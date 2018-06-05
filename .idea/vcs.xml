@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../albumy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../catchat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../flask-share" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../sayhello" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../todoism" vcs="Git" />
+  </component>
+</project>
