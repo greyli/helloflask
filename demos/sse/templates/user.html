@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ username }} - HelloFlask{% endblock %}
+
+{% block content %}
+<h1>User > {{ username }}</h1>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    var source = new EventSource("{{ url_for('sse.stream', channel=username) }}");
+    source.addEventListener('message', function (event) {
+        var data = JSON.parse(event.data);
+        document.title = 'New message - {{ username }}'
+        // alert("The server says " + data.message);
+    }, false);
+    source.addEventListener('error', function (event) {
+        alert("Failed to connect to event stream. Is Redis running?");
+    }, false);
+</script>
+{% endblock %}

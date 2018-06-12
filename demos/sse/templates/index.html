@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Server-Sent Events</h1>
+<small>with <a href="https://github.com/singingwolfboy/flask-sse">Flask-SSE</a></small>
+<textarea placeholder="Your message"></textarea>
+<a href="{{ url_for('broadcast') }}">Broadcast</a>
+<a href="">Private Chat</a>
+{% endblock %}
