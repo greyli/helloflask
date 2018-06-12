@@ -1,0 +1,13 @@
+{% macro form_field(field) %}
+    {{ field.label }}<br>
+    {% if field.flags.required %}
+        {{ field(required='required', **kwargs) }}<br>
+    {% else %}
+        {{ field(**kwargs) }}<br>
+    {% endif %}
+    {% if field.errors %}
+        {% for error in field.errors %}
+            <small class="error">{{ error }}</small><br>
+        {% endfor %}
+    {% endif %}
+{% endmacro %}
