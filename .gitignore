@@ -170,3 +170,8 @@ fabric.properties
 
 # Sphinx
 docs/_build/
+
+# SQLite
+.db
+.sqlite
+.sqlite3
