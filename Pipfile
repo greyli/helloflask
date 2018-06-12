@@ -1,5 +1,5 @@
 [[source]]
-url = "https://pypi.python.org/simple"
+url = "https://mirrors.aliyun.com/pypi/simple"
 verify_ssl = true
 name = "pypi"
 
@@ -8,11 +8,9 @@ watchdog = "*"
 
 [packages]
 python-dotenv = "*"
-flask-ckeditor = "*"
 flask-sqlalchemy = "*"
 flask-mail = "*"
 sendgrid = "*"
-gevent = "*"
 flask-migrate = "*"
 flask-caching = "*"
 flask-assets = "*"
@@ -25,3 +23,4 @@ waitress = "*"
 redis = "*"
 flask-dropzone = "*"
 flask-wtf = "*"
+flask-ckeditor = "*"
