@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import form_field %}
+
+{% block content %}
+<h2>Send an Email to Yourself</h2>
+<p>or subscribe <a href="{{ url_for('subscribe') }}">the fake newsletter</a></p>
+
+<form method="post">
+    {{ form.csrf_token }}
+    {{ form_field(form.to, placeholder='zorn@example.com') }}
+    {{ form_field(form.subject, size=30) }}
+    {{ form_field(form.body, rows=5, cols=50) }}<br>
+    {{ form.submit_smtp(class='btn') }}
+    {{ form.submit_api(class='btn') }}
+    {{ form.submit_async(class='btn') }}
+</form>
+{% endblock %}

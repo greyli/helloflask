@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% from 'macros.html' import form_field %}
+
+{% block content %}
+    <h2>Flask Weekly</h2>
+    <p>A free weekly newsletter featuring curated news, articles, new releases, jobs etc related to Flask. </p>
+    <p>Delivery at every Wednesday morning.</p>
+    <p>Unsubscribe at any time.</p>
+    <form method="post">
+        {{ form.csrf_token }}
+        {{ form_field(form.name, placeholder='Your Name') }}
+        {{ form_field(form.email, placeholder='Your Email') }}<br>
+        {{ form.submit(class='btn') }}
+    </form>
+{% endblock %}
