@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Forms</h1>
+<ul>
+    <li><a href="{{ url_for('html') }}">HTML Form</a></li>
+    <li><a href="{{ url_for('basic') }}">Basic Form</a></li>
+    <li><a href="{{ url_for('bootstrap') }}">Bootstrap Style Form</a></li>
+    <li><a href="{{ url_for('upload') }}">File Upload</a></li>
+    <li><a href="{{ url_for('multi_upload') }}">Multiple Files Upload</a></li>
+    <li><a href="{{ url_for('dropzone_upload') }}">Integrate Dropzone.js with Flask-Dropzone</a></li>
+    <li><a href="{{ url_for('custom_validator') }}">Custom Validator</a></li>
+    <li><a href="{{ url_for('two_submits') }}">Multiple Submit Buttons</a></li>
+    <li><a href="{{ url_for('multi_form') }}">Multiple Forms in One Page with One View</a></li>
+    <li><a href="{{ url_for('multi_form_multi_view') }}">Multiple Forms in One Page with Two View</a></li>
+    <li><a href="{{ url_for('integrate_ckeditor') }}">Integrate CKEditor with Flask-CKEditor</a></li>
+</ul>
+{% endblock %}

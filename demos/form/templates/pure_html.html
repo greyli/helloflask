@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Pure HTML Form</h2>
+
+<form method="post">
+    <label for="username">Username</label><br>
+    <input type="text" name="username" placeholder="Héctor Rivera"><br>
+    <label for="password">Password</label><br>
+    <input type="password" name="password" placeholder="19001130"><br>
+    <input id="remember" name="remember" type="checkbox" checked>
+    <label for="remember"><small>Remember me</small></label><br>
+    <input type="submit" name="submit" value="Log in">
+</form>
+{% endblock %}
