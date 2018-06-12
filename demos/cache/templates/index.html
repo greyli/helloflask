@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Cache</h1><small>with <a href="https://github.com/sh4nks/flask-caching">Flask-Caching</a></small>
+<p>These pages use <b>time.sleep(1)</b> to simulate a poor server or heavy work.</p>
+<ul>
+    <li><a href="{{ url_for('foo') }}">Foo</a>: no cache</li>
+    <li><a href="{{ url_for('bar') }}">Bar</a>: cache enabled, 10 minutes timeout</li>
+    <li><a href="{{ url_for('baz') }}">Baz</a>: cache enabled, 1 hour timeout</li>
+    <li><a href="{{ url_for('qux', page=1) }}">Qux</a>: cache based on query string (page)</li>
+</ul>
+<a class="btn" href="{{ url_for('update_bar') }}">Delete cache for bar</a>
+<a class="btn" href="{{ url_for('update_baz') }}">Delete cache for baz</a>
+<a class="btn" href="{{ url_for('update_all') }}">Delete all cache</a>
+{% endblock %}
