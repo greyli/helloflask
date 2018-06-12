@@ -27,6 +27,3 @@ def hello(username):
 @app.route('/user/<username>')
 def user(username):
     return render_template('user.html', username=username)
-
-
-
