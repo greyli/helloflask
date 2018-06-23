@@ -175,3 +175,7 @@ docs/_build/
 .db
 .sqlite
 .sqlite3
+
+# Upload file
+demos/form/uploads/*
+!demos/form/uploads/.gitkeep
