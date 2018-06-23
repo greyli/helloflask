@@ -5,14 +5,14 @@ A collection of Flask example applications. Repository for [*Hello, Flask!*](htt
 
 There are 9 applications in demos directory:
 
-- demos/hello  Basic Flask application
-- demos/http  Flask with HTTP
-- demos/template Templating with Jinja2
-- demos/form  Form handing with Flask-WTF (WTForms)
-- demos/database  Database with Flask-SQLAlchemy
-- demos/email  Send email with Flask-Mail and SendGrid
-- demos/assets  Assets optimize with Flask-Assets
-- demos/cache  Cache with Flask-Caching
+- `demos/hello`  Basic Flask application
+- `demos/http`  Flask with HTTP
+- `demos/template` Templating with Jinja2
+- `demos/form`  Form handing with Flask-WTF (WTForms)
+- `demos/database`  Database with Flask-SQLAlchemy
+- `demos/email`  Send email with Flask-Mail and SendGrid
+- `demos/assets`  Assets optimize with Flask-Assets
+- `demos/cache`  Cache with Flask-Caching
 - and more...
 
 ## Run the demo application
@@ -36,16 +36,16 @@ You can run other application by replace `demos/hello` with proper path.
 
 ## For Chinese Readers of My Flask Book
 
-Õâ¸ö²Ö¿â°üº¬[¡¶Flask Web¿ª·¢ÊµÕ½¡·](http://helloflask.com/book)µÚ1~6ÕÂÒÔ¼°13ÕÂµÄÊ¾Àı³ÌĞòÔ´Âë¡£Ê¾Àı³ÌĞòºÍÕÂ½ÚµÄ¶ÔÓ¦Çé¿öÈçÏÂ£º
+è¿™ä¸ªä»“åº“åŒ…å«[ã€ŠFlask Webå¼€å‘å®æˆ˜ã€‹](http://helloflask.com/book)ç¬¬1~6ç« ä»¥åŠ13ç« çš„ç¤ºä¾‹ç¨‹åºæºç ã€‚ç¤ºä¾‹ç¨‹åºå’Œç« èŠ‚çš„å¯¹åº”æƒ…å†µå¦‚ä¸‹ï¼š
 
-- demos/hello  ¶ÔÓ¦µÚ1ÕÂ¡¶³õÊ¶Flask¡·
-- demos/http  ¶ÔÓ¦µÚ2ÕÂ¡¶FlaskÓëHTTP¡·
-- demos/template  ¶ÔÓ¦µÚ3ÕÂ¡¶Ä£°å¡·
-- demos/form  ¶ÔÓ¦µÚ4ÕÂ¡¶±íµ¥¡·
-- demos/database  ¶ÔÓ¦µÚ5ÕÂ¡¶Êı¾İ¿â¡·
-- demos/email  ¶ÔÓ¦µÚ6ÕÂ¡¶µç×ÓÓÊ¼ş¡·
-- demos/assets  ¶ÔÓ¦µÚ13ÕÂ¡¶ĞÔÄÜÓÅ»¯¡·
-- demos/cache  ¶ÔÓ¦µÚ13ÕÂ¡¶ĞÔÄÜÓÅ»¯¡·
+- `demos/hello`  å¯¹åº”ç¬¬1ç« ã€Šåˆè¯†Flaskã€‹
+- `demos/http`  å¯¹åº”ç¬¬2ç« ã€ŠFlaskä¸HTTPã€‹
+- `demos/template`  å¯¹åº”ç¬¬3ç« ã€Šæ¨¡æ¿ã€‹
+- `demos/form`  å¯¹åº”ç¬¬4ç« ã€Šè¡¨å•ã€‹
+- `demos/database`  å¯¹åº”ç¬¬5ç« ã€Šæ•°æ®åº“ã€‹
+- `demos/email`  å¯¹åº”ç¬¬6ç« ã€Šç”µå­é‚®ä»¶ã€‹
+- `demos/assets`  å¯¹åº”ç¬¬13ç« ã€Šæ€§èƒ½ä¼˜åŒ–ã€‹
+- `demos/cache`  å¯¹åº”ç¬¬13ç« ã€Šæ€§èƒ½ä¼˜åŒ–ã€‹
 
 ## License
 
