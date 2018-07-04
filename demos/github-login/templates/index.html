@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Login with GitHub</h1>
+    <p>with <a href="https://github.com/cenkalti/github-flask">GitHub-Flask</a></p>
+    {% if is_login %}
+        Hello, <b>{{ username }}</b>!<br>
+        Look, we get this avatar from <a href="{{ url }}">your GitHub account</a>:<br><br>
+        <img src="{{ avatar }}"><br><br>
+        You can click <a href="{{ url_for('get_user') }}">here</a> to see more information we get.<br><br>
+        Try to star this repo on GitHub with the button below:
+        <a href="{{ url_for('star') }}" class="btn">Star HelloFlask on GitHub</a><br><br>
+        <a class="btn" href="{{ url_for('logout') }}">Logout</a>
+    {% else %}
+        <a class="btn" href="{{ url_for('login') }}">Login with GitHub</a>
+    {% endif %}
+{% endblock %}
