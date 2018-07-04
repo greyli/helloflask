@@ -93,8 +93,8 @@ def authorized(access_token):
         flash('Login failed.')
         return redirect(url_for('index'))
 
-    response = github.get('user')
-    username = response['login']
+    response = github.get('user', access_token=access_token)
+    username = response['login']  # get username
     user = User.query.filter_by(username=username).first()
     if user is None:
         user = User(username=username, access_token=access_token)
