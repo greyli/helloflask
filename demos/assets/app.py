@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+"""
+    :author: Grey Li (李辉)
+    :url: http://greyli.com
+    :copyright: © 2018 Grey Li
+    :license: MIT, see LICENSE for more details.
+"""
 from flask import Flask, render_template
 from flask_assets import Environment, Bundle
 from flask_ckeditor import CKEditor

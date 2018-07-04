@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+"""
+    :author: Grey Li (李辉)
+    :url: http://greyli.com
+    :copyright: © 2018 Grey Li
+    :license: MIT, see LICENSE for more details.
+"""
 from flask_ckeditor import CKEditorField
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileRequired, FileAllowed

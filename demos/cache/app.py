@@ -1,4 +1,10 @@
 # -*- coding: utf-8 -*-
+"""
+    :author: Grey Li (李辉)
+    :url: http://greyli.com
+    :copyright: © 2018 Grey Li
+    :license: MIT, see LICENSE for more details.
+"""
 import time
 
 from flask import Flask, url_for, redirect, request, flash, render_template
