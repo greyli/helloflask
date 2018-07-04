@@ -13,6 +13,7 @@ There are 9 applications in demos directory:
 - `demos/email`  Send email with Flask-Mail and SendGrid
 - `demos/assets`  Assets optimize with Flask-Assets
 - `demos/cache`  Cache with Flask-Caching
+- `demos/github-login`  GitHub OAuth login with GitHub-Flask
 - and more...
 
 ## Run the demo application
@@ -36,7 +37,7 @@ You can run other application by replace `demos/hello` with proper path.
 
 ## For Chinese Readers of My Flask Book
 
-这个仓库包含[《Flask Web开发实战》](http://helloflask.com/book)第1~6章以及13章的示例程序源码。示例程序和章节的对应情况如下：
+这个仓库包含[《Flask Web开发实战》](https://zhuanlan.zhihu.com/p/29907260)第1~6章以及13章的示例程序源码。示例程序和章节的对应情况如下：
 
 - `demos/hello`  对应第1章《初识Flask》
 - `demos/http`  对应第2章《Flask与HTTP》
@@ -46,6 +47,8 @@ You can run other application by replace `demos/hello` with proper path.
 - `demos/email`  对应第6章《电子邮件》
 - `demos/assets`  对应第13章《性能优化》
 - `demos/cache`  对应第13章《性能优化》
+
+除此之外，这个仓库还包含其他Flask常见应用主题的示例程序。
 
 ## License
 
