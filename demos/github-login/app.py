@@ -29,6 +29,7 @@ app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'secret string')
 app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL', prefix + os.path.join(app.root_path, 'data.db'))
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 # GitHub-Flask
+# You normally need to save this values as enviroment variable
 app.config['GITHUB_CLIENT_ID'] = '723b66409490cad030f0'
 app.config['GITHUB_CLIENT_SECRET'] = 'bb60af3c5a4d8c98b8442314a7cff32dcefe0660'
 
