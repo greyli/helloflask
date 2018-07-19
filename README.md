@@ -1,44 +1,12 @@
 # HelloFlask
-A collection of Flask example applications. Repository for [*Hello, Flask!*](https://zhuanlan.zhihu.com/p/29907260).
 
-## Demos
+Flask书[《Flask Web开发实战》（Python Web development with Flask）](http://helloflask.com/book)仓库。
 
-There are 9 applications in demos directory:
+## 包含内容
+这个仓库包含[《Flask Web开发实战》](http://helloflask.com/book)第1~6章、13章的示例程序源码和勘误信息。
 
-- `demos/hello`  Basic Flask application
-- `demos/http`  Flask with HTTP
-- `demos/template` Templating with Jinja2
-- `demos/form`  Form handing with Flask-WTF (WTForms)
-- `demos/database`  Database with Flask-SQLAlchemy
-- `demos/email`  Send email with Flask-Mail and SendGrid
-- `demos/assets`  Assets optimize with Flask-Assets
-- `demos/cache`  Cache with Flask-Caching
-- `demos/github-login`  GitHub OAuth login with GitHub-Flask
-- and more...
 
-## Run the demo application
-
-Preparation work:
-```
-$ git clone https://github.com/greyli/helloflask.git
-$ cd helloflask
-$ pipenv install
-$ pipenv shell
-```
-
-Run:
-```
-$ cd demos/hello
-$ flask run
-```
-Now open http://localhost:5000.
-
-You can run other application by replace `demos/hello` with proper path.
-
-## For Chinese Readers of My Flask Book
-
-这个仓库包含[《Flask Web开发实战》](https://zhuanlan.zhihu.com/p/29907260)第1~6章以及13章的示例程序源码。示例程序和章节的对应情况如下：
-
+示例程序目录和章节的对应情况如下：
 - `demos/hello`  对应第1章《初识Flask》
 - `demos/http`  对应第2章《Flask与HTTP》
 - `demos/template`  对应第3章《模板》
@@ -48,9 +16,33 @@ You can run other application by replace `demos/hello` with proper path.
 - `demos/assets`  对应第13章《性能优化》
 - `demos/cache`  对应第13章《性能优化》
 
-除此之外，这个仓库还包含其他Flask常见应用主题的示例程序。
+勘误文件在`errata`目录下。
+
+
+## 运行程序
+
+克隆仓库，并安装依赖包：
+```
+$ git clone https://github.com/greyli/helloflask.git
+$ cd helloflask
+$ pipenv install
+$ pipenv shell
+```
+如果你还没有安装Pipenv，那么可以在运行`pipenv`命令前通过`pip install pipenv`来安装。
+```
+$ cd demos/hello
+$ flask run
+```
+现在使用浏览器打开http://localhost:5000即可看到示例程序主页。
+
+你可以通过切换到不同的示例程序目录来运行不同的程序，比如，下面的命令将会运行第4章的示例程序：
+```
+$ cd demos/form
+$ flask run
+```
+在书中，每一章的开头都会包含运行实例程序的提示。
+
 
 ## License
 
-This project is licensed under the MIT License (see the
-`LICENSE` file for details).
+该项目基于MIT协议授权，具体可以参考`LICENSE`文件。
