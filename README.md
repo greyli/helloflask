@@ -1,10 +1,8 @@
 # HelloFlask
 
-Flask书[《Flask Web开发实战》（Python Web development with Flask）](http://helloflask.com/book)仓库。
+这个仓库包含[《Flask Web开发实战》（Python Web development with Flask）](http://helloflask.com/book)第1~6章、13章的示例程序源码和勘误信息。
 
-## 包含内容
-这个仓库包含[《Flask Web开发实战》](http://helloflask.com/book)第1~6章、13章的示例程序源码和勘误信息。
-
+## 目录
 
 示例程序目录和章节的对应情况如下：
 - `demos/hello`  对应第1章《初识Flask》
@@ -33,9 +31,9 @@ $ pipenv shell
 $ cd demos/hello
 $ flask run
 ```
-现在使用浏览器打开http://localhost:5000即可看到示例程序主页。
+现在使用浏览器打开http://localhost:5000
 
-你可以通过切换到不同的示例程序目录来运行不同的程序，比如，下面的命令将会运行第4章的示例程序：
+你可以通过切换到不同的示例程序目录来运行不同的示例程序。比如，下面的命令将会运行第4章的示例程序：
 ```
 $ cd demos/form
 $ flask run
