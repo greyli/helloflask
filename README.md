@@ -23,7 +23,7 @@
 ```
 $ git clone https://github.com/greyli/helloflask.git
 $ cd helloflask
-$ pipenv install
+$ pipenv install --skip-lock
 $ pipenv shell
 ```
 如果你还没有安装Pipenv，那么可以在运行`pipenv`命令前通过`pip install pipenv`来安装。
