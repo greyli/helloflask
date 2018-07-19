@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c93536103cd557816abe39b1e50b2711b692e02e53b788cbb3113c2de02f460c"
+            "sha256": "f0528d723050bc120693bb36b1da91b1e1b0dae59c324d6facfa53246523243a"
         },
         "pipfile-spec": 6,
         "requires": {},
@@ -111,14 +111,6 @@
             "index": "pypi",
             "version": "==2.3.2"
         },
-        "flask-sse": {
-            "hashes": [
-                "sha256:3723723b78ff67c32f3954a9262eb78bbe324cacd40c6aad5d222ea48f50258d",
-                "sha256:db93edc4d04fe5c843135c4216877395d4b8233df85c76202701bd5cd8f187ff"
-            ],
-            "index": "pypi",
-            "version": "==0.2.1"
-        },
         "flask-wtf": {
             "hashes": [
                 "sha256:5d14d55cfd35f613d99ee7cba0fc3fbbe63ba02f544d349158c14ca15561cc36",
@@ -214,14 +206,6 @@
                 "sha256:72325e67fb85f6e9ad304c603d83626d1df684fdf0c7ab1f0352e71feeab69d8"
             ],
             "version": "==1.2.10"
-        },
-        "waitress": {
-            "hashes": [
-                "sha256:40b0f297a7f3af61fbfbdc67e59090c70dc150a1601c39ecc9f5f1d283fb931b",
-                "sha256:d33cd3d62426c0f1b3cd84ee3d65779c7003aae3fc060dee60524d10a57f05a9"
-            ],
-            "index": "pypi",
-            "version": "==1.1.0"
         },
         "webassets": {
             "hashes": [
