@@ -1,6 +1,6 @@
 # HelloFlask
 
-这个仓库包含[《Flask Web开发实战》（Python Web development with Flask）](http://helloflask.com/book)第1~6章、13章的示例程序源码和勘误信息。
+这个仓库包含[《Flask Web开发实战》（Python Web Development with Flask）](http://helloflask.com/book)第1~6章、13章的示例程序源码和勘误信息。
 
 ## 目录
 
@@ -14,32 +14,37 @@
 - `demos/assets`  对应第13章《性能优化》
 - `demos/cache`  对应第13章《性能优化》
 
+*在书中，每一章的开头都会包含运行实例程序的提示。*
+
 勘误文件在`errata`目录下。
 
 
 ## 运行程序
 
-克隆仓库，并安装依赖包：
+克隆仓库：
 ```
 $ git clone https://github.com/greyli/helloflask.git
 $ cd helloflask
+```
+安装依赖包：
+```
 $ pipenv install --skip-lock
 $ pipenv shell
 ```
-如果你还没有安装Pipenv，那么可以在运行`pipenv`命令前通过`pip install pipenv`来安装。
+*如果你还没有安装Pipenv，那么可以在运行`pipenv`命令前通过pip安装（`pip install pipenv`）。*
+
+运行实例程序：
 ```
 $ cd demos/hello
 $ flask run
 ```
 现在使用浏览器打开http://localhost:5000
 
-你可以通过切换到不同的示例程序目录来运行不同的示例程序。比如，下面的命令将会运行第4章的示例程序：
+你可以通过切换到不同的示例程序目录来运行不同章节的示例程序。比如，下面的命令将会运行第4章的示例程序：
 ```
 $ cd demos/form
 $ flask run
 ```
-在书中，每一章的开头都会包含运行实例程序的提示。
-
 
 ## License
 
