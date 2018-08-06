@@ -2,9 +2,17 @@
 
 这个仓库包含[《Flask Web开发实战》（Python Web Development with Flask）](http://helloflask.com/book)第1~6章、13章的示例程序源码和勘误信息。
 
-## 目录
+# 勘误
+
+勘误文件在`errata`目录下。
+
+首先，为书中包含的错误表示抱歉！如果你发现了书中的错误，欢迎提交PR更新勘误文件；你也可以创建Issue指出相关错误，或是通过Email与我联系（withlihui@gmail.com），谢谢！
+
+
+## 示例程序目录
 
 示例程序目录和章节的对应情况如下：
+
 - `demos/hello`  对应第1章《初识Flask》
 - `demos/http`  对应第2章《Flask与HTTP》
 - `demos/template`  对应第3章《模板》
@@ -16,8 +24,6 @@
 
 *在书中，每一章的开头都会包含运行实例程序的提示。*
 
-勘误文件在`errata`目录下。
-
 
 ## 运行程序
 
@@ -28,7 +34,7 @@ $ cd helloflask
 ```
 安装依赖包：
 ```
-$ pipenv install --skip-lock
+$ pipenv install --dev --pypi-mirror https://mirrors.aliyun.com/pypi/simple
 $ pipenv shell
 ```
 *如果你还没有安装Pipenv，那么可以在运行`pipenv`命令前通过pip安装（`pip install pipenv`）。*
@@ -45,6 +51,15 @@ $ flask run
 $ cd demos/form
 $ flask run
 ```
+
+## 相关项目
+
+* [SayHello](https://github.com/greyli/sayhello)： 本书第7章示例程序，一个简单的留言板程序。
+* [Bluelog](https://github.com/greyli/bluelog)：本书第8章示例程序，一个个人博客。
+* [Albumy](https://github.com/greyli/albumy)：本书第9章示例程序，多人图片社交网站。
+* [Todoism](https://github.com/greyli/todoism)：本书第10章示例程序，实现了Web API和i18n支持的Todo程序。
+* [CatChat](https://github.com/greyli/catchat)：本书第11章示例程序，基于WebSocket实现，并提供了社交账户登录功能的聊天室。
+* [Flask-Share](https://github.com/greyli/flask-share)：本书第15章的Flask扩展示例。
 
 ## License
 
