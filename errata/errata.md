@@ -4,11 +4,15 @@
 
 ## 文本错误
 
-* 暂无
+* 电子书中第二章讲http安全中的注入防范里的主要防范方法的第三条的参数化查询中给出的示例代码缺少一个引号，原文为：
+```
+db.execute('SELECT * FROM students WHERE password=?, password)
+```
 
 ## 源码错误
 
 * 按照书中的描述以及实际的效果，Albumy评论模板中的用户头像应该使用中等尺寸，即`avatar_m`。代码位置在`albumy/albumy/templates/main/_comment.html:20`
+
 
 ## 可改进的实现
 
