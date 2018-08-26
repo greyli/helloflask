@@ -13,7 +13,7 @@
 
 本书相关项目的源码建议你按照书中的指导使用Git克隆到本地，如果下载速度较慢，可以等待两天，这周我会把所有源码推送到GitHub，并打包一个合集文件供下载。
 
-# 勘误
+## 勘误
 
 勘误文件在[errata](https://github.com/greyli/helloflask/blob/master/errata/)目录下。
 
@@ -71,6 +71,25 @@ $ flask run
 * [Todoism](https://github.com/greyli/todoism)：本书第10章示例程序，实现了Web API和i18n支持的Todo程序。
 * [CatChat](https://github.com/greyli/catchat)：本书第11章示例程序，基于WebSocket实现，并提供了社交账户登录功能的聊天室。
 * [Flask-Share](https://github.com/greyli/flask-share)：本书第15章的Flask扩展示例。
+
+
+## Powered by This Book
+
+如果你通过阅读本书实现了自己的小项目，欢迎通过各种途径让我知道，我会把你的项目添加到这里和本书主页。
+
+
+## 分享 & 推荐
+
+如果这本书帮到了你，或是你觉得这本书还不错，欢迎通过社交平台私信或是或发Email告诉我，这对我来说是非常珍贵的鼓励！
+
+另外，你也可以通过下面的途径来分享和推荐本书：
+
+* 直接向朋友或同事推荐
+* 在新浪微博、Twitter或知乎等平台分享并@我（新浪微博@李辉Grey，Twitter@greylihui，知乎@李辉）
+* 在你的博客或其他平台写文章分享你的阅读心得
+* 在本书的豆瓣图书页面写短评或书评
+* 在本书的京东、亚马逊、当当商品页面写评价
+
 
 ## License
 
