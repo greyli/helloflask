@@ -1,12 +1,21 @@
+主页
+/ [勘误](https://github.com/greyli/helloflask/blob/master/errata/errata.md)
+/ [FAQ](https://github.com/greyli/helloflask/blob/master/faq/faq.md)
+/ [示例程序](https://github.com/greyli/helloflask/blob/master/demos/)
+/ [HelloFlask.com](http://helloflask.com)
+/ [本书主页](http://helloflask.com/book)
+
 # HelloFlask
 
 这个仓库包含[《Flask Web开发实战》（Python Web Development with Flask）](http://helloflask.com/book)第1~6章、13章的示例程序源码和勘误信息。
 
+你可以访问本书主页[http://helloflask.com/book](http://helloflask.com/book)查看本书的资源索引、目录、购买链接等详细信息。
+
 # 勘误
 
-勘误文件在`errata`目录下。
+勘误文件在[errata](https://github.com/greyli/helloflask/blob/master/errata/)目录下。
 
-首先，为书中包含的错误表示抱歉！如果你发现了书中的错误，欢迎提交PR更新勘误文件；你也可以创建Issue指出相关错误，或是通过Email与我联系（withlihui@gmail.com），谢谢！
+首先，为书中包含的错误表示抱歉！如果你发现了书中的错误，欢迎提交PR更新勘误文件；你也可以创建Issue指出相关错误，或是通过Email与我联系（[withlihui@gmail.com](mailto:withlihui@gmail.com)），谢谢！
 
 
 ## 示例程序目录
