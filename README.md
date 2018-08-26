@@ -11,6 +11,8 @@
 
 你可以访问本书主页[http://helloflask.com/book](http://helloflask.com/book)查看本书的资源索引、目录、购买链接等详细信息。
 
+本书相关项目的源码建议你按照书中的指导使用Git克隆到本地，如果下载速度较慢，可以等待两天，这周我会把所有源码推送到GitHub，并打包一个合集文件供下载。
+
 # 勘误
 
 勘误文件在[errata](https://github.com/greyli/helloflask/blob/master/errata/)目录下。

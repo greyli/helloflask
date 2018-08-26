@@ -7,6 +7,8 @@
 
 # FAQ
 
+如果你想提一个问题，请创建Issue。
+
 ### 为什么没有使用Flask-RESTful编写Web API？
 
 在写作Web API这部分内容时，我考察了目前所有流行的API编写扩展，其中相对处于活跃开发状态的有[Flask-RESTful](https://github.com/flask-restful/flask-restful)、[Flask-apispec](https://github.com/jmcarp/flask-apispec)、[Flask-Classful](https://github.com/teracyhq/flask-classful)、[Flask-RestPlus](https://github.com/noirbizarre/flask-restplus)、[Flask-Restless](https://github.com/jfinkels/flask-restless)这几个。第10章的程序一开始是使用Flask-RESTful的，但后来经过再三考虑，改为单纯用Flask实现。
