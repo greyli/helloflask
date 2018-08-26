@@ -16,6 +16,10 @@
 
 ## 贡献指南
 
+如果你发现了书中的错误，欢迎提交PR更新勘误文件；你也可以创建Issue指出相关错误，或是通过Email与我联系（[withlihui@gmail.com](mailto:withlihui@gmail.com)），谢谢！
+
+创建PR时，请参考下列要求：
+
 * 勘误需要按照章节顺序排列，全局错误放到最上面。
 * 每一列的内容说明参考第一行。
 
@@ -32,6 +36,7 @@
 | 前言 | - | 本书主要特点中的第3点 | Pyhton | Python | 拼写错误 |
 | 前言 | - | 本书主要特点中的第3点 | Boostrap | Bootstrap | 审校错误 |
 | 1.3.3 | - | 第一行 | Enviroment  | Environment | 拼写错误 |
+| 1.7 | - | 第2个代码块下第1行 | `url_for('say_hello', name='Jack')` | `url_for('greet', name='Jack')` | 笔误 |
 | 2.3.2 | - | HTML小节的最后一行 | HTTP | HTML | 笔误 |
 | 2.5.4.1 | - | 第三个代码块 | `db.execute('SELECT * FROM students WHERE password=?', password)` | `db.execute('SELECT * FROM students WHERE password=?, password)` | 笔误。字符串漏写右侧关闭引号 |
 | 前言 | - | 本书主要特点中的第3点 | Boostrap | Bootstrap | 审校错误 |
