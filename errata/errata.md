@@ -39,7 +39,7 @@
 | 1.7 | - | 第2个代码块下第1行 | `url_for('say_hello', name='Jack')` | `url_for('greet', name='Jack')` | 笔误 |
 | 2.3.2 | - | HTML小节的最后一行 | HTTP | HTML | 笔误 |
 | 2.5.4.1 | - | 第三个代码块 | `db.execute('SELECT * FROM students WHERE password=?', password)` | `db.execute('SELECT * FROM students WHERE password=?, password)` | 笔误。字符串漏写右侧关闭引号 |
-| 前言 | - | 本书主要特点中的第3点 | Boostrap | Bootstrap | 审校错误 |
+| 3.3.2 | - | 第二段文字中 | _macors.html | _macros.html | 笔误 |
 | 10.3.1.4 | - | 忘记了，待确定 | RSET | REST | 笔误 |
 | 10.3.3 5 | - | 最后一行 | flask-restless | Flask-Restless | 大小写错误 |
 | | | | | |
