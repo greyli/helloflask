@@ -21,7 +21,7 @@
 
 ## 纸书第一版第一次印刷
 
-发布时间：2018/8/24
+发布时间：2018/9/1
 
 章节 | 页码 | 位置 | 错误文字 | 正确文字 | 备注 |
 --- | --- | --- | --- | --- | ---
@@ -31,13 +31,14 @@
 | 前言 | - | 本书主要特点中的第2点 | 第一部分的2~6章 | 第一部分的1~6章 | 审校错误 |
 | 前言 | - | 本书主要特点中的第3点 | Pyhton | Python | 拼写错误 |
 | 前言 | - | 本书主要特点中的第3点 | Boostrap | Bootstrap | 审校错误 |
-| 1.3.3 | - | 第一行 | Enviroment  | Environment | 拼写错误 |
+| 1.2.2.2 | - | 第1个附注文字下第2行 | http://helloflask.com/hello/Grey | http://helloflask.com/greet/Grey | 笔误 |
+| 1.3.3 | - | 第1行 | Enviroment  | Environment | 拼写错误 |
 | 1.7 | - | 第2个代码块下第1行 | `url_for('say_hello', name='Jack')` | `url_for('greet', name='Jack')` | 笔误 |
-| 2.3.2 | - | HTML小节的最后一行 | HTTP | HTML | 笔误 |
-| 2.5.4.1 | - | 第三个代码块 | `db.execute('SELECT * FROM students WHERE password=?', password)` | `db.execute('SELECT * FROM students WHERE password=?, password)` | 笔误。字符串漏写右侧关闭引号 |
-| 3.3.2 | - | 第二段文字中 | _macors.html | _macros.html | 笔误 |
+| 2.3.2 | - | HTML小节的最后1行 | HTTP | HTML | 笔误 |
+| 2.5.4.1 | - | 第3个代码块 | `db.execute('SELECT * FROM students WHERE password=?', password)` | `db.execute('SELECT * FROM students WHERE password=?, password)` | 笔误。字符串漏写右侧关闭引号 |
+| 3.3.2 | - | 第2段文字中 | _macors.html | _macros.html | 笔误 |
 | 10.3.1.4 | - | 忘记了，待确定 | RSET | REST | 笔误 |
-| 10.3.3 5 | - | 最后一行 | flask-restless | Flask-Restless | 大小写错误 |
+| 10.3.3 5 | - | 最后1行 | flask-restless | Flask-Restless | 大小写错误 |
 | | | | | |
 
 ## 电子书
