@@ -27,3 +27,20 @@ Anaconda我没用过，简单了解了一下，觉得很成熟和方便。不过
 ```
 pipenv --python /usr/local/bin/python3
 ```
+
+### PyCharm无法配置运行程序
+
+旧版本的PyCharm不支持通过模块来执行命令。新版本的PyCharm在图1-6的第4点位置有一个下拉选项，可以选择Module name，而不是Script。如果你使用的PyCharm没有这个下拉选项，可以通过为Python解释器添加-m选项可以起到类似的效果，即python -m flask run。
+
+![旧版本PyCharm配置提示](https://camo.githubusercontent.com/a66b13d20c512156790cd3aa8cd29c4e8ac2740b/687474703a2f2f69322e6276696d672e636f6d2f3635393834312f346564633638333033306161393266372e706e67)
+
+### 启动程序出现`TypeError`异常
+
+Werkzeug当前版本（14.2）存在一个Bug，当在Windows系统下使用Python2开启调试模式时，重载器会因为环境变量FLASK_ENV的编码问题而出现TypeError异常。这个Bug已在master分支修复（话说定位这个Bug花了我很长时间），预计在纸书正式发售前会发布Werkzeug 0.15版本。
+
+目前，临时的解决方案有修改Werkzeug源码、修改python-dotenv源码、从GitHub上的master分支更新Werkzeug等，但这些方法都太麻烦。我建议你临时不开启调试模式来避免这个异常出现，也就是在.flaskenv文件中将FLASK_ENV定义那一行注释掉（使用#号），比如：
+
+```
+# FLASK_ENV=development
+```
+等到Werkzeug 0.15发布后，我会在知乎专栏Hello, Flask!发一篇文章通知大家更新本地依赖，并给出具体的更新方式。
