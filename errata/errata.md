@@ -37,9 +37,10 @@
 | 2.3.2 | - | HTML小节的最后1行 | HTTP | HTML | 笔误 |
 | 2.5.4.1 | - | 第3个代码块 | `db.execute('SELECT * FROM students WHERE password=?', password)` | `db.execute('SELECT * FROM students WHERE password=?, password)` | 笔误。字符串漏写右侧关闭引号 |
 | 3.3.2 | - | 第2段文字中 | _macors.html | _macros.html | 笔误 |
+| 4.3.1 | - | 第1个代码块后第1行 | 3000 | 2000 | 笔误，不同的浏览器对于URL有不同的长度限制，此处的长度为“最佳实践” |
 | 10.3.1.4 | - | 忘记了，待确定 | RSET | REST | 笔误 |
 | 10.3.3 5 | - | 最后1行 | flask-restless | Flask-Restless | 大小写错误 |
-| | | | | |
+
 
 ## 电子书
 
@@ -52,7 +53,6 @@
 | 全局 | - | -  | （） | () | 排版错误。所有半角括号被改为全角括号 |
 | 全局 | - | -  | foo --bar | foo--bar | 排版错误。多处。比如`flask --help`被错误写为`flask--help` |
 | 1.1.2 | - | 第1个代码块 |  | 排版错误。命令输出缺失内容`flask-1.0.2 itsdangerous-0.24` | 内容缺失 |
-| | | | | |
 
 
 ## 源码错误
