@@ -9,16 +9,19 @@
 
 如果你想提一个问题，请创建Issue。
 
-### 为什么没有使用Flask-RESTful编写Web API？
+### helloflask仓库没有Git标签？
 
-在写作Web API这部分内容时，我考察了目前所有流行的API编写扩展，其中相对处于活跃开发状态的有[Flask-RESTful](https://github.com/flask-restful/flask-restful)、[Flask-apispec](https://github.com/jmcarp/flask-apispec)、[Flask-Classful](https://github.com/teracyhq/flask-classful)、[Flask-RestPlus](https://github.com/noirbizarre/flask-restplus)、[Flask-Restless](https://github.com/jfinkels/flask-restless)这几个。第10章的程序一开始是使用Flask-RESTful的，但后来经过再三考虑，改为单纯用Flask实现。
+前言里在介绍Git基本用法时使用helloflask仓库作为示例，但是git tag -n命令给出位置容易产生误解。
 
-Flask-RESTful以及它的fork改良版Flask-RESTplus中的请求解析、响应格式化已经不推荐使用，而请求解析部分也将在未来移除，假如不使用这两部分功能，那么已经没有太大必要采用这个扩展，这是我没有使用它们的主要原因；而Flask内置的MethodView已经基本能够替代Flask-Classful，而且这个扩展看起来不太灵活；Flask-RESTless依赖于SQLAlchemy，不便于在作为一个作为示例用途的程序中使用；至于Flask-apispec，它结合了webargs和marshmallow，也提供了API文档生成功能，的确是非常好的选择，我很看好这个扩展，但是因为其刚刚出现不久，还不够完善，所以也没有选用。
+helloflask并不包含Git标签，所以这里的命令不会输出内容。这个命令用于列出第二部分的5个项目中设置的Git标签。
 
-### 为什么不叫REST API而使用Web API
-有些读者可能不理解我为什么把常说的REST API/RESTful API说成Web API，我摘取书里的这部分内容供你参考一下：
+### 如何通过PyCharm配置通过Flask-Script启动程序
 
-> “仅仅通过HTTP协议返回JSON或XML数据的Web API并不能算是严格意义上的REST API。REST的提出者也在博文（http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven）中指出不是使用了HTTP的API都叫REST API。为了避免产生混乱，本章会尽量避免REST这个词。事实上，我们不必完全按照REST的架构要求来设计API。要尽量从API的自身特点和普适的规范来设计，而不是拘泥于REST一词。”
+目前不建议继续使用Flask-Script，Flask内置的CLI组件已经基本能够替代它。如果仍然要使用Flask-Scirpt，可以参考下图：
+
+![Flask-Script在PyCharm中的启动配置](https://static.oschina.net/uploads/space/2016/0222/105449_Fg6R_1439846.png)
+
+图片来自[Flask学习笔记-PyCharm配置使用Flask-Script启动以及开启Debug模式](https://my.oschina.net/ykbj/blog/618475)。
 
 ### 使用Anaconda时如何通过Pipenv创建虚拟环境
 
@@ -44,3 +47,14 @@ Werkzeug当前版本（14.2）存在一个Bug，当在Windows系统下使用Pyth
 # FLASK_ENV=development
 ```
 等到Werkzeug 0.15发布后，我会在知乎专栏Hello, Flask!发一篇文章通知大家更新本地依赖，并给出具体的更新方式。
+
+### 为什么没有使用Flask-RESTful编写Web API？
+
+在写作Web API这部分内容时，我考察了目前所有流行的API编写扩展，其中相对处于活跃开发状态的有[Flask-RESTful](https://github.com/flask-restful/flask-restful)、[Flask-apispec](https://github.com/jmcarp/flask-apispec)、[Flask-Classful](https://github.com/teracyhq/flask-classful)、[Flask-RestPlus](https://github.com/noirbizarre/flask-restplus)、[Flask-Restless](https://github.com/jfinkels/flask-restless)这几个。第10章的程序一开始是使用Flask-RESTful的，但后来经过再三考虑，改为单纯用Flask实现。
+
+Flask-RESTful以及它的fork改良版Flask-RESTplus中的请求解析、响应格式化已经不推荐使用，而请求解析部分也将在未来移除，假如不使用这两部分功能，那么已经没有太大必要采用这个扩展，这是我没有使用它们的主要原因；而Flask内置的MethodView已经基本能够替代Flask-Classful，而且这个扩展看起来不太灵活；Flask-RESTless依赖于SQLAlchemy，不便于在作为一个作为示例用途的程序中使用；至于Flask-apispec，它结合了webargs和marshmallow，也提供了API文档生成功能，的确是非常好的选择，我很看好这个扩展，但是因为其刚刚出现不久，还不够完善，所以也没有选用。
+
+### 为什么不叫REST API而使用Web API
+有些读者可能不理解我为什么把常说的REST API/RESTful API说成Web API，我摘取书里的这部分内容供你参考一下：
+
+> “仅仅通过HTTP协议返回JSON或XML数据的Web API并不能算是严格意义上的REST API。REST的提出者也在博文（http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven）中指出不是使用了HTTP的API都叫REST API。为了避免产生混乱，本章会尽量避免REST这个词。事实上，我们不必完全按照REST的架构要求来设计API。要尽量从API的自身特点和普适的规范来设计，而不是拘泥于REST一词。”
