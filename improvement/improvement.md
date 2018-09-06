@@ -41,6 +41,15 @@ roles_permissions_map = {
 }
 ```
 
+### bluelog
+
+#### 虚拟数据中相关代码的优化
+
+* 相关Issue：https://github.com/greyli/bluelog/issues/1
+* 贡献者：@[AngelLiang](https://github.com/AngelLiang)
+* 主要描述：「尽量使虚拟数据接近真实的数据」。虚拟数据中生成的评论时间应该晚于文章时间，评论回复时间应该晚于评论时间，并且评论和回复应关联同一篇文章。不过由于虚拟数据主要目的是展示或测试视觉效果，所以不必把太多精力放在这里。
+
+
 
 ## 排版、风格设计
 
