@@ -47,9 +47,13 @@
 | 2.3.2 | - | HTML小节的最后1行 | HTTP | HTML | 笔误 |
 | 2.3.2 | - | 第三个代码块 | `{'Location', 'http://www.example.com'}` | `{'Location': 'http://www.example.com'}` | 笔误。返回值中字典里的符号出错 |
 | 2.5.4.1 | - | 第3个代码块 | `db.execute('SELECT * FROM students WHERE password=?', password)` | `db.execute('SELECT * FROM students WHERE password=?, password)` | 笔误。字符串漏写右侧关闭引号 |
+| 3.1 | - | 代码清单3-1下的提示 | HTML5 | HTML | 多余文本。另外，后面的链接需要更新为https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure |
 | 3.3.2 | - | 第2段文字中 | _macors.html | _macros.html | 笔误 |
 | 4.3.1 | - | 第1个代码块后第1行 | 3000 | 2000 | 笔误，不同的浏览器对于URL有不同的长度限制，此处的长度为“最佳实践” |
 | 5.4.1.1 | - | 第1个代码块第3行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，字符串漏掉了转义符号 |
+| 7.3.2 | - | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
+| 7.3.2 | - | 第1个代码块下面的提示文字 | HTmL | HTML | 审校错误，大小写错误 |
+| 8.2.1.1.(4) | - | 第2个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
 | 10.3.1.4 | - | 忘记了，待确定 | RSET | REST | 笔误 |
 | 10.3.3.5 | - | 最后1行 | flask-restless | Flask-Restless | 大小写错误 |
 | 11.4.3.5 | - | 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
