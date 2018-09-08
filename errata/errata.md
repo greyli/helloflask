@@ -2,7 +2,7 @@
 / 勘误
 / [FAQ](https://github.com/greyli/helloflask/blob/master/faq/faq.md)
 / [可改进实现](https://github.com/greyli/helloflask/blob/master/improvement/improvement.md)
-/ [更新记录](https://github.com/greyli/helloflask/blob/master/CHANGES.md)
+/ [版本更新记录](https://github.com/greyli/helloflask/blob/master/CHANGES.md)
 / [示例程序](https://github.com/greyli/helloflask/blob/master/demos/)
 / [HelloFlask.com](http://helloflask.com)
 / [本书主页](http://helloflask.com/book)

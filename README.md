@@ -2,7 +2,7 @@
 / [勘误](https://github.com/greyli/helloflask/blob/master/errata/errata.md)
 / [FAQ](https://github.com/greyli/helloflask/blob/master/faq/faq.md)
 / [可改进实现](https://github.com/greyli/helloflask/blob/master/improvement/improvement.md)
-/ [更新记录](https://github.com/greyli/helloflask/blob/master/CHANGES.md)
+/ [版本更新记录](https://github.com/greyli/helloflask/blob/master/CHANGES.md)
 / [示例程序](https://github.com/greyli/helloflask/blob/master/demos/)
 / [HelloFlask.com](http://helloflask.com)
 / [本书主页](http://helloflask.com/book)
@@ -15,12 +15,12 @@
 
 本书相关项目的源码建议你按照书中的指导使用Git克隆到本地，如果克隆速度过慢，可以点击<a href="http://helloflask.com/downloads/helloflask-projects-18-8-29.zip" target="_blank" download>这里</a>下载源码合集文件。
 
-## 勘误 & FAQ & 可改进实现 & 更新记录
+## 勘误 & FAQ & 可改进实现 & 版本更新记录
 
 * [勘误](https://github.com/greyli/helloflask/blob/master/errata/errata.md)（书中的笔误、错误及排版问题等）
 * [FAQ](https://github.com/greyli/helloflask/blob/master/faq/faq.md)（常见问题）
 * [可改进实现](https://github.com/greyli/helloflask/blob/master/improvement/improvement.md)（可改进的内容描述或代码实现）
-* [更新记录](https://github.com/greyli/helloflask/blob/master/CHANGES.md)（电子书与实体书版本更新与改进记录）
+* [版本更新记录](https://github.com/greyli/helloflask/blob/master/CHANGES.md)（电子书与实体书版本更新与改进记录）
 
 首先，为书中包含的错误表示抱歉！如果你发现了书中的错误/常见问题/可改进实现，欢迎提交PR更新上述链接指向的文件；你也可以创建Issue指出相关事项，或是通过Email与我联系（[withlihui@gmail.com](mailto:withlihui@gmail.com)），谢谢！
 
