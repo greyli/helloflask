@@ -52,6 +52,9 @@
 | 3.3.2 | - | 第2段文字中 | _macors.html | _macros.html | 笔误 |
 | 4.3.1 | - | 第1个代码块后第1行 | 3000 | 2000 | 笔误，不同的浏览器对于URL有不同的长度限制，此处的长度为“最佳实践” |
 | 5.4.1.1 | - | 第1个代码块第3行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，字符串漏掉了转义符号 |
+| 5.5.4 | - | 第2个代码块第6行 | - | 第6行`>>> china.capital = beijing`移动到第3行 | 笔误 |
+| 5.5.4 | - | 第2个代码块第8行 | `<Capital 1>'` | `<Capital u'Beijing'>'` | 笔误 |
+| 5.5.4 | - | 第2个代码块第10行 | `u'China'` | `<Country u'China'>` | 笔误 |
 | 7.2.5.1 | - | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.3.2 | - | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
 | 7.3.2 | - | 第1个代码块下面的提示文字 | HTmL | HTML | 审校错误，大小写错误 |
