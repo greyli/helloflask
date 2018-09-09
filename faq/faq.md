@@ -60,3 +60,19 @@ Flask-RESTful以及它的fork改良版Flask-RESTplus中的请求解析、响应�
 有些读者可能不理解我为什么把常说的REST API/RESTful API说成Web API，我摘取书里的这部分内容供你参考一下：
 
 > “仅仅通过HTTP协议返回JSON或XML数据的Web API并不能算是严格意义上的REST API。REST的提出者也在博文（http://roy.gbiv.com/untangled/2008/rest-apis-must-be-hypertext-driven）中指出不是使用了HTTP的API都叫REST API。为了避免产生混乱，本章会尽量避免REST这个词。事实上，我们不必完全按照REST的架构要求来设计API。要尽量从API的自身特点和普适的规范来设计，而不是拘泥于REST一词。”
+
+
+### 执行`flask forge`命令后显示`no such command`
+
+在部分程序中，faker被列为开发依赖，所以在安装依赖时需要添加--dev选项，即：
+```
+$ pipenv install --dev
+```
+
+### 第10章Todoism启动后语言切换无效
+
+需要在启动程序前执行下面的命令生成MO文件：
+```
+$ flask translate compile
+```
+这部分内容在10.2.4详细介绍。
