@@ -43,6 +43,8 @@
 | 前言 | - | 本书主要特点中的第3点 | Boostrap | Bootstrap | 审校错误 |
 | 1.2 | - | 代码清单1-1下的提示文字 | 命令为 | 命名为 | 笔误 |
 | 1.2.2.2 | - | 第1个附注文字下第2行 | http://helloflask.com/hello/Grey | http://helloflask.com/greet/Grey | 笔误 |
+| 1.3.1 | - | 标题 | Run，Flask，Run！  | Run, Flask, Run! | 标点错误 |
+| 1.3.1 | - | 第1个代码块最后1行 | | 出现多余的缩进 | 排版错误 |
 | 1.3.3 | - | 第1行 | Enviroment  | Environment | 拼写错误 |
 | 1.7 | - | 第2个代码块下第1行 | `url_for('say_hello', name='Jack')` | `url_for('greet', name='Jack')` | 笔误 |
 | 2.3.2 | - | HTML小节的最后1行 | HTTP | HTML | 笔误 |
