@@ -57,7 +57,7 @@
 | 5.5.4 | - | 第2个代码块第6行 | - | 第6行`>>> china.capital = beijing`移动到第3行 | 笔误 |
 | 5.5.4 | - | 第2个代码块第8行 | `<Capital 1>'` | `<Capital u'Beijing'>'` | 笔误 |
 | 5.5.4 | - | 第2个代码块第10行 | `u'China'` | `<Country u'China'>` | 笔误 |
-| 7.2.5.1 | - | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
+| 7.2.3.1 | - | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.3.2 | - | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
 | 7.3.2 | - | 第1个代码块下面的提示文字 | HTmL | HTML | 审校错误，大小写错误 |
 | 8.2.1.1.(4) | - | 第2个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
