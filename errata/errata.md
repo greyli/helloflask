@@ -61,7 +61,7 @@
 | 7.3.2 | - | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
 | 7.3.2 | - | 第1个代码块下面的提示文字 | HTmL | HTML | 审校错误，大小写错误 |
 | 8.2.1.1.(4) | - | 第2个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
-| 10.3.1.4 | - | 忘记了，待确定 | RSET | REST | 笔误 |
+| 10.3.1.4 | - | 最后1段第5行 | RSET | REST | 笔误 |
 | 10.3.3.5 | - | 最后1行 | flask-restless | Flask-Restless | 大小写错误 |
 | 11.4.3.5 | - | 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
 | 11.5.1 | - | 代码清单11-13第5行 | `position === 0&& socket.nsp` | `position === 0 && socket.nsp` | 审校错误。空格缺失 |
