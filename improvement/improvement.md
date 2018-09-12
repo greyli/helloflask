@@ -19,7 +19,7 @@
 
 ### 前言和附录中的勘误URL
 
-GitHub上的勘误文件阅读体验不太好，而且部分地区访问较慢，我在helloflask创建了一个镜像勘误页面，可以将前言和附录中的勘误URL改为http://helloflask.com/book/errata。
+GitHub上的勘误文件阅读体验不太好，而且部分地区访问较慢，我在helloflask创建了一个镜像勘误页面，可以将前言和附录中的勘误URL改为 http://helloflask.com/book/errata 。
 
 ### 介绍Git标签部分容易产生误解
 
