@@ -71,6 +71,7 @@
 | 5.5.4 | - | 第2个代码块第6行 | - | 第6行`>>> china.capital = beijing`移动到第3行 | 笔误 |
 | 5.5.4 | - | 第2个代码块第8行 | `<Capital 1>'` | `<Capital u'Beijing'>'` | 笔误 |
 | 5.5.4 | - | 第2个代码块第10行 | `u'China'` | `<Country u'China'>` | 笔误 |
+| 5.7.1.2 | - | 最后1个代码块第1行 | `Post.quer2y.get(2)` | `Post.query.get(2)` | 审校错误。 |
 | 7.2.3.1 | - | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.3.2 | - | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
 | 7.3.2 | - | 第1个代码块下面的提示文字 | HTmL | HTML | 审校错误，大小写错误 |
@@ -110,9 +111,16 @@
 
 ## 源码错误
 
-* 按照书中的描述以及实际的效果，Albumy评论模板中的用户头像应该使用中等尺寸，即`avatar_m`。代码位置在`albumy/albumy/templates/main/_comment.html:20`
+此处列出书中没有涉及的程序代码错误，目前临时在master分支更新，后续会重写相应的标签。
+
+程序 | 描述 | commit | 备注 |
+--- | --- | --- | ---
+| Albumy | Albumy评论模板中的用户头像应该使用中等尺寸，即`avatar_m` | [4c6622c](https://github.com/greyli/albumy/commit/4c6622cc30377ebf2e1da64f570de71ddcc522d2) |  |
+| Albumy | 图片详情页上的开启/关闭评论按钮应该使用表单实现，提交POST请求 | 待修复 | 由[Shimada666](https://github.com/Shimada666)发现 |
+| CatChat | 删除用户功能时的删除按钮的class写错了，而且JavaScript中的事件函数需要监听document | [c264aac](https://github.com/greyli/catchat/commit/c264aac6fd35f527e0bd461b88fa05ab207b55f2) |  |
 
 ## 新变化提示
 
 * 第1章：PyCharm 2018.2版本增加了对Pipenv的支持。
+* 第1章：Pipenv自2018.7.1版本后在Windows中激活虚拟环境后会显示虚拟环境提示符（具体版本号待确认）。
 * 第15章中的Flask-Share源码对应0.1.0版本。
