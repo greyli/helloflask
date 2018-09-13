@@ -21,9 +21,9 @@ helloflask并不包含Git标签，所以这里的命令不会输出内容。这�
 
 目前不建议继续使用Flask-Script，Flask内置的CLI组件已经基本能够替代它。如果仍然要使用Flask-Scirpt，可以参考下图：
 
-![Flask-Script在PyCharm中的启动配置](https://static.oschina.net/uploads/space/2016/0222/105449_Fg6R_1439846.png)
+![Flask-Script在PyCharm中的启动配置](http://helloflask.com/images/pycharm-flask-script.png)
 
-图片来自[Flask学习笔记-PyCharm配置使用Flask-Script启动以及开启Debug模式](https://my.oschina.net/ykbj/blog/618475)。
+原图来自[Flask学习笔记-PyCharm配置使用Flask-Script启动以及开启Debug模式](https://my.oschina.net/ykbj/blog/618475)。
 
 ### 使用Anaconda时如何通过Pipenv创建虚拟环境
 
@@ -33,13 +33,13 @@ Anaconda我没用过，简单了解了一下，觉得很成熟和方便。不过
 pipenv --python /usr/local/bin/python3
 ```
 
-### PyCharm无法配置运行程序
+### PyCharm无法配置运行程序，没有Module下拉选项
 
-旧版本的PyCharm不支持通过模块来执行命令。新版本的PyCharm在图1-6的第4点位置有一个下拉选项，可以选择Module name，而不是Script。如果你使用的PyCharm没有这个下拉选项，可以通过为Python解释器添加-m选项可以起到类似的效果，即python -m flask run。
+旧版本的PyCharm不支持通过模块来执行命令。新版本的PyCharm在图1-6的第4点位置有一个下拉选项，可以选择Module name，而不是Script。如果你使用的PyCharm没有这个下拉选项，可以通过为Python解释器选项一栏（Interpreter options）添加-m选项可以起到类似的效果，即python -m flask run。
 
-![旧版本PyCharm配置提示](https://camo.githubusercontent.com/a66b13d20c512156790cd3aa8cd29c4e8ac2740b/687474703a2f2f69322e6276696d672e636f6d2f3635393834312f346564633638333033306161393266372e706e67)
+![旧版本PyCharm配置提示](http://helloflask.com/images/pycharm-m.png)
 
-### 启动程序出现`TypeError`异常
+### 启动程序（flask run）出现`TypeError`异常
 
 Werkzeug当前版本（14.2）存在一个Bug，当在Windows系统下使用Python2开启调试模式时，重载器会因为环境变量FLASK_ENV的编码问题而出现TypeError异常。这个Bug已在master分支修复（话说定位这个Bug花了我很长时间），预计在纸书正式发售前会发布Werkzeug 0.15版本。
 
