@@ -11,6 +11,8 @@
 
 下面是《Flask Web开发实战》的勘误信息。我在helloflask.com上创建了一个镜像勘误页面，阅读体验更好，请访问 http://helloflask.com/book/errata 查看。
 
+最后更新：2018/9/14
+
 ## TODO
 
 * 添加纸书勘误的页码
@@ -49,7 +51,7 @@
 章节 | 页码 | 位置 | 错误文字 | 正确文字 | 备注 |
 --- | --- | --- | --- | --- | ---
 | 全局 | - | -  | 单击 | 点击 | 审校错误。多处。编辑称这个修改是出版社的规范要求，我觉得有些莫名其妙 |
-| 全局 | - | -  |  | 代码块中的英文单词换行被截断时错误的添加的连接线 | 排版错误。多处，比如9.4.1第2个代码块、9.5.2代码清单9-16等 |
+| 全局 | - | -  |  | 代码块中的英文单词换行被截断时错误的添加的连接线 | 排版错误。多处，比如9.4.1第2个代码块、9.5.2代码清单9-16、10.3.4代码清单10-17第1行等 |
 | 全局 | - | -  | Github | GitHub | 大小写错误。多处 |
 | 前言 | - | 本书主要特点中的第2点 | 第一部分的2~6章 | 第一部分的1~6章 | 审校错误 |
 | 前言 | - | 本书主要特点中的第3点 | Pyhton | Python | 拼写错误 |
@@ -78,8 +80,11 @@
 | 8.2.1.1.(4) | - | 第2个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
 | 10.3.1.4 | - | 最后1段第5行 | RSET | REST | 笔误 |
 | 10.3.3.5 | - | 最后1行 | flask-restless | Flask-Restless | 大小写错误 |
+| 10.3.6.3 | - | 第1行 | app.error_handler | app.errorhandler | 笔误 |
 | 11.4.3.5 | - | 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
 | 11.5.1 | - | 代码清单11-13第5行 | `position === 0&& socket.nsp` | `position === 0 && socket.nsp` | 审校错误。空格缺失 |
+| 12.3.2 | - | 代码清单12-2第6行 | test_app_exsit | test_app_exist | 拼写错误 |
+| 14.4.2 | 574 | 第2个提示段落上面 | python(3)两处 | python3 | 审校错误 |
 | 15.7.3 | - | 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
 
 
@@ -105,7 +110,6 @@
 --- | --- | --- | --- | ---
 | 1.5.1 | 第1个提示文字 | `python-m` | `python -m` | 排版错误。空格缺失 |
 | 12.5.2 | 第2个代码块下 | `coverage run-m` | `coverage run -m` | 排版错误。空格缺失 |
-| 14.4.2 | 第1个提示文字下 | `python-dev(3)和python-pip(3)` | `python-dev3和python-pip3` | 排版错误。添加了多余括号 |
 
 *更新：电子书中上述错误已经修正并发送给各大平台，请联系客服进行更新。*
 
