@@ -121,7 +121,7 @@
 程序 | 描述 | commit | 备注 |
 --- | --- | --- | ---
 | Albumy | Albumy评论模板中的用户头像应该使用中等尺寸，即`avatar_m` | [4c6622c](https://github.com/greyli/albumy/commit/4c6622cc30377ebf2e1da64f570de71ddcc522d2) |  |
-| Albumy | 图片详情页上的开启/关闭评论按钮应该使用表单实现，提交POST请求 | 待修复 | 由[Shimada666](https://github.com/Shimada666)发现 |
+| Albumy | 图片详情页上的开启/关闭评论按钮应该使用表单实现，提交POST请求 | [4ef2898](https://github.com/greyli/albumy/commit/4ef28988586fc09a64e31b87722b83615416b1cd) | 由[Shimada666](https://github.com/Shimada666)发现 |
 | CatChat | 删除用户功能时的删除按钮的class写错了，而且JavaScript中的事件函数需要监听document | [c264aac](https://github.com/greyli/catchat/commit/c264aac6fd35f527e0bd461b88fa05ab207b55f2) |  |
 
 ## 新变化提示
