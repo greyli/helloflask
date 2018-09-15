@@ -11,7 +11,7 @@
 
 下面是《Flask Web开发实战》的勘误信息。我在helloflask.com上创建了一个镜像勘误页面，阅读体验更好，请访问 http://helloflask.com/book/errata 查看。
 
-最后更新：2018/9/14
+最后更新：2018/9/15
 
 ## TODO
 
@@ -51,43 +51,51 @@
 章节 | 页码 | 位置 | 错误文字 | 正确文字 | 备注 |
 --- | --- | --- | --- | --- | ---
 | 全局 | - | -  | 单击 | 点击 | 审校错误。多处。编辑称这个修改是出版社的规范要求，我觉得有些莫名其妙 |
-| 全局 | - | -  |  | 代码块中的英文单词换行被截断时错误的添加的连接线 | 排版错误。多处，比如9.4.1第2个代码块、9.5.2代码清单9-16、10.3.4代码清单10-17第1行等 |
+| 全局 | - | -  |  | 代码块中的英文单词换行被截断时错误的添加的连接线 | 排版错误。多处，详情见下面的列表 |
 | 全局 | - | -  | Github | GitHub | 大小写错误。多处 |
-| 前言 | - | 本书主要特点中的第2点 | 第一部分的2~6章 | 第一部分的1~6章 | 审校错误 |
-| 前言 | - | 本书主要特点中的第3点 | Pyhton | Python | 拼写错误 |
-| 前言 | - | 本书主要特点中的第3点 | Boostrap | Bootstrap | 审校错误 |
-| 1.2 | - | 代码清单1-1下的提示文字 | 命令为 | 命名为 | 笔误 |
-| 1.2.2.2 | - | 第1个附注文字下第2行 | http://helloflask.com/hello/Grey | http://helloflask.com/greet/Grey | 笔误 |
-| 1.3.1 | - | 标题 | Run，Flask，Run！  | Run, Flask, Run! | 标点错误 |
-| 1.3.1 | - | 第1个代码块最后1行 | | 出现多余的缩进 | 排版错误 |
-| 1.3.3 | - | 第1行 | Enviroment  | Environment | 拼写错误 |
-| 1.7 | - | 第2个代码块下第1行 | `url_for('say_hello', name='Jack')` | `url_for('greet', name='Jack')` | 笔误 |
-| 2.3.2 | - | HTML小节的最后1行 | HTTP | HTML | 笔误 |
-| 2.3.2 | - | 第三个代码块 | `{'Location', 'http://www.example.com'}` | `{'Location': 'http://www.example.com'}` | 笔误。返回值中字典里的符号出错 |
-| 2.5.4.1 | - | 第3个代码块 | `db.execute('SELECT * FROM students WHERE password=?, password)` | `db.execute('SELECT * FROM students WHERE password=?', password)` | 笔误。字符串漏写右侧关闭引号 |
-| 3.1 | - | 代码清单3-1下的提示 | HTML5 | HTML | 多余文本。另外，后面的链接需要更新为https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure |
-| 3.3.2 | - | 第2段文字中 | _macors.html | _macros.html | 笔误 |
-| 4.3.1 | - | 第1个代码块后第1行 | 3000 | 2000 | 笔误，不同的浏览器对于URL有不同的长度限制，此处的长度为“最佳实践” |
-| 5.4.1.1 | - | 第1个代码块第3行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，字符串漏掉了转义符号 |
-| 5.5.3 | - | 代码清单5-13上面 | 都定义在“多”这一侧，即City类中 | 都定义在“多”这一侧，即Citizen类中 | 笔误 |
-| 5.5.4 | - | 第2个代码块第6行 | - | 第6行`>>> china.capital = beijing`移动到第3行 | 笔误 |
-| 5.5.4 | - | 第2个代码块第8行 | `<Capital 1>'` | `<Capital u'Beijing'>'` | 笔误 |
-| 5.5.4 | - | 第2个代码块第10行 | `u'China'` | `<Country u'China'>` | 笔误 |
-| 5.7.1.2 | - | 最后1个代码块第1行 | `Post.quer2y.get(2)` | `Post.query.get(2)` | 审校错误。 |
-| 7.2.3.1 | - | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
-| 7.3.2 | - | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
-| 7.3.2 | - | 第1个代码块下面的提示文字 | HTmL | HTML | 审校错误，大小写错误 |
-| 8.2.1.1.(4) | - | 第2个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
-| 10.2.5 | 438 | 标题上面的附注文字 | 生成帮助信息 | 生成的帮助信息 | 审校错误。编辑以为自己在改病句，实际上却是在制造病句 |
-| 10.3.1.4 | - | 最后1段第5行 | RSET | REST | 笔误 |
-| 10.3.3.5 | - | 最后1行 | flask-restless | Flask-Restless | 大小写错误 |
-| 10.3.6.3 | - | 第1行 | app.error_handler | app.errorhandler | 笔误 |
-| 11.4.3.5 | - | 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
-| 11.5.1 | - | 代码清单11-13第5行 | `position === 0&& socket.nsp` | `position === 0 && socket.nsp` | 审校错误。空格缺失 |
-| 12.3.2 | - | 代码清单12-2第6行 | test_app_exsit | test_app_exist | 拼写错误 |
-| 14.4.2 | 574 | 第2个提示段落上面 | python(3)两处 | python3 | 审校错误 |
-| 15.7.3 | - | 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
+| 前言 | V | 本书主要特点中的第2点 | 第一部分的2~6章 | 第一部分的1~6章 | 审校错误 |
+| 前言 | V | 本书主要特点中的第3点 | Pyhton | Python | 拼写错误 |
+| 前言 | V | 本书主要特点中的第3点 | Boostrap | Bootstrap | 审校错误 |
+| 1.2 | P11 | 代码清单1-1下的提示文字 | 命令为 | 命名为 | 笔误 |
+| 1.2.2.2 | P13 | 第1个附注文字下第2行 | http://helloflask.com/hello/Grey | http://helloflask.com/greet/Grey | 笔误 |
+| 1.3.1 | P14 | 标题 | Run，Flask，Run！  | Run, Flask, Run! | 标点错误 |
+| 1.3.1 | P14 | 第1个代码块最后1行 | | 出现多余的缩进 | 排版错误 |
+| 1.3.1.3 | P17 | 配置步骤4 | 下列选项 | 下拉选项 | 笔误 |
+| 1.3.3 | P18 | 第1行 | Enviroment  | Environment | 拼写错误 |
+| 1.7 | P23 | 第2个代码块下第1行 | `url_for('say_hello', name='Jack')` | `url_for('greet', name='Jack')` | 笔误 |
+| 2.3.1 | P40 | 第3个代码块 | `{'Location', 'http://www.example.com'}` | `{'Location': 'http://www.example.com'}` | 笔误。返回值中字典里的符号出错 |
+| 2.3.2 | P44 | HTML小节的最后1行 | HTTP | HTML | 笔误 |
+| 2.3.3 | P47 | 第2个附注段落 | Respone | Response | 笔误。拼写错误 |
+| 2.5.4.1.(3) | P67 | 第1个代码块 | `db.execute('SELECT * FROM students WHERE password=?, password)` | `db.execute('SELECT * FROM students WHERE password=?', password)` | 笔误。字符串漏写右侧关闭引号 |
+| 3.1 | P77 | 代码清单3-1下的提示 | HTML5 | HTML | 多余文本。另外，后面的链接需要更新为https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure |
+| 3.3.2 | P89 | 第2段文字中 | _macors.html | _macros.html | 笔误 |
+| 4.3.1 | P112 | 第1个代码块后第1行 | 3000 | 2000 | 笔误，不同的浏览器对于URL有不同的长度限制，此处的长度为“最佳实践” |
+| 5.4.1.1 | P147 | 第1个代码块第3行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，字符串漏掉了转义符号 |
+| 5.5.3 | P164 | 代码清单5-13上面 | 都定义在“多”这一侧，即City类中 | 都定义在“多”这一侧，即Citizen类中 | 笔误 |
+| 5.5.4 | P165 | 第2个代码块第6行 | - | 第6行`>>> china.capital = beijing`移动到第3行 | 笔误 |
+| 5.5.4 | P165 | 第2个代码块第8行 | `<Capital 1>'` | `<Capital u'Beijing'>'` | 笔误 |
+| 5.5.4 | P167 | 第2个代码块第10行 | `u'China'` | `<Country u'China'>` | 笔误 |
+| 5.7.1.2 | P174 | 最后1个代码块第1行 | `Post.quer2y.get(2)` | `Post.query.get(2)` | 审校错误。 |
+| 7.2.3.1 | P202 | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
+| 7.3.2 | P208 | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
+| 8.7.2.1 | P293 | 第1个代码块下面的提示文字 | HTmL | HTML | 审校错误，大小写错误 |
+| 8.2.1.1.(4) | P235 | 第2个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
+| 10.2.5 | P438 | 标题上面的附注文字 | 生成帮助信息 | 生成的帮助信息 | 审校错误。编辑以为自己在改病句，实际上却是在制造病句 |
+| 10.3.1.4 | P443 | 最后1段第5行 | RSET | REST | 笔误 |
+| 10.3.3.5 | P453 | 最后1行 | flask-restless | Flask-Restless | 大小写错误 |
+| 10.3.6.3 | P468 | 第1行 | app.error_handler | app.errorhandler | 笔误 |
+| 11.4.3.5 | P503 | 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
+| 11.5.1 | P509 | 代码清单11-13第5行 | `position === 0&& socket.nsp` | `position === 0 && socket.nsp` | 审校错误。空格缺失 |
+| 12.3.2 | P527 | 代码清单12-2第6行 | test_app_exsit | test_app_exist | 拼写错误 |
+| 14.4.2 | P574 | 第2个提示段落上面 | python(3)两处 | python3 | 审校错误 |
+| 15.7.3 | P625 | 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
 
+
+断行单词在排版时产生的错误连字符位置列表：
+
+* 9.4.1第2个代码块
+* 9.5.2代码清单9-16
+* 10.3.4代码清单10-17第1行
 
 关于URL长度限制的详情可以参考[WWW FAQs: What is the maximum length of a URL?](https://www.boutell.com/newfaq/misc/urllength.html)。
 
