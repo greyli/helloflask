@@ -56,6 +56,7 @@
 | 前言 | V | 本书主要特点中的第2点 | 第一部分的2~6章 | 第一部分的1~6章 | 审校错误 |
 | 前言 | V | 本书主要特点中的第3点 | Pyhton | Python | 拼写错误 |
 | 前言 | V | 本书主要特点中的第3点 | Boostrap | Bootstrap | 审校错误 |
+| 前言 | X | 排版约定最后一段的上面1行 | you_email| your_email | 拼写错误 |
 | 1.2 | P11 | 代码清单1-1下的提示文字 | 命令为 | 命名为 | 笔误 |
 | 1.2.2.2 | P13 | 第1个附注文字下第2行 | http://helloflask.com/hello/Grey | http://helloflask.com/greet/Grey | 笔误 |
 | 1.3.1 | P14 | 标题 | Run，Flask，Run！  | Run, Flask, Run! | 标点错误 |
