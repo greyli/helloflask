@@ -32,6 +32,26 @@ GitHub上的勘误文件阅读体验不太好，而且部分地区访问较慢�
 * PyCharm从2018.2版本起提供了对Pipenv的支持，第一章相关内容可以进行改写。
 * 增加对旧版本PyCharm启动配置的说明。
 
+
+### 第1章和第8章对于FLASK_APP合法值的描述
+
+第一章介绍FLASK_APP时1.3.1.1（P15）添加描述：FLASK_APP的值是模块所在的“路径“。并介绍几种合法的可选值，可以参考文档：
+
+> FLASK_APP has three parts: an optional path that sets the current working directory, a Python file or dotted import path, and an optional variable name of the instance or factory. If the name is a factory, it can optionally be followed by arguments in parentheses. The following values demonstrate these parts:
+
+> 来源：http://flask.pocoo.org/docs/1.0/cli/#application-discovery
+
+同时更新第8章8.1.3（P232）中的两处措辞（均改为“导入路径”）：
+* 第一段的“模块中”
+* 注意段落中的“包中”
+
+### 第3章3.3.2最后的两个列表
+
+* 相关Issue：https://github.com/greyli/helloflask/issues/26
+* 贡献者：@[BobcatsII](https://github.com/BobcatsII)
+
+描述中使用了“第一个列表的2、3、4项”的表达，为了更好的定位，这里的两个列表应该使用有序标号。
+
 ### 第10章开头的启动命令
 
 在本章开头给出的初始化命令应该加入`flask translate compile`，以便生成MO文件，让程序中的语言切换生效。因为这个命令对应的内容在10.2.4，这里可以添加一句提示。
