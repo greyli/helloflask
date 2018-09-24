@@ -67,6 +67,8 @@
 | 3.1 | P77 | 代码清单3-1下的提示 | HTML5 | HTML | 多余文本。另外，后面的链接需要更新为https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure |
 | 3.3.2 | P89 | 第2段文字中 | _macors.html | _macros.html | 笔误 |
 | 4.3.1 | P112 | 第1个代码块后第1行 | 3000 | 2000 | 笔误，不同的浏览器对于URL有不同的长度限制，此处的长度为“最佳实践” |
+| 4.3.3 | P117 | 代码清单4-7第4行 | `form.username()` | `form.username` | 笔误。此处的括号可有可无，去掉以保持风格上的统一 | 18.9.24 |
+| 4.4.4.1 | P123 | 代码清单4-17第1行 | `flask wtf` | `flask_wtf` | 审校错误 | 18.9.24 |
 | 5.4.1.1 | P147 | 第1个代码块第4行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，字符串漏掉了转义符号 |
 | 5.4.1.2 | P150 | 表5-7下的第1个代码块 | `Note.body='SHAVE'` | `Note.body == 'SHAVE'` | 代码错误，少了1个等于号 | 18.9.22 |
 | 5.5.2.4 | P162 | 代码清单5-11后面的代码块第2、3行 | `Book(name='XXX')` | `Book(title='XXX')` | 笔误 | 18.9.22 |
@@ -77,6 +79,7 @@
 | 5.7.1.2 | P174 | 最后1个代码块第1行 | `Post.quer2y.get(2)` | `Post.query.get(2)` | 审校错误。 |
 | 7.2.3.1 | P202 | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.3.2 | P208 | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
+| 8.1.3 | P229 | 第2个提示段落 | 新创建的模块 | 新创建模块 | 审校错误。 | 18.9.24 |
 | 8.7.2.1 | P293 | 第1个代码块下面的提示文字 | HTmL | HTML | 审校错误，大小写错误 |
 | 8.2.1.1.(4) | P235 | 第2个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
 | 10.2.5 | P438 | 标题上面的附注文字 | 生成帮助信息 | 生成的帮助信息 | 审校错误。编辑以为自己在改病句，实际上却是在制造病句 |
