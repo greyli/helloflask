@@ -72,10 +72,12 @@
 | 5.4.1.1 | P147 | 第1个代码块第4行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，字符串漏掉了转义符号 |
 | 5.4.1.2 | P150 | 表5-7下的第1个代码块 | `Note.body='SHAVE'` | `Note.body == 'SHAVE'` | 代码错误，少了1个等于号 | 18.9.22 |
 | 5.5.2.4 | P162 | 代码清单5-11第8行 | `title = ` | `name = ` | 笔误 | 18.9.26 |
+| 5.5.2.4 | P163 | 第3个代码块第6行 | `it.writer = writer` | `it.writer = king` | 笔误 | 18.9.26 |
 | 5.5.3 | P164 | 代码清单5-13上面 | 都定义在“多”这一侧，即City类中 | 都定义在“多”这一侧，即Citizen类中 | 笔误 |
 | 5.5.4 | P165 | 第2个代码块第6行 | - | 第6行`>>> china.capital = beijing`移动到第3行 | 笔误 |
 | 5.5.4 | P165 | 第2个代码块第8行 | `<Capital 1>'` | `<Capital u'Beijing'>'` | 笔误 |
-| 5.5.4 | P167 | 第2个代码块第10行 | `u'China'` | `<Country u'China'>` | 笔误 |
+| 5.5.4 | P166 | 第2个代码块第10行 | `u'China'` | `<Country u'China'>` | 笔误 |
+| 5.5.4 | P166 | 第2个代码块第11行 | `name'Tokyo'` | `name='Tokyo'` | 笔误 | 18.9.26 |
 | 5.7.1.2 | P174 | 最后1个代码块第1行 | `Post.quer2y.get(2)` | `Post.query.get(2)` | 审校错误。 |
 | 7.2.3.1 | P202 | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.3.2 | P208 | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
