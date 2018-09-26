@@ -227,7 +227,7 @@ class Writer(db.Model):
 
 class Book(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(50), index=True)
+    name = db.Column(db.String(50), index=True)
     writer_id = db.Column(db.Integer, db.ForeignKey('writer.id'))
     writer = db.relationship('Writer', back_populates='books')
 
