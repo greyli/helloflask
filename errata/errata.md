@@ -82,6 +82,8 @@
 | 7.2.3.1 | P202 | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.3.2 | P208 | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
 | 8.1.3 | P229 | 第2个提示段落 | 新创建的模块 | 新创建模块 | 审校错误。 | 18.9.24 |
+| 8.3.7 | P267 | 代清清单8-31第4行 | `comment.photo_id` | `comment.post_id` | 笔误 | 18.9.26 |
+| 8.3.7 | P267 | 代清清单8-31下方正文第2段最后一行的URL中 | photo | post | 笔误 | 18.9.26 |
 | 8.7.2.1 | P293 | 第1个代码块下面的提示文字 | HTmL | HTML | 审校错误，大小写错误 |
 | 8.2.1.1.(4) | P235 | 第2个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
 | 10.2.5 | P438 | 标题上面的附注文字 | 生成帮助信息 | 生成的帮助信息 | 审校错误。编辑以为自己在改病句，实际上却是在制造病句 |
