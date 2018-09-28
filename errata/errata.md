@@ -86,6 +86,7 @@
 | 5.7.2 | P177 | 最后1个代码块上面 | 参数name | 参数named | 笔误 | 18.9.28 |
 | 5.7.2 | P177 | 最后1段提示文字 | 监听函数时， | 监听函数。这时 | 审校错误 | 18.9.28 |
 | 5.7.2 | - | 全章节多处 | listen_for | listens_for | 笔误 | 18.9.28 |
+| 5.8 | P177 | 最后1行 | 本章要介绍的 | 本章介绍的 | 笔误 | 18.9.28 |
 | 7.2.3.1 | P202 | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.3.2 | P208 | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
 | 7.3.2 | P208 | 表7-2上面段落的最后一句话 | quick_form() | render_form() | 笔误。历史遗留问题 | 18.9.28 |
