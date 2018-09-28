@@ -11,7 +11,7 @@
 
 下面是《Flask Web开发实战》的勘误信息。我在helloflask.com上创建了一个镜像勘误页面，阅读体验更好，请访问 http://helloflask.com/book/errata 查看。
 
-最后更新：2018/9/26
+最后更新：2018/9/28
 
 ## 贡献指南
 
@@ -60,12 +60,15 @@
 | 1.3.1.3 | P17 | 配置步骤4 | 下列选项 | 下拉选项 | 笔误 |
 | 1.3.3 | P18 | 第1行 | Enviroment  | Environment | 拼写错误 |
 | 1.7 | P23 | 第2个代码块下第1行 | `url_for('say_hello', name='Jack')` | `url_for('greet', name='Jack')` | 笔误 |
+| 2.2.3 | P34 | 图2-5 |  | 地址栏的地址应为/nothing，和描述对应。图中的/foo在后面实际被定义了 | 笔误 | 18.9.28 |
+| 2.2.3.3 | P36 | 第1个代码块 | `'goback/<int:year>'` | `'/goback/<int:year>'` | 笔误。URL规则漏掉了开头的斜线 | 18.9.28 |
 | 2.3.1 | P40 | 第3个代码块 | `{'Location', 'http://www.example.com'}` | `{'Location': 'http://www.example.com'}` | 笔误。返回值中字典里的符号出错 |
 | 2.3.2 | P44 | HTML小节的最后1行 | HTTP | HTML | 笔误 |
 | 2.3.3 | P47 | 第2个附注段落 | Respone | Response | 笔误。拼写错误 |
 | 2.5.4.1.(3) | P67 | 第1个代码块 | `db.execute('SELECT * FROM students WHERE password=?, password)` | `db.execute('SELECT * FROM students WHERE password=?', password)` | 笔误。字符串漏写右侧关闭引号 |
 | 3.1 | P77 | 代码清单3-1下的提示 | HTML5 | HTML | 多余文本。另外，后面的链接需要更新为https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure |
 | 3.3.2 | P89 | 第2段文字中 | _macors.html | _macros.html | 笔误 |
+| 4.2.3 | P110 | 代码清单4-2最后1行 | `'login.html'` | `'basic.html'` | 笔误 | 18.9.28 |
 | 4.3.1 | P112 | 第1个代码块后第1行 | 3000 | 2000 | 笔误，不同的浏览器对于URL有不同的长度限制，此处的长度为“最佳实践” |
 | 4.3.3 | P117 | 代码清单4-7第4行 | `form.username()` | `form.username` | 笔误。此处的括号可有可无，去掉以保持风格上的统一 | 18.9.24 |
 | 4.4.4.1 | P123 | 代码清单4-17第1行 | `flask wtf` | `flask_wtf` | 审校错误 | 18.9.24 |
@@ -79,8 +82,12 @@
 | 5.5.4 | P166 | 第2个代码块第10行 | `u'China'` | `<Country u'China'>` | 笔误 |
 | 5.5.4 | P166 | 第2个代码块第11行 | `name'Tokyo'` | `name='Tokyo'` | 笔误 | 18.9.26 |
 | 5.7.1.2 | P174 | 最后1个代码块第1行 | `Post.quer2y.get(2)` | `Post.query.get(2)` | 审校错误。 |
+| 5.7.2 | P176 | 代码清单5-18下第1行 | targe | target | 笔误 | 18.9.28 |
+| 5.7.2 | P177 | 最后1个代码块上面 | 参数name | 参数named | 笔误 | 18.9.28 |
+| 5.7.2 | - | 全章节多处 | listen_for | listens_for | 笔误 | 18.9.28 |
 | 7.2.3.1 | P202 | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.3.2 | P208 | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
+| 7.3.2 | P208 | 表7-2上面段落的最后一句话 | quick_form() | render_form() | 笔误。历史遗留问题 | 18.9.28 |
 | 8.1.3 | P229 | 第2个提示段落 | 新创建的模块 | 新创建模块 | 审校错误。 | 18.9.24 |
 | 8.3.5 | P263 | 第1个代码块第6行 | `Comment.query.with_parent(post)` | `Comment.query.with_parent(post).filter_by(reviewed=True)` | 笔误 | 18.9.26 |
 | 8.3.7 | P267 | 代清清单8-31第4行 | `comment.photo_id` | `comment.post_id` | 笔误 | 18.9.26 |
