@@ -45,6 +45,16 @@ GitHub上的勘误文件阅读体验不太好，而且部分地区访问较慢�
 * 第一段的“模块中”
 * 注意段落中的“包中”
 
+### 第2章的any转换器
+
+这里可以添加一个提示，当需要给出数字作为选项时，需要添加引号将数字作为字符串，以便正确作为正则表达式匹配：
+
+```py
+@app.route("/number/<any('1', '2', '3'):num>")
+def choose_a_number():
+    ...
+```
+
 ### 第3章3.3.2最后的两个列表
 
 * 相关Issue：https://github.com/greyli/helloflask/issues/26
