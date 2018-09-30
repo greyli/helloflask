@@ -1,6 +1,6 @@
 ---
 name: errata
-about: 勘误反馈模板
+about: 勘误反馈
 
 ---
 
