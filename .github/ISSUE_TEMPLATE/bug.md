@@ -1,6 +1,6 @@
 ---
-name: question
-about: 和书相关的问题和疑问
+name: bug
+about: 和书中代码或程序相关的问题或疑问
 
 ---
 
