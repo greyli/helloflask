@@ -22,8 +22,11 @@
 * [可改进实现](https://github.com/greyli/helloflask/blob/master/improvement/improvement.md)（可改进的内容描述或代码实现）
 * [版本更新记录](https://github.com/greyli/helloflask/blob/master/CHANGES.md)（电子书与实体书版本更新与改进记录）
 
-首先，为书中包含的错误表示抱歉！如果你发现了书中的错误/常见问题/可改进实现，欢迎提交PR更新上述链接指向的文件；你也可以创建Issue指出相关事项，或是通过Email与我联系（[withlihui@gmail.com](mailto:withlihui@gmail.com)），谢谢！
+首先，为书中包含的错误表示抱歉！如果你发现了书中的错误/常见问题/可改进实现，欢迎提交PR更新上述链接指向的文件；你也可以[创建Issue](https://github.com/greyli/helloflask/issues/new/choose)指出相关事项，或是通过Email与我联系（[withlihui@gmail.com](mailto:withlihui@gmail.com)），谢谢！
 
+## 问题反馈
+
+如果你发现了书中的错误、运行实例程序出错或是有其他的问题，可以[创建Issue](https://github.com/greyli/helloflask/issues/new/choose)进行反馈。
 
 ## 示例程序目录
 
