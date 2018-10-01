@@ -78,7 +78,7 @@
 | 5.5.2.4 | P163 | 第3个代码块第6行 | `it.writer = writer` | `it.writer = king` | 笔误 | 18.9.26 |
 | 5.5.3 | P164 | 代码清单5-13上面 | 都定义在“多”这一侧，即City类中 | 都定义在“多”这一侧，即Citizen类中 | 笔误 |
 | 5.5.4 | P165 | 第2个代码块第6行 | - | 第6行`>>> china.capital = beijing`移动到第3行 | 笔误 |
-| 5.5.4 | P165 | 第2个代码块第8行 | `<Capital 1>'` | `<Capital u'Beijing'>'` | 笔误 |
+| 5.5.4 | P165 | 第2个代码块第8行 | `<Capital 1>` | `<Capital u'Beijing'>` | 笔误 |
 | 5.5.4 | P166 | 第2个代码块第10行 | `u'China'` | `<Country u'China'>` | 笔误 |
 | 5.5.4 | P166 | 第2个代码块第11行 | `name'Tokyo'` | `name='Tokyo'` | 笔误 | 18.9.26 |
 | 5.7.1.2 | P174 | 最后1个代码块第1行 | `Post.quer2y.get(2)` | `Post.query.get(2)` | 审校错误。 |
