@@ -11,6 +11,35 @@
 
 如果你想提一个问题，请创建Issue。
 
+### 执行`pipenv install`等命令出现`TypeError`、`ResourceWarning`、或`ImportError`异常
+
+这个是pipenv 2018.7.1版本的bug，目前可以临时通过降级pip来解决：
+
+`$ python3 -m pip install pip==10.0.1`
+
+如果你使用Python2，则使用下面的命令：
+
+`$ python -m pip install pip==10.0.1`
+
+等到新版本修复了这些问题后，可以通过下面的命令升级pipenv和pip：
+
+```
+$ python3 -m pip install --upgrade pip
+$ python3 -m pip install --upgrade pipenv
+```
+
+### 启动程序（flask run）出现`TypeError`异常
+
+Werkzeug当前版本（14.2）存在一个Bug，当在Windows系统下使用Python2开启调试模式时，重载器会因为环境变量FLASK_ENV的编码问题而出现TypeError异常。这个Bug已在master分支修复（话说定位这个Bug花了我很长时间），预计在纸书正式发售前会发布Werkzeug 0.15版本。
+
+目前，临时的解决方案有修改Werkzeug源码、修改python-dotenv源码、从GitHub上的master分支更新Werkzeug等，但这些方法都太麻烦。我建议你临时不开启调试模式来避免这个异常出现，也就是在.flaskenv文件中将FLASK_ENV定义那一行注释掉（使用#号），比如：
+
+```
+# FLASK_ENV=development
+```
+等到Werkzeug 0.15发布后，我会在知乎专栏Hello, Flask!发一篇文章通知大家更新本地依赖，并给出具体的更新方式。
+
+
 ### helloflask仓库没有Git标签？
 
 前言里在介绍Git基本用法时使用helloflask仓库作为示例，但是git tag -n命令给出位置容易产生误解。
@@ -39,16 +68,6 @@ pipenv --python /usr/local/bin/python3
 
 ![旧版本PyCharm配置提示](http://helloflask.com/images/pycharm-m.png)
 
-### 启动程序（flask run）出现`TypeError`异常
-
-Werkzeug当前版本（14.2）存在一个Bug，当在Windows系统下使用Python2开启调试模式时，重载器会因为环境变量FLASK_ENV的编码问题而出现TypeError异常。这个Bug已在master分支修复（话说定位这个Bug花了我很长时间），预计在纸书正式发售前会发布Werkzeug 0.15版本。
-
-目前，临时的解决方案有修改Werkzeug源码、修改python-dotenv源码、从GitHub上的master分支更新Werkzeug等，但这些方法都太麻烦。我建议你临时不开启调试模式来避免这个异常出现，也就是在.flaskenv文件中将FLASK_ENV定义那一行注释掉（使用#号），比如：
-
-```
-# FLASK_ENV=development
-```
-等到Werkzeug 0.15发布后，我会在知乎专栏Hello, Flask!发一篇文章通知大家更新本地依赖，并给出具体的更新方式。
 
 ### 为什么没有使用Flask-RESTful编写Web API？
 
