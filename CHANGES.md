@@ -11,11 +11,6 @@
 
 ## helloflask仓库变更
 
-### 2018/10/16
-
-勘误重写，电子书和纸书分别使用独立的勘误定位方式。
-
-
 ## 纸书变更
 
 这里记录了不同版本的[《Flask Web开发实战》（Python Web Development with Flask）](http://helloflask.com/book)实体版的变动记录。
