@@ -41,7 +41,7 @@
 缩写含义：
 
 * S：代码块或代码清单（snippet）。S3表示第3个代码块，S4-16表示代码清单4-16。
-* L：表示行数（line），比如L7表示第7行。
+* L：表示行数（line），比如L7表示第7行，L-1表示最后1行。
 * I：表示图片（image），比如I3-1表示图3-1。
 
 勘误定位方式：
@@ -77,10 +77,13 @@
 | 2.2.3.3 | P36 | 第1个代码块 | `'goback/<int:year>'` | `'/goback/<int:year>'` | 笔误。URL规则漏掉了开头的斜线 | 18.9.28 |
 | 2.3.1 | P40 | 第3个代码块 | `{'Location', 'http://www.example.com'}` | `{'Location': 'http://www.example.com'}` | 笔误。返回值中字典里的符号出错 |
 | 2.3.2 | P44 | HTML小节的最后1行 | HTTP | HTML | 笔误 |
+| 2.3.2.4 | P46 | 第4个代码块 | `return jsonify({name: 'Grey Li', gender: 'male'})` | `return jsonify({'name': 'Grey Li', 'gender': 'male'})` | 笔误。字典中的键未加引号 | 18.10.18 |
 | 2.3.3 | P47 | 第2个附注段落 | Respone | Response | 笔误。拼写错误 |
+| 2.3.4.2 | P51 | 第2个代码块 | | 第9行及以下均应向左缩进4个空格 | 排版错误 | 18.10.18 |
 | 2.5.4.1.(3) | P67 | 第1个代码块 | `db.execute('SELECT * FROM students WHERE password=?, password)` | `db.execute('SELECT * FROM students WHERE password=?', password)` | 笔误。字符串漏写右侧关闭引号 |
 | 3.1 | P77 | 代码清单3-1下的提示 | HTML5 | HTML | 多余文本。另外，后面的链接需要更新为https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure |
 | 3.3.2 | P89 | 第2段文字中 | _macors.html | _macros.html | 笔误 |
+| 3.3.2 | P89 | 第1个注释段落最后1行 | 显示 | 显式 | 笔误 | 18.10.18 |
 | 3.4.4 | P101 | 图3-5 | | 地址栏的地址应为/nothing，和描述对应。 | 笔误 | 18.10.1 |
 | 4.2.3 | P110 | 代码清单4-2最后1行 | `'login.html'` | `'basic.html'` | 笔误 | 18.9.28 |
 | 4.3.1 | P112 | 第1个代码块后第1行 | 3000 | 2000 | 笔误，不同的浏览器对于URL有不同的长度限制，此处的长度为“最佳实践” |
@@ -90,6 +93,7 @@
 | 4.4.4.4 | P128 | 代码清单4-16 | | “检查文件类型”注释下第一行多余缩进4格 | 笔误 | 18.10.18 |
 | 5.4.1.1 | P147 | 第1个代码块第4行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，字符串漏掉了转义符号 |
 | 5.4.1.2 | P150 | 表5-7下的第1个代码块 | `Note.body='SHAVE'` | `Note.body == 'SHAVE'` | 代码错误，少了1个等于号 | 18.9.22 |
+| 5.5.2.3 | P160 | 第1个代码块 | | 第2行插入`ham.author_id = 1` | 省略步骤，可加可不加 | 18.9.22 |
 | 5.5.2.4 | P162 | 代码清单5-11第8行 | `title = ` | `name = ` | 笔误 | 18.9.26 |
 | 5.5.2.4 | P163 | 第3个代码块第6行 | `it.writer = writer` | `it.writer = king` | 笔误 | 18.9.26 |
 | 5.5.3 | P164 | 代码清单5-13上面 | 都定义在“多”这一侧，即City类中 | 都定义在“多”这一侧，即Citizen类中 | 笔误 |
@@ -108,6 +112,7 @@
 | 7.3.2 | P208 | 表7-2上面段落的最后一句话 | quick_form() | render_form() | 笔误。历史遗留问题 | 18.9.28 |
 | 8.1 | P220 | 文件目录树 | | 目录树漏掉了 __init__.py 文件 | 笔误。 | 18.10.1 |
 | 8.1.3 | P229 | 第2个提示段落 | 新创建的模块 | 新创建模块 | 审校错误。 | 18.9.24 |
+| 8.2.1.3 | P237 | 代码清单8-9第10行 | | 缩进少一格 | 排版错误 | 18.10.18 |
 | 8.3.1 | P252 | 第1个代码块最后1行 | `'index.html'` | `'blog/index.html'` | 笔误 | 18.10.06 |
 | 8.3.1 | P252 | 代码清单8-24文件路径 | templates/index.html | templates/blog/index.html | 笔误 | 18.10.06 |
 | 8.3.5 | P263 | 第1个代码块第6行 | `Comment.query.with_parent(post)` | `Comment.query.with_parent(post).filter_by(reviewed=True)` | 笔误 | 18.9.26 |
