@@ -74,6 +74,7 @@
 | 1.3.3 | P18 | 第1行 | Enviroment  | Environment | 拼写错误 |
 | 1.7 | P23 | 第2个代码块下第1行 | `url_for('say_hello', name='Jack')` | `url_for('greet', name='Jack')` | 笔误 |
 | 2.2.3 | P34 | 图2-5 |  | 地址栏的地址应为/nothing，和描述对应。图中的/foo在后面实际被定义了 | 笔误 | 18.9.28 |
+| 2.2.3 | P51 | 图2-11 |  | 图中的响应状态码应该为 302 Found | 文图不对应 | 18.10.18 |
 | 2.2.3.3 | P36 | 第1个代码块 | `'goback/<int:year>'` | `'/goback/<int:year>'` | 笔误。URL规则漏掉了开头的斜线 | 18.9.28 |
 | 2.3.1 | P40 | 第3个代码块 | `{'Location', 'http://www.example.com'}` | `{'Location': 'http://www.example.com'}` | 笔误。返回值中字典里的符号出错 |
 | 2.3.2 | P44 | HTML小节的最后1行 | HTTP | HTML | 笔误 |
