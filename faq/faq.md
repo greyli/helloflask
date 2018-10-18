@@ -11,6 +11,10 @@
 
 如果你想提一个问题，请创建Issue。
 
+### 执行 flask shell 命令的时候，怎么调用 ipython，而不是默认的 Python Shell?
+
+安装 flask-shell-ipython 库。
+
 ### 执行`pipenv install`等命令出现`TypeError`、`ResourceWarning`、或`ImportError`异常
 
 这个是pipenv 2018.7.1版本的bug，目前可以临时通过降级pip来解决：
