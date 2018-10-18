@@ -9,9 +9,31 @@
 
 # Changelog
 
-这个文件记录了不同版本的[《Flask Web开发实战》（Python Web Development with Flask）](http://helloflask.com/book)电子版与实体版的变动记录。
+## helloflask仓库变更
 
-## 电子版
+### 2018/10/16
+
+勘误重写，电子书和纸书分别使用独立的勘误定位方式。
+
+
+## 纸书变更
+
+这里记录了不同版本的[《Flask Web开发实战》（Python Web Development with Flask）](http://helloflask.com/book)实体版的变动记录。
+
+下面的号码组成为“版本号-印次”，“1-1”即第一版第一次印刷，以此类推。
+
+*重印会更正上一版本的错误。*
+
+### 1-1（2018/9/1）
+
+此版本中的错误见勘误文件的对应部分。
+
+### 1-2（unreleased）
+
+
+## 电子书变更
+
+这里记录了不同版本的[《Flask Web开发实战》（Python Web Development with Flask）](http://helloflask.com/book)实体版的变动记录。
 
 ### 1.0（2018/8/24）
 
@@ -28,15 +50,3 @@
 * 细化目录，添加三级标题，跳转更加方便。
 
 *请联系各平台客服更新文件。*
-
-## 实体版
-
-下面的号码组成为“版本号-印次”，“1-1”即第一版第一次印刷，以此类推。
-
-*重印会更正上一版本的错误。*
-
-### 1-1（2018/9/1）
-
-此版本中的错误见勘误文件的对应部分。
-
-### 1-2（unreleased）
