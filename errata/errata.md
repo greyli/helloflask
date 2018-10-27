@@ -90,7 +90,10 @@
 | 8.3.5 | P263 | 第1个代码块第6行 | `Comment.query.with_parent(post)` | `Comment.query.with_parent(post).filter_by(reviewed=True)` | 笔误 | 18.9.26 |
 | 8.3.7 | P267 | 代清清单8-31第4行 | `comment.photo_id` | `comment.post_id` | 笔误 | 18.9.26 |
 | 8.3.7 | P267 | 代清清单8-31下方正文第2段最后一行的URL中 | photo | post | 笔误 | 18.9.26 |
+| 8.4.1 | P272 | 第1个代码块最后1行 | `>>> False` | `>>> True` | 笔误 | 18.10.27 |
+| 8.5 | P275 | “8.5”小节下第2个代码块第2行 | `LoginManger(app)` | `LoginManger()` | 代码错误 | 18.10.27 | 
 | 8.6 | P282 | 代清清单8-38第4行 | `'400.html'` | `'errors/400.html'` | 笔误 | 18.10.27 |
+| 8.7.1 |P285 | 代码清单8-40下的正文第1行 | manage_category.html | manage_post.html | 笔误 | 18.10.27 | 
 | 9.5.3 | P334 | 代码清单9-19后面的代码块倒数第二行 | `photo.save()` | `db.session.add(photo) 换行 db.session.commit()` | 遗留代码未更新 | 18.10.27 |
 | 10.3.6.3 | P468 | ”处理错误响应“小节第1行 | app.error_handler | app.errorhandler | 笔误 |
 | 11.4.3.5 | P503 | 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
