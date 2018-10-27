@@ -93,6 +93,7 @@
 | 8.3.7 | P267 | 代清清单8-31第4行 | `comment.photo_id` | `comment.post_id` | 笔误 | 18.9.26 |
 | 8.3.7 | P267 | 代清清单8-31下方正文第2段最后一行的URL中 | photo | post | 笔误 | 18.9.26 |
 | 8.6 | P282 | 代清清单8-38第4行 | `'400.html'` | `'errors/400.html'` | 笔误 | 18.10.27 |
+| 9.5.3 | P334 | 代码清单9-19后面的代码块倒数第二行 | `photo.save()` | `db.session.add(photo) 换行 db.session.commit()` | 遗留代码未更新 | 18.10.27 |
 | 10.3.6.3 | P468 | 第1行 | app.error_handler | app.errorhandler | 笔误 |
 | 11.4.3.5 | P503 | 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
 | 11.5.1 | P509 | 代码清单11-13第5行 | `position === 0&& socket.nsp` | `position === 0 && socket.nsp` | 审校错误。空格缺失 |
@@ -131,6 +132,7 @@
 | 4.4.4.1 | P123 | 代码清单4-13第1行 | `flask wtf` | `flask_wtf` | 审校错误 | 18.9.24 |
 | 4.4.4.4 | P128 | 第2个代码块 | | 第3行代码缺少右侧关闭括号 | 笔误 | 18.10.18 |
 | 5.3.1 | P143 | 表5-2最后1行 | SQlite | SQLite | 大小写错误 | 18.10.27 |
+| 5.5.2 | P159 | 表5-4下的注意段落第2行 | Flask-SQLlchemy | Flask-SQLAlchemy | 笔误 | 18.10.27 |
 | 5.8 | P177 | 最后1行 | 本章要介绍的 | 本章介绍的 | 笔误 | 18.9.28 |
 | 6.1.3 | P183 | 代码清单6-3第9行 | `return redirect(url_for('idnex'))` | `return redirect(url_for('index'))` | 笔误 | 18.10.27 |
 | 6.2 | P183 | 6.2及6.2.1章节标题以及目录共四处 | SendGird | SendGrid | 笔误 | 18.10.27 |
