@@ -56,7 +56,7 @@
 | 前言 | V | 本书主要特点中的第3点 | Boostrap | Bootstrap | 审校错误 |
 | 前言 | X | 排版约定最后一段的上面1行 | you_email| your_email | 拼写错误 |
 | 1.2 | P11 | 代码清单1-1下的提示文字 | 命令为 | 命名为 | 笔误 |
-|  1.2.2 | P13| 标题1上面的附注 | Lacator | Locator | 拼写错误 | 18.10.25 |
+| 1.2.2 | P13| 标题1上面的附注 | Lacator | Locator | 拼写错误 | 18.10.25 |
 | 1.2.2.2 | P13 | 第1个附注文字下第2行 | http://helloflask.com/hello/Grey | http://helloflask.com/greet/Grey | 笔误 |
 | 1.3.1 | P14 | 标题 | Run，Flask，Run！ | Run, Flask, Run! | 标点错误 |
 | 1.3.1 | P14 | 第1个代码块最后1行 | | 出现多余的缩进 | 排版错误 |
@@ -74,7 +74,7 @@
 | 2.5.4.1.(3) | P67 | 第1个代码块 | `db.execute('SELECT * FROM students WHERE password=?, password)` | `db.execute('SELECT * FROM students WHERE password=?', password)` | 笔误。字符串漏写右侧关闭引号 |
 | 3.1 | P77 | 代码清单3-1下的提示 | HTML5 | HTML | 多余文本。另外，后面的链接需要更新为https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure |
 | 3.3.2 | P89 | 第2段文字中 | _macors.html | _macros.html | 笔误 |
-| 3.3.2 | P89 | 第1个注释段落最后1行 | 显示 | 显式 | 笔误 | 18.10.18 |
+| 3.3.2 | P89 | 第1个注意段落最后1行 | 显示 | 显式 | 笔误 | 18.10.18 |
 | 3.4.4 | P101 | 图3-5 | | 地址栏的地址应为/nothing，和描述对应。 | 笔误 | 18.10.1 |
 | 4.2.3 | P110 | 代码清单4-2最后1行 | `'login.html'` | `'basic.html'` | 笔误 | 18.9.28 |
 | 4.3.1 | P112 | 第1个代码块后第1行 | 3000 | 2000 | 笔误，不同的浏览器对于URL有不同的长度限制，此处的长度为“最佳实践” |
@@ -83,9 +83,9 @@
 | 4.4.4.1 | P123 | 代码清单4-13第1行 | `flask wtf` | `flask_wtf` | 审校错误 | 18.9.24 |
 | 4.4.4.4 | P128 | 第2个代码块 | | 第3行代码缺少右侧关闭括号 | 笔误 | 18.10.18 |
 | 4.4.4.4 | P128 | 代码清单4-16 | | “检查文件类型”注释下第一行多余缩进4格 | 笔误 | 18.10.18 |
+| 5.3.3 | P146 | 第2个代码块 | | 开头可添加一行导入`from app import Note` | 更完善 | 18.10.18 |
 | 5.4.1.1 | P147 | 第1个代码块第4行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，字符串漏掉了转义符号 |
 | 5.4.1.2 | P150 | 表5-7下的第1个代码块 | `Note.body='SHAVE'` | `Note.body == 'SHAVE'` | 代码错误，少了1个等于号 | 18.9.22 |
-| 5.3.3 | P146 | 第2个代码块 | | 开头可添加一行导入`from app import Note` | 更完善 | 18.10.18 |
 | 5.5.2.3 | P160 | 第1个代码块 | | 第2行插入`ham.author_id = 1` | 省略步骤，可加可不加 | 18.9.22 |
 | 5.5.2.4 | P162 | 代码清单5-11第8行 | `title = ` | `name = ` | 笔误 | 18.9.26 |
 | 5.5.2.4 | P163 | 第3个代码块第6行 | `it.writer = writer` | `it.writer = king` | 笔误 | 18.9.26 |
@@ -104,8 +104,9 @@
 | 7.3.2 | P208 | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
 | 7.3.2 | P208 | 表7-2上面段落的最后一句话 | quick_form() | render_form() | 笔误。历史遗留问题 | 18.9.28 |
 | 8.1 | P220 | 文件目录树 | | 目录树漏掉了 __init__.py 文件 | 笔误。 | 18.10.1 |
-| 8.1.3 | P229、P231 | 代码清单8-2、8-4 | | 单个蓝本变量名称均应为foo_bp形式，比如admin应为admin_bp | 笔误 | 18.9.24 |
 | 8.1.3 | P229 | 第2个提示段落 | 新创建的模块 | 新创建模块 | 审校错误。 | 18.9.24 |
+| 8.1.3 | P229、P231 | 代码清单8-2、8-4 | | 单个蓝本变量名称均应为foo_bp形式，比如admin应为admin_bp | 笔误 | 18.9.24 |
+| 8.2.1.1.(4) | P235 | 第2个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
 | 8.2.1.3 | P237 | 代码清单8-9第10行 | | 缩进少一格 | 排版错误 | 18.10.18 |
 | 8.3.1 | P252 | 第1个代码块最后1行 | `'index.html'` | `'blog/index.html'` | 笔误 | 18.10.06 |
 | 8.3.1 | P252 | 代码清单8-24文件路径 | templates/index.html | templates/blog/index.html | 笔误 | 18.10.06 |
@@ -113,7 +114,6 @@
 | 8.3.7 | P267 | 代清清单8-31第4行 | `comment.photo_id` | `comment.post_id` | 笔误 | 18.9.26 |
 | 8.3.7 | P267 | 代清清单8-31下方正文第2段最后一行的URL中 | photo | post | 笔误 | 18.9.26 |
 | 8.7.2.1 | P293 | 第1个代码块下面的提示文字 | HTmL | HTML | 审校错误，大小写错误 |
-| 8.2.1.1.(4) | P235 | 第2个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
 | 10.2.5 | P438 | 标题上面的附注文字 | 生成帮助信息 | 生成的帮助信息 | 审校错误。编辑以为自己在改病句，实际上却是在制造病句 |
 | 10.3.1.4 | P443 | 最后1段第5行 | RSET | REST | 笔误 |
 | 10.3.3.5 | P453 | 最后1行 | flask-restless | Flask-Restless | 大小写错误 |
