@@ -11,6 +11,15 @@
 
 ## helloflask仓库变更
 
+### 2018-9-12
+
+* 因为勘误的表格太宽，在GitHub显示不全，需要横向滚动查看。在helloflask.com创建了一个镜像页面： helloflask.com/book/errata
+
+### 2018-10-27
+
+* 勘误分成两部分，一部分是影响理解和程序运行的错误，另一部分是无关紧要的拼写等错误。读者可以只修正第一类错误。
+* 重新调整每一个勘误的位置描述，消除歧义，现在既可以通过页数出发定位，也可以通过章节号出发定位，兼顾了纸书和电子书。
+
 ## 纸书变更
 
 这里记录了不同版本的[《Flask Web开发实战》（Python Web Development with Flask）](http://helloflask.com/book)实体版的变动记录。
