@@ -84,7 +84,7 @@
 | 7.3.2 | P208 | 表7-2上面段落的最后一句话 | quick_form() | render_form() | 笔误。历史遗留问题 | 18.9.28 |
 | 8.1.3 | P229、P231 | 代码清单8-2、8-4 | | 单个蓝本变量名称均应为foo_bp形式，比如admin应为admin_bp | 笔误 | 18.9.24 |
 | 8.2.1.1.(4) | P235 | 代码清单8-7后面第1个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
-| 8.2.3 | P247 | 代码清单8-19第2行 | `from wtforms` | `from wrforms.validators` | 笔误 | 18.10.27 | 
+| 8.2.3 | P247 | 代码清单8-19第2行 | `from wtforms` | `from wtforms.validators` | 笔误 | 18.10.27 | 
 | 8.3.1 | P252 | 第1个代码块最后1行 | `'index.html'` | `'blog/index.html'` | 笔误 | 18.10.06 |
 | 8.3.1 | P252 | 代码清单8-24文件路径 | templates/index.html | templates/blog/index.html | 笔误 | 18.10.06 |
 | 8.3.5 | P263 | 第1个代码块第6行 | `Comment.query.with_parent(post)` | `Comment.query.with_parent(post).filter_by(reviewed=True)` | 笔误 | 18.9.26 |
