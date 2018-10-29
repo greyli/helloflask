@@ -50,6 +50,7 @@
 
 章节 | 页码 | 位置 | 错误文字 | 正确文字 | 备注 | 发现时间 |
 --- | --- | --- | --- | --- | --- | ---
+| 1.2 | P11 | 第一个提示第一行 | 命令 | 命名 | 笔误 |
 | 1.2.2.2 | P13 | 代码清单1-3下第2段第2行 | http://helloflask.com/hello/Grey | http://helloflask.com/greet/Grey | 笔误 |
 | 1.7 | P23 | 第2个代码块下第1行 | `url_for('say_hello', name='Jack')` | `url_for('greet', name='Jack')` | 笔误 |
 | 2.2.3 | P51 | 图2-11 |  | 图中的响应状态码应该为 302 Found | 文图不对应 | 18.10.18 |
