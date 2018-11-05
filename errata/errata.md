@@ -11,7 +11,7 @@
 
 下面是《Flask Web开发实战》的勘误信息。我在helloflask.com上创建了一个镜像勘误页面，阅读体验更好，请访问 http://helloflask.com/book/errata 查看。
 
-最后更新：2018/11/02
+最后更新：2018/11/05
 
 ## 贡献指南
 
@@ -52,12 +52,13 @@
 --- | --- | --- | --- | --- | --- | ---
 | 1.2.2.2 | P13 | 代码清单1-3下第2段第2行 | http://helloflask.com/hello/Grey | http://helloflask.com/greet/Grey | 笔误 |
 | 1.7 | P23 | 第2个代码块下第1行 | `url_for('say_hello', name='Jack')` | `url_for('greet', name='Jack')` | 笔误 |
-| 2.2.3 | P51 | 图2-11 |  | 图中的响应状态码应该为 302 Found | 文图不对应 | 18.10.18 |
 | 2.2.3.3 | P36 | 表2-6后第1个代码块 | `'goback/<int:year>'` | `'/goback/<int:year>'` | 笔误。URL规则漏掉了开头的斜线 | 18.9.28 |
 | 2.3.1 | P40 | 第3个代码块 | `{'Location', 'http://www.example.com'}` | `{'Location': 'http://www.example.com'}` | 笔误。返回值中字典里的符号出错 |
 | 2.3.2 | P44 | HTML小节的最后1行 | HTTP | HTML | 笔误 |
 | 2.3.2.4 | P46 | 倒数第3个代码块 | `return jsonify({name: 'Grey Li', gender: 'male'})` | `return jsonify({'name': 'Grey Li', 'gender': 'male'})` | 笔误。字典中的键未加引号 | 18.10.18 |
+| 2.2.3 | P48 | 图2-11 |  | 图中的响应状态码应该为 302 Found | 文图不对应 | 18.10.18 |
 | 2.3.4.2 | P51 | 图2-12后第1个代码块 | | 第9行及以下均应向左缩进4个空格 | 排版错误 | 18.10.18 |
+| 2.5.4.1.(2) | P67 | “攻击示例”小节第3段文字第2行 | 设为 “';drop table users; --” | 设为 “';drop table students; --” | 笔误 |18.11.2 |
 | 4.2.3 | P110 | 代码清单4-2最后1行 | `'login.html'` | `'basic.html'` | 笔误 | 18.9.28 |
 | 4.3.1 | P112 | 第1个代码块后第1行 | 3000 | 2000 | 笔误，不同的浏览器对于URL有不同的长度限制，此处的长度为“最佳实践” |
 | 4.3.1 | P113 | 代码清单4-5第1行 | `'/'` | `'/basic'` | 笔误 | 18.10.18 |
@@ -82,6 +83,7 @@
 | 6.1.1 | P181 | 代码清单6-1 | | 第9-13行末尾漏掉分割参数的逗号 | 笔误 | 18.10.27 |
 | 7.3.2 | P208 | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
 | 7.3.2 | P208 | 表7-2上面段落的最后一句话 | quick_form() | render_form() | 笔误。历史遗留问题 | 18.9.28 |
+| 7.4.3 | P211 | 表7-4下面的提示段落 | https://momentjs.com/docs/displaying/format/ | https://momentjs.com/docs/#/displaying/format/ | 链接变化 | 18.11.5 | 
 | 8.1.3 | P229、P231 | 代码清单8-2、8-4 | | 单个蓝本变量名称均应为foo_bp形式，比如admin应为admin_bp | 笔误 | 18.9.24 |
 | 8.2.1.1.(4) | P235 | 代码清单8-7后面第1个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
 | 8.2.3 | P247 | 代码清单8-19第2行 | `from wtforms` | `from wtforms.validators` | 笔误 | 18.10.27 | 
@@ -94,6 +96,7 @@
 | 8.5 | P275 | “8.5”小节下第2个代码块第2行 | `LoginManger(app)` | `LoginManger()` | 代码错误 | 18.10.27 | 
 | 8.6 | P282 | 代清清单8-38第4行 | `'400.html'` | `'errors/400.html'` | 笔误 | 18.10.27 |
 | 8.7.1 |P285 | 代码清单8-40下的正文第1行 | manage_category.html | manage_post.html | 笔误 | 18.10.27 | 
+| 9.3.3 | P315 | 代码清单9-8下的正文第2段第2行（纸书该页最后1行） | `auth.resend_confirmation` | `auth.resend_confirm_email` | 笔误 | 18.11.5 |
 | 9.5.3 | P334 | 代码清单9-19后面的代码块倒数第二行 | `photo.save()` | `db.session.add(photo) 换行 db.session.commit()` | 遗留代码未更新 | 18.10.27 |
 | 10.3.6.3 | P468 | ”处理错误响应“小节第1行 | app.error_handler | app.errorhandler | 笔误 |
 | 11.4.3.5 | P503 | 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
@@ -123,16 +126,23 @@
 | 1.3.3 | P18 | ”1.3.3“小节第1行 | Enviroment  | Environment | 拼写错误 |
 | 2.2.3 | P34 | 图2-5 |  | 地址栏的地址应为/nothing，和描述对应。图中的/foo在后面实际被定义了 | 笔误 | 18.9.28 |
 | 2.3.3 | P47 | 表2-10后面的第1个附注段落 | Respone | Response | 笔误。拼写错误 |
-| 2.5.4.1.(2) | P67 | 第二段文字第二行 | 设为 “';drop table users; --” | 设为 “';drop table students; --” | 笔误 |18.11.2 |
+| 2.5.4.1.(2) | P67 | 纸书该页第1个代码块，电子书“攻击示例”小节第2个代码块 |  | 最后的单引号和前面的分号对调位置 | 笔误 |18.11.5 |
+| 2.5.4.1.(2) | P67 | 纸书该页第2个代码块，电子书“攻击示例”小节第3个代码块 |  | 在最后的分号前添加一个半角单引号 | 笔误 |18.11.5 |
 | 2.5.4.1.(3) | P67 | ”主要防范方法“小节第1个代码块 | `db.execute('SELECT * FROM students WHERE password=?, password)` | `db.execute('SELECT * FROM students WHERE password=?', password)` | 笔误。字符串漏写右侧关闭引号 |
+| 2.5.4 | P69 | 纸书该页最后1行的代码块最后几个字符 | `sript` | `script` | 笔误 | 18.11.5 | 
 | 3.1 | P77 | 代码清单3-1下的提示 | HTML5 | HTML | 多余文本。另外，后面的链接需要更新为 https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure |
 | 3.3.2 | P89 | 第1个代码块上面的文字第2行 | `_macors.html` | `_macros.html` | 笔误 |
 | 3.3.2 | P89 | 第1个注意段落最后1行 | 显示 | 显式 | 笔误 | 18.10.18 |
+| 3.4.1 | P93 | 第1~4个代码块 | | 忽略了 Jinja 本身的代码逻辑，读者可忽略 Jinja 语句含义，具体见后面 | 逻辑错误。 | 18.11.5 |
 | 3.4.2 | P97 | 注意段落下面正文第2行 | CND | CDN | 笔误 | 18.10.27 |
 | 3.4.4 | P101 | 图3-5 | | 地址栏的地址应为/nothing，和描述对应。 | 笔误 | 18.10.1 |
+| 4.2.1 | P108 | 表4-3下面的注意段落 | `内置的验证器通过……` | `内置的验证器使用……` | 改善措辞 | 18.11.5 |
+| 4.2.3 | P110 | 代码清单4-3第3行 | `{{ from.username.label }}{{ form.username }}<br>` | `{{ from.username.label }}<br>{{ form.username }}<br>` | 改进 | 18.11.5 |
+| 4.2.3 | P110 | 代码清单4-3第4行 | `{{ from.password.label }}{{ form.password }}<br>` | `{{ from.username.label }}<br>{{ form.username }}<br>` | 改进 | 18.11.5 |
 | 4.3.3 | P117 | 代码清单4-7第4行 | `form.username()` | `form.username` | 笔误。此处的括号可有可无，去掉以保持风格上的统一 | 18.9.24 |
 | 4.4.4.1 | P123 | 代码清单4-13第1行 | `flask wtf` | `flask_wtf` | 审校错误 | 18.9.24 |
 | 4.4.4.4 | P128 | 代码清单4-16上面的第1个代码块第3行 | | 缺少右侧关闭括号 | 笔误 | 18.10.18 |
+| 4.4.5 | P131 | 代码清单4-19下正文段落第3行 | `Ture` | `True` | 笔误 | 18.11.5 |
 | 5.3.1 | P143 | 表5-2最后1行 | SQlite | SQLite | 大小写错误 | 18.10.27 |
 | 5.5.2 | P159 | 表5-4下的注意段落第2行 | Flask-SQLlchemy | Flask-SQLAlchemy | 笔误 | 18.10.27 |
 | 5.8 | P177 | 最后1行 | 本章要介绍的 | 本章介绍的 | 笔误 | 18.9.28 |
@@ -142,6 +152,7 @@
 | 8.1 | P220 | 文件目录树 | | 目录树漏掉了 __init__.py 文件 | 笔误。 | 18.10.1 |
 | 8.1.3 | P229 | 第2个提示段落 | 新创建的模块 | 新创建一个模块 | 审校错误。 | 18.9.24 |
 | 8.2.1.3 | P237 | 代码清单8-9第10行 | | 缩进少一格 | 排版错误 | 18.10.18 |
+| 8.3.3 | P261 | 代码清单8-27 | | `<div class="modal-body">` 所在的行以及下面2行均向右缩进8格 | 排版错误 | 18.11.5 |
 | 8.3.5 | P264 | 代码清单8-29第12行 | `(%Y-%m-%dT%H:%M:%SZ')` | `('%Y-%m-%dT%H:%M:%SZ')` | 笔误，漏掉左侧引号 | 18.10.27 |
 | 8.7.2.1 | P293 | 图8-16上面的提示段落 | HTmL | HTML | 审校错误，大小写错误 |
 | 9.13 | - | 9.13小节最后代码清单上面的文字 | innit_app() | init_app() | 笔误 | 18.11.04 |
@@ -156,9 +167,42 @@
 
 * 9.4.1第2个代码块
 * 9.5.2代码清单9-16
+* 9.13.1小节第三段最后一行（P404）
 * 10.3.4代码清单10-17第1行
 
 关于URL长度限制的详情可以参考[WWW FAQs: What is the maximum length of a URL?](https://www.boutell.com/newfaq/misc/urllength.html)。
+
+3.4.1 P93 部分的4个代码块依次需要更改为：
+
+```html
+<div>
+{% if True %}
+    <p>Hello!</p>
+{% endif %}
+</div>
+```
+
+```html
+<div>
+
+    <p>Hello!</p>
+
+</div>
+```
+
+```html
+<div>
+{% if True -%}
+    <p>Hello!</p>
+{%- endif %}
+</div>
+```
+
+```html
+<div>
+    <p>Hello!</p>
+</div>
+```
 
 ## 电子书
 
