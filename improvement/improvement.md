@@ -64,6 +64,40 @@ def choose_a_number():
     ...
 ```
 
+### 第3章空白控制示例代码
+
+这部分示例代码逻辑上不正确，3.4.1 P93 部分的4个代码块依次需要更改为：
+
+```html
+<div>
+{% if True %}
+    <p>Hello!</p>
+{% endif %}
+</div>
+```
+
+```html
+<div>
+
+    <p>Hello!</p>
+
+</div>
+```
+
+```html
+<div>
+{% if True -%}
+    <p>Hello!</p>
+{%- endif %}
+</div>
+```
+
+```html
+<div>
+    <p>Hello!</p>
+</div>
+```
+
 ### 第3章3.3.2最后的两个列表
 
 * 相关Issue：https://github.com/greyli/helloflask/issues/26
