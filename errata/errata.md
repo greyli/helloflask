@@ -153,8 +153,8 @@
 | 6.1.3 | P183 | 代码清单6-3第9行 | `return redirect(url_for('idnex'))` | `return redirect(url_for('index'))` | 笔误 | 18.10.27 |
 | 6.2 | P183 | 6.2及6.2.1章节标题以及目录共**4处** | SendGird | SendGrid | 笔误 | 18.10.27 |
 | 7.2.3.1 | P202 | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
-| 7.3.1 | P207 | 3.7.1节中最后一段话中的bootstrap_load_js() | bootstrap_load_js() | bootstrap.load_js() | 笔误 |
-| 7.5 | P213 | 最后一行代码 | fake = Faker('zh_CN'))|  fake = Faker('zh_CN') | 笔误 |
+| 7.3.1 | P207 | 3.7.1节中最后一段话中的bootstrap_load_js() | bootstrap_load_js() | bootstrap.load_js() | 笔误 | 18.11.17 |
+| 7.5 | P213 | 最后一行代码 | fake = Faker('zh_CN'))|  fake = Faker('zh_CN') | 笔误 | 18.11.17 |
 | 8.1 | P220 | 文件目录树 | | 目录树漏掉了 __init__.py 文件 | 笔误。 | 18.10.1 |
 | 8.1.3 | P229 | 第2个提示段落 | 新创建的模块 | 新创建一个模块 | 审校错误。 | 18.9.24 |
 | 8.2.1.3 | P237 | 代码清单8-9第10行 | | 缩进少一格 | 排版错误 | 18.10.18 |
