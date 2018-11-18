@@ -11,7 +11,7 @@
 
 下面是《Flask Web开发实战》的勘误信息。我在helloflask.com上创建了一个镜像勘误页面，阅读体验更好，请访问 http://helloflask.com/book/errata 查看。
 
-最后更新：2018/11/11
+最后更新：2018/11/18
 
 ## 贡献指南
 
@@ -52,6 +52,7 @@
 --- | --- | --- | --- | --- | --- | ---
 | 1.2.2.2 | P13 | 代码清单1-3下第2段第2行 | http://helloflask.com/hello/Grey | http://helloflask.com/greet/Grey | 笔误 |
 | 1.7 | P23 | 第2个代码块下第1行 | `url_for('say_hello', name='Jack')` | `url_for('greet', name='Jack')` | 笔误 |
+| 2.2.1 | P31 | 表2-3左侧下面的两行 | | POST对应的说明列原文为“传输数据”，修改为“创建或更新资源”；PUT对应的说明列原文为“传输文件”，修改为“创建或替换资源” | 改进 | 18.11.18 |
 | 2.2.3.3 | P36 | 表2-6后第1个代码块 | `'goback/<int:year>'` | `'/goback/<int:year>'` | 笔误。URL规则漏掉了开头的斜线 | 18.9.28 |
 | 2.3.1 | P40 | 第3个代码块 | `{'Location', 'http://www.example.com'}` | `{'Location': 'http://www.example.com'}` | 笔误。返回值中字典里的符号出错 |
 | 2.3.2 | P44 | HTML小节的最后1行 | HTTP | HTML | 笔误 |
@@ -104,6 +105,7 @@
 | 10.3.6.3 | P468 | ”处理错误响应“小节第1行 | app.error_handler | app.errorhandler | 笔误 |
 | 11.4.3.5 | P503 | 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
 | 11.5.1 | P509 | 代码清单11-13第5行 | `position === 0&& socket.nsp` | `position === 0 && socket.nsp` | 审校错误。空格缺失 |
+| 11.5.3 | P513~P514 | 513页7处，514页8处 |  | 所有的 Pyments 改为 Pygments，pyments 改为 pygments | 笔误 | 18.11.18 |
 | 15.7.3 | P625 | 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
 
 
@@ -129,6 +131,7 @@
 | 1.3.3 | P18 | ”1.3.3“小节第1行 | Enviroment  | Environment | 拼写错误 |
 | 2.2.3 | P34 | 图2-5 |  | 地址栏的地址应为/nothing，和描述对应。图中的/foo在后面实际被定义了 | 笔误 | 18.9.28 |
 | 2.3.3 | P47 | 表2-10后面的第1个附注段落 | Respone | Response | 笔误。拼写错误 |
+| 2.3.4 | P50~P52 | 代码清单2-5下第1段第3行；图2-13后第1段第2行；代码清单2-6下第2段第2行 | logged-in | logged_in | 笔误 | 18.11.18 |
 | 2.5.4.1.(2) | P67 | 纸书该页第1个代码块，电子书“攻击示例”小节第2个代码块 |  | 最后的单引号和前面的分号对调位置 | 笔误 |18.11.5 |
 | 2.5.4.1.(2) | P67 | 纸书该页第2个代码块，电子书“攻击示例”小节第3个代码块 |  | 在最后的分号前添加一个半角单引号 | 笔误 |18.11.5 |
 | 2.5.4.1.(3) | P67 | ”主要防范方法“小节第1个代码块 | `db.execute('SELECT * FROM students WHERE password=?, password)` | `db.execute('SELECT * FROM students WHERE password=?', password)` | 笔误。字符串漏写右侧关闭引号 |
@@ -153,12 +156,15 @@
 | 6.1.3 | P183 | 代码清单6-3第9行 | `return redirect(url_for('idnex'))` | `return redirect(url_for('index'))` | 笔误 | 18.10.27 |
 | 6.2 | P183 | 6.2及6.2.1章节标题以及目录共**4处** | SendGird | SendGrid | 笔误 | 18.10.27 |
 | 7.2.3.1 | P202 | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
+| 7.3.1 | P207 | 3.7.1节中最后一段话中的bootstrap_load_js() | bootstrap_load_js() | bootstrap.load_js() | 笔误 | 18.11.17 |
+| 7.5 | P213 | 最后一行代码 | fake = Faker('zh_CN'))|  fake = Faker('zh_CN') | 笔误 | 18.11.17 |
 | 8.1 | P220 | 文件目录树 | | 目录树漏掉了 __init__.py 文件 | 笔误。 | 18.10.1 |
 | 8.1.3 | P229 | 第2个提示段落 | 新创建的模块 | 新创建一个模块 | 审校错误。 | 18.9.24 |
 | 8.2.1.3 | P237 | 代码清单8-9第10行 | | 缩进少一格 | 排版错误 | 18.10.18 |
 | 8.3.3 | P261 | 代码清单8-27 | | `<div class="modal-body">` 所在的行以及下面2行均向右缩进8格 | 排版错误 | 18.11.5 |
 | 8.3.5 | P264 | 代码清单8-29第12行 | `(%Y-%m-%dT%H:%M:%SZ')` | `('%Y-%m-%dT%H:%M:%SZ')` | 笔误，漏掉左侧引号 | 18.10.27 |
 | 8.7.2.1 | P293 | 图8-16上面的提示段落 | HTmL | HTML | 审校错误，大小写错误 |
+| 9.10.1 | P379 | 代码清单9-59下面的代码块 | | 第2行向右缩进1格，第3行向左缩进，和第2行对齐。 | 排版错误 | 18.11.18 |
 | 9.13 | - | 9.13小节最后代码清单上面的文字 | innit_app() | init_app() | 笔误 | 18.11.04 |
 | 10.2.5 | P438 | 标题上面的附注文字 | 生成帮助信息 | 生成的帮助信息 | 审校错误。编辑以为自己在改病句，实际上却是在制造病句 |
 | 10.3.1.4 | P443 | “10.3.2”小节上面段落倒数第3行 | RSET | REST | 笔误 |
@@ -166,47 +172,57 @@
 | 12.3.2 | P527 | 代码清单12-2第7行 | test_app_exsit | test_app_exist | 拼写错误 |
 | 14.4.2 | P574 | 第2个提示段落上面两处 | python(3) | python3 | 审校错误 |
 
-
-断行单词在排版时产生的错误连字符位置列表：
-
-* 9.4.1第2个代码块
-* 9.5.2代码清单9-16
-* 9.13.1小节第三段最后一行（P404）
-* 10.3.4代码清单10-17第1行
-
 关于URL长度限制的详情可以参考[WWW FAQs: What is the maximum length of a URL?](https://www.boutell.com/newfaq/misc/urllength.html)。
 
-3.4.1 P93 部分的4个代码块依次需要更改为：
 
-```html
-<div>
-{% if True %}
-    <p>Hello!</p>
-{% endif %}
-</div>
-```
+### 断行连接符错误
 
-```html
-<div>
+编辑人员在处理书稿时，对断行单词添加了连字符，但对于编程变量并不需要这样处理，容易导致误解。我过了一遍全书，找出了这些错误的位置
+共42处。你可以选择不修改，了解即可，如果非要修改，请沿着页面最右侧边缘进行定位。因为电子书页数不固定，目前无法确定，请等待重印更新。
 
-    <p>Hello!</p>
+* P106下面Password-
+* P320第7行，看页面最右侧，back_popu- 去掉后面的连字符。
+* P329第3行，user- 去掉后面的连字符
+* P338代码清单9-21倒数第4行 user-
+* P339倒数第2行 file-
+* P342上面的代码块两处 share- 和 times-
+* P344下面的代码块1处，倒数第8行，dis-。
+* P346第一个代码块下面第1行 connec-
+* P347下面的代码块 de-
+* P354倒数第2个代码块com-
+* P356附注段落 getboot-
+* P369下面代码块 pagina-
+* P370第1行pagina-
+* P376页面中部 follo-
+* P377页面上部 error-
+* P383 页面中部notifica-
+* P389页面上方up-
+* P393页面上方正文 old_pass-
+* P394下方三处 notifica-，倒数第二行还有一个noti-fication需要去掉中间的连字符
+* P396第一行colle-
+* P398 中部regi-
+* P404下面user-
+* P419上面style-
+* P440中部，两处for-和date-
+* P442底部disserta-
+* P459上部BadSigna-
+* P460下部sec-
+* P461中部sty-
+* P472上面Authori-
+* P487中部_annony-mous_去掉中间的连字符
+* P517上部notifica-
+* P539下部Phantom-
+* P556下部Cach-（只去掉最后的连字符）
+* P569上部WARN-
+* P586上部super-
+* P599下部的require-和pip-
+* P608下部Py-
+* P631下部Doc-
+* P671上部Null-
+* P678下部templa-
+* P679中部Environ-
+* P682中部Bit-，同时这一行的Github需要改为GitHub
 
-</div>
-```
-
-```html
-<div>
-{% if True -%}
-    <p>Hello!</p>
-{%- endif %}
-</div>
-```
-
-```html
-<div>
-    <p>Hello!</p>
-</div>
-```
 
 ## 电子书
 
@@ -246,5 +262,5 @@
 ## 新变化提示
 
 * 第1章：PyCharm 2018.2版本增加了对Pipenv的支持。
-* 第1章：Pipenv自2018.7.1版本后在Windows中激活虚拟环境后会显示虚拟环境提示符（具体版本号待确认）。
+* 第1章：Pipenv自2018.6.25版本后在Windows中激活虚拟环境后会显示虚拟环境提示符（具体版本号待确认）。
 * 第15章中的Flask-Share源码对应0.1.0版本。
