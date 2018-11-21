@@ -11,3 +11,4 @@
 --- | --- | --- | --- | --- | --- | ---
 | 7.3.1 | P207 | 3.7.1节中最后一段话中 | bootstrap_load_js() | bootstrap.load_js() | 笔误 | 18.11.17 |
 | 7.5 | P213 | 最后一行代码 | `fake = Faker('zh_CN'))` |  `fake = Faker('zh_CN')` | 笔误 | 18.11.17 |
+| 14.3.1 | P567 | 第二个代码块第2行| `token_urlsafe(16)` |  `secrets.token_urlsafe(16)` | 笔误 | 18.11.21 |
