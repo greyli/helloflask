@@ -11,7 +11,7 @@
 
 下面是《Flask Web开发实战》的勘误信息。我在helloflask.com上创建了一个镜像勘误页面，阅读体验更好，请访问 http://helloflask.com/book/errata 查看。
 
-最后更新：2018/11/19
+最后更新：2018/11/28
 
 ## 贡献指南
 
@@ -130,6 +130,7 @@
 | 1.3.1.3 | P17 | 配置步骤4 | 下列选项 | 下拉选项 | 笔误 |
 | 1.3.3 | P18 | ”1.3.3“小节第1行 | Enviroment  | Environment | 拼写错误 |
 | 2.2.3 | P34 | 图2-5 |  | 地址栏的地址应为/nothing，和描述对应。图中的/foo在后面实际被定义了 | 笔误 | 18.9.28 |
+| 2.3.2.4 | P45 | JSON代码示例 | "heading":"Remider", |  "heading":"Reminder",  | 笔误。单词拼写错误。 | 18.11.28 |
 | 2.3.3 | P47 | 表2-10后面的第1个附注段落 | Respone | Response | 笔误。拼写错误 |
 | 2.5.4.1.(2) | P67 | 纸书该页第1个代码块，电子书“攻击示例”小节第2个代码块 |  | 最后的单引号和前面的分号对调位置 | 笔误 |18.11.5 |
 | 2.5.4.1.(2) | P67 | 纸书该页第2个代码块，电子书“攻击示例”小节第3个代码块 |  | 在最后的分号前添加一个半角单引号 | 笔误 |18.11.5 |
@@ -169,7 +170,10 @@
 | 10.3.1.4 | P443 | “10.3.2”小节上面段落倒数第3行 | RSET | REST | 笔误 |
 | 10.3.3.5 | P453 | 代码清单10-13下面的提示段落最后1行 | flask-restless | Flask-Restless | 大小写错误 |
 | 12.3.2 | P527 | 代码清单12-2第7行 | test_app_exsit | test_app_exist | 拼写错误 |
+| 14.3.1 | P567 | 第二个代码块第2行| `token_urlsafe(16)` |  `secrets.token_urlsafe(16)` | 笔误 | 18.11.28 |
+| 14.3.4 | P569 | 代码清单14-1 register_logger函数缺少app参数| `register_logging()` |  `register_logging(app)` | 笔误 | 18.11.28 |
 | 14.4.2 | P574 | 第2个提示段落上面两处 | python(3) | python3 | 审校错误 |
+| 14.4.7 | P584 | 倒数第2个代码块上方段落第5行| 放在/etc/supervisord.conf路径下 | 放在/etc/supervisor/conf.d路径下 | 笔误 | 18.11.28 |
 
 关于URL长度限制的详情可以参考[WWW FAQs: What is the maximum length of a URL?](https://www.boutell.com/newfaq/misc/urllength.html)。
 
