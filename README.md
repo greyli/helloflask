@@ -13,7 +13,7 @@
 
 你可以访问本书主页[http://helloflask.com/book](http://helloflask.com/book)查看本书的资源索引、目录、购买链接等详细信息。
 
-本书相关项目的源码建议你按照书中的指导使用Git克隆到本地，如果克隆速度过慢，可以点击<a href="http://helloflask.com/downloads/helloflask-projects-18-8-29.zip" target="_blank" download>这里</a>下载源码合集文件。
+本书相关项目的源码建议你按照书中的指导使用Git克隆到本地，如果克隆速度过慢，可以点击<a href="http://helloflask.com/downloads/helloflask-projects-2018-12-7.zip" target="_blank" download>这里</a>下载源码合集文件。
 
 ## 勘误 & FAQ & 可改进实现 & 版本更新记录
 
