@@ -140,6 +140,30 @@ def choose_a_number():
 
 ## 程序设计与实现
 
+### 全局
+
+* 相关Issue：https://github.com/greyli/sayhello/issues/4
+* 贡献者：@[realzhangm](https://github.com/realzhangm)
+
+一个视图，如果同时处理 GET 和 POST 请求，那么对于 POST 请求用不到的代码，可以放到 POST 请求的 if 语句块下面执行，以减少不必要的调用。以 SayHello 为例：
+
+```py
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    form = HelloForm()
+    # ... 原来的位置
+    if form.validate_on_submit():
+        name = form.name.data
+        body = form.body.data
+        message = Message(body=body, name=name)
+        db.session.add(message)
+        db.session.commit()
+        flash('Your message have been sent to the world!')
+        return redirect(url_for('index'))
+    messages = Message.query.order_by(Message.timestamp.desc()).all()  # 优化后的位置
+    return render_template('index.html', form=form, messages=messages)
+```
+
 ### Albumy
 
 #### 9.4.3 写入用户权限中的角色与权限字典的设计
