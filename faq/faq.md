@@ -17,15 +17,7 @@
 
 ### 执行`pipenv install`等命令出现`TypeError`、`ResourceWarning`、或`ImportError`异常
 
-这个是pipenv 2018.7.1版本的bug，目前可以临时通过降级pip来解决：
-
-`$ python3 -m pip install pip==10.0.1`
-
-如果你使用Python2，则使用下面的命令：
-
-`$ python -m pip install pip==10.0.1`
-
-等到新版本修复了这些问题后，可以通过下面的命令升级pipenv和pip：
+新版本修复了这些问题，可以通过下面的命令升级pipenv和pip：
 
 ```
 $ python3 -m pip install --upgrade pip
