@@ -34,6 +34,17 @@ GitHub上的勘误文件阅读体验不太好，而且部分地区访问较慢�
 >>> import os
 ```
 
+7.5 P214 代码清单7-8：
+```py
+from sayhello import db
+from sayhello.models import Message
+```
+
+8.2.1 P237 代码清单8-10
+```py
+import random
+```
+
 ### 第1章Pipenv相关介绍
 
 * 加入使用第三方PyPI源的方法介绍，包括修改Pipfile、通过环境变量设置以及通过命令行选项设置。
@@ -128,6 +139,30 @@ def choose_a_number():
 拿到书才发现，编辑把我的后记删掉了。因为成本问题，临时妥协的解决方法是在重印时稍加修改后放到前言最后的空白处。尽管如此，还是希望有机会添加一个后记。
 
 ## 程序设计与实现
+
+### 全局
+
+* 相关Issue：https://github.com/greyli/sayhello/issues/4
+* 贡献者：@[realzhangm](https://github.com/realzhangm)
+
+一个视图，如果同时处理 GET 和 POST 请求，那么对于 POST 请求用不到的代码，可以放到 POST 请求的 if 语句块下面执行，以减少不必要的调用。以 SayHello 为例：
+
+```py
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    form = HelloForm()
+    # ... 原来的位置
+    if form.validate_on_submit():
+        name = form.name.data
+        body = form.body.data
+        message = Message(body=body, name=name)
+        db.session.add(message)
+        db.session.commit()
+        flash('Your message have been sent to the world!')
+        return redirect(url_for('index'))
+    messages = Message.query.order_by(Message.timestamp.desc()).all()  # 优化后的位置
+    return render_template('index.html', form=form, messages=messages)
+```
 
 ### Albumy
 

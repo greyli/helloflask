@@ -17,32 +17,20 @@
 
 ### 执行`pipenv install`等命令出现`TypeError`、`ResourceWarning`、或`ImportError`异常
 
-这个是pipenv 2018.7.1版本的bug，目前可以临时通过降级pip来解决：
-
-`$ python3 -m pip install pip==10.0.1`
-
-如果你使用Python2，则使用下面的命令：
-
-`$ python -m pip install pip==10.0.1`
-
-等到新版本修复了这些问题后，可以通过下面的命令升级pipenv和pip：
+新版本修复了这些问题，可以通过下面的命令升级pipenv和pip：
 
 ```
 $ python3 -m pip install --upgrade pip
 $ python3 -m pip install --upgrade pipenv
 ```
 
-### 启动程序（flask run）出现`TypeError`异常
+### 启动程序（flask run）出现`TypeError: environment can only contain strings`异常
 
-Werkzeug当前版本（14.2）存在一个Bug，当在Windows系统下使用Python2开启调试模式时，重载器会因为环境变量FLASK_ENV的编码问题而出现TypeError异常。这个Bug已在master分支修复（话说定位这个Bug花了我很长时间），预计在纸书正式发售前会发布Werkzeug 0.15版本。
-
-目前，临时的解决方案有修改Werkzeug源码、修改python-dotenv源码、从GitHub上的master分支更新Werkzeug等，但这些方法都太麻烦。我建议你临时不开启调试模式来避免这个异常出现，也就是在.flaskenv文件中将FLASK_ENV定义那一行注释掉（使用#号），比如：
+使用下面的命令更新 python-dotenv 到最新版本即可解决：
 
 ```
-# FLASK_ENV=development
+$ pip install -U python-dotenv
 ```
-等到Werkzeug 0.15发布后，我会在知乎专栏Hello, Flask!发一篇文章通知大家更新本地依赖，并给出具体的更新方式。
-
 
 ### Jinja宏里为什么可以直接使用kwargs？
 

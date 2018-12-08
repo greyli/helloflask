@@ -66,11 +66,11 @@
         },
         "flask-ckeditor": {
             "hashes": [
-                "sha256:6a6cadbc253f573348bfb3163e75a2e40a7f6b8b2e08db1b4d382a51dad60155",
-                "sha256:884af5fba485f38dc9221e2ac84f3b808910c45f8edaf3d957464ec272445e0a"
+                "sha256:327ad60c3787d96cdc579ce04c284d33343802d3b7422ba998aadbbdee6756f1",
+                "sha256:8d91ee747473dc4e6e0dc166fd71b3136b7d388de757731c019fad835d776c8e"
             ],
             "index": "pypi",
-            "version": "==0.4.1"
+            "version": "==0.4.3"
         },
         "flask-debugtoolbar": {
             "hashes": [
@@ -160,11 +160,11 @@
         },
         "python-dotenv": {
             "hashes": [
-                "sha256:4965ed170bf51c347a89820e8050655e9c25db3837db6602e906b6d850fad85c",
-                "sha256:509736185257111613009974e666568a1b031b028b61b500ef1ab4ee780089d5"
+                "sha256:4f3582904d08dac5ab4c9aa44cb17ce056c9a35e585cfda6183d80054d247307",
+                "sha256:cb8cd327109898c7725f76c5256a081e8a9efe72ebbf127f8d1221ceb7f38bf2"
             ],
             "index": "pypi",
-            "version": "==0.8.2"
+            "version": "==0.10.0"
         },
         "python-editor": {
             "hashes": [

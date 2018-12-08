@@ -88,18 +88,29 @@
 | 7.3.2 | P208 | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
 | 7.3.2 | P208 | 表7-2上面段落的最后一句话 | quick_form() | render_form() | 笔误。历史遗留问题 | 18.9.28 |
 | 7.4.3 | P211 | 表7-4下面的提示段落 | https://momentjs.com/docs/displaying/format/ | https://momentjs.com/docs/#/displaying/format/ | 链接变化 | 18.11.5 | 
+| 7.4.3 | P213 | 最后 1 个附注段落 | bootstrap.bundle.min.css |  bootstrap.bundle.min.js | 笔误 | 18.12.5 |
 | 8.1.3 | P229、P231 | 代码清单8-2、8-4 | | 单个蓝本变量名称均应为foo_bp形式，比如admin应为admin_bp | 笔误 | 18.9.24 |
 | 8.2.1.1.(4) | P235 | 代码清单8-7后面第1个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
 | 8.2.3 | P247 | 代码清单8-19第2行 | `from wtforms` | `from wtforms.validators` | 笔误 | 18.10.27 | 
 | 8.3.1 | P252 | 第1个代码块最后1行 | `'index.html'` | `'blog/index.html'` | 笔误 | 18.10.06 |
 | 8.3.1 | P252 | 代码清单8-24文件路径 | templates/index.html | templates/blog/index.html | 笔误 | 18.10.06 |
 | 8.3.5 | P263 | 第1个代码块第6行 | `Comment.query.with_parent(post)` | `Comment.query.with_parent(post).filter_by(reviewed=True)` | 笔误 | 18.9.26 |
+| 8.3.5 | P264 | 图 8-8 上的代码块第2行 | `{{ comment.replied.author.name }}` | `{{ comment.replied.author }}` | 笔误 | 18.12.6 |
+| 8.3.5 | P265 | 第1个代码块倒数第11行 | `Reply</a>` | `Reply</a></div>` | 笔误 | 18.12.6 |
 | 8.3.7 | P267 | 代清清单8-31第4行 | `comment.photo_id` | `comment.post_id` | 笔误 | 18.9.26 |
 | 8.3.7 | P267 | 代清清单8-31下方正文第2段最后一行的URL中 | photo | post | 笔误 | 18.9.26 |
+| 8.3.7 | P268 | 第1行 | photo | show_post | 笔误 | 18.12.6 |
 | 8.4.1 | P272 | 第1个代码块最后1行 | `>>> False` | `>>> True` | 笔误 | 18.10.27 |
+| 8.4.1 | P273 | 纸书该页第 2 个代码块，电子书 8.4.2 上面倒数第 2 个代码块。第 5、7 行 | `check_password` | `validate_password` | 笔误 | 18.12.6 |
 | 8.5 | P275 | “8.5”小节下第2个代码块第2行 | `LoginManger(app)` | `LoginManger()` | 代码错误 | 18.10.27 | 
+| 8.5.3 | P278 | 代码清单8-37代码块第1行 | `from flask_login import logout_user` | `from flask_login import logout_user, login_required` | 代码错误 | 18.12.6 | 
 | 8.6 | P282 | 代清清单8-38第4行 | `'400.html'` | `'errors/400.html'` | 笔误 | 18.10.27 |
 | 8.7.1 |P285 | 代码清单8-40下的正文第1行 | manage_category.html | manage_post.html | 笔误 | 18.10.27 | 
+| 8.7.1.2 |P288 | 代码清单8-42代码块倒数第2行  | `.show_post` | `blog.show_post`  | 笔误 | 18.12.6 | 
+| 8.7.1.3 |P290 | 第1个代码块倒数第5行  | `.show_post` | `blog.show_post`  | 笔误 | 18.12.6 |
+| 8.7.2 |P292 | 代码清单8-44代码块倒数第1行  | `.show_post` | `blog.show_post`  | 笔误 | 18.12.6 | 
+| 8.7.2.2 |P294 | 代码清单8-45代码块下正文第1行  | `Ture` | `True`  | 笔误 | 18.12.6 | 
+| 9.1.1 | P302 | 9.1.2 标题上面的代码块 | `bluelog` | `myapp` | 笔误 | 18.12.6 |
 | 9.3.3 | P315 | 代码清单9-8下的正文第2段第2行（纸书该页最后1行） | `auth.resend_confirmation` | `auth.resend_confirm_email` | 笔误 | 18.11.5 |
 | 9.5.3 | P334 | 代码清单9-19后面的代码块倒数第二行 | `photo.save()` | `db.session.add(photo) 换行 db.session.commit()` | 遗留代码未更新 | 18.10.27 |
 | 10.3.6.3 | P468 | ”处理错误响应“小节第1行 | app.error_handler | app.errorhandler | 笔误 |
@@ -107,7 +118,6 @@
 | 11.5.1 | P509 | 代码清单11-13第5行 | `position === 0&& socket.nsp` | `position === 0 && socket.nsp` | 审校错误。空格缺失 |
 | 11.5.3 | P513~P514 | 513页7处，514页8处 |  | 所有的 Pyments 改为 Pygments，pyments 改为 pygments | 笔误 | 18.11.18 |
 | 15.7.3 | P625 | 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
-
 
 
 #### 不重要勘误
@@ -158,12 +168,15 @@
 | 7.2.3.1 | P202 | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.3.1 | P207 | 3.7.1节中最后一段话中 | bootstrap_load_js() | bootstrap.load_js() | 笔误 | 18.11.17 |
 | 7.5 | P213 | 最后一行代码 | `fake = Faker('zh_CN'))` |  `fake = Faker('zh_CN')` | 笔误 | 18.11.17 |
+| 7.5 | P214 | 该页（节）最后 2 个代码块的最后 1 行 | | 两处均向左缩进 4 格，和上面对齐 | 排版错误 | 18.12.6 |
 | 8.1 | P220 | 文件目录树 | | 目录树漏掉了 __init__.py 文件 | 笔误。 | 18.10.1 |
 | 8.1.3 | P229 | 第2个提示段落 | 新创建的模块 | 新创建一个模块 | 审校错误。 | 18.9.24 |
+| 8.2.1 | P237 | 代码清单 8-8 倒数第 3 行 | | 添加注释：`# 这个方法将在 8.4.3（P273）节介绍` | 后续内容前置提示 | 18.12.6 |
 | 8.2.1.3 | P237 | 代码清单8-9第10行 | | 缩进少一格 | 排版错误 | 18.10.18 |
 | 8.3.3 | P261 | 代码清单8-27 | | `<div class="modal-body">` 所在的行以及下面2行均向右缩进8格 | 排版错误 | 18.11.5 |
 | 8.3.5 | P264 | 代码清单8-29第12行 | `(%Y-%m-%dT%H:%M:%SZ')` | `('%Y-%m-%dT%H:%M:%SZ')` | 笔误，漏掉左侧引号 | 18.10.27 |
 | 8.7.2.1 | P293 | 图8-16上面的提示段落 | HTmL | HTML | 审校错误，大小写错误 |
+| 9.1.1 | P301 | 该页最后 1 行，电子书该节第 2 个代码块最后一行 | | 向左缩进 4 格 | 排版错误 | 18.12.6 |
 | 9.10.1 | P379 | 代码清单9-59下面的代码块 | | 第2行向右缩进1格，第3行向左缩进，和第2行对齐。 | 排版错误 | 18.11.18 |
 | 9.13 | - | 9.13小节最后代码清单上面的文字 | innit_app() | init_app() | 笔误 | 18.11.04 |
 | 10.2.5 | P438 | 标题上面的附注文字 | 生成帮助信息 | 生成的帮助信息 | 审校错误。编辑以为自己在改病句，实际上却是在制造病句 |
@@ -176,81 +189,6 @@
 | 14.4.7 | P584 | 倒数第2个代码块上方段落第5行| 放在/etc/supervisord.conf路径下 | 放在/etc/supervisor/conf.d路径下 | 笔误 | 18.11.28 |
 
 关于URL长度限制的详情可以参考[WWW FAQs: What is the maximum length of a URL?](https://www.boutell.com/newfaq/misc/urllength.html)。
-
-
-### 断行连接符错误
-
-编辑人员在处理书稿时，对断行单词添加了连字符，但对于编程变量并不需要这样处理，容易导致误解。我过了一遍全书，找出了这些错误的位置
-共42处。你可以选择不修改，了解即可，如果非要修改，请沿着页面最右侧边缘进行定位。因为电子书页数不固定，目前无法确定，请等待重印更新。
-
-* P106下面Password-
-* P320第7行，看页面最右侧，back_popu- 去掉后面的连字符。
-* P329第3行，user- 去掉后面的连字符
-* P338代码清单9-21倒数第4行 user-
-* P339倒数第2行 file-
-* P342上面的代码块两处 share- 和 times-
-* P344下面的代码块1处，倒数第8行，dis-。
-* P346第一个代码块下面第1行 connec-
-* P347下面的代码块 de-
-* P354倒数第2个代码块com-
-* P356附注段落 getboot-
-* P369下面代码块 pagina-
-* P370第1行pagina-
-* P376页面中部 follo-
-* P377页面上部 error-
-* P383 页面中部notifica-
-* P389页面上方up-
-* P393页面上方正文 old_pass-
-* P394下方三处 notifica-，倒数第二行还有一个noti-fication需要去掉中间的连字符
-* P396第一行colle-
-* P398 中部regi-
-* P404下面user-
-* P419上面style-
-* P440中部，两处for-和date-
-* P442底部disserta-
-* P459上部BadSigna-
-* P460下部sec-
-* P461中部sty-
-* P472上面Authori-
-* P487中部_annony-mous_去掉中间的连字符
-* P517上部notifica-
-* P539下部Phantom-
-* P556下部Cach-（只去掉最后的连字符）
-* P569上部WARN-
-* P586上部super-
-* P599下部的require-和pip-
-* P608下部Py-
-* P631下部Doc-
-* P671上部Null-
-* P678下部templa-
-* P679中部Environ-
-* P682中部Bit-，同时这一行的Github需要改为GitHub
-
-
-## 电子书
-
-此处列出电子书特有的错误，多为排版错误，其他通用勘误请参考上面的纸书勘误。
-
-### 2018/8/24版本
-
-章节 | 页码 | 位置 | 错误文字 | 正确文字 | 备注 |
---- | --- | --- | --- | --- | ---
-| 全局 | - | -  | （） | () | 排版错误。所有半角括号被改为全角括号 |
-| 全局 | - | -  | `foo--bar` | `foo --bar` | 排版错误。多处。比如`flask --help`被错误写为`flask--help` |
-| 第5章 | - | - | `flaskinitdb` | `flask initdb` | 排版错误。命令间的空格缺失 |
-
-*更新：电子书中上述错误已经修正并发送给各大平台，请联系客服进行更新。*
-
-### 2018/9/10版本
-
-章节 | 位置 | 错误文字 | 正确文字 | 备注 |
---- | --- | --- | --- | ---
-| 1.5.1 | 第1个提示文字 | `python-m` | `python -m` | 排版错误。空格缺失 |
-| 12.5.2 | 第2个代码块下 | `coverage run-m` | `coverage run -m` | 排版错误。空格缺失 |
-
-另外，此版本还完善了目录，添加了三级标题，跳转更加方便。
-
-*更新：电子书中上述错误已经修正并发送给各大平台，请联系客服进行更新。*
 
 ## 源码错误
 
