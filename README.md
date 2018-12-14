@@ -93,7 +93,7 @@ $ flask run
 另外，你也可以通过下面的途径来分享和推荐本书：
 
 * 直接向朋友或同事推荐
-* 在新浪微博、Twitter或知乎等平台分享并@我（新浪微博@李辉Grey，Twitter@greylihui，知乎@李辉）
+* 在新浪微博、Twitter或知乎等平台分享
 * 在你的博客或其他平台写文章分享你的阅读心得
 * 在本书的[豆瓣图书页面](https://book.douban.com/subject/30310340/)写短评或书评
 * 在知乎问题“[如何评价《Flask Web开发实战》](https://www.zhihu.com/question/296048455)？”下撰写答案
