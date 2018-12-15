@@ -25,7 +25,6 @@
 | 8.7.2.2 |P294 | 代码清单8-45代码块下正文第1行  | `Ture` | `True`  | 笔误 | 18.12.6 | 
 | 9.1.1 | P301 | 该页最后 1 行，电子书该节第 2 个代码块最后一行 | | 向左缩进 4 格 | 排版错误 | 18.12.6 |
 | 9.1.1 | P302 | 9.1.2 标题上面的代码块 | `bluelog` | `myapp` | 笔误 | 18.12.6 |
-
 | 9.2 | P304 | 图9-1左上角多了一个"搜索" | `搜索` | 去掉一个`搜索` | 笔误 | 18.12.10 |
 | 9.2 | P310 | 代码清单9-3代码块第7行 | `url_for ('main.index')` |`url_for('main.index')`| 笔误 | 18.12.10 |
 | 9.3.2.1 | P312 | 第二个代码块上正文倒数第1行 | Operations字典中 | Operations类中| 笔误 | 18.12.10 |
@@ -37,8 +36,6 @@
 | 9.11.2 | P389| 第一个代码块下正文第1行 | avatar.html模板继承自settings.html模板 |change_avatar.html模板继承自settings/base.html模板| 笔误 | 18.12.10 |
 | 9.11.2 | P389 | 代码清单9-71代码块第1行 | `{% extends 'user/settings.html' %}` |`{% extends 'user/settings/base.html' %}`| 笔误 | 18.12.10 |
 | 9.11.6 | P397 | 代码清单9-79代码块倒数第5行 | `db.session.delete(current_user)` |`db.session.delete(current_user._get_current_object())`| 笔误 | 18.12.10 |
-
-
 | 14.3.1 | P567 | 第二个代码块第2行| `token_urlsafe(16)` |  `secrets.token_urlsafe(16)` | 笔误 | 18.11.28 |
 | 14.3.4 | P569 | 代码清单14-1 register_logger函数缺少app参数| `register_logging()` |  `register_logging(app)` | 笔误 | 18.11.28 |
 | 14.4.7 | P584 | 倒数第2个代码块上方段落第5行| 放在/etc/supervisord.conf路径下 | 放在/etc/supervisor/conf.d路径下 | 笔误 | 18.11.28 |
