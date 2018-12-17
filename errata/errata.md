@@ -111,9 +111,15 @@
 | 8.7.2 |P292 | 代码清单8-44代码块倒数第1行  | `.show_post` | `blog.show_post`  | 笔误 | 18.12.6 | 
 | 8.7.2.2 |P294 | 代码清单8-45代码块下正文第1行  | `Ture` | `True`  | 笔误 | 18.12.6 | 
 | 9.1.1 | P302 | 9.1.2 标题上面的代码块 | `bluelog` | `myapp` | 笔误 | 18.12.6 |
+| 9.3.2.2 | P314 | 代码清单9-6代码块最后1行 | `url_for ('.reset_confirmation')` | `url_for ('.reset_confirm_email')`| 笔误 | 18.12.12 |
 | 9.3.3 | P315 | 代码清单9-8下的正文第2段第2行（纸书该页最后1行） | `auth.resend_confirmation` | `auth.resend_confirm_email` | 笔误 | 18.11.5 |
 | 9.5.3 | P334 | 9.6 小节上面的代码块最后一行模板字符串 | `home/upload.html` | `main/upload.html` | 遗留代码未更新 | 18.12.17 |
 | 9.5.3 | P334 | 代码清单9-19后面的代码块倒数第二行 | `photo.save()` | `db.session.add(photo) 换行 db.session.commit()` | 遗留代码未更新 | 18.10.27 |
+| 9.8.3 | P363 | 代码清单9-45代码块倒数第6行 | `{% if collections %}` |`{% if collects %}`| 笔误 | 18.12.10 |
+| 9.11.2 | P388| 最后一行 | 渲染avatar.html模板 |渲染change_avatar.html模板| 笔误 | 18.12.10 |
+| 9.11.2 | P389| 第一个代码块下正文第1行 | avatar.html模板继承自settings.html模板 |change_avatar.html模板继承自settings/base.html模板| 笔误 | 18.12.10 |
+| 9.11.2 | P389 | 代码清单9-71代码块第1行 | `{% extends 'user/settings.html' %}` |`{% extends 'user/settings/base.html' %}`| 笔误 | 18.12.10 |
+| 9.11.6 | P397 | 代码清单9-79代码块倒数第5行 | `db.session.delete(current_user)` |`db.session.delete(current_user._get_current_object())`| 笔误 | 18.12.10 |
 | 10.3.6.3 | P468 | ”处理错误响应“小节第1行 | app.error_handler | app.errorhandler | 笔误 |
 | 11.4.3.5 | P503 | 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
 | 11.5.1 | P509 | 代码清单11-13第5行 | `position === 0&& socket.nsp` | `position === 0 && socket.nsp` | 审校错误。空格缺失 |
@@ -181,17 +187,11 @@
 | 9.2 | P304 | 图9-1左上角多了一个"搜索" | `搜索` | 去掉一个`搜索` | 笔误 | 18.12.10 |
 | 9.2 | P310 | 代码清单9-3代码块第7行 | `url_for ('main.index')` |`url_for('main.index')`| 笔误 | 18.12.10 |
 | 9.3.2.1 | P312 | 第二个代码块上正文倒数第1行 | Operations字典中 | Operations类中| 笔误 | 18.12.10 |
-| 9.3.2.2 | P314 | 代码清单9-6代码块最后1行 | `url_for ('.reset_confirmation')` | `url_for ('.reset_confirm_email')`| 笔误 | 18.12.12 |
 | 9.4.4 | P324 | 代码清单9-14代码块第4-5行 || 两处均向左缩进 4 格 | 排版错误  | 18.12.10 |
 | 9.5.3 | P334 | 9.6 小节上面的代码块 | | 代码中的 400 和 800 分别替换为配置变量 `current_app.config['ALBUMY_PHOTO_SIZE']['small']` 和 `current_app.config['ALBUMY_PHOTO_SIZE']['medium']` | 遗留代码 | 18.12.17 |
 | 9.7.1 | P340 | 代码清单 9-24 第 2 处注释 | 主要 | 主页 | 笔误 | 18.12.17 |
 | 9.8.2 | P360 | 代码清单9-41代码块上访正文倒数第3行 | 实际动作是有用户做出的| 实际动作是由用户做出的| 笔误 | 18.12.10 |
-| 9.8.3 | P363 | 代码清单9-45代码块倒数第6行 | `{% if collections %}` |`{% if collects %}`| 笔误 | 18.12.10 |
 | 9.10.1 | P379 | 代码清单9-59下面的代码块 | | 第2行向右缩进1格，第3行向左缩进，和第2行对齐。 | 排版错误 | 18.11.18 |
-| 9.11.2 | P388| 最后一行 | 渲染avatar.html模板 |渲染change_avatar.html模板| 笔误 | 18.12.10 |
-| 9.11.2 | P389| 第一个代码块下正文第1行 | avatar.html模板继承自settings.html模板 |change_avatar.html模板继承自settings/base.html模板| 笔误 | 18.12.10 |
-| 9.11.2 | P389 | 代码清单9-71代码块第1行 | `{% extends 'user/settings.html' %}` |`{% extends 'user/settings/base.html' %}`| 笔误 | 18.12.10 |
-| 9.11.6 | P397 | 代码清单9-79代码块倒数第5行 | `db.session.delete(current_user)` |`db.session.delete(current_user._get_current_object())`| 笔误 | 18.12.10 |
 | 9.13 | - | 9.13小节最后代码清单上面的文字 | innit_app() | init_app() | 笔误 | 18.11.04 |
 | 10.2.5 | P438 | 标题上面的附注文字 | 生成帮助信息 | 生成的帮助信息 | 审校错误。编辑以为自己在改病句，实际上却是在制造病句 |
 | 10.3.1.4 | P443 | “10.3.2”小节上面段落倒数第3行 | RSET | REST | 笔误 |
