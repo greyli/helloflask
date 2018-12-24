@@ -17,7 +17,8 @@
 
 ## 勘误 & FAQ & 可改进实现 & 版本更新记录
 
-* [勘误](https://github.com/greyli/helloflask/blob/master/errata/errata.md)（书中的笔误、错误及排版问题等）
+* [阅读勘误表](http://helloflask.com/book/errata)（优化格式后便于阅读的勘误表）
+* [勘误源码](https://github.com/greyli/helloflask/blob/master/errata/errata.md)（书中的笔误、错误及排版问题等）
 * [FAQ](https://github.com/greyli/helloflask/blob/master/faq/faq.md)（常见问题）
 * [可改进实现](https://github.com/greyli/helloflask/blob/master/improvement/improvement.md)（可改进的内容描述或代码实现）
 * [版本更新记录](https://github.com/greyli/helloflask/blob/master/CHANGES.md)（电子书与实体书版本更新与改进记录）
