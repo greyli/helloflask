@@ -116,6 +116,7 @@
 | 9.5.3 | P334 | 9.6 小节上面的代码块最后一行模板字符串 | `home/upload.html` | `main/upload.html` | 遗留代码未更新 | 18.12.17 |
 | 9.5.3 | P334 | 代码清单9-19后面的代码块倒数第二行 | `photo.save()` | `db.session.add(photo) 换行 db.session.commit()` | 遗留代码未更新 | 18.10.27 |
 | 9.8.3 | P363 | 代码清单9-45代码块倒数第6行 | `{% if collections %}` |`{% if collects %}`| 笔误 | 18.12.10 |
+| 9.11 | P385 | 代码清单9-66倒数第9行 | `{{ render_nav_item('user.notification_setting', 'Notification and Privacy') }}` | `{{ render_nav_item('user.notification_setting', 'Notification') }} {{ render_nav_item('user.privacy_setting', 'Privacy') }}` | 代码与实际项目不符 | 18.12.24 |
 | 9.11.2 | P388| 最后一行 | 渲染avatar.html模板 |渲染change_avatar.html模板| 笔误 | 18.12.10 |
 | 9.11.2 | P389| 第一个代码块下正文第1行 | avatar.html模板继承自settings.html模板 |change_avatar.html模板继承自settings/base.html模板| 笔误 | 18.12.10 |
 | 9.11.2 | P389 | 代码清单9-71代码块第1行 | `{% extends 'user/settings.html' %}` |`{% extends 'user/settings/base.html' %}`| 笔误 | 18.12.10 |
