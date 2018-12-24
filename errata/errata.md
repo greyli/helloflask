@@ -11,7 +11,7 @@
 
 下面是《Flask Web开发实战》的勘误信息。我在helloflask.com上创建了一个镜像勘误页面，阅读体验更好，请访问 http://helloflask.com/book/errata 查看。
 
-最后更新：2018/12/17
+最后更新：2018/12/24
 
 ## 贡献指南
 
@@ -68,9 +68,10 @@
 | 4.3.1 | P113 | 代码清单4-5第1行 | `'/'` | `'/basic'` | 笔误 | 18.10.18 |
 | 4.4.4.3.(3)第6个代码块下正文第2行 | P127第2个代码块下正文第2行 | | 这个uploads视图 | 这个get_file视图 | 笔误 | 18.10.27 |
 | 4.4.4.4 | P128 | 代码清单4-16 | | “检查文件类型”注释下第一行多余缩进4格 | 笔误 | 18.10.18 |
-| 5.3.3 | P146 | 第2个代码块 | | 开头可添加一行导入`from app import Note` | 更完善 | 18.10.18 |
 | 5.4.1.1 | P147 | ”Create“小节第1个代码块第4行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，字符串漏掉了转义符号 |
 | 5.4.1.2 | P150 | 表5-7下的第1个代码块 | `Note.body='SHAVE'` | `Note.body == 'SHAVE'` | 代码错误，少了1个等于号 | 18.9.22 |
+| 5.4.2 | P153 | 代码清单 5-5 | | 删掉第 3 行，最后一行删除括号中的`, form=form` | 代码未更新 | 18.12.24 |
+| 5.4.2 | P155 | 代码清单 5-8 第 3 行 | `DeleteForm()` | `DeleteNoteForm()` | 代码未更新 | 18.12.24 |
 | 5.5.2.3 | P160 | ”建立关系“小节第1个代码块 | | 第2行插入`ham.author_id = 1` | 省略步骤，可加可不加 | 18.9.22 |
 | 5.5.2.4 | P162 | 代码清单5-11第8行 | `title = ` | `name = ` | 笔误 | 18.9.26 |
 | 5.5.2.4 | P163 | ”建立双向关系“小节第3个代码块第6行 | `it.writer = writer` | `it.writer = king` | 笔误 | 18.9.26 |
@@ -87,7 +88,6 @@
 | 6.1.1 | P181 | 代码清单6-1 | | 第9-13行末尾漏掉分割参数的逗号 | 笔误 | 18.10.27 |
 | 7.3.2 | P208 | 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
 | 7.3.2 | P208 | 表7-2上面段落的最后一句话 | quick_form() | render_form() | 笔误。历史遗留问题 | 18.9.28 |
-| 7.4.3 | P211 | 表7-4下面的提示段落 | https://momentjs.com/docs/displaying/format/ | https://momentjs.com/docs/#/displaying/format/ | 链接变化 | 18.11.5 | 
 | 7.4.3 | P213 | 最后 1 个附注段落 | bootstrap.bundle.min.css |  bootstrap.bundle.min.js | 笔误 | 18.12.5 |
 | 8.1.3 | P229、P231 | 代码清单8-2、8-4 | | 单个蓝本变量名称均应为foo_bp形式，比如admin应为admin_bp | 笔误 | 18.9.24 |
 | 8.2.1.1.(4) | P235 | 代码清单8-7后面第1个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
@@ -103,7 +103,7 @@
 | 8.4.1 | P272 | 第1个代码块最后1行 | `>>> False` | `>>> True` | 笔误 | 18.10.27 |
 | 8.4.1 | P273 | 纸书该页第 2 个代码块，电子书 8.4.2 上面倒数第 2 个代码块。第 5、7 行 | `check_password` | `validate_password` | 笔误 | 18.12.6 |
 | 8.5 | P275 | “8.5”小节下第2个代码块第2行 | `LoginManager(app)` | `LoginManager()` | 代码错误 | 18.12.23 | 
-| 8.5.3 | P278 | 代码清单8-37代码块第1行 | `from flask_login import logout_user` | `from flask_login import logout_user, login_required` | 代码错误 | 18.12.6 | 
+| 8.5.3 | P278 | 代码清单8-37代码块第1行 | `from flask_login import logout_user` | `from flask_login import logout_user, login_required` | 完善导入 | 18.12.6 | 
 | 8.6 | P282 | 代清清单8-38第4行 | `'400.html'` | `'errors/400.html'` | 笔误 | 18.10.27 |
 | 8.7.1 |P285 | 代码清单8-40下的正文第1行 | manage_category.html | manage_post.html | 笔误 | 18.10.27 | 
 | 8.7.1.2 |P288 | 代码清单8-42代码块倒数第2行  | `.show_post` | `blog.show_post`  | 笔误 | 18.12.6 | 
@@ -111,11 +111,13 @@
 | 8.7.2 |P292 | 代码清单8-44代码块倒数第1行  | `.show_post` | `blog.show_post`  | 笔误 | 18.12.6 | 
 | 8.7.2.2 |P294 | 代码清单8-45代码块下正文第1行  | `Ture` | `True`  | 笔误 | 18.12.6 | 
 | 9.1.1 | P302 | 9.1.2 标题上面的代码块 | `bluelog` | `myapp` | 笔误 | 18.12.6 |
-| 9.3.2.2 | P314 | 代码清单9-6代码块最后1行 | `url_for ('.reset_confirmation')` | `url_for ('.reset_confirm_email')`| 笔误 | 18.12.12 |
+| 9.3.2.2 | P314 | 代码清单9-6代码块最后1行 | `url_for ('.resend_confirmation')` | `url_for ('.resend_confirm_email')`| 笔误 | 18.12.12 |
 | 9.3.3 | P315 | 代码清单9-8下的正文第2段第2行（纸书该页最后1行） | `auth.resend_confirmation` | `auth.resend_confirm_email` | 笔误 | 18.11.5 |
 | 9.5.3 | P334 | 9.6 小节上面的代码块最后一行模板字符串 | `home/upload.html` | `main/upload.html` | 遗留代码未更新 | 18.12.17 |
 | 9.5.3 | P334 | 代码清单9-19后面的代码块倒数第二行 | `photo.save()` | `db.session.add(photo) 换行 db.session.commit()` | 遗留代码未更新 | 18.10.27 |
 | 9.8.3 | P363 | 代码清单9-45代码块倒数第6行 | `{% if collections %}` |`{% if collects %}`| 笔误 | 18.12.10 |
+| 9.9.4 | P371 | 代码清单9-53的路径 | albumy/templates/profile_popup.html | albumy/templates/main/profile_popup.html | 笔误 | 18.12.21 |
+| 9.9.4 | P375 | 代码清单 9-56 下面的代码块第二行 | id="followers-count" | id="followers-count-{{ user.id }}" | 笔误 | 18.12.21 |
 | 9.11.2 | P388| 最后一行 | 渲染avatar.html模板 |渲染change_avatar.html模板| 笔误 | 18.12.10 |
 | 9.11.2 | P389| 第一个代码块下正文第1行 | avatar.html模板继承自settings.html模板 |change_avatar.html模板继承自settings/base.html模板| 笔误 | 18.12.10 |
 | 9.11.2 | P389 | 代码清单9-71代码块第1行 | `{% extends 'user/settings.html' %}` |`{% extends 'user/settings/base.html' %}`| 笔误 | 18.12.10 |
@@ -146,7 +148,9 @@
 | 1.3.1 | P14 | ”Run，Flask，Run“小节第1个代码块最后1行 | | 出现多余的缩进 | 排版错误 |
 | 1.3.1.3 | P17 | 配置步骤4 | 下列选项 | 下拉选项 | 笔误 |
 | 1.3.3 | P18 | ”1.3.3“小节第1行 | Enviroment  | Environment | 拼写错误 |
+| 2.2.2 | P33 | 正文第一行 | MutliDict | MultiDict | 笔误 | 18.12.24 |
 | 2.2.3 | P34 | 图2-5 |  | 地址栏的地址应为/nothing，和描述对应。图中的/foo在后面实际被定义了 | 笔误 | 18.9.28 |
+| 2.3.1 | P41 | 代码清单 2-2 第 7 行 | redierct | redirect | 笔误 | 18.12.24 |
 | 2.3.2.4 | P45 | JSON代码示例 | "heading":"Remider", |  "heading":"Reminder",  | 笔误。单词拼写错误。 | 18.11.28 |
 | 2.3.3 | P47 | 表2-10后面的第1个附注段落 | Respone | Response | 笔误。拼写错误 |
 | 2.5.4.1.(2) | P67 | 纸书该页第1个代码块，电子书“攻击示例”小节第2个代码块 |  | 最后的单引号和前面的分号对调位置 | 笔误 |18.11.5 |
@@ -168,12 +172,15 @@
 | 4.4.4.4 | P128 | 代码清单4-16上面的第1个代码块第3行 | | 缺少右侧关闭括号 | 笔误 | 18.10.18 |
 | 4.4.5 | P131 | 代码清单4-19下正文段落第3行 | `Ture` | `True` | 笔误 | 18.11.5 |
 | 5.3.1 | P143 | 表5-2最后1行 | SQlite | SQLite | 大小写错误 | 18.10.27 |
+| 5.3.3 | P146 | 第2个代码块 | | 开头可添加一行导入`from app import Note` | 更完善 | 18.10.18 |
 | 5.5.2 | P159 | 表5-4下的注意段落第2行 | Flask-SQLlchemy | Flask-SQLAlchemy | 笔误 | 18.10.27 |
+| 5.5.2 | P160 | 正文最后一行、P161 第一行 | Aritcle | Article | 笔误 | 18.12.24 |
 | 5.8 | P177 | 最后1行 | 本章要介绍的 | 本章介绍的 | 笔误 | 18.9.28 |
 | 6.1.3 | P183 | 代码清单6-3第9行 | `return redirect(url_for('idnex'))` | `return redirect(url_for('index'))` | 笔误 | 18.10.27 |
 | 6.2 | P183 | 6.2及6.2.1章节标题以及目录共**4处** | SendGird | SendGrid | 笔误 | 18.10.27 |
 | 7.2.3.1 | P202 | 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.3.1 | P207 | 3.7.1节中最后一段话中 | bootstrap_load_js() | bootstrap.load_js() | 笔误 | 18.11.17 |
+| 7.4.3 | P211 | 表7-4下面的提示段落 | https://momentjs.com/docs/displaying/format/ | https://momentjs.com/docs/#/displaying/format/ | 链接变化 | 18.11.5 | 
 | 7.5 | P213 | 最后一行代码 | `fake = Faker('zh_CN'))` |  `fake = Faker('zh_CN')` | 笔误 | 18.11.17 |
 | 7.5 | P214 | 该页（节）最后 2 个代码块的最后 1 行 | | 两处均向左缩进 4 格，和上面对齐 | 排版错误 | 18.12.6 |
 | 8.1 | P220 | 文件目录树 | | 目录树漏掉了 __init__.py 文件 | 笔误。 | 18.10.1 |
@@ -193,9 +200,7 @@
 | 9.7.1 | P340 | 代码清单 9-24 第 2 处注释 | 主要 | 主页 | 笔误 | 18.12.17 |
 | 9.8.2 | P360 | 代码清单9-41代码块上方正文倒数第3行 | 实际动作是有用户做出的 | 实际动作是由用户做出的| 笔误 | 18.12.10 |
 | 9.9 | P365 | 代码清单9-47下方的正文 | timastamp | timestamp | 笔误 | 18.12.21 |
-| 9.9.1 | P365 | 正文第一行 | Uesr | User | 笔误 | 18.12.21 |
-| 9.9.4 | P371 | 代码清单9-53的路径 | albumy/templates/profile_popup.html | albumy/templates/main/profile_popup.html | 笔误 | 18.12.21 |
-| 9.9.4 | P375 | P375倒数第二行的代码中id的值 | id="followers-count" | id="followers-count-{{ user.id }}" | 笔误 | 18.12.21 |
+| 9.9.1 | P365 | 9.9.1 标题下正文第一行 | Uesr | User | 笔误 | 18.12.21 |
 | 9.10.1 | P379 | 代码清单9-59下面的代码块 | | 第2行向右缩进1格，第3行向左缩进，和第2行对齐。 | 排版错误 | 18.11.18 |
 | 9.13 | - | 9.13小节最后代码清单上面的文字 | innit_app() | init_app() | 笔误 | 18.11.04 |
 | 10.2.5 | P438 | 标题上面的附注文字 | 生成帮助信息 | 生成的帮助信息 | 审校错误。编辑以为自己在改病句，实际上却是在制造病句 |
