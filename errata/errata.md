@@ -105,7 +105,8 @@
 | 9.11.6 | P397 | 代码清单9-79代码块倒数第5行 | `db.session.delete(current_user)` |`db.session.delete(current_user._get_current_object())`| 笔误 | 18.12.10 |
 | 9.14.3 | P412 | 代码清单9-90 | | | 缺少validate_username()方法的定义 | 18.12.24 |
 | 10.1 | P417 | 项目结构示意图 | | | blueprints下的__init__.py多缩进了一级 | 18.12.27 |
-| 10.1.1 | P420 | 第一个代码块 | var clear_item_url = "{{ url_for('todo.clear_item') }}"; | var clear_item_url = "{{ url_for('todo.clear_items') }}"; | 笔误 | 18.12.27 |
+| 10.1.1 | P420 | 第一个代码块 | `var clear_item_url = "{{ url_for('todo.clear_item') }}";` | `var clear_item_url = "{{ url_for('todo.clear_items') }}";` | 笔误 | 18.12.27 |
+| 10.1.4 | P425 | 第一个代码块 | `jsonify(message='Invalid item body.'), 400` | `return jsonify(message=_('Invalid item body.')), 400` | 笔误 | 18.12.28 |
 | 10.3.6.3 | P468 | ”处理错误响应“小节第1行 | app.error_handler | app.errorhandler | 笔误 |
 | 11.4.3.5 | P503 | 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
 | 11.5.1 | P509 | 代码清单11-13第5行 | `position === 0&& socket.nsp` | `position === 0 && socket.nsp` | 审校错误。空格缺失 |
