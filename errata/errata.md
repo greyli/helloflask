@@ -111,6 +111,7 @@
 | 10.2.4 | P434 | 注意段落上方的正文段落的第一行 | message.po | messages.po | 笔误 | 18.12.28 |
 | 10.2.4 | P436 | 图10-3下方的正文第二行 | message.po | messages.po | 笔误 | 18.12.28 |
 | 10.3.3 | P446-P447 | 目录结构示意图 | | | v1包下的4个模块少缩进一级，且apis子包缺少__init__.py模块 | 18.12.28 |
+| 10.3.3 | P447 | 最后一个代码块 | `csrf.exempt(api)` | `csrf.exempt(api_v1)` | 笔误 | 18.12.28 |
 | 10.3.6.3 | P468 | ”处理错误响应“小节第1行 | app.error_handler | app.errorhandler | 笔误 |
 | 11.4.3.5 | P503 | 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
 | 11.5.1 | P509 | 代码清单11-13第5行 | `position === 0&& socket.nsp` | `position === 0 && socket.nsp` | 审校错误。空格缺失 |
