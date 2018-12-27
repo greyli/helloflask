@@ -205,6 +205,7 @@
 | 10.3.1 | P442 | 倒数第5行 | Simple Object Acsess Protocol | Simple Object Access Protocol | 笔误 | 18.12.28 |
 | 10.3.1.4 | P443 | “10.3.2”小节上面段落倒数第3行 | RSET | REST | 笔误 |
 | 10.3.3.5 | P453 | 代码清单10-13下面的提示段落最后1行 | flask-restless | Flask-Restless | 大小写错误 |
+| 10.3.4 | P454 | 第二段正文的第二行 | Isssue | Issue | 笔误 | 18.12.28 |
 | 11 | P475 | 注意段落 | Crtl+F5 | Ctrl+F5 | 笔误 | 18.12.27 |
 | 12.3.2 | P527 | 代码清单12-2第7行 | test_app_exsit | test_app_exist | 拼写错误 |
 | 14.3.1 | P567 | 第二个代码块第2行| `token_urlsafe(16)` |  `secrets.token_urlsafe(16)` | 笔误 | 18.11.28 |
