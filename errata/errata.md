@@ -158,7 +158,9 @@
 | 11.4.4 P506 第二个代码块 | 所有resp | response | 笔误 18.12.29 |
 | 11.4.4 P506 第二个代码块 | | 增加if response is not None:... else:...语句 | 笔误 18.12.29 |
 | 11.4.4 P507 正文第一行 | ture | true | 笔误 18.12.29 |
-| 11.5.1 P509 代码清单11-13第5行 | `position === 0&& socket.nsp` | `position === 0 && socket.nsp` | 审校错误。空格缺失 |
+| 11.5.1 P508 代码清单11-12 | `return render_template('_messages.html', messages=messages[::-1])` | `return render_template('chat/_messages.html', messages=messages[::-1])` | 笔误 18.12.29 |
+| 11.5.1 P509 代码清单11-13第5行 | `position === 0&& socket.nsp! == '/anonymous'` | `position === 0 && socket.nsp !== '/anonymous'` | 审校错误，空格错误 18.12.29 |
+| 11.5.1 P510 代码清单11-13倒数第6行 | `toast('No more messages.');` | `alert('No more messages.');` | 此项目中未定义toast函数 18.12.29 |
 | 11.5.3 P513~P514 513页7处，514页8处 |  | 所有的 Pyments 改为 Pygments，pyments 改为 pygments | 笔误 18.11.18 |
 | 15.7.3 P625 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
 | 16.2.4 P639 最后1个段落的第2行 | 在不基于线程、greenlet或单进程实现的并发服务器上 | 在不基于线程、Greenlet 或进程实现并发的服务器上 | 笔误 | 18.12.31 |
