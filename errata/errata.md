@@ -13,7 +13,7 @@
 
 如果你发现了书中的错误，欢迎提交PR更新勘误文件；你也可以创建Issue指出相关错误，或是通过Email与我联系（[withlihui@gmail.com](mailto:withlihui@gmail.com)），谢谢！
 
-最后更新：2018/12/28
+最后更新：2018/12/29
 
 ## 勘误贡献者列表
 
@@ -155,6 +155,9 @@
 | 11.4.3.5 P503 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
 | 11.4.3.5 P503 最后一个代码块 | `access_token = resp.get('access_token')` | `access_token = response.get('access_token')` | 笔误 18.12.29 |
 | 11.4.3.6 P505 提示段落上方的代码块 | `@oauth_bp.route(...)` | `@auth_bp.route(...)` | 笔误 18.12.29 |
+| 11.4.4 P506 第二个代码块 | 所有resp | response | 笔误 18.12.29 |
+| 11.4.4 P506 第二个代码块 | | 增加if response is not None:... else:...语句 | 笔误 18.12.29 |
+| 11.4.4 P507 正文第一行 | ture | true | 笔误 18.12.29 |
 | 11.5.1 P509 代码清单11-13第5行 | `position === 0&& socket.nsp` | `position === 0 && socket.nsp` | 审校错误。空格缺失 |
 | 11.5.3 P513~P514 513页7处，514页8处 |  | 所有的 Pyments 改为 Pygments，pyments 改为 pygments | 笔误 18.11.18 |
 | 15.7.3 P625 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
