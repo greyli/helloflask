@@ -162,6 +162,8 @@
 | 11.5.1 P509 代码清单11-13第5行 | `position === 0&& socket.nsp! == '/anonymous'` | `position === 0 && socket.nsp !== '/anonymous'` | 审校错误，空格错误 18.12.29 |
 | 11.5.1 P510 代码清单11-13倒数第6行 | `toast('No more messages.');` | `alert('No more messages.');` | 此项目中未定义toast函数 18.12.29 |
 | 11.5.3 P513~P514 513页7处，514页8处 |  | 所有的 Pyments 改为 Pygments，pyments 改为 pygments | 笔误 18.11.18 |
+| 11.5.4 P516 代码清单11-15第3行 | `socket.on('message', function (data) {` | `socket.on('new message', function (data) {` | 笔误 18.12.29 |
+| 11.5.4 P516 代码清单11-15第6行 | `document.title = '(' + message_count + ') ' + document.title;` | `document.title = '(' + message_count + ') ' + 'CatChat';` | 消息数量会随着事件多次发生而不断追加在原标题前 18.12.29 |
 | 15.7.3 P625 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
 | 16.2.4 P639 最后1个段落的第2行 | 在不基于线程、greenlet或单进程实现的并发服务器上 | 在不基于线程、Greenlet 或进程实现并发的服务器上 | 笔误 | 18.12.31 |
 
