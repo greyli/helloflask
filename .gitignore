@@ -108,6 +108,7 @@ docs/_build/
 
 # SQLite
 *.db
+!demos/database/data.db
 *.sqlite
 *.sqlite3
 
