@@ -170,6 +170,7 @@
 | 11.5.5 P518 最后1个代码块第6行 | `message_body` | `html_message` | 笔误 18.12.30 |
 | 15.7.3 P625 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
 | 16.2.4 P639 最后1个段落的第2行 | 在不基于线程、greenlet或单进程实现的并发服务器上 | 在不基于线程、Greenlet 或进程实现并发的服务器上 | 笔误 | 18.12.31 |
+| 16.4.2 P649 最后1行| Flask.route()是Flask类的类方法 | Flask.route()是Flask类的实例方法 | 笔误 | 19.1.1 |
 
 #### 不重要勘误
 
