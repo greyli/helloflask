@@ -44,6 +44,8 @@
 * @stravel611 https://github.com/stravel611
 * @Merpyzf wang ke https://github.com/Merpyzf
 * @realzhangm Colin Zhang https://github.com/realzhangm
+* @candycrusher Jiayu Song https://github.com/candycrusher
+* @xxiaocheng Chengxiao https://github.com/xxiaocheng
 * ……
 
 另外还有通过 QQ、Telegram 和 Email 反馈勘误的读者，不方便索引，这里没有一一列出。感谢你们的贡献！
@@ -147,7 +149,6 @@
 | 10.3.3 P453 代码清单10-13第二行中的methods参数 | `methods=['GET']` | `methods=['POST']` | 与实际项目不一致 18.12.28 |
 | 10.3.5 P462 代码清单10-20倒数第4行 | `'username': item.author,` | `'username': item.author.username,` | 笔误 18.12.28 |
 | 10.3.6.3 P468 ”处理错误响应“小节第1行 | app.error_handler | app.errorhandler | 笔误 |
-| 11.1 P476 目录结构示意图 | | blueprints目录向左缩进一级 | 笔误 18.12.28 |
 | 11.3.2 P483 代码清单11-4倒数第2行 | | 花括号"}"后添加一个逗号"," | 笔误 18.12.28 |
 | 11.3.2 P484 代码清单11-5第2行 | `$('message').append(data.message_html);` | `$('.messages').append(data.message_html);` | 笔误 18.12.28 |
 | 11.4.1 P491 该节最后一段正文的第1行 | views包 | blueprints包 | 笔误 18.12.29 |
@@ -156,8 +157,7 @@
 | 11.4.3.5 P503 最后一个代码块 | `access_token = resp.get('access_token')` | `access_token = response.get('access_token')` | 笔误 18.12.29 |
 | 11.4.3.6 P505 提示段落上方的代码块 | `@oauth_bp.route(...)` | `@auth_bp.route(...)` | 笔误 18.12.29 |
 | 11.4.4 P506 第二个代码块 | 所有resp | response | 笔误 18.12.29 |
-| 11.4.4 P506 第二个代码块 | | 增加if response is not None:... else:...语句 | 笔误 18.12.29 |
-| 11.4.4 P507 正文第一行 | ture | true | 笔误 18.12.29 |
+| 11.4.4 P506 第二个代码块 | | 增加 if response is not None:... else:...语句，具体参考源码 | 笔误 18.12.29 |
 | 11.5.1 P508 代码清单11-12 | `return render_template('_messages.html', messages=messages[::-1])` | `return render_template('chat/_messages.html', messages=messages[::-1])` | 笔误 18.12.29 |
 | 11.5.1 P509 代码清单11-13第5行 | `position === 0&& socket.nsp! == '/anonymous'` | `position === 0 && socket.nsp !== '/anonymous'` | 审校错误，空格错误 18.12.29 |
 | 11.5.1 P510 代码清单11-13倒数第6行 | `toast('No more messages.');` | `alert('No more messages.');` | 此项目中未定义toast函数 18.12.29 |
@@ -264,6 +264,8 @@
 | 10.2.5 P438 标题上面的附注文字 | 生成帮助信息 | 生成的帮助信息 | 审校错误。编辑以为自己在改病句，实际上却是在制造病句 |
 | 10.3.1.4 P443 “10.3.2”小节上面段落倒数第3行 | RSET | REST | 笔误 |
 | 10.3.3.5 P453 代码清单10-13下面的提示段落最后1行 | flask-restless | Flask-Restless | 大小写错误 |
+| 11.1 P476 目录结构示意图 | | blueprints目录向左缩进一级 | 笔误 18.12.28 |
+| 11.4.4 P507 正文第一行 | ture | true | 笔误 18.12.29 |
 | 12.3.2 P527 代码清单12-2第7行 | test_app_exsit | test_app_exist | 拼写错误 |
 | 14.3.1 P567 第二个代码块第2行| `token_urlsafe(16)` |  `secrets.token_urlsafe(16)` | 笔误 18.11.28 |
 | 14.3.4 P569 代码清单14-1 register_logger函数缺少app参数| `register_logging()` |  `register_logging(app)` | 笔误 18.11.28 |
