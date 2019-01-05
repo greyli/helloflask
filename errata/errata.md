@@ -179,6 +179,11 @@
 | 12.3.3 P534 代码清单12-7第2个导入语句 | `from flask import current_app, url_for` | `from flask import url_for` | 多余的导入 19.01.06 |
 | 12.4.3 P540 代码清单12-10中test_index方法中self.assertIn()的第1个参数 | 'Todoism makes everything clear.' | 'We are todoist, we use todoism.' | 遗留代码未更新 19.01.06 |
 | 12.6 P546 第1个附注段落上方的正文第2行 | 弃用 | 启用 | 笔误 19.01.06 |
+| 13.1.2 P550 代码清单13-1 | `@app.after_app_request` | `@app.after_request` | 笔误 19.01.06 |
+| 13.1.2 P550 代码清单13-1 | | 两处current_app改为app | 笔误 19.01.06 |
+| 13.3 P557 第2个提示段落 | CND | CDN | 笔误 19.01.06 |
+| 13.3 P557 命令行命令 | `$ cd cache` | `$ cd assets` | 笔误 19.01.06 |
+| 13.3.3 P560 第1段正文第3行 | style块 | styles块 | 笔误 19.01.06 |
 | 15.7.3 P625 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
 | 16.2.4 P639 最后1个段落的第2行 | 在不基于线程、greenlet或单进程实现的并发服务器上 | 在不基于线程、Greenlet 或进程实现并发的服务器上 | 笔误 18.12.31 |
 | 16.4.3  2. 堆栈与LocalStack  P659 第1段第3行| 并将数据的字典名称设为'stack'。| 并将储存上下文对象的列表名称设为'stack' | 笔误 19.1.4
