@@ -17,7 +17,7 @@
 
 ## 勘误贡献者列表
 
-统计时间：2018/12/28
+统计时间：2018/1/13
 
 * @JustALee https://github.com/JustALee
 * @meizhaohui 梅朝辉 https://github.com/meizhaohui
@@ -46,6 +46,9 @@
 * @realzhangm Colin Zhang https://github.com/realzhangm
 * @candycrusher Jiayu Song https://github.com/candycrusher
 * @xxiaocheng Chengxiao https://github.com/xxiaocheng
+* @brakchen jianping https://github.com/brakchen
+* @xSandie 向书晗 https://github.com/xSandie
+* @Kuari kuari https://github.com/Kuari
 * ……
 
 另外还有通过 QQ、Telegram 和 Email 反馈勘误的读者，不方便索引，这里没有一一列出。感谢你们的贡献！
