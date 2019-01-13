@@ -80,6 +80,13 @@ def choose_a_number():
 
 * 6.1.1 P181 代码清单6-1 第 9-13 行参数对去掉等号两边的空格。
 
+### 第 8 章
+
+P275 该小节最后添加一段提示文字：
+
+提示 在 fakes.py 脚本里的 fake_admin() 函数中，我们需要在 admin 对象创建后，为虚拟用户记录设置密码，添加后面的代码：admin.set_password('helloflask')。
+
+
 ### 第14章部署后更新程序添加说明
 
 14.4.8添加一个小提示，提示可以直接使用`supervisorctl restart`命令。确认两者的区别，顺便添加reload的说明。
