@@ -27,7 +27,7 @@
 
 ## 问题反馈
 
-如果你发现了书中的错误、运行实例程序出错或是有其他的问题，可以[创建Issue](https://github.com/greyli/helloflask/issues/new/choose)进行反馈。
+如果你发现了书中的错误、运行实例程序出错或是有其他的问题，可以[创建Issue](https://github.com/greyli/helloflask/issues/new/choose)或是在 [HelloFlask 论坛](https://discuss.helloflask.com)发帖进行反馈。
 
 ## 示例程序目录
 
