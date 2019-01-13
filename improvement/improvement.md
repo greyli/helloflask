@@ -72,7 +72,7 @@ def choose_a_number():
 
 ### 第 5 章
 
-* 表 5-2 下面简单介绍 URI 的格式，添加对 MySQL 使用不同 Python 接口库的 URI 变化说，。 
+* 表 5-2 下面简单介绍 URI 的格式，添加对 MySQL 使用不同 Python 接口库的 URI 变化说明。 
 * 表 5-6 get() 等方法接受的参数 ident 改为 id。
 * 表 5-7 第一列的标题改为“过滤方法”。
 
