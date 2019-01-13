@@ -103,12 +103,14 @@
 | 5.7.2 P177 最后1段提示文字 | 监听函数时， | 监听函数。这时 | 编辑瞎改稿子 18.9.28 |
 | 5.7.2 全章节多处 | listen_for | listens_for | 笔误 18.9.28 |
 | 6.1.1 P181 代码清单6-1 | | 第9-13行末尾漏掉分割参数的逗号 | 笔误 18.10.27 |
+| 7.2.3 P202 代码清单7-3 文件名| `sayhello.py` | `models.py` | 笔误 19.01.11 |
+| 7.2.3 P204 代码清单7-5后面的代码块第4行 | | `messages = Message.query.order_by...`向后缩进1格 | 缩进 19.01.11 |
 | 7.3.2 P208 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
 | 7.3.2 P208 表7-2上面段落的最后一句话 | quick_form() | render_form() | 笔误。历史遗留问题 18.9.28 |
 | 7.4.3 P213 最后 1 个附注段落 | bootstrap.bundle.min.css |  bootstrap.bundle.min.js | 笔误 18.12.5 |
 | 8.1.3 P229、P231 代码清单8-2、8-4 | | 单个蓝本变量名称均应为foo_bp形式，比如admin应为admin_bp | 笔误 18.9.24 |
 | 8.2.1.1.(4) P235 代码清单8-7后面第1个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
-| 8.2.3 P247 代码清单8-19第2行 | `from wtforms` | `from wtforms.validators` | 笔误 18.10.27 | 
+| 8.2.3 P247 代码清单8-19第2行 | `from wtforms` | `from wtforms.validators` | 笔误 18.10.27 |
 | 8.3.1 P252 第1个代码块最后1行 | `'index.html'` | `'blog/index.html'` | 笔误 18.10.06 |
 | 8.3.1 P252 代码清单8-24文件路径 | templates/index.html | templates/blog/index.html | 笔误 18.10.06 |
 | 8.3.5 P263 第1个代码块第6行 | `Comment.query.with_parent(post)` | `Comment.query.with_parent(post).filter_by(reviewed=True)` | 笔误 18.9.26 |
@@ -119,14 +121,14 @@
 | 8.3.7 P268 第1行 | photo | show_post | 笔误 18.12.6 |
 | 8.4.1 P272 第1个代码块最后1行 | `>>> False` | `>>> True` | 笔误 18.10.27 |
 | 8.4.1 P273 纸书该页第 2 个代码块，电子书 8.4.2 上面倒数第 2 个代码块。第 5、7 行 | `check_password` | `validate_password` | 笔误 18.12.6 |
-| 8.5 P275 “8.5”小节下第2个代码块第2行 | `LoginManager(app)` | `LoginManager()` | 代码错误 18.12.23 | 
-| 8.5.3 P278 代码清单8-37代码块第1行 | `from flask_login import logout_user` | `from flask_login import logout_user, login_required` | 完善导入 18.12.6 | 
+| 8.5 P275 “8.5”小节下第2个代码块第2行 | `LoginManager(app)` | `LoginManager()` | 代码错误 18.12.23 |
+| 8.5.3 P278 代码清单8-37代码块第1行 | `from flask_login import logout_user` | `from flask_login import logout_user, login_required` | 完善导入 18.12.6 |
 | 8.6 P282 代清清单8-38第4行 | `'400.html'` | `'errors/400.html'` | 笔误 18.10.27 |
-| 8.7.1 P285 代码清单8-40下的正文第1行 | manage_category.html | manage_post.html | 笔误 18.10.27 | 
-| 8.7.1.2 P288 代码清单8-42代码块倒数第2行  | `.show_post` | `blog.show_post`  | 笔误 18.12.6 | 
+| 8.7.1 P285 代码清单8-40下的正文第1行 | manage_category.html | manage_post.html | 笔误 18.10.27 |
+| 8.7.1.2 P288 代码清单8-42代码块倒数第2行  | `.show_post` | `blog.show_post`  | 笔误 18.12.6 |
 | 8.7.1.3 P290 第1个代码块倒数第5行  | `.show_post` | `blog.show_post`  | 笔误 18.12.6 |
-| 8.7.2 P292 代码清单8-44代码块倒数第1行  | `.show_post` | `blog.show_post`  | 笔误 18.12.6 | 
-| 8.7.2.2 P294 代码清单8-45代码块下正文第1行  | `Ture` | `True`  | 笔误 18.12.6 | 
+| 8.7.2 P292 代码清单8-44代码块倒数第1行  | `.show_post` | `blog.show_post`  | 笔误 18.12.6 |
+| 8.7.2.2 P294 代码清单8-45代码块下正文第1行  | `Ture` | `True`  | 笔误 18.12.6 |
 | 9.1.1 P302 9.1.2 标题上面的代码块 | `bluelog` | `myapp` | 笔误 18.12.6 |
 | 9.3.2.2 P314 代码清单9-6代码块最后1行 | `url_for('.resend_confirmation')` | `url_for('.resend_confirm_email')`| 笔误 18.12.12 |
 | 9.3.3 P315 代码清单9-8下的正文第2段第2行（纸书该页最后1行） | `auth.resend_confirmation` | `auth.resend_confirm_email` | 笔误 18.11.5 |
@@ -220,7 +222,7 @@
 | 2.5.4.1.(2) P67 纸书该页第1个代码块，电子书“攻击示例”小节第2个代码块 |  | 最后的单引号和前面的分号对调位置 | 笔误 18.11.5 |
 | 2.5.4.1.(2) P67 纸书该页第2个代码块，电子书“攻击示例”小节第3个代码块 |  | 在最后的分号前添加一个半角单引号 | 笔误 18.11.5 |
 | 2.5.4.1.(3) P67 ”主要防范方法“小节第1个代码块 | `db.execute('SELECT * FROM students WHERE password=?, password)` | `db.execute('SELECT * FROM students WHERE password=?', password)` | 笔误。字符串右侧引号 |
-| 2.5.4 P69 纸书该页最后1行的代码块最后几个字符 | `sript` | `script` | 笔误 18.11.5 | 
+| 2.5.4 P69 纸书该页最后1行的代码块最后几个字符 | `sript` | `script` | 笔误 18.11.5 |
 | 3.1.1 P76 代码清单 3-1 文件路径 | template/watchlist.html | template**s**/watchlist.html | 笔误 18.12.28 |
 | 3.1 P77 代码清单3-1下的提示 | HTML5 | HTML | 多余文本。另外，后面的链接需要更新为 https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure |
 | 3.2.5 P87 正文共 5 处 | enviroment | enviro**n**ment | 拼写错误 18.12.28 |
@@ -249,7 +251,7 @@
 | 6.2 P183 6.2及6.2.1章节标题以及目录共**4处** | SendGird | SendGrid | 笔误 18.10.27 |
 | 7.2.3.1 P202 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.3.1 P207 3.7.1节中最后一段话中 | bootstrap_load_js() | bootstrap.load_js() | 笔误 18.11.17 |
-| 7.4.3 P211 表7-4下面的提示段落 | https://momentjs.com/docs/displaying/format/ | https://momentjs.com/docs/#/displaying/format/ | 链接变化 18.11.5 | 
+| 7.4.3 P211 表7-4下面的提示段落 | https://momentjs.com/docs/displaying/format/ | https://momentjs.com/docs/#/displaying/format/ | 链接变化 18.11.5 |
 | 7.5 P213 最后一行代码 | `fake = Faker('zh_CN'))` |  `fake = Faker('zh_CN')` | 笔误 18.11.17 |
 | 7.5 P214 该页（节）最后 2 个代码块的最后 1 行 | | 两处均向左缩进 4 格，和上面对齐 | 排版错误 18.12.6 |
 | 8.1 P220 文件目录树 | | 目录树漏掉了 __init__.py 文件 | 笔误。 18.10.1 |
