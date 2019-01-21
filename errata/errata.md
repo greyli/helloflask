@@ -13,11 +13,11 @@
 
 如果你发现了书中的错误，欢迎提交PR更新勘误文件；你也可以创建Issue指出相关错误，或是通过Email与我联系（[withlihui@gmail.com](mailto:withlihui@gmail.com)），谢谢！
 
-最后更新：2018/12/30
+最后更新：2019/01/13
 
 ## 勘误贡献者列表
 
-统计时间：2018/12/28
+统计时间：2018/1/13
 
 * @JustALee https://github.com/JustALee
 * @meizhaohui 梅朝辉 https://github.com/meizhaohui
@@ -44,6 +44,11 @@
 * @stravel611 https://github.com/stravel611
 * @Merpyzf wang ke https://github.com/Merpyzf
 * @realzhangm Colin Zhang https://github.com/realzhangm
+* @candycrusher Jiayu Song https://github.com/candycrusher
+* @xxiaocheng Chengxiao https://github.com/xxiaocheng
+* @brakchen jianping https://github.com/brakchen
+* @xSandie 向书晗 https://github.com/xSandie
+* @Kuari kuari https://github.com/Kuari
 * ……
 
 另外还有通过 QQ、Telegram 和 Email 反馈勘误的读者，不方便索引，这里没有一一列出。感谢你们的贡献！
@@ -51,9 +56,9 @@
 
 ## 纸书
 
-纸书的版本号格式为“版本号-印次号”，“1-1”即“第一版第一次印刷”。**每一次重印会修正上一印次包含的所有错误**，版本号可以在版权页看到。
+纸书的版本号格式为“版本号-印次号”，“1-1”即“第 1 版第 1 次印刷”。**每一次重印会修正上一印次包含的所有错误**，版本号可以在版权页看到。
 
-### 1-1
+### 1-1（第 1 版第 1 次印刷）
 
 发布时间：2018/9/1
 
@@ -82,6 +87,7 @@
 | 4.3.1 P115 第 2 小节的代码块第 5 行 | `Length(8, 128)` | `Length(6, 128)` | 前后不一致（1-3 重印时需要反过来调整另外 3 处），18.12.28 |
 | 4.4.4.3.(3)第6个代码块下正文第2行 P127第2个代码块下正文第2行 | | 这个uploads视图 | 这个get_file视图 | 笔误 18.10.27 |
 | 4.4.4.4 P128 代码清单4-16 | | “检查文件类型”注释下第一行多余缩进4格 | 笔误 18.10.18 |
+| 5 P139 第 1 个代码块 | | `$ flask run` 上面添加一行 `$ flask initdb  # 初始化数据库，后面会详细介绍` | 疏漏 19.1.5 |
 | 5.4.1.1 P147 ”Create“小节第1个代码块第4行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，漏掉转义符号 |
 | 5.4.1.2 P150 表5-7下的第1个代码块 | `Note.body='SHAVE'` | `Note.body == 'SHAVE'` | 代码错误，少了1个等号 18.9.22 |
 | 5.4.2 P153 代码清单 5-5 | | 删掉第 3 行，最后一行删除括号中的`, form=form` | 代码未更新 18.12.24 |
@@ -105,7 +111,7 @@
 | 7.4.3 P213 最后 1 个附注段落 | bootstrap.bundle.min.css |  bootstrap.bundle.min.js | 笔误 18.12.5 |
 | 8.1.3 P229、P231 代码清单8-2、8-4 | | 单个蓝本变量名称均应为foo_bp形式，比如admin应为admin_bp | 笔误 18.9.24 |
 | 8.2.1.1.(4) P235 代码清单8-7后面第1个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |
-| 8.2.3 P247 代码清单8-19第2行 | `from wtforms` | `from wtforms.validators` | 笔误 18.10.27 | 
+| 8.2.3 P247 代码清单8-19第2行 | `from wtforms` | `from wtforms.validators` | 笔误 18.10.27 |
 | 8.3.1 P252 第1个代码块最后1行 | `'index.html'` | `'blog/index.html'` | 笔误 18.10.06 |
 | 8.3.1 P252 代码清单8-24文件路径 | templates/index.html | templates/blog/index.html | 笔误 18.10.06 |
 | 8.3.5 P263 第1个代码块第6行 | `Comment.query.with_parent(post)` | `Comment.query.with_parent(post).filter_by(reviewed=True)` | 笔误 18.9.26 |
@@ -116,14 +122,14 @@
 | 8.3.7 P268 第1行 | photo | show_post | 笔误 18.12.6 |
 | 8.4.1 P272 第1个代码块最后1行 | `>>> False` | `>>> True` | 笔误 18.10.27 |
 | 8.4.1 P273 纸书该页第 2 个代码块，电子书 8.4.2 上面倒数第 2 个代码块。第 5、7 行 | `check_password` | `validate_password` | 笔误 18.12.6 |
-| 8.5 P275 “8.5”小节下第2个代码块第2行 | `LoginManager(app)` | `LoginManager()` | 代码错误 18.12.23 | 
-| 8.5.3 P278 代码清单8-37代码块第1行 | `from flask_login import logout_user` | `from flask_login import logout_user, login_required` | 完善导入 18.12.6 | 
+| 8.5 P275 “8.5”小节下第2个代码块第2行 | `LoginManager(app)` | `LoginManager()` | 代码错误 18.12.23 |
+| 8.5.3 P278 代码清单8-37代码块第1行 | `from flask_login import logout_user` | `from flask_login import logout_user, login_required` | 完善导入 18.12.6 |
 | 8.6 P282 代清清单8-38第4行 | `'400.html'` | `'errors/400.html'` | 笔误 18.10.27 |
-| 8.7.1 P285 代码清单8-40下的正文第1行 | manage_category.html | manage_post.html | 笔误 18.10.27 | 
-| 8.7.1.2 P288 代码清单8-42代码块倒数第2行  | `.show_post` | `blog.show_post`  | 笔误 18.12.6 | 
+| 8.7.1 P285 代码清单8-40下的正文第1行 | manage_category.html | manage_post.html | 笔误 18.10.27 |
+| 8.7.1.2 P288 代码清单8-42代码块倒数第2行  | `.show_post` | `blog.show_post`  | 笔误 18.12.6 |
 | 8.7.1.3 P290 第1个代码块倒数第5行  | `.show_post` | `blog.show_post`  | 笔误 18.12.6 |
-| 8.7.2 P292 代码清单8-44代码块倒数第1行  | `.show_post` | `blog.show_post`  | 笔误 18.12.6 | 
-| 8.7.2.2 P294 代码清单8-45代码块下正文第1行  | `Ture` | `True`  | 笔误 18.12.6 | 
+| 8.7.2 P292 代码清单8-44代码块倒数第1行  | `.show_post` | `blog.show_post`  | 笔误 18.12.6 |
+| 8.7.2.2 P294 代码清单8-45代码块下正文第1行  | `Ture` | `True`  | 笔误 18.12.6 |
 | 9.1.1 P302 9.1.2 标题上面的代码块 | `bluelog` | `myapp` | 笔误 18.12.6 |
 | 9.3.2.2 P314 代码清单9-6代码块最后1行 | `url_for('.resend_confirmation')` | `url_for('.resend_confirm_email')`| 笔误 18.12.12 |
 | 9.3.3 P315 代码清单9-8下的正文第2段第2行（纸书该页最后1行） | `auth.resend_confirmation` | `auth.resend_confirm_email` | 笔误 18.11.5 |
@@ -135,7 +141,7 @@
 | 9.11.2 P388 最后一行 | 渲染avatar.html模板 |渲染change_avatar.html模板| 笔误 18.12.10 |
 | 9.11.2 P389 第一个代码块下正文第1行 | avatar.html模板继承自settings.html模板 |change_avatar.html模板继承自settings/base.html模板| 笔误 18.12.10 |
 | 9.11.2 P389 代码清单9-71代码块第1行 | `{% extends 'user/settings.html' %}` |`{% extends 'user/settings/base.html' %}`| 笔误 18.12.10 |
-| 9.11.6 P397 代码清单9-79代码块倒数第5行 | `db.session.delete(current_user)` |`db.session.delete(current_user._get_current_object())`| 笔误 18.12.10 |
+| 9.11.6 P397 代码清单9-79代码块倒数第5行 | `current_user` |`current_user._get_current_object()`| 笔误 18.12.10 |
 | 9.11 P385 代码清单9-66倒数第9行 | `{{ render_nav_item('user.notification_setting', 'Notification and Privacy') }}` | `{{ render_nav_item('user.notification_setting', 'Notification') }} {{ render_nav_item('user.privacy_setting', 'Privacy') }}` | 代码与实际项目不符 18.12.24 |
 | 9.11.2 P389 代码清单9-71倒数第4行 | `{{ render_form(crop_form) }}` | `{{ render_form(crop_form, action=url_for('.crop_avatar')) }}` | 笔误 18.12.24 |
 | 9.14.3 P412 代码清单9-90 | | | 缺少validate_username()方法的定义 18.12.24 |
@@ -145,33 +151,39 @@
 | 10.3.3 P453 代码清单10-13第一行中的methods参数 | `methods=['GET', 'POST']` | `methods=['GET']` | 与原定的方法不一致 18.12.28 |
 | 10.3.3 P453 代码清单10-13第二行中的第一个参数 | `'/token'` | `'/oauth/token'` | 与实际项目不一致 18.12.28 |
 | 10.3.3 P453 代码清单10-13第二行中的methods参数 | `methods=['GET']` | `methods=['POST']` | 与实际项目不一致 18.12.28 |
-| 10.3.5 P462 代码清单10-20倒数第4行 | `'username': item.author,` | `'username': item.author.username,` | 笔误 18.12.28 |
+| 10.3.5 P462 代码清单10-20倒数第4行 | `item.author,` | `item.author.username,` | 笔误 18.12.28 |
 | 10.3.6.3 P468 ”处理错误响应“小节第1行 | app.error_handler | app.errorhandler | 笔误 |
-| 11.1 P476 目录结构示意图 | | blueprints目录向左缩进一级 | 笔误 18.12.28 |
 | 11.3.2 P483 代码清单11-4倒数第2行 | | 花括号"}"后添加一个逗号"," | 笔误 18.12.28 |
-| 11.3.2 P484 代码清单11-5第2行 | `$('message').append(data.message_html);` | `$('.messages').append(data.message_html);` | 笔误 18.12.28 |
+| 11.3.2 P484 代码清单11-5第2行 | `$('message')` | `$('.messages')` | 笔误 18.12.28 |
 | 11.4.1 P491 该节最后一段正文的第1行 | views包 | blueprints包 | 笔误 18.12.29 |
 | 11.4.3 P498 附注段落下方正文第2行 | provide_name | provider_name | 笔误 18.12.29 |
 | 11.4.3.5 P503 代码清单11-11中多处 | `get['XXX']` | `get('XXX')` | 审校错误 |
 | 11.4.3.5 P503 最后一个代码块 | `access_token = resp.get('access_token')` | `access_token = response.get('access_token')` | 笔误 18.12.29 |
 | 11.4.3.6 P505 提示段落上方的代码块 | `@oauth_bp.route(...)` | `@auth_bp.route(...)` | 笔误 18.12.29 |
-| 11.4.4 P506 第二个代码块 | 所有resp | response | 笔误 18.12.29 |
-| 11.4.4 P506 第二个代码块 | | 增加if response is not None:... else:...语句 | 笔误 18.12.29 |
-| 11.4.4 P507 正文第一行 | ture | true | 笔误 18.12.29 |
-| 11.5.1 P508 代码清单11-12 | `return render_template('_messages.html', messages=messages[::-1])` | `return render_template('chat/_messages.html', messages=messages[::-1])` | 笔误 18.12.29 |
+| 11.4.4 P506 第二个代码块 | | 所有resp 改为 response | 笔误 18.12.29 |
+| 11.4.4 P506 第二个代码块 | | 增加 if response is not None:... else:...语句，具体参考源码 | 笔误 18.12.29 |
+| 11.5.1 P508 代码清单11-12 | `'_messages.html'` | `'chat/_messages.html'` | 笔误 18.12.29 |
 | 11.5.1 P509 代码清单11-13第5行 | `position === 0&& socket.nsp! == '/anonymous'` | `position === 0 && socket.nsp !== '/anonymous'` | 审校错误，空格错误 18.12.29 |
 | 11.5.1 P510 代码清单11-13倒数第6行 | `toast('No more messages.');` | `alert('No more messages.');` | 此项目中未定义toast函数 18.12.29 |
 | 11.5.3 P513~P514 513页7处，514页8处 |  | 所有的 Pyments 改为 Pygments，pyments 改为 pygments | 笔误 18.11.18 |
-| 11.5.4 P516 代码清单11-15第3行 | `socket.on('message', function (data) {` | `socket.on('new message', function (data) {` | 笔误 18.12.29 |
+| 11.5.4 P516 代码清单11-15第3行 | `'message'` | `'new message'` | 笔误 18.12.29 |
 | 11.5.4 P516 代码清单11-15第6行 | `document.title = '(' + message_count + ') ' + document.title;` | `document.title = '(' + message_count + ') ' + 'CatChat';` | 消息数量会随着事件多次发生而不断追加在原标题前 18.12.29 |
 | 11.5.5 P517 代码清单11-17第6行 | `data.name` | `data.nickname` | 笔误 18.12.30 |
 | 11.5.5 P517 代码清单11-17第7行 | `icon: ...` | `icon: data.gravatar` | 笔误 18.12.30 |
-| 11.5.5 P518 最后1个代码块第5行 | `render_template('_message.html', message=message)` | `render_template('chat/_message.html', message=message)` | 笔误 18.12.30 |
+| 11.5.5 P518 最后1个代码块第5行 | `'_message.html'` | `'chat/_message.html'` | 笔误 18.12.30 |
 | 11.5.5 P518 最后1个代码块第6行 | `message_body` | `html_message` | 笔误 18.12.30 |
+| 12.3.1 P526 代码清单12-1 | | setUp方法最后面追加一行代码`self.client = app.test_client()` | 代码缺失 19.01.05 |
+| 12.3.2 P527 提示段落下方的正文第3行 | assertEqual() | assertTrue() | 笔误 19.01.05 |
+| 12.3.2 P527 代码清单12-3 test_404_page方法的注释 | # 测试 400 错误页面 | # 测试 404 错误页面 | 笔误 19.01.05 |
+| 12.3.3 P534 代码清单12-6最后1个导入语句 | `from bluelog.models import User` | `from bluelog.models import Admin` | 笔误 19.01.06 |
+| 13.1.2 P550 代码清单13-1 | `@app.after_app_request` | `@app.after_request` | 笔误 19.01.06 |
+| 13.1.2 P550 代码清单13-1 | | 两处current_app改为app | 笔误 19.01.06 |
+| 13.3 P557 命令行命令 | `$ cd cache` | `$ cd assets` | 笔误 19.01.06 |
+| 14.4.7 P584 倒数第2个代码块上方段落第5行| 放在/etc/supervisord.conf路径下 | 放在/etc/supervisor/conf.d路径下 | 笔误 18.11.28 |
 | 15.7.3 P625 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
 | 16.2.4 P639 最后1个段落的第2行 | 在不基于线程、greenlet或单进程实现的并发服务器上 | 在不基于线程、Greenlet 或进程实现并发的服务器上 | 笔误 18.12.31 |
-| 16.4.3  2. 堆栈与LocalStack  P659 第1段第3行| 并将数据的字典名称设为'stack'。| 并将储存上下文对象的列表名称设为'stack' | 笔误 19.1.4
 | 16.4.2 P649 最后1行| Flask.route()是Flask类的类方法 | Flask.route()是Flask类的实例方法 | 笔误 19.1.1 |
+| 16.4.3  2. 堆栈与LocalStack  P659 第1段第3行| 并将数据的字典名称设为'stack'。| 并将储存上下文对象的列表名称设为'stack' | 笔误 19.1.4 |
 
 #### 不重要勘误
 
@@ -203,9 +215,10 @@
 | 2.5.4.1.(2) P67 纸书该页第1个代码块，电子书“攻击示例”小节第2个代码块 |  | 最后的单引号和前面的分号对调位置 | 笔误 18.11.5 |
 | 2.5.4.1.(2) P67 纸书该页第2个代码块，电子书“攻击示例”小节第3个代码块 |  | 在最后的分号前添加一个半角单引号 | 笔误 18.11.5 |
 | 2.5.4.1.(3) P67 ”主要防范方法“小节第1个代码块 | `db.execute('SELECT * FROM students WHERE password=?, password)` | `db.execute('SELECT * FROM students WHERE password=?', password)` | 笔误。字符串右侧引号 |
-| 2.5.4 P69 纸书该页最后1行的代码块最后几个字符 | `sript` | `script` | 笔误 18.11.5 | 
+| 2.5.4 P69 纸书该页最后1行的代码块最后几个字符 | `sript` | `script` | 笔误 18.11.5 |
 | 3.1.1 P76 代码清单 3-1 文件路径 | template/watchlist.html | template**s**/watchlist.html | 笔误 18.12.28 |
 | 3.1 P77 代码清单3-1下的提示 | HTML5 | HTML | 多余文本。另外，后面的链接需要更新为 https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure |
+| 3.2.4 2.自定义测试器 P86下方| 我们创建了一个没有意义的baz过滤器 | 我们创建了一个没有意义的baz测试器 | 笔误 19.1.9 |
 | 3.2.5 P87 正文共 5 处 | enviroment | enviro**n**ment | 拼写错误 18.12.28 |
 | 3.3.2 P89 第1个代码块上面的文字第2行 | `_macors.html` | `_macros.html` | 笔误 |
 | 3.3.2 P89 第1个注意段落最后1行 | 显示 | 显式 | 笔误 18.10.18 |
@@ -213,6 +226,7 @@
 | 3.4.2 P97 注意段落下面正文第2行 | CND | CDN | 笔误 18.10.27 |
 | 3.4.2 P97 注意段落最后一行 | Boostrap | Boo**t**strap | 笔误 18.12.28 |
 | 3.4.4 P101 图3-5 | | 地址栏的地址应为/nothing，和描述对应。 | 笔误 18.10.1 |
+| 3.4.4 P101 图 3-5 下面第 1 行文字 | 处理器和模块 | 处理器和模**板** | 笔误 19.1.13 |
 | 4.1 P105 最后一行 | ， | 。 | 笔误 18.11.11 |
 | 4.2.1 P108 表4-3下面的注意段落 | `内置的验证器通过……` | `内置的验证器使用……` | 改善措辞 18.11.5 |
 | 4.2.3 P110 代码清单4-3第3行 | `{{ from.username.label }}{{ form.username }}<br>` | `{{ from.username.label }}<br>{{ form.username }}<br>` | 改进 18.11.5 |
@@ -220,6 +234,8 @@
 | 4.3.3 P117 代码清单4-7第4行 | `form.username()` | `form.username` | 笔误。此处的括号可有可无，去掉以保持风格上的统一 18.9.24 |
 | 4.4.4.1 P123 代码清单4-13第1行 | `flask wtf` | `flask_wtf` | 审校错误 18.9.24 |
 | 4.4.4.4 P128 代码清单4-16上面的第1个代码块第3行 | | 缺少右侧关闭括号 | 笔误 18.10.18 |
+| 4.4.4.1 P123 代码清单4-13第3行 | | 字符间距过大。 | 排版错误 19.1.5 |
+| 4.4.5.2 提示段落 | https://flask-ckeditor.readthedocs.io/configuration.html | https://flask-ckeditor.readthedocs.io/en/latest/configuration.html | 笔误 19.1.5 |
 | 4.4.5 P131 代码清单4-19下正文段落第3行 | `Ture` | `True` | 笔误 18.11.5 |
 | 5.3.1 P143 表5-2最后1行 | SQlite | SQLite | 大小写错误 18.10.27 |
 | 5.3.3 P146 第2个代码块 | | 开头可添加一行导入`from app import Note` | 更完善 18.10.18 |
@@ -229,17 +245,21 @@
 | 6.1.3 P183 代码清单6-3第9行 | `return redirect(url_for('idnex'))` | `return redirect(url_for('index'))` | 笔误 18.10.27 |
 | 6.2 P183 6.2及6.2.1章节标题以及目录共**4处** | SendGird | SendGrid | 笔误 18.10.27 |
 | 7.2.3.1 P202 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
+| 7.2.3 P204 代码清单7-5后面的代码块第4行 | | `messages = Message.query.order_by...`向后缩进1格 | 缩进 19.01.11 |
 | 7.3.1 P207 3.7.1节中最后一段话中 | bootstrap_load_js() | bootstrap.load_js() | 笔误 18.11.17 |
-| 7.4.3 P211 表7-4下面的提示段落 | https://momentjs.com/docs/displaying/format/ | https://momentjs.com/docs/#/displaying/format/ | 链接变化 18.11.5 | 
+| 7.4.3 P211 表7-4下面的提示段落 | https://momentjs.com/docs/displaying/format/ | https://momentjs.com/docs/#/displaying/format/ | 链接变化 18.11.5 |
 | 7.5 P213 最后一行代码 | `fake = Faker('zh_CN'))` |  `fake = Faker('zh_CN')` | 笔误 18.11.17 |
 | 7.5 P214 该页（节）最后 2 个代码块的最后 1 行 | | 两处均向左缩进 4 格，和上面对齐 | 排版错误 18.12.6 |
 | 8.1 P220 文件目录树 | | 目录树漏掉了 __init__.py 文件 | 笔误。 18.10.1 |
 | 8.1.3 P229 第2个提示段落 | 新创建的模块 | 新创建一个模块 | 审校错误。 18.9.24 |
-| 8.2.1 P237 代码清单 8-8 倒数第 3 行 | | 添加注释：`# 这个方法将在 8.4.3（P273）节介绍` | 后续内容前置提示 18.12.6 |
+| 8.2.1 P237 代码清单 8-8 倒数第 3 行 | | 删除这一行 | 后续内容前置 19.1.13 |
 | 8.2.1.3 P237 代码清单8-9第10行 | | 缩进少一格 | 排版错误 18.10.18 |
+| 8.2.1 P239 代码清单 8-12 文件路径 | bluelog/commands.py | bluelog/__init__.py | 遗留代码未更新 19.1.13 |
 | 8.3.3 P261 代码清单8-27 | | `<div class="modal-body">` 所在的行以及下面2行均向右缩进8格 | 排版错误 18.11.5 |
 | 8.3.5 P264 代码清单8-29第12行 | `(%Y-%m-%dT%H:%M:%SZ')` | `('%Y-%m-%dT%H:%M:%SZ')` | 笔误，漏掉左侧引号 18.10.27 |
+| 8.2.1 P240 8.2.2 标题上面的代码块 | | 三个点那一行应该向左缩进 4 格，和上面的美元符号对齐 | 排版错误 19.1.13 |
 | 8.5 P276 提示上方段落第一行 | UserMinxin | UserMixin | 笔误 18.12.23 |
+| 8.5.3 P279 代码清单 8-37 第 4 行 | @login_required | @login_required  # 用于视图保护，后面会详细介绍 | 添加注释 19.1.5 |
 | 8.7.2.1 P293 图8-16上面的提示段落 | HTmL | HTML | 审校错误，大小写错误 |
 | 9.1.1 P301 该页最后 1 行，电子书该节第 2 个代码块最后一行 | | 向左缩进 4 格 | 排版错误 18.12.6 |
 | 9.2 P304 图9-1左上角多了一个"搜索" | `搜索` | 去掉一个`搜索` | 笔误 18.12.10 |
@@ -264,24 +284,37 @@
 | 10.2.5 P438 标题上面的附注文字 | 生成帮助信息 | 生成的帮助信息 | 审校错误。编辑以为自己在改病句，实际上却是在制造病句 |
 | 10.3.1.4 P443 “10.3.2”小节上面段落倒数第3行 | RSET | REST | 笔误 |
 | 10.3.3.5 P453 代码清单10-13下面的提示段落最后1行 | flask-restless | Flask-Restless | 大小写错误 |
+| 11.1 P476 目录结构示意图 | | blueprints目录向左缩进一级 | 笔误 18.12.28 |
+| 11.4.4 P507 正文第一行 | ture | true | 笔误 18.12.29 |
 | 12.3.2 P527 代码清单12-2第7行 | test_app_exsit | test_app_exist | 拼写错误 |
+| 12.3.2.2 P532 正文第4个段落的最后1行 | JOSN | JSON | 笔误 19.01.05 |
+| 12.3.2.3 P532 代码清单12-5 | `from sayhello.commands import forge` | `from sayhello.commands import forge, initdb` | 导入缺失 19.01.05 |
+| 12.3.3 P534 代码清单12-6第2个导入语句 | `from flask import current_app, url_for` | `from flask import url_for` | 多余的导入 19.01.06 |
+| 12.3.3 P534 代码清单12-7第2个导入语句 | `from flask import current_app, url_for` | `from flask import url_for` | 多余的导入 19.01.06 |
+| 12.3.3 P533 代码清单12-6上方正文最后第2行 | tearDow() | tearDown() | 笔误 19.01.06 |
+| 12.3.2.3 P532 代码清单 12-5 第一个注释 | | 注释上面添加 1 个空行，注释前删除 1 个空格 | 排版错误 19.1.13 |
+| 12.4.3 P540 代码清单12-10中test_index方法中self.assertIn()的第1个参数 | 'Todoism makes everything clear.' | 'We are todoist, we use todoism.' | 遗留代码未更新 19.01.06 |
+| 12.6 P546 第1个附注段落上方的正文第2行 | 弃用 | 启用 | 笔误 19.01.06 |
+| 13.3 P557 第2个提示段落 | CND | CDN | 笔误 19.01.06 |
+| 13.3.3 P560 第1段正文第3行 | style块 | styles块 | 笔误 19.01.06 |
 | 14.3.1 P567 第二个代码块第2行| `token_urlsafe(16)` |  `secrets.token_urlsafe(16)` | 笔误 18.11.28 |
 | 14.3.4 P569 代码清单14-1 register_logger函数缺少app参数| `register_logging()` |  `register_logging(app)` | 笔误 18.11.28 |
 | 14.4.2 P574 第2个提示段落上面两处 | python(3) | python3 | 审校错误 |
-| 14.4.7 P584 倒数第2个代码块上方段落第5行| 放在/etc/supervisord.conf路径下 | 放在/etc/supervisor/conf.d路径下 | 笔误 18.11.28 |
+| 16.4.3 3.代理与LocalProxy P660 Cython交互代码片段第8第9行| 代码与第6第7行重复，可删除 | 校对错误 | 19.1.7 | 
+| 16.4.5 P669 代码清单16-28 多行注释| 一个字典，每当产生改变化时会调用传入的参数 | 一个字典，每当产生变化时会调用传入的参数 | 笔误 19.1.9 | 
 
 拼写错误，全书多处：Crtl 改为 Ctrl，下面是已知的错误位置：
-P300 注意段落
-P220 注意段落
-P195 第二个注意段落
-P416 注意段落
-P475 注意段落
-P15 正文第 1 行
-P20 提示段落上面
-P21 提示段落中两处
-P577 页面中部两处
-P580 页面中部
-P584 页面中部
+* P300 注意段落
+* P220 注意段落
+* P195 第二个注意段落
+* P416 注意段落
+* P475 注意段落
+* P15 正文第 1 行
+* P20 提示段落上面
+* P21 提示段落中两处
+* P577 页面中部两处
+* P580 页面中部
+* P584 页面中部
 
 关于URL长度限制的详情可以参考[WWW FAQs: What is the maximum length of a URL?](https://www.boutell.com/newfaq/misc/urllength.html)。
 
