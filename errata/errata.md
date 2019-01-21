@@ -187,6 +187,7 @@
 | 14.3.4.3 P571 代码清单14-2 | `register_logger()` | `register_logging()` | 与实际源码不符 19.01.21 |
 | 14.3.4.3 P571 代码清单14-3 | 5处`os.getenv()` | `app.config[]` | 与实际源码不符 19.01.21 |
 | 14.4.3.1 P576 提示段落第二行 | C/Users/Administrator/.ssh | C:\Users\Administrator\.ssh | 错误 19.01.21 |
+| 14.4.5 P579 下方正文 | WGSI | WSGI | 笔误 19.01.21 |
 | 14.4.7 P584 倒数第2个代码块上方段落第5行| 放在/etc/supervisord.conf路径下 | 放在/etc/supervisor/conf.d路径下 | 笔误 18.11.28 |
 | 15.7.3 P625 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
 | 16.2.4 P639 最后1个段落的第2行 | 在不基于线程、greenlet或单进程实现的并发服务器上 | 在不基于线程、Greenlet 或进程实现并发的服务器上 | 笔误 18.12.31 |
