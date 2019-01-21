@@ -192,6 +192,10 @@
 | 15.5.1 P612 页面中部代码块 | `def load(css_url=None, js_url=None):` | `def load(css_url=None, js_url=None, serve_local=False):` | 与实际源码不符 19.01.21 |
 | 15.5.1 P612 页面中部代码块 | `if current_app.config['SHARE_SERVE_LOCAL']:` | `if serve_local or current_app.config['SHARE_SERVE_LOCAL']` | 与实际源码不符 19.01.21 |
 | 15.5.1 P612 页面中部代码块最后1行中的filename参数 | `filename='js/share.min.js'` | `filename='js/social-share.min.js'` | 笔误 19.01.21 |
+| 15.6.1 P614 代码清单15-8中Share类的init_app方法中的blueprint | Blueprint缺少static_folder和static_url_path参数 | 见代码清单15-5或项目源码 | 笔误 19.01.21 |
+| 15.6.1 P614 代码清单15-8中Share类的init_app方法 | 没有将扩展添加到模板上下文 | 添加代码`app.jinja_env.globals['share'] = self` | 代码缺少 19.01.21 |
+| 15.6.1 P614 代码清单15-8中Share类的init_app方法最后1行第2个参数 | True | False | 与实际源码不符 19.01.21 |
+| 15.6.1 P615 代码清单15-8中Share类的create方法参数 | `addition_class=None` | `addition_class=''` | 与实际项目不符 19.01.21 |
 | 15.7.3 P625 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
 | 16.2.4 P639 最后1个段落的第2行 | 在不基于线程、greenlet或单进程实现的并发服务器上 | 在不基于线程、Greenlet 或进程实现并发的服务器上 | 笔误 18.12.31 |
 | 16.4.2 P649 最后1行| Flask.route()是Flask类的类方法 | Flask.route()是Flask类的实例方法 | 笔误 19.1.1 |
