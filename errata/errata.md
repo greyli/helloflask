@@ -187,10 +187,11 @@
 | 14.3.4.3 P571 代码清单14-2 | `register_logger()` | `register_logging()` | 与实际源码不符 19.01.21 |
 | 14.3.4.3 P571 代码清单14-3 | 5处`os.getenv()` | `app.config[]` | 与实际源码不符 19.01.21 |
 | 14.4.3.1 P576 提示段落第二行 | C/Users/Administrator/.ssh | C:\Users\Administrator\.ssh | 错误 19.01.21 |
-| 14.4.5 P579 下方正文 | WGSI | WSGI | 笔误 19.01.21 |
 | 14.4.7 P584 倒数第2个代码块上方段落第5行 | 放在/etc/supervisord.conf路径下 | 放在/etc/supervisor/conf.d路径下 | 笔误 18.11.28 |
-| 15.5 P611 正文第3行 | | 多一个句号 | 笔误 19.01.21 |
 | 15.5 P611 正文第5行 | 在模板中提供load()方法资源。 | 在模板中提供load()方法加载静态资源。 | 句子不完整 19.01.21 |
+| 15.5.1 P612 页面中部代码块 | `def load(css_url=None, js_url=None):` | `def load(css_url=None, js_url=None, serve_local=False):` | 与实际源码不符 19.01.21 |
+| 15.5.1 P612 页面中部代码块 | `if current_app.config['SHARE_SERVE_LOCAL']:` | `if serve_local or current_app.config['SHARE_SERVE_LOCAL']` | 与实际源码不符 19.01.21 |
+| 15.5.1 P612 页面中部代码块最后1行中的filename参数 | `filename='js/share.min.js'` | `filename='js/social-share.min.js'` | 笔误 19.01.21 |
 | 15.7.3 P625 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
 | 16.2.4 P639 最后1个段落的第2行 | 在不基于线程、greenlet或单进程实现的并发服务器上 | 在不基于线程、Greenlet 或进程实现并发的服务器上 | 笔误 18.12.31 |
 | 16.4.2 P649 最后1行| Flask.route()是Flask类的类方法 | Flask.route()是Flask类的实例方法 | 笔误 19.1.1 |
@@ -214,7 +215,7 @@
 | 1.3.1 P14 标题 | Run，Flask，Run！ | Run, Flask, Run! | 标点错误 |
 | 1.3.1 P14 ”Run，Flask，Run“小节第1个代码块最后1行 | | 出现多余的缩进 | 排版错误 |
 | 1.3.1.3 P17 配置步骤4 | 下列选项 | 下拉选项 | 笔误 |
-| 1.3.3 P18 ”1.3.3“小节第1行 | Enviroment  | Environment | 拼写错误 |
+| 1.3.3 P18 "1.3.3"小节第1行 | Enviroment  | Environment | 拼写错误 |
 | 2.2.2 P33 正文第一行 | MutliDict | MultiDict | 笔误 18.12.24 |
 | 2.2.2 P33 图 2-4 上面一行 | requset | request | 笔误 18.12.28 |
 | 2.2.2 P33 代码清单 2-1 最后一行 | `'<h1>Hello, %s!<h1>'` | `'<h1>Hello, %s!</h1>'` | `<h1>` 关闭斜线 18.12.28 |
@@ -311,7 +312,12 @@
 | 14.3.1 P567 第二个代码块第2行| `token_urlsafe(16)` |  `secrets.token_urlsafe(16)` | 笔误 18.11.28 |
 | 14.3.4 P569 代码清单14-1 register_logger函数缺少app参数| `register_logging()` |  `register_logging(app)` | 笔误 18.11.28 |
 | 14.4.2 P574 第2个提示段落上面两处 | python(3) | python3 | 审校错误 |
-| 16.4.3 3.代理与LocalProxy P660 Cython交互代码片段第8第9行| 代码与第6第7行重复，可删除 | 校对错误 | 19.1.7 | 
+| 14.4.5 P579 下方正文 | WGSI | WSGI | 笔误 19.01.21 |
+| 15.5 P611 正文第3行 | | 多一个句号 | 笔误 19.01.21 |
+| 15.5.1 P611 倒数第2段正文第1行 | laod() | load() | 笔误 19.01.21 |
+| 15.5.1 P612 代码清单15-5中init_app()方法 | `static_folder='static ,` | `static_folder='static,` | 空格错误 19.01.21 |
+| 15.5.1 P612 代码清单15-5中init_app()方法 | | 倒数第2行去除一个多余的)符号 | 符号错误 19.01.21 |
+| 16.4.3 3.代理与LocalProxy P660 Cython交互代码片段第8第9行| 代码与第6第7行重复，可删除 | 校对错误 | 19.1.7 |
 | 16.4.5 P669 代码清单16-28 多行注释| 一个字典，每当产生改变化时会调用传入的参数 | 一个字典，每当产生变化时会调用传入的参数 | 笔误 19.1.9 | 
 
 拼写错误，全书多处：Crtl 改为 Ctrl，下面是已知的错误位置：
