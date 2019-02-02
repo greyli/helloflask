@@ -9,6 +9,10 @@
 
 位置 | 错误 | 正确 | 备注/时间 |
 --- | --- | --- | ---
+| 2.2 P30 | 请求报文示例表格 | | URL /hello 改为 http://helloflask.com/hello?name=Grey | 19.2.2 |
+| 2.2 P30 | 请求报文示例表格 | | 去掉主体一栏的内容 | 19.2.2 |
+| 2.2 P30 | 请求报文示例表格下方正文 | 如果 URL 中包含查询字符串，或是提交了表单，那么报文主体将会是查询字符串和表单数据。 | 如果提交了表单，那么报文主体将会是表单数据（查询字符串直接通过 URL 传递）。 | 19.2.2 |
+| 2.2 P31 命令行输出 | /hello | /hello?name=Grey | 19.2.2 |
 | 3.2.4 2.自定义测试器 P86下方| 我们创建了一个没有意义的baz过滤器 | 我们创建了一个没有意义的baz测试器 | 笔误 19.1.9 | 
 | 4.3.1 P115 第 2 小节的代码块第 5 行 | `Length(8, 128)` | `Length(6, 128)` | 前后不一致（1-3 重印时需要反过来调整另外 3 处），18.12.28 |
 | 5 P139 第 1 个代码块 | | `$ flask run` 上面添加一行 `$ flask initdb  # 初始化数据库，后面会详细介绍` | 疏漏 19.1.5 |
@@ -43,6 +47,7 @@
 | 9.11.2 P389 代码清单9-71倒数第4行 | `{{ render_form(crop_form) }}` | `{{ render_form(crop_form, action=url_for('.crop_avatar')) }}` | 笔误 18.12.24 |
 | 9.14.3 P412 代码清单9-90 | | | 缺少validate_username()方法的定义 18.12.24 |
 | 10.1.1 P420 第 2 小节第一个代码块第 7 行 | `{{ url_for('todo.clear_item') }};` | `{{ url_for('todo.clear_items') }};` | 笔误 18.12.27 |
+| 10.1.4 P425 第一个代码块第 6 行 | `jsonify(message='Invalid item body.'), 400` | `return jsonify(message='Invalid item body.'), 400` | 笔误 19.1.20 |
 | 10.3.3 P447 第 1 小节/该页最后一个代码块 | `... import api` | `... import api_v1` | 笔误 18.12.28 |
 | 10.3.3 P447 第 1 小节/该页最后一个代码块 | `csrf.exempt(api)` | `csrf.exempt(api_v1)` | 笔误 18.12.28 |
 | 10.3.3 P453 代码清单10-13第一行中的methods参数 | `methods=['GET', 'POST']` | `methods=['GET']` | 与原定的方法不一致 18.12.28 |
@@ -76,6 +81,22 @@
 | 14.3.1 P567 第二个代码块第2行| `token_urlsafe(16)` |  `secrets.token_urlsafe(16)` | 笔误 18.11.28 |
 | 14.3.4 P569 代码清单14-1 register_logger函数缺少app参数| `register_logging()` |  `register_logging(app)` | 笔误 18.11.28 |
 | 14.4.7 P584 倒数第2个代码块上方段落第5行| 放在/etc/supervisord.conf路径下 | 放在/etc/supervisor/conf.d路径下 | 笔误 18.11.28 |
+| 14.3.4.1 P569 代码清单14-1上方正文 | `register_logger()` | `register_logging()` | 与实际源码不符 19.01.21 |
+| 14.3.4.1 P569 代码清单14-1 | `register_logger()` | `register_logging(app)` | 与实际源码不符 19.01.21 |
+| 14.3.4.1 P569 代码清单14-1 | RotatingFileHandler的第一个参数 | `os.path.join(basedir, 'logs/bluelog.log')` | 与实际源码不符 19.01.21 |
+| 14.3.4.2 P570 代码块 | `register_logger()` | `register_logging(app)` | 与实际源码不符 19.01.21 |
+| 14.3.4.3 P571 代码清单14-2 | `register_logger()` | `register_logging(app)` | 与实际源码不符 19.01.21 |
+| 14.3.4.3 P571 代码清单14-3 | `register_logger()` | `register_logging(app)` | 与实际源码不符 19.01.21 |
+| 14.3.4.3 P571 代码清单14-3 | 5处`os.getenv()` | `app.config[]` | 与实际源码不符 19.01.21 |
+| 14.4.3.1 P576 提示段落第二行 | C/Users/Administrator/.ssh | C:\Users\Administrator\.ssh | 错误 19.01.21 |
+| 15.5 P611 正文第5行 | 在模板中提供load()方法资源。 | 在模板中提供load()方法加载静态资源。 | 句子不完整 19.01.21 |
+| 15.5.1 P612 页面中部代码块 | `def load(css_url=None, js_url=None):` | `def load(css_url=None, js_url=None, serve_local=False):` | 与实际源码不符 19.01.21 |
+| 15.5.1 P612 页面中部代码块 | `if current_app.config['SHARE_SERVE_LOCAL']:` | `if serve_local or current_app.config['SHARE_SERVE_LOCAL']` | 与实际源码不符 19.01.21 |
+| 15.5.1 P612 页面中部代码块最后1行中的filename参数 | `filename='js/share.min.js'` | `filename='js/social-share.min.js'` | 笔误 19.01.21 |
+| 15.6.1 P614 代码清单15-8中Share类的init_app方法中的blueprint | Blueprint缺少static_folder和static_url_path参数 | 见代码清单15-5或项目源码 | 笔误 19.01.21 |
+| 15.6.1 P614 代码清单15-8中Share类的init_app方法 | 没有将扩展添加到模板上下文 | 添加代码`app.jinja_env.globals['share'] = self` | 代码缺少 19.01.21 |
+| 15.6.1 P614 代码清单15-8中Share类的init_app方法最后1行第2个参数 | True | False | 与实际源码不符 19.01.21 |
+| 15.6.1 P615 代码清单15-7和代码清单15-8中Share类的create方法参数 | `addition_class=None` | `addition_class=''` | 与实际项目不符 19.01.21 |
 | 16.2.4 P639 最后1个段落的第2行 | 在不基于线程、greenlet或单进程实现的并发服务器上 | 在不基于线程、Greenlet 或进程实现并发的服务器上 | 笔误 18.12.31 |
 | 16.4.2 P649 最后1行| Flask.route()是Flask类的类方法 | Flask.route()是Flask类的实例方法 | 笔误 19.1.1 |
 | 16.4.3 2. 堆栈与LocalStack  P659 第1段第3行| 并将数据的字典名称设为'stack'。| 并将储存上下文对象的列表名称设为'stack' | 笔误 19.1.4 |
@@ -97,6 +118,7 @@
 | 4.4.4.1 P123 代码清单4-13第3行 | | 字符间距过大。 | 排版错误 19.1.5 |
 | 4.4.5.2 提示段落 | https://flask-ckeditor.readthedocs.io/configuration.html | https://flask-ckeditor.readthedocs.io/en/latest/configuration.html | 笔误 19.1.5 |
 | 5.5.2 P160 正文最后一行、P161 第一行 | Aritcle | Article | 笔误 18.12.24 |
+| 7.2 P202 代码清单 7-3、7-4、7-7 | 补全路径，相应加入 sayllo/ 和 templates/ | 19.2.2 |
 | 7.2.3 P204 代码清单7-5后面的代码块第4行 | | `messages = Message.query.order_by...`向后缩进1格 | 缩进 19.01.11 |
 | 7.5 P213 最后一行代码 | `fake = Faker('zh_CN'))` |  `fake = Faker('zh_CN')` | 笔误 18.11.17 |
 | 8.2.1 P239 代码清单 8-12 文件路径 | bluelog/commands.py | bluelog/__init__.py | 遗留代码未更新 19.1.13 |
@@ -110,6 +132,9 @@
 | 9.9.1 P365 9.9.1 标题下正文第一行 | Uesr | User | 笔误 18.12.21 |
 | 9.9 P365 代码清单9-47下方的正文 | timastamp | timestamp | 笔误 18.12.21 |
 | 9.7.1 P340 代码清单 9-24 第 2 处注释 | 主要 | 主页 | 笔误 18.12.17 |
+| 9.7.1 P339 代码清单 9-23 路径 | macros.py | macros.html | 19.2.2 |
+| 9.7.1 P340 代码清单9-24 上方 | Photo_card() | photo_card() | 19.2.2 |
+| 9.7.1 P340 代码清单9-24 导入语句第二行 | form | from | 19.2.2 |
 | 9.2 P304 图9-1左上角多了一个"搜索" | `搜索` | 去掉一个`搜索` | 笔误 18.12.10 |
 | 9.11.2 P388 提示下方的正文 | Scripts块 | scripts块 | 笔误 18.12.24 |
 | 10.1 P417 项目结构示意图 | | blueprints下的__init__.py多缩进了 4 格 | 排版错误 18.12.27 |
@@ -131,6 +156,18 @@
 | 12.6 P546 第1个附注段落上方的正文第2行 | 弃用 | 启用 | 笔误 19.01.06 |
 | 13.3 P557 第2个提示段落 | CND | CDN | 笔误 19.01.06 |
 | 13.3.3 P560 第1段正文第3行 | style块 | styles块 | 笔误 19.01.06 |
+| 14.3.4 P569 第一段正文下方的代码 | `app.logger.warning('A wraning message.')` | `app.logger.warning('A warning message.')` | 笔误 19.01.21 |
+| 14.3.5 P572 代码块 wsgi.py 定义 | 导入语句补充 `import os` | 19.2.2 |
+| 16.5 P680 附注第2行 | Pocco风格指南 | Pocoo风格指南 | 笔误 19.01.21 |
+| 16.4.2.1 P650 最后第2段正文第1行 | view_function | view_functions | 笔误 19.01.21 |
+| 16.4.2.2 P653 代码清单16-15中的注释 | 出于 | 处于 | 笔误 19.01.21 |
+| 14.4.5 P579 下方正文 | WGSI | WSGI | 笔误 19.01.21 |
+| 15.5 P611 正文第3行 | | 多一个句号 | 笔误 19.01.21 |
+| 15.5.1 P611 倒数第2段正文第1行 | laod() | load() | 笔误 19.01.21 |
+| 15.5.1 P612 代码清单15-5中init_app()方法 | `static_folder='static ,` | `static_folder='static,` | 空格错误 19.01.21 |
+| 15.5.1 P612 代码清单15-5中init_app()方法 | | 倒数第2行去除一个多余的)符号 | 符号错误 19.01.21 |
+| 16.4.1.1 P647 正文第1行 | Ture | True | 笔误 19.01.21 |
+| 16.4.1.2 P648 代码清单16-8中的注释 | HTPP | HTTP | 笔误 19.01.21 |
 | 16.4.3 3.代理与LocalProxy P660 Cython交互代码片段第8第9行| 代码与第6第7行重复，可删除 | 校对错误 | 19.1.7 |
 | 16.4.5 P669 代码清单16-28 多行注释| 一个字典，每当产生改变化时会调用传入的参数 | 一个字典，每当产生变化时会调用传入的参数 | 笔误 19.1.9 |
 
@@ -147,3 +184,4 @@
 * P577 页面中部两处
 * P580 页面中部
 * P584 页面中部
+* P633 第1行

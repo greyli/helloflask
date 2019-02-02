@@ -49,6 +49,8 @@
 * @brakchen jianping https://github.com/brakchen
 * @xSandie 向书晗 https://github.com/xSandie
 * @Kuari kuari https://github.com/Kuari
+* @yesting  yesting https://github.com/yetsing
+* @宏 微信
 * ……
 
 另外还有通过 QQ、Telegram 和 Email 反馈勘误的读者，不方便索引，这里没有一一列出。感谢你们的贡献！
@@ -70,6 +72,10 @@
 --- | --- | --- | ---
 | 1.2.2.2 P13 代码清单1-3下第2段第2行 | http://helloflask.com/hello/Grey | http://helloflask.com/greet/Grey | 笔误 |
 | 1.7 P23 第2个代码块下第1行 | `url_for('say_hello', name='Jack')` | `url_for('greet', name='Jack')` | 笔误 |
+| 2.2 P30 | 请求报文示例表格 | | URL /hello 改为 http://helloflask.com/hello?name=Grey | 19.2.2 |
+| 2.2 P30 | 请求报文示例表格 | | 去掉主体一栏的内容 | 19.2.2 |
+| 2.2 P30 | 请求报文示例表格下方正文 | 如果 URL 中包含查询字符串，或是提交了表单，那么报文主体将会是查询字符串和表单数据。 | 如果提交了表单，那么报文主体将会是表单数据（查询字符串直接通过 URL 传递）。 | 19.2.2 |
+| 2.2 P31 命令行输出 | /hello | /hello?name=Grey | 19.2.2 |
 | 2.2.1 P31 表2-3左侧下面的两行 | | POST对应的说明列原文为“传输数据”，修改为“创建或更新资源”；PUT对应的说明列原文为“传输文件”，修改为“创建或替换资源” | 改进 18.11.18 |
 | 2.2.3.3 P36 表2-6后第1个代码块 | `'goback/<int:year>'` | `'/goback/<int:year>'` | 笔误。 18.9.28 |
 | 2.3.1 P40 第3个代码块 | `{'Location', 'http://www.example.com'}` | `{'Location': 'http://www.example.com'}` | 笔误。返回值中字典里的符号出错 |
@@ -180,12 +186,12 @@
 | 13.1.2 P550 代码清单13-1 | `@app.after_app_request` | `@app.after_request` | 笔误 19.01.06 |
 | 13.1.2 P550 代码清单13-1 | | 两处current_app改为app | 笔误 19.01.06 |
 | 13.3 P557 命令行命令 | `$ cd cache` | `$ cd assets` | 笔误 19.01.06 |
-| 14.3.4 P569 第一段正文下方的代码 | `app.logger.warning('A wraning message.')` | `app.logger.warning('A warning message.')` | 笔误 19.01.21 |
 | 14.3.4.1 P569 代码清单14-1上方正文 | `register_logger()` | `register_logging()` | 与实际源码不符 19.01.21 |
-| 14.3.4.1 P569 代码清单14-1 | `register_logger()` | `register_logging()` | 与实际源码不符 19.01.21 |
+| 14.3.4.1 P569 代码清单14-1 | `register_logger()` | `register_logging(app)` | 与实际源码不符 19.01.21 |
 | 14.3.4.1 P569 代码清单14-1 | RotatingFileHandler的第一个参数 | `os.path.join(basedir, 'logs/bluelog.log')` | 与实际源码不符 19.01.21 |
-| 14.3.4.2 P570 代码块 | `register_logger()` | `register_logging()` | 与实际源码不符 19.01.21 |
-| 14.3.4.3 P571 代码清单14-2 | `register_logger()` | `register_logging()` | 与实际源码不符 19.01.21 |
+| 14.3.4.2 P570 代码块 | `register_logger()` | `register_logging(app)` | 与实际源码不符 19.01.21 |
+| 14.3.4.3 P571 代码清单14-2 | `register_logger()` | `register_logging(app)` | 与实际源码不符 19.01.21 |
+| 14.3.4.3 P571 代码清单14-3 | `register_logger()` | `register_logging(app)` | 与实际源码不符 19.01.21 |
 | 14.3.4.3 P571 代码清单14-3 | 5处`os.getenv()` | `app.config[]` | 与实际源码不符 19.01.21 |
 | 14.4.3.1 P576 提示段落第二行 | C/Users/Administrator/.ssh | C:\Users\Administrator\.ssh | 错误 19.01.21 |
 | 14.4.7 P584 倒数第2个代码块上方段落第5行 | 放在/etc/supervisord.conf路径下 | 放在/etc/supervisor/conf.d路径下 | 笔误 18.11.28 |
@@ -196,7 +202,7 @@
 | 15.6.1 P614 代码清单15-8中Share类的init_app方法中的blueprint | Blueprint缺少static_folder和static_url_path参数 | 见代码清单15-5或项目源码 | 笔误 19.01.21 |
 | 15.6.1 P614 代码清单15-8中Share类的init_app方法 | 没有将扩展添加到模板上下文 | 添加代码`app.jinja_env.globals['share'] = self` | 代码缺少 19.01.21 |
 | 15.6.1 P614 代码清单15-8中Share类的init_app方法最后1行第2个参数 | True | False | 与实际源码不符 19.01.21 |
-| 15.6.1 P615 代码清单15-8中Share类的create方法参数 | `addition_class=None` | `addition_class=''` | 与实际项目不符 19.01.21 |
+| 15.6.1 P615 代码清单15-7和代码清单15-8中Share类的create方法参数 | `addition_class=None` | `addition_class=''` | 与实际项目不符 19.01.21 |
 | 15.7.3 P625 最后1个代码块的第2行 | `git push origm` | `git push origin` | 审校错误。另外，这一行下面的Github应为GitHub |
 | 16.2.4 P639 最后1个段落的第2行 | 在不基于线程、greenlet或单进程实现的并发服务器上 | 在不基于线程、Greenlet 或进程实现并发的服务器上 | 笔误 18.12.31 |
 | 16.4.2 P649 最后1行 | Flask.route()是Flask类的类方法 | Flask.route()是Flask类的实例方法 | 笔误 19.1.1 |
@@ -264,6 +270,7 @@
 | 5.8 P177 最后1行 | 本章要介绍的 | 本章介绍的 | 笔误 18.9.28 |
 | 6.1.3 P183 代码清单6-3第9行 | `return redirect(url_for('idnex'))` | `return redirect(url_for('index'))` | 笔误 18.10.27 |
 | 6.2 P183 6.2及6.2.1章节标题以及目录共**4处** | SendGird | SendGrid | 笔误 18.10.27 |
+| 7.2 P202 代码清单 7-3、7-4、7-7 | 补全路径，相应加入 sayllo/ 和 templates/ | 19.2.2 |
 | 7.2.3.1 P202 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.2.3 P204 代码清单7-5后面的代码块第4行 | | `messages = Message.query.order_by...`向后缩进1格 | 缩进 19.01.11 |
 | 7.3.1 P207 3.7.1节中最后一段话中 | bootstrap_load_js() | bootstrap.load_js() | 笔误 18.11.17 |
@@ -287,6 +294,9 @@
 | 9.3.2.1 P312 第二个代码块上正文倒数第1行 | Operations字典中 | Operations类中| 笔误 18.12.10 |
 | 9.4.4 P324 代码清单9-14代码块第4-5行 || 两处均向左缩进 4 格 | 排版错误  18.12.10 |
 | 9.5.3 P334 9.6 小节上面的代码块 | | 代码中的 400 和 800 分别替换为配置变量 `current_app.config['ALBUMY_PHOTO_SIZE']['small']` 和 `current_app.config['ALBUMY_PHOTO_SIZE']['medium']` | 遗留代码 18.12.17 |
+| 9.7.1 P339 代码清单 9-23 路径 | macros.py | macros.html | 19.2.2 |
+| 9.7.1 P340 代码清单9-24 上方 | Photo_card() | photo_card() | 19.2.2 |
+| 9.7.1 P340 代码清单9-24 导入语句第二行 | form | from | 19.2.2 |
 | 9.7.1 P340 代码清单 9-24 第 2 处注释 | 主要 | 主页 | 笔误 18.12.17 |
 | 9.8.2 P360 代码清单9-41代码块上方正文倒数第3行 | 实际动作是有用户做出的 | 实际动作是由用户做出的| 笔误 18.12.10 |
 | 9.9 P365 代码清单9-47下方的正文 | timastamp | timestamp | 笔误 18.12.21 |
@@ -318,7 +328,9 @@
 | 13.3 P557 第2个提示段落 | CND | CDN | 笔误 19.01.06 |
 | 13.3.3 P560 第1段正文第3行 | style块 | styles块 | 笔误 19.01.06 |
 | 14.3.1 P567 第二个代码块第2行| `token_urlsafe(16)` |  `secrets.token_urlsafe(16)` | 笔误 18.11.28 |
-| 14.3.4 P569 代码清单14-1 register_logger函数缺少app参数| `register_logging()` |  `register_logging(app)` | 笔误 18.11.28 |
+| 14.3.4 P569 第一段正文下方的代码 | `app.logger.warning('A wraning message.')` | `app.logger.warning('A warning message.')` | 笔误 19.01.21 |
+| 14.3.4 P569 代码清单14-1 register_logger函数缺少app参数| `register_logger()` |  `register_logging(app)` | 笔误 18.11.28 |
+| 14.3.5 P572 代码块 wsgi.py 定义 | 导入语句补充 `import os` | 19.2.2 |
 | 14.4.2 P574 第2个提示段落上面两处 | python(3) | python3 | 审校错误 |
 | 14.4.5 P579 下方正文 | WGSI | WSGI | 笔误 19.01.21 |
 | 15.5 P611 正文第3行 | | 多一个句号 | 笔误 19.01.21 |
@@ -360,4 +372,3 @@
 
 * 第1章：PyCharm 2018.2版本增加了对Pipenv的支持。
 * 第1章：Pipenv自2018.6.25版本后在Windows中激活虚拟环境后会显示虚拟环境提示符。
-* 第15章中的Flask-Share源码对应0.1.0版本。
