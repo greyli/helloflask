@@ -1,13 +1,10 @@
 # HelloFlask
 
-这里是[《Flask Web开发实战》（Python Web Development with Flask）](http://helloflask.com/book)的Meta仓库，包含第1-6章、13章的示例程序源码和勘误等信息。
-
-你可以访问本书主页[http://helloflask.com/book](http://helloflask.com/book)查看本书的资源索引、目录、购买链接等详细信息。
+这里是《Flask Web开发实战》（Python Web Development with Flask）的Meta仓库，包含第1-6章、13章的示例程序源码和勘误等信息。访问[本书主页](http://helloflask.com/book)查看本书的资源索引、目录、购买链接等详细信息。
 
 ## 勘误 & FAQ & 可改进实现 & 版本更新记录
 
 * [阅读勘误表](http://helloflask.com/book/errata)（优化格式后便于阅读的勘误表）
-* [勘误源码](https://github.com/greyli/helloflask/blob/master/errata/errata.md)（书中的笔误、错误及排版问题等）
 * [FAQ](https://github.com/greyli/helloflask/blob/master/faq/faq.md)（常见问题）
 * [可改进实现](https://github.com/greyli/helloflask/blob/master/improvement/improvement.md)（可改进的内容描述或代码实现）
 * [版本更新记录](https://github.com/greyli/helloflask/blob/master/CHANGES.md)（电子书与实体书版本更新与改进记录）
