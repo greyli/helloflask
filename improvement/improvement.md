@@ -17,25 +17,11 @@
 
 ## 文本描述与章节安排等
 
-### 关于导入语句
-
-为了节省篇幅，除非是第一次出现的类和函数等接口，导入语句都省略掉了。对于某些交互式代码块，添加必要的导入语句会更友好。包含下面这些：
-
-7.5 P214 代码清单7-8：
-```py
-from sayhello import db
-from sayhello.models import Message
-```
-
-8.2.1 P237 代码清单8-10
-```py
-import random
-```
-
 ### 第1章Pipenv相关介绍
 
 * 加入使用第三方PyPI源的方法介绍，包括修改Pipfile、通过环境变量设置以及通过命令行选项设置。
 * 增加对旧版本PyCharm启动配置的说明。
+* pipenv update 命令会更新所有依赖包，等待这个行为改变，或添加提示在第 7 页。
 
 ### 第1章和第8章对于FLASK_APP合法值的描述
 
@@ -59,13 +45,6 @@ def choose_a_number():
     ...
 ```
 
-### 第3章3.3.2最后的两个列表
-
-* 相关Issue：https://github.com/greyli/helloflask/issues/26
-* 贡献者：@[BobcatsII](https://github.com/BobcatsII)
-
-描述中使用了“第一个列表的2、3、4项”的表达，为了更好的定位，这里的两个列表应该使用有序标号。1-2 版本反馈给编辑，但是没有改，或许可以把这句改为“上面第一个列表的第2、3、4项”。
-
 ### 第3章介绍宏的部分添加关于kwargs和varargs的提示
 
 这部分内容容易让人疑惑，书中没有详细介绍它们，详情见FAQ中相关问题。
@@ -73,19 +52,6 @@ def choose_a_number():
 ### 第 5 章
 
 * 表 5-2 下面简单介绍 URI 的格式，添加对 MySQL 使用不同 Python 接口库的 URI 变化说明。 
-* 表 5-6 get() 等方法接受的参数 ident 改为 id。
-* 表 5-7 第一列的标题改为“过滤方法”。
-
-### 第 6 章 
-
-* 6.1.1 P181 代码清单6-1 第 9-13 行参数对去掉等号两边的空格。
-
-### 第 8 章
-
-P275 该小节最后添加一段提示文字：
-
-提示 在 fakes.py 脚本里的 fake_admin() 函数中，我们需要在 admin 对象创建后，为虚拟用户记录设置密码，添加后面的代码：admin.set_password('helloflask')。
-
 
 ### 第14章部署后更新程序添加说明
 
@@ -136,6 +102,32 @@ roles_permissions_map = {
 }
 ```
 
+### 关于发送验证邮件的设计
+
+目前更合理的主流设计是注册的时候不发确认邮件，等用户自行登录后，显示提示需要确认邮件，用户点击发送邮件按钮后再发送邮件。
+
+
+### 禁止锁定和封禁协管员和管理员
+
+* 相关 Issue： https://github.com/greyli/albumy/issues/7
+* 相关 Commit： https://github.com/greyli/albumy/commit/943829b819b7bda6921d6c0fe277c75cd6a98033
+* 主要描述：在用户后台管理，不对管理员和协管员显示封禁锁定按钮，同时在对应视图进行检查。
+
+以锁定为例，原代码：
+```py
+user.lock()
+flash('Account locked.', 'info')
+```
+修改为：
+```py
+if user.role.name in ['Administrator', 'Moderator']:
+    flash('Permission denied.', 'warning')
+else:
+    user.lock()
+    flash('Account locked.', 'info')
+```
+封禁处理类似。模板中处理类似。
+
 ### bluelog
 
 #### 虚拟数据中相关代码的优化
@@ -143,6 +135,10 @@ roles_permissions_map = {
 * 相关Issue：https://github.com/greyli/bluelog/issues/1
 * 贡献者：@[AngelLiang](https://github.com/AngelLiang)
 * 主要描述：「尽量使虚拟数据接近真实的数据」。虚拟数据中生成的评论时间应该晚于文章时间，评论回复时间应该晚于评论时间，并且评论和回复应关联同一篇文章。不过由于虚拟数据主要目的是展示或测试视觉效果，所以不必把太多精力放在这里。
+
+### 主页评论数量改进
+
+https://github.com/greyli/bluelog/issues/3
 
 ### CatChat
 
@@ -167,6 +163,47 @@ roles_permissions_map = {
 
 * 封面的图片颜色和设计图相比有些失真，需要完善。
 * 图片可以再大一点。
+
+## 第 1 版第 3 次印刷（2019/4/1）更新
+
+下面的内容已经在 1-3 版本中修正。
+
+### 关于导入语句
+
+为了节省篇幅，除非是第一次出现的类和函数等接口，导入语句都省略掉了。对于某些交互式代码块，添加必要的导入语句会更友好。包含下面这些：
+
+7.5 P214 代码清单7-8：
+```py
+from sayhello import db
+from sayhello.models import Message
+```
+
+8.2.1 P237 代码清单8-10
+```py
+import random
+```
+
+### 第 5 章
+
+* 表 5-6 get() 等方法接受的参数 ident 改为 id。
+* 表 5-7 第一列的标题改为“过滤方法”。
+
+### 第 6 章 
+
+* 6.1.1 P181 代码清单6-1 第 9-13 行参数对去掉等号两边的空格。
+
+### 第 8 章
+
+P275 该小节最后添加一段提示文字：
+
+提示 在 fakes.py 脚本里的 fake_admin() 函数中，我们需要在 admin 对象创建后，为虚拟用户记录设置密码，添加后面的代码：admin.set_password('helloflask')。
+
+### 第3章3.3.2最后的两个列表
+
+* 相关Issue：https://github.com/greyli/helloflask/issues/26
+* 贡献者：@[BobcatsII](https://github.com/BobcatsII)
+
+描述中使用了“第一个列表的2、3、4项”的表达，为了更好的定位，这里的两个列表应该使用有序标号。1-2 版本反馈给编辑，但是没有改，或许可以把这句改为“上面第一个列表的第2、3、4项”。
 
 ## 第 1 版第 2 次印刷（2019/1/1）更新
 
