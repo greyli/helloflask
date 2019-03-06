@@ -11,7 +11,7 @@
 --- | --- | --- | ---
 | 2.2 P30 | 请求报文示例表格 | | URL /hello 改为 http://helloflask.com/hello?name=Grey | 19.2.2 |
 | 2.2 P30 | 请求报文示例表格 | | 去掉主体一栏的内容 | 19.2.2 |
-| 2.2 P30 | 请求报文示例表格下方正文 | 如果 URL 中包含查询字符串，或是提交了表单，那么报文主体将会是查询字符串和表单数据。 | 如果提交了表单，那么报文主体将会是表单数据（查询字符串直接通过 URL 传递）。 | 19.2.2 |
+| 2.2 P30 | 请求报文示例表格下方正文 | 如果 URL 中包含查询字符串，或是提交了表单，那么报文主体将会是查询字符串和表单数据。 | 如果提交了表单，那么报文主体将会是表单数据（查询字符串通常会直接通过 URL 传递）。 | 19.2.2 |
 | 2.2 P31 命令行输出 | /hello | /hello?name=Grey | 19.2.2 |
 | 3.2.4 2.自定义测试器 P86下方| 我们创建了一个没有意义的baz过滤器 | 我们创建了一个没有意义的baz测试器 | 笔误 19.1.9 | 
 | 4.3.1 P115 第 2 小节的代码块第 5 行 | `Length(8, 128)` | `Length(6, 128)` | 前后不一致（1-3 重印时需要反过来调整另外 3 处），18.12.28 |
@@ -22,6 +22,7 @@
 | 7.4.3 P213 最后 1 个附注段落 | bootstrap.bundle.min.css |  bootstrap.bundle.min.js | 笔误 18.12.5 |
 | 7.5 P214 该页（节）最后 2 个代码块的最后 1 行 | | 两处均向左缩进 4 格，和上面对齐 | 排版错误 18.12.6 |
 | 8.2.1 P237 代码清单 8-8 倒数第 3 行 | | 删除这一行 | 后续内容前置 19.1.13 |
+| P263 代码清单 8-29 第 2 行 | `{{ comments|length }} Comments` | `{{ pagination.total }} Comments <!-- 使用 pagination.total 获取分页条目总数 -->` | 优化 19.3.5 |
 | 8.3.5 P264 图 8-8 上的代码块第2行 | `{{ comment.replied.author.name }}` | `{{ comment.replied.author }}` | 笔误 18.12.6 |
 | 8.3.7 P268 第1行 | photo | show_post | 笔误 18.12.6 |
 | 8.4.1 P273 纸书该页第 2 个代码块，电子书 8.4.2 上面倒数第 2 个代码块。第 5、7 行 | `check_password` | `validate_password` | 笔误 18.12.6 |
@@ -31,11 +32,18 @@
 | 8.7.2 P292 代码清单8-44代码块倒数第1行  | `.show_post` | `blog.show_post`  | 笔误 18.12.6 | 
 | 9.1.1 P301 该页最后 1 行，电子书该节第 2 个代码块最后一行 | | 向左缩进 4 格 | 排版错误 18.12.6 |
 | 9.1.1 P302 9.1.2 标题上面的代码块 | `bluelog` | `myapp` | 笔误 18.12.6 |
+| P309 代码清单 9-2 倒数第 6 行 | field.data | field.data.lower() | 优化 19.3.5 |
 | 9.3.2.1 P312 第二个代码块上正文倒数第1行 | Operations字典中 | Operations类中| 笔误 18.12.10 |
 | 9.3.2.2 P314 代码清单9-6代码块最后1行 | `url_for('.reset_confirmation')` | `url_for('.reset_confirm_email')`| 笔误 18.12.12 |
 | 9.4.4 P324 代码清单9-14代码块第4-5行 || 两处均向左缩进 4 格 | 排版错误  18.12.10 |
+| P332 图 9-4 下面第 2 行 | dropzone_upload 视图 | upload 视图 | 错误 19.3.5 |
 | 9.5.3 P334 9.6 小节上面的代码块最后一行模板字符串 | `home/upload.html` | `main/upload.html` | 遗留代码未更新 18.12.17 |
 | 9.5.3 P334 9.6 小节上面的代码块 | | 代码中的 400 和 800 分别替换为配置变量 `current_app.config['ALBUMY_PHOTO_SIZE']['small']` 和 `current_app.config['ALBUMY_PHOTO_SIZE']['medium']` | 遗留代码 18.12.17 |
+| P360 代码清单 9-41 倒数第 2 行和倒数第 8 行**两处** |  `self.collected`  | `Collect.query.with_parent(self)` | 错误 19.3.5 |
+| P363 代码清单9-45 倒数第 6 行 | collections | collects | 错误 19.3.5 |
+| P363 代码清单9-45 第 3 行 | `... import user_card with context %}` | `... import user_card %}` | 提前 19.3.5 |
+| P367 正文第 3 行 | if_following() | is_following() | 错误 19.3.5 |
+| P368 第 2 段第 2 行 | | 去掉“和 is_followed_by()” | 多余内容 19.3.5 |
 | 9.8.3 P363 代码清单9-45代码块倒数第6行 | `{% if collections %}` |`{% if collects %}`| 笔误 18.12.10 |
 | 9.9.4 P371 代码清单9-53的路径 | albumy/templates/profile_popup.html | albumy/templates/main/profile_popup.html | 笔误 18.12.21 |
 | 9.9.4 P375 代码清单 9-56 下面的代码块第二行 | id="followers-count" | id="followers-count-{{ user.id }}" | 笔误 18.12.21 |
@@ -45,7 +53,11 @@
 | 9.11.6 P397 代码清单9-79代码块倒数第5行 | `current_user` |`current_user._get_current_object()`| 笔误 18.12.10 |
 | 9.11 P385 代码清单9-66倒数第9行 | `{{ render_nav_item('user.notification_setting', 'Notification and Privacy') }}` | `{{ render_nav_item('user.notification_setting', 'Notification') }} {{ render_nav_item('user.privacy_setting', 'Privacy') }}` | 代码与实际项目不符 18.12.24 |
 | 9.11.2 P389 代码清单9-71倒数第4行 | `{{ render_form(crop_form) }}` | `{{ render_form(crop_form, action=url_for('.crop_avatar')) }}` | 笔误 18.12.24 |
-| 9.14.3 P412 代码清单9-90 | | | 缺少validate_username()方法的定义 18.12.24 |
+| P395 第 1 个代码块第 3 行 | show_collections | public_collections | 错误 19.3.5 |
+| P396 提示段落 | show_collections | public_collections | 错误 19.3.5 |
+| P406 代码清单 9-85 第 3 行 | | 在这一行最后紧跟着括号添加（注意不要漏掉开始的英文句点） `.strip()` | 优化，避免输入空格作为搜索词 19.3.5 |
+| P412 代码清单 9-90 倒数第 3 行 | field.data | field.data.lower() | 优化 19.3.5 |
+| P417 文件目录树倒数第 6 行 | app.py | todo.py | 错误 19.3.5 |
 | 10.1.1 P420 第 2 小节第一个代码块第 7 行 | `{{ url_for('todo.clear_item') }};` | `{{ url_for('todo.clear_items') }};` | 笔误 18.12.27 |
 | 10.1.4 P425 第一个代码块第 6 行 | `jsonify(message='Invalid item body.'), 400` | `return jsonify(message='Invalid item body.'), 400` | 笔误 19.1.20 |
 | 10.3.3 P447 第 1 小节/该页最后一个代码块 | `... import api` | `... import api_v1` | 笔误 18.12.28 |
@@ -100,6 +112,69 @@
 | 16.2.4 P639 最后1个段落的第2行 | 在不基于线程、greenlet或单进程实现的并发服务器上 | 在不基于线程、Greenlet 或进程实现并发的服务器上 | 笔误 18.12.31 |
 | 16.4.2 P649 最后1行| Flask.route()是Flask类的类方法 | Flask.route()是Flask类的实例方法 | 笔误 19.1.1 |
 | 16.4.3 2. 堆栈与LocalStack  P659 第1段第3行| 并将数据的字典名称设为'stack'。| 并将储存上下文对象的列表名称设为'stack' | 笔误 19.1.4 |
+| 16.4.5 P672 第一段第一行 | 对传入的**请求对象**调用 | 对传入的**响应对象**调用 | 笔误 19.2.8 |
+
+
+**P412** 添加 validate_username() 方法定义（同时添加到 1-1 勘误）：
+
+```python
+def validate_username(self, field):
+    if field.data != self.user.username and User.query.filter_by(username=field.data).first():
+        raise ValidationError('The username is already in use.')
+```
+
+**P363** 正文第 1 段，原文：
+
+我们在第 3 章曾经介绍过 Jinja2 的上下文机制，因为 user_card 宏里使用了 Flask-Login 提供的 current_user 变量，所以我们需要在导入时使用 with context 指令显式声明包含上下文：
+
+改为：
+
+根据第 3 章介绍的 Jinja2 上下文机制，因为 user_card 宏后面会使用 Flask-Login 提供的 current_user 变量，到时你需要为相关的导入语句追加 with context 指令显式声明包含上下文：
+
+
+**P393** 代码清单9-74 从该页第 3 行到第 8 行，原文为：
+
+```python
+    if form.validate_on_submit() and current_user.validate_password(form.old_password.data):
+        current_user.set_password(form.password.data)  # 重设密码
+        db.session.commit()
+        flash('Password updated.', 'success')
+        return redirect(url_for('.index', username=current_user.username))
+```
+修改为：
+
+```python
+    if form.validate_on_submit():  # 验证表单是否通过验证
+        if current_user.validate_password(form.old_password.data):  # 验证旧密码
+            current_user.set_password(form.password.data)  # 设置新密码
+            db.session.commit()  # 提交数据库会话
+            flash('Password updated.', 'success')
+            return redirect(url_for('.index', username=current_user.username))
+        else:
+            flash('Old password is incorrect.', 'warning')  # 旧密码不对则显示提示
+```
+
+因为改动后的行数新增了 2 行，可以删掉代码块下面的第一段文字（2 行）。
+
+**P409** 代码清单 9-88 在第 2 行和第 10 行（@permission 开头的两行）上面分别插入新的一行，内容为 `@login_required`，比如：
+
+```python
+@admin_bp.route('/lock/user/<int:user_id>', methods=['POST'])
+@login_required
+@permission_required('MODERATE')
+```
+
+
+**P275** 8.5 小节标题上面添加提示段落：
+
+提示 在 fakes.py 脚本里的 fake_admin() 函数中，我们需要在 admin 对象创建后，为虚拟用户记录设置密码：admin.set_password('helloflask')。
+
+如果排版空间不够，可以将上面的四行英文替换为一行“...”）：
+
+Initializing the database...
+Creating the administrator account...
+Creating the default category...
+Done.
 
 #### 不重要
 
@@ -113,6 +188,10 @@
 | 2.2.2 P33 代码清单 2-1 最后一行 | | 该行注释缩进出错，向左移动至保留 2 个空格 | 排版错误 18.12.28 |
 | 3.2.5 P87 正文共 5 处 | enviroment | enviro**n**ment | 拼写错误 18.12.28 |
 | 3.1.1 P76 代码清单 3-1 文件路径 | template/watchlist.html | template**s**/watchlist.html | 笔误 18.12.28 |
+| P89 最后一个代码块上面的段落 | 使用第一个列表 | 使用**前**一个列表 | 优化 19.3.5 |
+| P149 表 5-6 左边一列第 1 行和第 5 行两处 | ident | id | 优化 19.3.5 |
+| P150 表 5-7 左边一列的标题 | 查询过滤器名称 | 过滤方法 | 优化 19.3.5 |
+| P237 代码清单 8-10 第 2 行 | | 空白行写入内容 `import random` | 优化 19.3.5 |
 | 3.4.2 P97 注意段落最后一行 | Boostrap | Boo**t**strap | 笔误 18.12.28 |
 | 3.4.4 P101 图 3-5 下面第 1 行文字 | 处理器和模块 | 处理器和模**板** | 笔误 19.1.13 |
 | 4.4.4.1 P123 代码清单4-13第3行 | | 字符间距过大。 | 排版错误 19.1.5 |
@@ -127,7 +206,11 @@
 | 8.7.2.2 P294 代码清单8-45代码块下正文第1行  | `Ture` | `True`  | 笔误 18.12.6 | 、
 | 8.5 P276 提示上方段落第一行 | UserMinxin | UserMixin | 笔误 18.12.23 |
 | 8.5.3 P279 代码清单 8-37 第 4 行 | @login_required | @login_required  # 用于视图保护，后面会详细介绍 | 添加注释 19.1.5 |
+| P299 | | Flask-Avatars 版本 升级为 0.2.2 | 更新 19.3.5 |
+| 9.2 P304 图9-1左上角多了一个"搜索" | `搜索` | 去掉一个`搜索` | 笔误 18.12.10 |
 | 9.2 P310 代码清单9-3代码块第7行 | `url_for ('main.index')` |`url_for('main.index')`| 笔误 18.12.10 |
+| P327 最后 1 个代码块上方文字 | 使用**分号**隔开 | 使用**逗号**隔开 | 错误 19.3.5 |
+| P330 代码清单 9-17 下面的段落第 2 行 | Photo 模型和 User 模型 | User 模型和 Photo 模型 | 优化 19.3.5 |
 | 9.8.2 P360 代码清单9-41代码块上访正文倒数第3行 | 实际动作是有用户做出的| 实际动作是由用户做出的| 笔误 18.12.10 |
 | 9.9.1 P365 9.9.1 标题下正文第一行 | Uesr | User | 笔误 18.12.21 |
 | 9.9 P365 代码清单9-47下方的正文 | timastamp | timestamp | 笔误 18.12.21 |
@@ -135,8 +218,10 @@
 | 9.7.1 P339 代码清单 9-23 路径 | macros.py | macros.html | 19.2.2 |
 | 9.7.1 P340 代码清单9-24 上方 | Photo_card() | photo_card() | 19.2.2 |
 | 9.7.1 P340 代码清单9-24 导入语句第二行 | form | from | 19.2.2 |
-| 9.2 P304 图9-1左上角多了一个"搜索" | `搜索` | 去掉一个`搜索` | 笔误 18.12.10 |
+| P364 倒数第 3 行 | collections 模板 | 收藏页面模板 | 优化 19.3.5 |
 | 9.11.2 P388 提示下方的正文 | Scripts块 | scripts块 | 笔误 18.12.24 |
+| P393 代码清单 9-75 | | 代码清单的文件路径和介绍中间添加缺失的中文引号 | 修正 19.3.5 |
+| P406 代码清单9-86 |  | 代码清单文件路径改为“albumy/templates/main/search.html” | 错误 19.3.5 |
 | 10.1 P417 项目结构示意图 | | blueprints下的__init__.py多缩进了 4 格 | 排版错误 18.12.27 |
 | 10.2.2 P427 倒数第5行 | ISO 639?1 | ISO 639-1 | 笔误 18.12.28 |
 | 10.2.4 P434 第 2 小节注意段落上方的正文段落的第一行 | message.po | messages.po | 笔误 18.12.28 |
@@ -158,6 +243,7 @@
 | 13.3.3 P560 第1段正文第3行 | style块 | styles块 | 笔误 19.01.06 |
 | 14.3.4 P569 第一段正文下方的代码 | `app.logger.warning('A wraning message.')` | `app.logger.warning('A warning message.')` | 笔误 19.01.21 |
 | 14.3.5 P572 代码块 wsgi.py 定义 | 导入语句补充 `import os` | 19.2.2 |
+| P578 第 1 个附注段落 | GitHub的免费账户只能创建公开仓库，为此你可以考虑使用BitBucket（https://bitbucket.org），它提供不限数量的免费私有仓库。 | GitHub（https://github.com） 和 BitBucket（https://bitbucket.org） 均支持免费创建私有仓库，你可以在创建仓库时进行选择。 | 更新 19.3.5 |
 | 16.5 P680 附注第2行 | Pocco风格指南 | Pocoo风格指南 | 笔误 19.01.21 |
 | 16.4.2.1 P650 最后第2段正文第1行 | view_function | view_functions | 笔误 19.01.21 |
 | 16.4.2.2 P653 代码清单16-15中的注释 | 出于 | 处于 | 笔误 19.01.21 |
@@ -166,11 +252,48 @@
 | 15.5.1 P611 倒数第2段正文第1行 | laod() | load() | 笔误 19.01.21 |
 | 15.5.1 P612 代码清单15-5中init_app()方法 | `static_folder='static ,` | `static_folder='static,` | 空格错误 19.01.21 |
 | 15.5.1 P612 代码清单15-5中init_app()方法 | | 倒数第2行去除一个多余的)符号 | 符号错误 19.01.21 |
+| P630 倒数第 2 行 | “f” | “f（红色背景）” | 优化 19.3.5 |
 | 16.4.1.1 P647 正文第1行 | Ture | True | 笔误 19.01.21 |
 | 16.4.1.2 P648 代码清单16-8中的注释 | HTPP | HTTP | 笔误 19.01.21 |
 | 16.4.3 3.代理与LocalProxy P660 Cython交互代码片段第8第9行| 代码与第6第7行重复，可删除 | 校对错误 | 19.1.7 |
 | 16.4.5 P669 代码清单16-28 多行注释| 一个字典，每当产生改变化时会调用传入的参数 | 一个字典，每当产生变化时会调用传入的参数 | 笔误 19.1.9 |
 
+
+**P7** 附注段落，原文为：
+
+附注 包括Flask在内，Flask的5个依赖包都由 Pocoo 团队（http://www.pocoo.org/）开发，主要作者均为Armin Ronacher（http://lucumr.pocoo.org/），这些项目均隶属于Pallets项目（https://www.palletsprojects.com/）。
+
+修改为：
+
+附注 包括Flask在内，Flask的5个依赖包都由 Pallets 团队（http://www.palletsprojects.com/）开发，主要作者均为 Armin Ronacher（http://lucumr.pocoo.org/），这些项目均隶属于Pallets Projects。
+
+
+**P181** 代码清单6-1 第 9-13 行（以 MAIL 开头的那 6 行），去掉等号“=”两边的空格，修改后的效果：
+```python
+    MAIL_SERVER=os.getenv('MAIL_SERVER'),
+    MAIL_PORT=465,
+    MAIL_USE_SSL=True,
+    MAIL_USERNAME=os.getenv('MAIL_USERNAME'),
+    MAIL_PASSWORD=os.getenv('MAIL_PASSWORD'),
+    MAIL_DEFAULT_SENDER=('Grey Li', os.getenv('MAIL_USERNAME'))
+```
+
+**P214** 代码清单 7-8 第 2 行修改，并新插入一行（如果排版限制不能插入，可以删掉下面的某个空白行，比如第 9 行）： 
+
+原文：
+
+```py
+from sayhello import app
+...
+```
+
+修改为：
+
+```py
+from sayhello import app, db
+from sayhello.models import Message
+...
+```
 
 拼写错误，全书多处：Crtl 改为 Ctrl，下面是已知的错误位置：
 * P300 注意段落
