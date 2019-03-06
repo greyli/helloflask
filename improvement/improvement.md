@@ -1,12 +1,3 @@
-[主页](https://github.com/greyli/helloflask)
-/ [勘误](https://github.com/greyli/helloflask/blob/master/errata/errata.md)
-/ [FAQ](https://github.com/greyli/helloflask/blob/master/faq/faq.md)
-/ 可改进实现
-/ [更新记录](https://github.com/greyli/helloflask/blob/master/CHANGES.md)
-/ [示例程序](https://github.com/greyli/helloflask/blob/master/demos/)
-/ [HelloFlask.com](http://helloflask.com)
-/ [本书主页](http://helloflask.com/book)
-
 # 可改进的实现
 
 下面是《Flask Web开发实战》的可改进实现。书中的第二部分的程序编写时需要同时写作书稿，时间上比较仓促，没有深入思考程序的设计与实现。
