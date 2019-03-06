@@ -73,9 +73,9 @@
 --- | --- | --- | ---
 | 1.2.2.2 P13 代码清单1-3下第2段第2行 | http://helloflask.com/hello/Grey | http://helloflask.com/greet/Grey | 笔误 |
 | 1.7 P23 第2个代码块下第1行 | `url_for('say_hello', name='Jack')` | `url_for('greet', name='Jack')` | 笔误 |
-| 2.2 P30 | 请求报文示例表格 | | URL /hello 改为 http://helloflask.com/hello?name=Grey | 19.2.2 |
-| 2.2 P30 | 请求报文示例表格 | | 去掉主体一栏的内容 | 19.2.2 |
-| 2.2 P30 | 请求报文示例表格下方正文 | 如果 URL 中包含查询字符串，或是提交了表单，那么报文主体将会是查询字符串和表单数据。 | 如果提交了表单，那么报文主体将会是表单数据（查询字符串通常会直接通过 URL 传递）。 | 19.2.2 |
+| 2.2 P30 请求报文示例表格 | | URL /hello 改为 http://helloflask.com/hello?name=Grey | 19.2.2 |
+| 2.2 P30 请求报文示例表格 | | 去掉主体一栏的内容 | 19.2.2 |
+| 2.2 P30 请求报文示例表格下方正文 | 如果 URL 中包含查询字符串，或是提交了表单，那么报文主体将会是查询字符串和表单数据。 | 如果提交了表单，那么报文主体将会是表单数据（查询字符串通常会直接通过 URL 传递）。 | 19.2.2 |
 | 2.2 P31 命令行输出 | /hello | /hello?name=Grey | 19.2.2 |
 | 2.2.1 P31 表2-3左侧下面的两行 | | POST对应的说明列原文为“传输数据”，修改为“创建或更新资源”；PUT对应的说明列原文为“传输文件”，修改为“创建或替换资源” | 改进 18.11.18 |
 | 2.2.3.3 P36 表2-6后第1个代码块 | `'goback/<int:year>'` | `'/goback/<int:year>'` | 笔误。 18.9.28 |
@@ -263,8 +263,6 @@ def validate_username(self, field):
             flash('Old password is incorrect.', 'warning')  # 旧密码不对则显示提示
 ```
 
-因为改动后的行数新增了 2 行，可以删掉代码块下面的第一段文字（2 行）。
-
 **P409** 代码清单 9-88 在第 2 行和第 10 行（@permission 开头的两行）上面分别插入新的一行，内容为 `@login_required`，比如：
 
 ```python
@@ -273,17 +271,9 @@ def validate_username(self, field):
 @permission_required('MODERATE')
 ```
 
-
 **P275** 8.5 小节标题上面添加提示段落：
 
 提示 在 fakes.py 脚本里的 fake_admin() 函数中，我们需要在 admin 对象创建后，为虚拟用户记录设置密码：admin.set_password('helloflask')。
-
-如果排版空间不够，可以将上面的四行英文替换为一行“...”）：
-
-Initializing the database...
-Creating the administrator account...
-Creating the default category...
-Done.
 
 #### 不重要勘误
 
@@ -429,8 +419,6 @@ Done.
 | 16.4.5 P669 代码清单16-28 多行注释 | 一个字典，每当产生改变化时会调用传入的参数 | 一个字典，每当产生变化时会调用传入的参数 | 笔误 19.1.9 |
 | 16.4.5 P672 第一段第一行 | 对传入的请求对象调用 `set_cookie` | 对传入的响应对象调用 `set_cookie` | 笔误 19.2.8 |
 
-
-
 **P7** 附注段落，原文为：
 
 附注 包括Flask在内，Flask的5个依赖包都由 Pocoo 团队（http://www.pocoo.org/）开发，主要作者均为Armin Ronacher（http://lucumr.pocoo.org/），这些项目均隶属于Pallets项目（https://www.palletsprojects.com/）。
@@ -440,17 +428,9 @@ Done.
 附注 包括Flask在内，Flask的5个依赖包都由 Pallets 团队（http://www.palletsprojects.com/）开发，主要作者均为 Armin Ronacher（http://lucumr.pocoo.org/），这些项目均隶属于Pallets Projects。
 
 
-**P181** 代码清单6-1 第 9-13 行（以 MAIL 开头的那 6 行），去掉等号“=”两边的空格，修改后的效果：
-```python
-    MAIL_SERVER=os.getenv('MAIL_SERVER'),
-    MAIL_PORT=465,
-    MAIL_USE_SSL=True,
-    MAIL_USERNAME=os.getenv('MAIL_USERNAME'),
-    MAIL_PASSWORD=os.getenv('MAIL_PASSWORD'),
-    MAIL_DEFAULT_SENDER=('Grey Li', os.getenv('MAIL_USERNAME'))
-```
+**P181** 代码清单6-1 第 9-13 行（以 MAIL 开头的那 6 行），去掉等号“=”两边的空格。
 
-**P214** 代码清单 7-8 第 2 行修改，并新插入一行（如果排版限制不能插入，可以删掉下面的某个空白行，比如第 9 行）： 
+**P214** 代码清单 7-8 第 2 行修改，并新插入一行： 
 
 原文：
 
@@ -466,7 +446,6 @@ from sayhello import app, db
 from sayhello.models import Message
 ...
 ```
-
 
 拼写错误，全书多处：Crtl 改为 Ctrl，下面是已知的错误位置：
 * P300 注意段落

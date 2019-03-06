@@ -9,9 +9,9 @@
 
 位置 | 错误 | 正确 | 备注/时间 |
 --- | --- | --- | ---
-| 2.2 P30 | 请求报文示例表格 | | URL /hello 改为 http://helloflask.com/hello?name=Grey | 19.2.2 |
-| 2.2 P30 | 请求报文示例表格 | | 去掉主体一栏的内容 | 19.2.2 |
-| 2.2 P30 | 请求报文示例表格下方正文 | 如果 URL 中包含查询字符串，或是提交了表单，那么报文主体将会是查询字符串和表单数据。 | 如果提交了表单，那么报文主体将会是表单数据（查询字符串通常会直接通过 URL 传递）。 | 19.2.2 |
+| 2.2 P30 请求报文示例表格 | | URL /hello 改为 http://helloflask.com/hello?name=Grey | 19.2.2 |
+| 2.2 P30 请求报文示例表格 | | 去掉主体一栏的内容 | 19.2.2 |
+| 2.2 P30 请求报文示例表格下方正文 | 如果 URL 中包含查询字符串，或是提交了表单，那么报文主体将会是查询字符串和表单数据。 | 如果提交了表单，那么报文主体将会是表单数据（查询字符串通常会直接通过 URL 传递）。 | 19.2.2 |
 | 2.2 P31 命令行输出 | /hello | /hello?name=Grey | 19.2.2 |
 | 3.2.4 2.自定义测试器 P86下方| 我们创建了一个没有意义的baz过滤器 | 我们创建了一个没有意义的baz测试器 | 笔误 19.1.9 | 
 | 4.3.1 P115 第 2 小节的代码块第 5 行 | `Length(8, 128)` | `Length(6, 128)` | 前后不一致（1-3 重印时需要反过来调整另外 3 处），18.12.28 |
@@ -154,8 +154,6 @@ def validate_username(self, field):
             flash('Old password is incorrect.', 'warning')  # 旧密码不对则显示提示
 ```
 
-因为改动后的行数新增了 2 行，可以删掉代码块下面的第一段文字（2 行）。
-
 **P409** 代码清单 9-88 在第 2 行和第 10 行（@permission 开头的两行）上面分别插入新的一行，内容为 `@login_required`，比如：
 
 ```python
@@ -164,17 +162,10 @@ def validate_username(self, field):
 @permission_required('MODERATE')
 ```
 
-
 **P275** 8.5 小节标题上面添加提示段落：
 
 提示 在 fakes.py 脚本里的 fake_admin() 函数中，我们需要在 admin 对象创建后，为虚拟用户记录设置密码：admin.set_password('helloflask')。
 
-如果排版空间不够，可以将上面的四行英文替换为一行“...”）：
-
-Initializing the database...
-Creating the administrator account...
-Creating the default category...
-Done.
 
 #### 不重要
 
@@ -268,17 +259,9 @@ Done.
 附注 包括Flask在内，Flask的5个依赖包都由 Pallets 团队（http://www.palletsprojects.com/）开发，主要作者均为 Armin Ronacher（http://lucumr.pocoo.org/），这些项目均隶属于Pallets Projects。
 
 
-**P181** 代码清单6-1 第 9-13 行（以 MAIL 开头的那 6 行），去掉等号“=”两边的空格，修改后的效果：
-```python
-    MAIL_SERVER=os.getenv('MAIL_SERVER'),
-    MAIL_PORT=465,
-    MAIL_USE_SSL=True,
-    MAIL_USERNAME=os.getenv('MAIL_USERNAME'),
-    MAIL_PASSWORD=os.getenv('MAIL_PASSWORD'),
-    MAIL_DEFAULT_SENDER=('Grey Li', os.getenv('MAIL_USERNAME'))
-```
+**P181** 代码清单6-1 第 9-13 行（以 MAIL 开头的那 6 行），去掉等号“=”两边的空格。
 
-**P214** 代码清单 7-8 第 2 行修改，并新插入一行（如果排版限制不能插入，可以删掉下面的某个空白行，比如第 9 行）： 
+**P214** 代码清单 7-8 第 2 行修改，并新插入一行： 
 
 原文：
 
