@@ -285,6 +285,8 @@ def validate_username(self, field):
 | 1.3.1 P14 ”Run，Flask，Run“小节第1个代码块最后1行 | | 出现多余的缩进 | 排版错误 |
 | 1.3.1.3 P17 配置步骤4 | 下列选项 | 下拉选项 | 笔误 |
 | 1.3.3 P18 "1.3.3"小节第1行 | Enviroment  | Environment | 拼写错误 |
+| 1.8 P24 代码清单1-4 | 缺少下文中提到的文档字符串 | 见Github源码 | 19.03.06 |
+| 2.2.2 P32 提示段落第一、三行 | MutliDict | MultiDict | 笔误 19.03.06 |
 | 2.2.2 P33 正文第一行 | MutliDict | MultiDict | 笔误 18.12.24 |
 | 2.2.2 P33 图 2-4 上面一行 | requset | request | 笔误 18.12.28 |
 | 2.2.2 P33 代码清单 2-1 最后一行 | `'<h1>Hello, %s!<h1>'` | `'<h1>Hello, %s!</h1>'` | `<h1>` 关闭斜线 18.12.28 |
