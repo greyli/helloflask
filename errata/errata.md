@@ -4,11 +4,11 @@
 
 如果你发现了书中的错误，欢迎提交PR更新勘误文件；你也可以创建Issue指出相关错误，或是通过Email与我联系（[withlihui@gmail.com](mailto:withlihui@gmail.com)），谢谢！
 
-最后更新：2019/3/6
+最后更新：2019/3/7
 
 ## 勘误贡献者列表
 
-统计时间：2018/3/6（排名不分先后）
+统计时间：2018/3/7（排名不分先后）
 
 * @JustALee https://github.com/JustALee
 * @meizhaohui 梅朝辉 https://github.com/meizhaohui
@@ -40,9 +40,10 @@
 * @brakchen jianping https://github.com/brakchen
 * @xSandie 向书晗 https://github.com/xSandie
 * @Kuari kuari https://github.com/Kuari
-* @yesting  yesting https://github.com/yetsing
-* @宏 微信
+* @yesting yesting https://github.com/yetsing
+* @zhangqihong 张启宏 https://github.com/zhangqihong
 * @bbbbx Venus https://github.com/bbbbx
+* @xmboy 小麦波音 https://github.com/xmboy
 * ……
 
 另外还有通过 QQ、Telegram 和 Email 反馈勘误的读者，不方便索引，这里没有一一列出。感谢你们的贡献！
@@ -93,6 +94,8 @@
 | 5.5.2.3 P160 ”建立关系“小节第1个代码块 | | 第2行插入`ham.author_id = 1` | 省略步骤，可加可不加 18.9.22 |
 | 5.5.2.4 P162 代码清单5-11第8行 | `title = ` | `name = ` | 笔误 18.9.26 |
 | 5.5.2.4 P163 ”建立双向关系“小节第3个代码块第6行 | `it.writer = writer` | `it.writer = king` | 笔误 18.9.26 |
+| P164 第 2 段第 2 行和第 3 行两处 | backref() 函数 | db.backref() 函数 | 优化 19.3.7 |
+| P164 第一个代码块第 3 行 | `backref=backref(...)` | `backref=db.backref(...)` | 错误 19.3.7 |
 | 5.5.3 P164 代码清单5-13上面 | 都定义在“多”这一侧，即City类中 | 都定义在“多”这一侧，即Citizen类中 | 笔误 |
 | 5.5.4 P165 代码清单5-14后面的代码块第6行 | - | 第6行`>>> china.capital = beijing`移动到第3行 | 笔误 |
 | 5.5.4 P165 代码清单5-14后面的代码块第8行 | `<Capital 1>` | `<Capital u'Beijing'>` | 笔误 |

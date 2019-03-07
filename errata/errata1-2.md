@@ -18,6 +18,8 @@
 | 5 P139 第 1 个代码块 | | `$ flask run` 上面添加一行 `$ flask initdb  # 初始化数据库，后面会详细介绍` | 疏漏 19.1.5 |
 | 5.4.2 P153 代码清单 5-5 | | 删掉第 3 行，最后一行删除括号中的`, form=form` | 代码未更新 18.12.24 |
 | 5.4.2 P155 代码清单 5-8 第 3 行 | `DeleteForm()` | `DeleteNoteForm()` | 代码未更新 18.12.24 |
+| P164 第 2 段第 2 行和第 3 行两处 | backref() 函数 | db.backref() 函数 | 优化 19.3.7 |
+| P164 第一个代码块第 3 行 | `backref=backref(...)` | `backref=db.backref(...)` | 错误 19.3.7 |
 | 7.3.1 P207 3.7.1节中最后一段话中 | bootstrap_load_js() | bootstrap.load_js() | 笔误 18.11.17 |
 | 7.4.3 P213 最后 1 个附注段落 | bootstrap.bundle.min.css |  bootstrap.bundle.min.js | 笔误 18.12.5 |
 | 7.5 P214 该页（节）最后 2 个代码块的最后 1 行 | | 两处均向左缩进 4 格，和上面对齐 | 排版错误 18.12.6 |
