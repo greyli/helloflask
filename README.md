@@ -11,7 +11,7 @@
 
 ## 反馈 & 讨论 & 评价
 
-如果你发现了书中的错误、运行实例程序出错或是有其他的问题，可以[创建Issue](https://github.com/greyli/helloflask/issues/new/choose)或是在 [HelloFlask 论坛](https://discuss.helloflask.com)发帖进行反馈。
+如果你发现了书中的错误、运行实例程序出错或是有其他的问题，可以[创建Issue](https://github.com/greyli/helloflask/issues/new/)或是在 [HelloFlask 论坛](https://discuss.helloflask.com)发帖进行反馈。
 
 欢迎在本书的[豆瓣图书页面](https://book.douban.com/subject/30310340/)、对应的[知乎问题](https://www.zhihu.com/question/296048455)或是电商网站撰写评价。
 
