@@ -4,7 +4,7 @@
 
 如果你发现了书中的错误，欢迎提交PR更新勘误文件；你也可以创建Issue指出相关错误，或是通过Email与我联系（[withlihui@gmail.com](mailto:withlihui@gmail.com)），谢谢！
 
-最后更新：2019/3/10
+最后更新：2019/3/11
 
 ## 勘误贡献者列表
 
@@ -91,7 +91,8 @@
 | 4.3.2.3 P115 第二段正文第一行 | basic_form 视图 | basic 视图 | 笔误 18.03.10 |
 | 4.3.2.3 P115 下方代码块最后一行第一个参数 | `'forms/basic.html'` | `'basic.html'` | 笔误 19.03.10 |
 | 4.3.3 P117 正文最后第二行 | 长度小于6 | 长度小于8 | 与实际项目不符 图4-4同理 19.03.10 |
-| 4.4.4.3.(3)第6个代码块下正文第2行 P127第2个代码块下正文第2行 | | 这个uploads视图 | 这个get_file视图 | 笔误 18.10.27 |
+| 4.4.4.3.(3) P127 第四段正文第二行 | 这个uploads视图 | 这个get_file视图 | 笔误 18.10.27 |
+| 4.4.4.3.(3) P127 第五段正文第二行 | ...模板**中**将从 session 获取... | ...模板将从 session **中**获取... | 句子不通顺 19.03.11 |
 | 4.4.4.4 P128 代码清单4-16 | | “检查文件类型”注释下第一行多余缩进4格 | 笔误 18.10.18 |
 | 5 P139 第 1 个代码块 | | `$ flask run` 上面添加一行 `$ flask initdb  # 初始化数据库，后面会详细介绍` | 疏漏 19.1.5 |
 | 5.4.1.1 P147 ”Create“小节第1个代码块第4行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，漏掉转义符号 |
@@ -328,8 +329,8 @@ def validate_username(self, field):
 | 4.2.3 P110 代码清单4-3第4行 | `{{ from.password.label }}{{ form.password }}<br>` | `{{ from.username.label }}<br>{{ form.username }}<br>` | 改进 18.11.5 |
 | 4.3.3 P117 代码清单4-7第4行 | `form.username()` | `form.username` | 笔误。此处的括号可有可无，去掉以保持风格上的统一 18.9.24 |
 | 4.4.4.1 P123 代码清单4-13第1行 | `flask wtf` | `flask_wtf` | 审校错误 18.9.24 |
-| 4.4.4.4 P128 代码清单4-16上面的第1个代码块第3行 | | 缺少右侧关闭括号 | 笔误 18.10.18 |
 | 4.4.4.1 P123 代码清单4-13第3行 | | 字符间距过大。 | 排版错误 19.1.5 |
+| 4.4.4.4 P128 第一个代码块第三行 | `('Upload Image', validators={DataRequired()}` | `('Upload Image', validators=[DataRequired()])` | 标点错误 19.03.11 |
 | 4.4.5.2 提示段落 | https://flask-ckeditor.readthedocs.io/configuration.html | https://flask-ckeditor.readthedocs.io/en/latest/configuration.html | 笔误 19.1.5 |
 | 4.4.5 P131 代码清单4-19下正文段落第3行 | `Ture` | `True` | 笔误 18.11.5 |
 | 5.3.1 P143 表5-2最后1行 | SQlite | SQLite | 大小写错误 18.10.27 |
