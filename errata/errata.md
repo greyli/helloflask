@@ -119,7 +119,7 @@
 | 8.3.1 P252 第1个代码块最后1行 | `'index.html'` | `'blog/index.html'` | 笔误 18.10.06 |
 | 8.3.1 P252 代码清单8-24文件路径 | templates/index.html | templates/blog/index.html | 笔误 18.10.06 |
 | 8.3.5 P263 第1个代码块第6行 | `Comment.query.with_parent(post)` | `Comment.query.with_parent(post).filter_by(reviewed=True)` | 笔误 18.9.26 |
-| P263 代码清单 8-29 第 2 行 | `{{ comments|length }} Comments` | `{{ pagination.total }} Comments <!-- 使用 pagination.total 获取分页条目总数 -->` | 优化 19.3.5 |
+| P263 代码清单 8-29 第 2 行 | `{{ comments\|length }} Comments` | `{{ pagination.total }} Comments <!-- 使用 pagination.total 获取分页条目总数 -->` | 优化 19.3.5 |
 | 8.3.5 P264 代码清单 8-29 倒数第11行 | `Reply</a>` | `Reply</a></div>` | 笔误 18.12.6 |
 | 8.3.5 P265 图 8-8 上的代码块第2行 | `{{ comment.replied.author.name }}` | `{{ comment.replied.author }}` | 笔误 18.12.6 |
 | 8.3.7 P267 代清清单8-31第4行 | `comment.photo_id` | `comment.post_id` | 笔误 18.9.26 |
@@ -298,7 +298,7 @@ def validate_username(self, field):
 | 2.2.2 P33 代码清单 2-1 最后一行 | `'<h1>Hello, %s!<h1>'` | `'<h1>Hello, %s!</h1>'` | `<h1>` 关闭斜线 18.12.28 |
 | 2.2.2 P33 代码清单 2-1 最后一行 | | 该行注释缩进出错，向左移动至保留 2 个空格 | 排版错误 18.12.28 |
 | 2.2.3 P34 图2-5 |  | 地址栏的地址应为/nothing，和描述对应。图中的/foo在后面实际被定义了 | 笔误 18.9.28 |
-| 2.2.3.3 P36 中部代码块最后一行 | 多出源码中没有的<p>标签 | 去除<p>标签 | 与源码不符 19.03.07 |
+| 2.2.3.3 P36 中部代码块最后一行 | 多出源码中没有的`<p>`标签 | 去除`<p>`标签 | 与源码不符 19.03.07 |
 | 2.3.1 P41 代码清单 2-2 第 7 行 | redierct | redirect | 笔误 18.12.24 |
 | 2.3.2.4 P45 JSON代码示例 | "heading":"Remider", |  "heading":"Reminder",  | 笔误。单词拼写错误。 18.11.28 |
 | 2.3.3 P47 表2-10后面的第1个附注段落 | Respone | Response | 笔误。拼写错误 |
