@@ -127,7 +127,7 @@
 | 8.3.1 P252 第1个代码块最后1行 | `'index.html'` | `'blog/index.html'` | 笔误 18.10.06 |
 | 8.3.1 P252 代码清单8-24文件路径 | templates/index.html | templates/blog/index.html | 笔误 18.10.06 |
 | 8.3.5 P263 第1个代码块第6行 | `Comment.query.with_parent(post)` | `Comment.query.with_parent(post).filter_by(reviewed=True)` | 笔误 18.9.26 |
-| P263 代码清单 8-29 第 2 行 | `{{ comments|length }} Comments` | `{{ pagination.total }} Comments <!-- 使用 pagination.total 获取分页条目总数 -->` | 优化 19.3.5 |
+| P263 代码清单 8-29 第 2 行 | `{{ comments\|length }} Comments` | `{{ pagination.total }} Comments <!-- 使用 pagination.total 获取分页条目总数 -->` | 优化 19.3.5 |
 | 8.3.5 P264 代码清单 8-29 倒数第11行 | `Reply</a>` | `Reply</a></div>` | 笔误 18.12.6 |
 | 8.3.5 P265 图 8-8 上的代码块第2行 | `{{ comment.replied.author.name }}` | `{{ comment.replied.author }}` | 笔误 18.12.6 |
 | 8.3.7 P267 代清清单8-31第4行 | `comment.photo_id` | `comment.post_id` | 笔误 18.9.26 |
@@ -196,7 +196,7 @@
 | 11.5.5 P517 代码清单11-17第6行 | `data.name` | `data.nickname` | 笔误 18.12.30 |
 | 11.5.5 P517 代码清单11-17第7行 | `icon: ...` | `icon: data.gravatar` | 笔误 18.12.30 |
 | 11.5.5 P518 最后1个代码块第5行 | `'_message.html'` | `'chat/_message.html'` | 笔误 18.12.30 |
-| 11.5.5 P518 最后1个代码块第6行 | `message_body` | `html_message` | 笔误 18.12.30 |
+| 11.5.5 P518 最后1个代码块第6行字典的值 | `message_body` | `html_message` | 笔误 18.12.30 |
 | 12.3.1 P526 代码清单12-1 | | setUp方法最后面追加一行代码`self.client = app.test_client()` | 代码缺失 19.01.05 |
 | 12.3.2 P527 提示段落下方的正文第3行 | assertEqual() | assertTrue() | 笔误 19.01.05 |
 | 12.3.2 P527 代码清单12-3 test_404_page方法的注释 | # 测试 400 错误页面 | # 测试 404 错误页面 | 笔误 19.01.05 |
@@ -306,7 +306,7 @@ def validate_username(self, field):
 | 2.2.2 P33 代码清单 2-1 最后一行 | `'<h1>Hello, %s!<h1>'` | `'<h1>Hello, %s!</h1>'` | `<h1>` 关闭斜线 18.12.28 |
 | 2.2.2 P33 代码清单 2-1 最后一行 | | 该行注释缩进出错，向左移动至保留 2 个空格 | 排版错误 18.12.28 |
 | 2.2.3 P34 图2-5 |  | 地址栏的地址应为/nothing，和描述对应。图中的/foo在后面实际被定义了 | 笔误 18.9.28 |
-| 2.2.3.3 P36 中部代码块最后一行 | 多出源码中没有的<p>标签 | 去除<p>标签 | 与源码不符 19.03.07 |
+| 2.2.3.3 P36 中部代码块最后一行 | 多出源码中没有的`<p>`标签 | 去除`<p>`标签 | 与源码不符 19.03.07 |
 | 2.3.1 P41 代码清单 2-2 第 7 行 | redierct | redirect | 笔误 18.12.24 |
 | 2.3.2.4 P45 JSON代码示例 | "heading":"Remider", |  "heading":"Reminder",  | 笔误。单词拼写错误。 18.11.28 |
 | 2.3.3 P47 表2-10后面的第1个附注段落 | Respone | Response | 笔误。拼写错误 |
@@ -347,7 +347,7 @@ def validate_username(self, field):
 | 5.8 P177 最后1行 | 本章要介绍的 | 本章介绍的 | 笔误 18.9.28 |
 | 6.1.3 P183 代码清单6-3第9行 | `return redirect(url_for('idnex'))` | `return redirect(url_for('index'))` | 笔误 18.10.27 |
 | 6.2 P183 6.2及6.2.1章节标题以及目录共**4处** | SendGird | SendGrid | 笔误 18.10.27 |
-| 7.2 P202 代码清单 7-3、7-4、7-7 | 补全路径，相应加入 sayllo/ 和 templates/ | 19.2.2 |
+| 7.2 P202 代码清单 7-3、7-4、7-7 | 补全路径，相应加入 sayhello/ 和 templates/ | 19.2.2 |
 | 7.2.3.1 P202 代码清单7-3的文件路径 | sayhello.py | models.py | 笔误 |
 | 7.2.3 P204 代码清单7-5后面的代码块第4行 | | `messages = Message.query.order_by...`向后缩进1格 | 缩进 19.01.11 |
 | 7.3.1 P207 3.7.1节中最后一段话中 | bootstrap_load_js() | bootstrap.load_js() | 笔误 18.11.17 |
