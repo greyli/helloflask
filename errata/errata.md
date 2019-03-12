@@ -4,7 +4,7 @@
 
 如果你发现了书中的错误，欢迎提交PR更新勘误文件；你也可以创建Issue指出相关错误，或是通过Email与我联系（[withlihui@gmail.com](mailto:withlihui@gmail.com)），谢谢！
 
-最后更新：2019/3/11
+最后更新：2019/3/12
 
 ## 勘误贡献者列表
 
@@ -95,6 +95,9 @@
 | 4.4.4.3.(3) P127 第五段正文第二行 | ...模板**中**将从 session 获取... | ...模板将从 session **中**获取... | 句子不通顺 19.03.11 |
 | 4.4.4.4 P128 代码清单4-16 | | “检查文件类型”注释下第一行多余缩进4格 | 笔误 18.10.18 |
 | 5 P139 第 1 个代码块 | | `$ flask run` 上面添加一行 `$ flask initdb  # 初始化数据库，后面会详细介绍` | 疏漏 19.1.5 |
+| 5.1.2.1 P140 记录的文档表示的第四行 | `sex: "Male"` | `sex: "Male",` | 标点缺失 19.03.12 |
+| 5.2 P141 第一个SQL代码块第三行 | | 去除末尾的**,**逗号 | 标点错误 19.03.12 |
+| 5.3.3 P146 代码清单5-3下方正文 | flask inintdb | flask initdb | 笔误 19.03.12 |
 | 5.4.1.1 P147 ”Create“小节第1个代码块第4行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，漏掉转义符号 |
 | 5.4.1.2 P150 表5-7下的第1个代码块 | `Note.body='SHAVE'` | `Note.body == 'SHAVE'` | 代码错误，少了1个等号 18.9.22 |
 | 5.4.2 P153 代码清单 5-5 | | 删掉第 3 行，最后一行删除括号中的`, form=form` | 代码未更新 18.12.24 |
@@ -334,6 +337,7 @@ def validate_username(self, field):
 | 4.4.5.2 提示段落 | https://flask-ckeditor.readthedocs.io/configuration.html | https://flask-ckeditor.readthedocs.io/en/latest/configuration.html | 笔误 19.1.5 |
 | 4.4.5 P131 代码清单4-19下正文段落第3行 | `Ture` | `True` | 笔误 18.11.5 |
 | 4.4.7 P135-P136 两个HTML代码块中三处标题标签 | `<h2></h2>` 标签 | 替换为`<h3></h3>` 标签 | 与源码不符 19.03.11 |
+| 5.2 P142 本节最后一段中文第二行 | SQL-Alchemy | SQLAlchemy | 标点多余 19.03.12 |
 | 5.3.1 P143 表5-2最后1行 | SQlite | SQLite | 大小写错误 18.10.27 |
 | 5.3.3 P146 第2个代码块 | | 开头可添加一行导入`from app import Note` | 更完善 18.10.18 |
 | P149 表 5-6 左边一列第 1 行和第 5 行两处 | ident | id | 优化 19.3.5 |
@@ -466,6 +470,7 @@ from sayhello.models import Message
 * P580 页面中部
 * P584 页面中部
 * P633 第1行
+* P139 注意段落
 
 关于URL长度限制的详情可以参考[WWW FAQs: What is the maximum length of a URL?](https://www.boutell.com/newfaq/misc/urllength.html)。
 
