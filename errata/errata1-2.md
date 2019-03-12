@@ -84,7 +84,7 @@
 | 11.5.5 P517 代码清单11-17第6行 | `data.name` | `data.nickname` | 笔误 18.12.30 |
 | 11.5.5 P517 代码清单11-17第7行 | `icon: ...` | `icon: data.gravatar` | 笔误 18.12.30 |
 | 11.5.5 P518 最后1个代码块第5行 | `'_message.html'` | `'chat/_message.html'` | 笔误 18.12.30 |
-| 11.5.5 P518 最后1个代码块第6行 | `message_body` | `html_message` | 笔误 18.12.30 |
+| 11.5.5 P518 最后1个代码块第6行字典的值 | `message_body` | `html_message` | 笔误 18.12.30 |
 | 12.3.1 P526 代码清单12-1 | | setUp方法最后面追加一行代码`self.client = app.test_client()` | 代码缺失 19.01.05 |
 | 12.3.2 P527 提示段落下方的正文第3行 | assertEqual() | assertTrue() | 笔误 19.01.05 |
 | 12.3.2 P527 代码清单12-3 test_404_page方法的注释 | # 测试 400 错误页面 | # 测试 404 错误页面 | 笔误 19.01.05 |
@@ -190,7 +190,7 @@ def validate_username(self, field):
 | 4.4.4.1 P123 代码清单4-13第3行 | | 字符间距过大。 | 排版错误 19.1.5 |
 | 4.4.5.2 提示段落 | https://flask-ckeditor.readthedocs.io/configuration.html | https://flask-ckeditor.readthedocs.io/en/latest/configuration.html | 笔误 19.1.5 |
 | 5.5.2 P160 正文最后一行、P161 第一行 | Aritcle | Article | 笔误 18.12.24 |
-| 7.2 P202 代码清单 7-3、7-4、7-7 | 补全路径，相应加入 sayllo/ 和 templates/ | 19.2.2 |
+| 7.2 P202 代码清单 7-3、7-4、7-7 | 补全路径，相应加入 sayhello/ 和 templates/ | 19.2.2 |
 | 7.2.3 P204 代码清单7-5后面的代码块第4行 | | `messages = Message.query.order_by...`向后缩进1格 | 缩进 19.01.11 |
 | 7.5 P213 最后一行代码 | `fake = Faker('zh_CN'))` |  `fake = Faker('zh_CN')` | 笔误 18.11.17 |
 | 8.2.1 P239 代码清单 8-12 文件路径 | bluelog/commands.py | bluelog/__init__.py | 遗留代码未更新 19.1.13 |
