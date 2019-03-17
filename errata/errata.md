@@ -4,7 +4,7 @@
 
 如果你发现了书中的错误，欢迎提交PR更新勘误文件；你也可以创建Issue指出相关错误，或是通过Email与我联系（[withlihui@gmail.com](mailto:withlihui@gmail.com)），谢谢！
 
-最后更新：2019/3/11
+最后更新：2019/3/15
 
 ## 勘误贡献者列表
 
@@ -95,11 +95,16 @@
 | 4.4.4.3.(3) P127 第五段正文第二行 | ...模板**中**将从 session 获取... | ...模板将从 session **中**获取... | 句子不通顺 19.03.11 |
 | 4.4.4.4 P128 代码清单4-16 | | “检查文件类型”注释下第一行多余缩进4格 | 笔误 18.10.18 |
 | 5 P139 第 1 个代码块 | | `$ flask run` 上面添加一行 `$ flask initdb  # 初始化数据库，后面会详细介绍` | 疏漏 19.1.5 |
+| 5.1.2.1 P140 记录的文档表示的第四行 | `sex: "Male"` | `sex: "Male",` | 标点缺失 19.03.12 |
+| 5.2 P141 第一个SQL代码块第三行 | | 去除末尾的**,**逗号 | 标点错误 19.03.12 |
+| 5.3.3 P146 代码清单5-3下方正文 | flask inintdb | flask initdb | 笔误 19.03.12 |
 | 5.4.1.1 P147 ”Create“小节第1个代码块第4行 | `'DON'T BELIEVE……'` | `'DON\'T BELIEVE……'` | 代码错误，漏掉转义符号 |
 | 5.4.1.2 P150 表5-7下的第1个代码块 | `Note.body='SHAVE'` | `Note.body == 'SHAVE'` | 代码错误，少了1个等号 18.9.22 |
 | 5.4.2 P153 代码清单 5-5 | | 删掉第 3 行，最后一行删除括号中的`, form=form` | 代码未更新 18.12.24 |
 | 5.4.2 P155 代码清单 5-8 第 3 行 | `DeleteForm()` | `DeleteNoteForm()` | 代码未更新 18.12.24 |
+| 5.5.2 P158 代码清单 5-10 第四行第一个参数 | `db.String(70)` | `db.String(20)` | 与源码不符 19.03.13 |
 | 5.5.2.3 P160 ”建立关系“小节第1个代码块 | | 第2行插入`ham.author_id = 1` | 省略步骤，可加可不加 18.9.22 |
+| 5.5.2.4 P162 代码清单5-11第3行 | `db.String(70)` | `db.String(64)` | 与源码不符 19.03.15 |
 | 5.5.2.4 P162 代码清单5-11第8行 | `title = ` | `name = ` | 笔误 18.9.26 |
 | 5.5.2.4 P163 ”建立双向关系“小节第3个代码块第6行 | `it.writer = writer` | `it.writer = king` | 笔误 18.9.26 |
 | P164 第 2 段第 2 行和第 3 行两处 | backref() 函数 | db.backref() 函数 | 优化 19.3.7 |
@@ -109,7 +114,12 @@
 | 5.5.4 P165 代码清单5-14后面的代码块第8行 | `<Capital 1>` | `<Capital u'Beijing'>` | 笔误 |
 | 5.5.4 P166 代码清单5-14后面的代码块第10行，166页第2行 | `u'China'` | `<Country u'China'>` | 笔误 |
 | 5.5.4 P166 代码清单5-14后面的代码块第11行，166页第3行 | `name'Tokyo'` | `name='Tokyo'` | 笔误 18.9.26 |
+| 5.5.5 P167 图 5-8 中 student 和 association 表之间的箭头 | 两张表的 id 不对应 | | 错误 19.03.15 |
+| 5.7.1 P172 下方代码块第三行 | 与源码不符 | 去掉`, unique=True`约束 | 与源码不符 19.03.15 |
+| 5.7.1 P173 上方代码块中comments字段的值 | `relationship('Comment', cascade='save-update, merge, delete')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 19.03.15 |
+| 5.7.1.2 P174 上方代码块 | `relationship()` | `db.relationship()` | 笔误 19.03.15 |
 | 5.7.1.2 P174 ”delete-orphan“小节上面第1个代码块第1行 | `Post.quer2y.get(2)` | `Post.query.get(2)` | 审校错误 |
+| 5.7.2 P176-P177 正文中4处、提示段落中1处 | `listen_for()` | `listens_for()` | 笔误 19.03.15 |
 | 5.7.2 P176 代码清单5-18下第1行 | targe | target | 笔误 18.9.28 |
 | 5.7.2 P177 最后1个代码块上面 | 参数name | 参数named | 笔误 18.9.28 |
 | 5.7.2 P177 最后1段提示文字 | 监听函数时， | 监听函数。这时 | 编辑瞎改稿子 18.9.28 |
@@ -333,13 +343,16 @@ def validate_username(self, field):
 | 4.4.4.4 P128 第一个代码块第三行 | `('Upload Image', validators={DataRequired()}` | `('Upload Image', validators=[DataRequired()])` | 标点错误 19.03.11 |
 | 4.4.5.2 提示段落 | https://flask-ckeditor.readthedocs.io/configuration.html | https://flask-ckeditor.readthedocs.io/en/latest/configuration.html | 笔误 19.1.5 |
 | 4.4.5 P131 代码清单4-19下正文段落第3行 | `Ture` | `True` | 笔误 18.11.5 |
+| 4.4.7 P134 代码清单4-23最后两行 | 两行间的行距过大 | | 排版错误 19.03.12 |
 | 4.4.7 P135-P136 两个HTML代码块中三处标题标签 | `<h2></h2>` 标签 | 替换为`<h3></h3>` 标签 | 与源码不符 19.03.11 |
+| 5.2 P142 本节最后一段中文第二行 | SQL-Alchemy | SQLAlchemy | 标点多余 19.03.12 |
 | 5.3.1 P143 表5-2最后1行 | SQlite | SQLite | 大小写错误 18.10.27 |
 | 5.3.3 P146 第2个代码块 | | 开头可添加一行导入`from app import Note` | 更完善 18.10.18 |
 | P149 表 5-6 左边一列第 1 行和第 5 行两处 | ident | id | 优化 19.3.5 |
 | P150 表 5-7 左边一列的标题 | 查询过滤器名称 | 过滤方法 | 优化 19.3.5 |
 | 5.5.2 P159 表5-4下的注意段落第2行 | Flask-SQLlchemy | Flask-SQLAlchemy | 笔误 18.10.27 |
-| 5.5.2 P160 正文最后一行、P161 第一行 | Aritcle | Article | 笔误 18.12.24 |
+| 5.5.2 P160-P161 正文、提示段落中共四处 | Aritcle / aritcles | Article / articles | 笔误 19.03.13 |
+| 5.7.1.1 P173 中部代码块 | `comment1 =Comment()`/`comment2 =Comment()` | = 等号右边增加一个空格 | 19.03.15 |
 | 5.8 P177 最后1行 | 本章要介绍的 | 本章介绍的 | 笔误 18.9.28 |
 | 6.1.3 P183 代码清单6-3第9行 | `return redirect(url_for('idnex'))` | `return redirect(url_for('index'))` | 笔误 18.10.27 |
 | 6.2 P183 6.2及6.2.1章节标题以及目录共**4处** | SendGird | SendGrid | 笔误 18.10.27 |
@@ -466,6 +479,7 @@ from sayhello.models import Message
 * P580 页面中部
 * P584 页面中部
 * P633 第1行
+* P139 注意段落
 
 关于URL长度限制的详情可以参考[WWW FAQs: What is the maximum length of a URL?](https://www.boutell.com/newfaq/misc/urllength.html)。
 
