@@ -13,16 +13,32 @@
 | 2.2 P30 请求报文示例表格 | | 去掉主体一栏的内容 | 19.2.2 |
 | 2.2 P30 请求报文示例表格下方正文 | 如果 URL 中包含查询字符串，或是提交了表单，那么报文主体将会是查询字符串和表单数据。 | 如果提交了表单，那么报文主体将会是表单数据（查询字符串通常会直接通过 URL 传递）。 | 19.2.2 |
 | 2.2 P31 命令行输出 | /hello | /hello?name=Grey | 19.2.2 |
-| 3.2.4 2.自定义测试器 P86下方| 我们创建了一个没有意义的baz过滤器 | 我们创建了一个没有意义的baz测试器 | 笔误 19.1.9 | 
+| 2.2.3.1 P34 最下方终端输出第四行的Rule | `/goback/<int:age>` | `/goback/<int:year>` | 笔误 19.03.07 |
+| 3.2.4 2.自定义测试器 P86下方| 我们创建了一个没有意义的baz过滤器 | 我们创建了一个没有意义的baz测试器 | 笔误 19.1.9 |
+| 3.4.3 P99-P100 每段正文中（共三处） | get_flashed_message() | get_flashed_messages() | 笔误 19.03.09 |
 | 4.3.1 P115 第 2 小节的代码块第 5 行 | `Length(8, 128)` | `Length(6, 128)` | 前后不一致（1-3 重印时需要反过来调整另外 3 处），18.12.28 |
 | 5 P139 第 1 个代码块 | | `$ flask run` 上面添加一行 `$ flask initdb  # 初始化数据库，后面会详细介绍` | 疏漏 19.1.5 |
 | 5.4.2 P153 代码清单 5-5 | | 删掉第 3 行，最后一行删除括号中的`, form=form` | 代码未更新 18.12.24 |
 | 5.4.2 P155 代码清单 5-8 第 3 行 | `DeleteForm()` | `DeleteNoteForm()` | 代码未更新 18.12.24 |
 | P164 第 2 段第 2 行和第 3 行两处 | backref() 函数 | db.backref() 函数 | 优化 19.3.7 |
 | P164 第一个代码块第 3 行 | `backref=backref(...)` | `backref=db.backref(...)` | 错误 19.3.7 |
+| 4.2.1 P108 第一段正文第一行 | name | username | 与实际项目不符 19.03.10 |
+| 4.3.2.3 P115 第二段正文第一行 | basic_form 视图 | basic 视图 | 笔误 18.03.10 |
+| 4.3.2.3 P115 下方代码块最后一行第一个参数 | `'forms/basic.html'` | `'basic.html'` | 笔误 19.03.10 |
+| 4.3.3 P117 正文最后第二行 | 长度小于6 | 长度小于8 | 与实际项目不符 图4-4同理 19.03.10 |
+| 4.4.4.3.(3) P127 第五段正文第二行 | ...模板**中**将从 session 获取... | ...模板将从 session **中**获取... | 句子不通顺 19.03.11 |
+| 4.4.4.4 P128 第一个代码块第三行 | `('Upload Image', validators={DataRequired()}` | `('Upload Image', validators=[DataRequired()])` | 标点错误 19.03.11 |
+| 5.7.1 P173 上方代码块第3行 | `relationship('Comment', cascade='save-update, merge, delete')` | `db.relationship('Comment', back_populates='post', cascade='save-update, merge, delete')` | 笔误 19.03.15 |
+| 5.7.1 P173 上方代码块第3行 | `relationship('Comment', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all')` | 笔误 19.03.15 |
+| 5.7.1 P174 倒数第2个代码块第3行 | `relationship('Comment', cascade='all, delete-orphan')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 19.03.15 |
+| 6.2.3.3 P187下方代码块 P188 代码清单6-4 | `os.environ.get()` | `os.getenv()` | 19.03.17 |
+| 第五章 P170 附注段落最后一句 | | 你可以在命令行中输入flask db --help 查看 db 命令所有可用的子命令和说明。| 19.4.23 |
+| 第五章 P167 图5-8下第二段最后一句 | 设为关联表名称 | 设为关联表对象或是字符串形式的关联表名称 | 19.4.23 |
 | 7.3.1 P207 3.7.1节中最后一段话中 | bootstrap_load_js() | bootstrap.load_js() | 笔误 18.11.17 |
 | 7.4.3 P213 最后 1 个附注段落 | bootstrap.bundle.min.css |  bootstrap.bundle.min.js | 笔误 18.12.5 |
 | 7.5 P214 该页（节）最后 2 个代码块的最后 1 行 | | 两处均向左缩进 4 格，和上面对齐 | 排版错误 18.12.6 |
+| P225 下面代码块第 10 行 | 去掉中部的 `class="next ` |
+| P269 | 去掉页面中部的提示段落 |
 | 8.2.1 P237 代码清单 8-8 倒数第 3 行 | | 删除这一行 | 后续内容前置 19.1.13 |
 | P263 代码清单 8-29 第 2 行 | `{{ comments\|length }} Comments` | `{{ pagination.total }} Comments <!-- 使用 pagination.total 获取分页条目总数 -->` | 优化 19.3.5 |
 | 8.3.5 P264 图 8-8 上的代码块第2行 | `{{ comment.replied.author.name }}` | `{{ comment.replied.author }}` | 笔误 18.12.6 |
@@ -64,6 +80,7 @@
 | 10.1.4 P425 第一个代码块第 6 行 | `jsonify(message='Invalid item body.'), 400` | `return jsonify(message='Invalid item body.'), 400` | 笔误 19.1.20 |
 | 10.3.3 P447 第 1 小节/该页最后一个代码块 | `... import api` | `... import api_v1` | 笔误 18.12.28 |
 | 10.3.3 P447 第 1 小节/该页最后一个代码块 | `csrf.exempt(api)` | `csrf.exempt(api_v1)` | 笔误 18.12.28 |
+| 第10章 P451 | `class Item(MethodView)` | `class ItemAPI(MethodView)` | 19.4.23 |
 | 10.3.3 P453 代码清单10-13第一行中的methods参数 | `methods=['GET', 'POST']` | `methods=['GET']` | 与原定的方法不一致 18.12.28 |
 | 10.3.3 P453 代码清单10-13第二行中的第一个参数 | `'/token'` | `'/oauth/token'` | 与实际项目不一致 18.12.28 |
 | 10.3.3 P453 代码清单10-13第二行中的methods参数 | `methods=['GET']` | `methods=['POST']` | 与实际项目不一致 18.12.28 |
@@ -112,9 +129,11 @@
 | 15.6.1 P614 代码清单15-8中Share类的init_app方法最后1行第2个参数 | True | False | 与实际源码不符 19.01.21 |
 | 15.6.1 P615 代码清单15-7和代码清单15-8中Share类的create方法参数 | `addition_class=None` | `addition_class=''` | 与实际项目不符 19.01.21 |
 | 16.2.4 P639 最后1个段落的第2行 | 在不基于线程、greenlet或单进程实现的并发服务器上 | 在不基于线程、Greenlet 或进程实现并发的服务器上 | 笔误 18.12.31 |
+| P644 第一个代码块最后一行 | `name` | `name.encode()` | 19.4.23 |
 | 16.4.2 P649 最后1行| Flask.route()是Flask类的类方法 | Flask.route()是Flask类的实例方法 | 笔误 19.1.1 |
 | 16.4.3 2. 堆栈与LocalStack  P659 第1段第3行| 并将数据的字典名称设为'stack'。| 并将储存上下文对象的列表名称设为'stack' | 笔误 19.1.4 |
 | 16.4.5 P672 第一段第一行 | 对传入的**请求对象**调用 | 对传入的**响应对象**调用 | 笔误 19.2.8 |
+
 
 
 **P412** 添加 validate_username() 方法定义（同时添加到 1-1 勘误）：
@@ -173,6 +192,10 @@ def validate_username(self, field):
 
 位置 | 错误 | 正确 | 备注/时间 |
 --- | --- | --- | ---
+| 1.8 P24 代码清单1-4 | 缺少下文中提到的文档字符串 | 见Github源码 | 19.03.06 |
+| 2.2.3.3 P36 中部代码块最后一行 | 多出源码中没有的`<p>`标签 | 去除`<p>`标签 | 与源码不符 19.03.07 |
+| 2.5.1 P57 最后一个代码块中的URL规则 | /do_something | /do-something | 与源码不符 19.03.08 |
+| 2.2.2 P32 提示段落第一、三行 | MutliDict | MultiDict | 笔误 19.03.06 |
 | 2.2.2 P33 正文第一行 | MutliDict | MultiDict | 笔误 18.12.24 |
 | 2.3.1 P41 代码清单 2-2 第 7 行 | redierct | redirect | 笔误 18.12.24 |
 | 2.3.2.4 P45 JSON代码示例 | "heading":"Remider", |  "heading":"Reminder",  | 笔误。单词拼写错误。 18.11.28 |
@@ -187,6 +210,21 @@ def validate_username(self, field):
 | P237 代码清单 8-10 第 2 行 | | 空白行写入内容 `import random` | 优化 19.3.5 |
 | 3.4.2 P97 注意段落最后一行 | Boostrap | Boo**t**strap | 笔误 18.12.28 |
 | 3.4.4 P101 图 3-5 下面第 1 行文字 | 处理器和模块 | 处理器和模**板** | 笔误 19.1.13 |
+| 5.1.2.1 P140 记录的文档表示的第四行 | `sex: "Male"` | `sex: "Male",` | 标点缺失 19.03.12 |
+| 5.3.3 P146 代码清单5-3下方正文 | flask inintdb | flask initdb | 笔误 19.03.12 |
+| 5.5.5 P167 图 5-8 中 student 和 association 表之间的箭头 | 两张表的 id 不对应 | | 错误 19.03.15 |
+| 4.4.7 P134 代码清单4-23最后两行 | 两行间的行距过大 | | 排版错误 19.03.12 |
+| 5.5.2 P160-P161 正文、提示段落中共四处 | Aritcle / aritcles | Article / articles | 笔误 19.03.13 |
+| 5.7.1.1 P173 中部代码块 | `comment1 =Comment()`/`comment2 =Comment()` | = 等号右边增加一个空格 | 19.03.15 |
+| 6.3.2 P190 第一段正文 | HMTL | HTML | 笔误 19.03.17 |
+| 4.4.7 P135-P136 两个HTML代码块中三处标题标签 | `<h2></h2>` 标签 | 替换为`<h3></h3>` 标签 | 与源码不符 19.03.11 |
+| 5.2 P141 第一个SQL代码块第三行 | | 去除末尾的**,**逗号 | 标点错误 19.03.12 |
+| 5.5.2 P158 代码清单 5-10 第四行第一个参数 | `db.String(70)` | `db.String(20)` | 与源码不符 19.03.13 |
+| 5.5.2.4 P162 代码清单5-11第3行 | `db.String(70)` | `db.String(64)` | 与源码不符 19.03.15 |
+| 5.7.1 P172 下方代码块第三行 | 与源码不符 | 去掉`, unique=True`约束 | 与源码不符 19.03.15 |
+| 6.2.3.3 P188 代码清单6-4 | 整段代码和源码有很多不同 | 见源码 | 19.03.17 |
+| 6 P182-P191 全章节多处 | 代码清单中发送邮件的函数名与源码不一致 | 见源码 | 19.03.17 |
+| 540 注释优化 | | 「定位输入按钮」改为「定位输入框」，按下按钮改为「按下回车键」| 19.4.23 |
 | 4.4.4.1 P123 代码清单4-13第3行 | | 字符间距过大。 | 排版错误 19.1.5 |
 | 4.4.5.2 提示段落 | https://flask-ckeditor.readthedocs.io/configuration.html | https://flask-ckeditor.readthedocs.io/en/latest/configuration.html | 笔误 19.1.5 |
 | 5.5.2 P160 正文最后一行、P161 第一行 | Aritcle | Article | 笔误 18.12.24 |
@@ -221,6 +259,8 @@ def validate_username(self, field):
 | 10.2.4 P436 图10-3下方的正文第二行 | message.po | messages.po | 笔误 18.12.28 |
 | 10.3.1 P442 倒数第5行 | Simple Object Acsess Protocol | Simple Object Access Protocol | 笔误 18.12.28 |
 | 10.3.3 P446-P447 目录结构示意图 | | v1包下的4个模块少缩进一级，且apis子包缺少__init__.py模块 | 排版错误 18.12.28 |
+| P453 正文第二行 | 因为 API 的无状态特性，我们不能再使用 Flask-Login 实现认证功能 | 因为客户端不一定是浏览器，我们一般不会使用 Flask-Login 实现认证功能 |
+| P552 表 13-2 下面段落 | 第二句话结尾分号前追加括号文字“（可以使用 CACHE_DIR 配置变量指定缓存文件存储目录）” |
 | 10.3.4 P454 第二段正文的第二行 | Isssue | Issue | 笔误 18.12.28 |
 | 11.1 P476 目录结构示意图 | | blueprints目录向左缩进一级 | 笔误 18.12.28 |
 | 11.4.4 P507 正文第一行 | ture | true | 笔误 18.12.29 |
@@ -293,3 +333,4 @@ from sayhello.models import Message
 * P580 页面中部
 * P584 页面中部
 * P633 第1行
+* P139 注意段落
