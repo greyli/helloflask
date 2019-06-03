@@ -55,7 +55,7 @@ def bar():
     return 'I am bar.'
 
 
-# reigster template filter
+# register template filter
 @app.template_filter()
 def musical(s):
     return s + Markup(' &#9835;')
