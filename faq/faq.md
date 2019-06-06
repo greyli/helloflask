@@ -2,6 +2,20 @@
 
 如果你想提一个问题，请创建Issue。
 
+### 第 9 章验证邮件部分，点击邮件里的验证链接无法通过验证，提示 token invalid
+
+回退 Werkzeug 版本书中注明的 0.14.1 可解决。
+
+### 第 6 章 Sendgrid 使用报错
+
+在第 6 章，如果执行 sendgrid 部分的代码出现如下报错：
+
+- `TypeError: <function Email at 0x7fce5c021e18> is not JSON serializable`
+- `AttributeError：list object has no attrribute _type`
+- `TypeError: __init__() got an unexpected keyword argument 'apikey'`
+
+统一的解决方法均为回退 sendgrid-python 到书中注明的 5.3.0 版本。
+
 ### 执行 `flask run` 提示找不到程序
 
 执行以下检查：
