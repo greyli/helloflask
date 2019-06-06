@@ -50,30 +50,6 @@ def choose_a_number():
 
 ## 程序设计与实现
 
-### 全局
-
-* 相关Issue：https://github.com/greyli/sayhello/issues/4
-* 贡献者：@[realzhangm](https://github.com/realzhangm)
-
-一个视图，如果同时处理 GET 和 POST 请求，那么对于 POST 请求用不到的代码，可以放到 POST 请求的 if 语句块下面执行，以减少不必要的调用。以 SayHello 为例：
-
-```py
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    form = HelloForm()
-    # ... 原来的位置
-    if form.validate_on_submit():
-        name = form.name.data
-        body = form.body.data
-        message = Message(body=body, name=name)
-        db.session.add(message)
-        db.session.commit()
-        flash('Your message have been sent to the world!')
-        return redirect(url_for('index'))
-    messages = Message.query.order_by(Message.timestamp.desc()).all()  # 优化后的位置
-    return render_template('index.html', form=form, messages=messages)
-```
-
 ### Albumy
 
 #### 9.4.3 写入用户权限中的角色与权限字典的设计
@@ -154,6 +130,43 @@ https://github.com/greyli/bluelog/issues/3
 
 * 封面的图片颜色和设计图相比有些失真，需要完善。
 * 图片可以再大一点。
+
+## 第 1 版第 4 次印刷（2019/7/1）更新
+
+下面的内容已经在 1-4 版本中修正。
+
+* P583页最下方段落删除和 P581页倒数第二段重复的部分。
+* 117页，4.3.3的第二小段，“像第2章渲染flash()消息一样”修正为是“像第3章渲染flash()消息一样”。
+* 修改第 8 章描述现实配置部分，邮箱服务器配置通常是写在配置文件里的。
+* 7.4.5 P211 示例代码中的 `timestamp` 改为 `message.timestamp`，这样更容易理解。
+
+### Bluelog 管理字数统计
+
+详情见 https://github.com/greyli/bluelog/issues/9
+
+### SayHello 视图函数代码优化
+
+* 相关Issue：https://github.com/greyli/sayhello/issues/4
+* 贡献者：@[realzhangm](https://github.com/realzhangm)
+
+一个视图，如果同时处理 GET 和 POST 请求，那么对于 POST 请求用不到的代码，可以放到 POST 请求的 if 语句块下面执行，以减少不必要的调用。以 SayHello 为例：
+
+```py
+@app.route('/', methods=['GET', 'POST'])
+def index():
+    form = HelloForm()
+    # ... 原来的位置
+    if form.validate_on_submit():
+        name = form.name.data
+        body = form.body.data
+        message = Message(body=body, name=name)
+        db.session.add(message)
+        db.session.commit()
+        flash('Your message have been sent to the world!')
+        return redirect(url_for('index'))
+    messages = Message.query.order_by(Message.timestamp.desc()).all()  # 优化后的位置
+    return render_template('index.html', form=form, messages=messages)
+```
 
 ## 第 1 版第 3 次印刷（2019/4/1）更新
 
