@@ -48,6 +48,8 @@
 * @yeshan333 Mr.Ye https://github.com/yeshan333
 * @hp66722667 iceman！ https://github.com/hp66722667
 * @jasonqiao36 Jason Qiao https://github.com/jasonqiao36
+* @JoeyGaojingxing Joey https://github.com/JoeyGaojingxing
+* 吴谢
 * ……
 
 另外还有通过 QQ、Telegram 和 Email 反馈勘误的读者，不方便索引，这里没有一一列出。感谢你们的贡献！
@@ -139,7 +141,7 @@
 | 7.3.2 P208 第1个代码块第6行 | `render_form(form),action=request.full_path` | `render_form(form, action=request.full_path)` | 审校错误，右侧关闭括号位置出错 |
 | 7.3.2 P208 表7-2上面段落的最后一句话 | quick_form() | render_form() | 笔误。历史遗留问题 18.9.28 |
 | 7.4.3 P213 最后 1 个附注段落 | bootstrap.bundle.min.css |  bootstrap.bundle.min.js | 笔误 18.12.5 |
-| P225 下面代码块第 10 行 | 去掉中部的 `class="next ` |
+| P255 下面代码块第 10 行 | 去掉中部的 `class="next ` |
 | P269 | 去掉页面中部的提示段落 |
 | 8.1.3 P229、P231 代码清单8-2、8-4 | | 单个蓝本变量名称均应为foo_bp形式，比如admin应为admin_bp | 笔误 18.9.24 |
 | 8.2.1.1.(4) P235 代码清单8-7后面第1个代码块第3行 | `db.relationship('Comment', backref='post', cascade='all')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 |

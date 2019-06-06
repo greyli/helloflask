@@ -18,7 +18,7 @@
 | 5.7.1 P174 倒数第2个代码块第3行 | `relationship('Comment', cascade='all, delete-orphan')` | `db.relationship('Comment', back_populates='post', cascade='all, delete-orphan')` | 笔误 19.03.15 |
 | 第10章 P451 | `class Item(MethodView)` | `class ItemAPI(MethodView)` | 19.4.23 |
 | 第五章 P167 图5-8下第二段最后一句 | 设为关联表名称 | 设为关联表对象或是字符串形式的关联表名称 | 19.4.23 |
-| P225 下面代码块第 10 行 | 去掉中部的 `class="next ` |
+| P255 下面代码块第 10 行 | 去掉中部的 `class="next ` |
 | P269 | 去掉页面中部的提示段落 |
 | P644 第一个代码块最后一行 | `name` | `name.encode()` | 19.4.23 |
 

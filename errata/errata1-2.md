@@ -37,7 +37,7 @@
 | 7.3.1 P207 3.7.1节中最后一段话中 | bootstrap_load_js() | bootstrap.load_js() | 笔误 18.11.17 |
 | 7.4.3 P213 最后 1 个附注段落 | bootstrap.bundle.min.css |  bootstrap.bundle.min.js | 笔误 18.12.5 |
 | 7.5 P214 该页（节）最后 2 个代码块的最后 1 行 | | 两处均向左缩进 4 格，和上面对齐 | 排版错误 18.12.6 |
-| P225 下面代码块第 10 行 | 去掉中部的 `class="next ` |
+| P255 下面代码块第 10 行 | 去掉中部的 `class="next ` |
 | P269 | 去掉页面中部的提示段落 |
 | 8.2.1 P237 代码清单 8-8 倒数第 3 行 | | 删除这一行 | 后续内容前置 19.1.13 |
 | P263 代码清单 8-29 第 2 行 | `{{ comments\|length }} Comments` | `{{ pagination.total }} Comments <!-- 使用 pagination.total 获取分页条目总数 -->` | 优化 19.3.5 |
