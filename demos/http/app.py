@@ -14,6 +14,7 @@ except ImportError:
 from jinja2 import escape
 from jinja2.utils import generate_lorem_ipsum
 from flask import Flask, make_response, request, redirect, url_for, abort, session, jsonify
+from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = os.getenv('SECRET_KEY', 'secret string')
@@ -42,9 +43,9 @@ def hi():
 
 
 # use int URL converter
-@app.route('/goback/<int:year>')
-def go_back(year):
-    return 'Welcome to %d!' % (2018 - year)
+@app.route('/goback/<int:number>')
+def go_back(number):
+    return 'Welcome to %d!' % (datetime.now().year - number)
 
 
 # use any URL converter
