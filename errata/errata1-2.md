@@ -277,6 +277,7 @@ def validate_username(self, field):
 | 14.3.4 P569 第一段正文下方的代码 | `app.logger.warning('A wraning message.')` | `app.logger.warning('A warning message.')` | 笔误 19.01.21 |
 | 14.3.5 P572 代码块 wsgi.py 定义 | 导入语句补充 `import os` | 19.2.2 |
 | P578 第 1 个附注段落 | GitHub的免费账户只能创建公开仓库，为此你可以考虑使用BitBucket（https://bitbucket.org），它提供不限数量的免费私有仓库。 | GitHub（https://github.com） 和 BitBucket（https://bitbucket.org） 均支持免费创建私有仓库，你可以在创建仓库时进行选择。 | 更新 19.3.5 |
+| 14.4.6 P583 正文倒数第二段 |当使用反向代理服务器后，......  | | 多余，与 P581 正文第二段落重复 19.07.26|
 | 16.5 P680 附注第2行 | Pocco风格指南 | Pocoo风格指南 | 笔误 19.01.21 |
 | 16.4.2.1 P650 最后第2段正文第1行 | view_function | view_functions | 笔误 19.01.21 |
 | 16.4.2.2 P653 代码清单16-15中的注释 | 出于 | 处于 | 笔误 19.01.21 |
