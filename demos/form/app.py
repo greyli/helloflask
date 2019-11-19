@@ -114,6 +114,8 @@ def upload():
     if form.validate_on_submit():
         f = form.photo.data
         filename = random_filename(f.filename)
+        if not os.path.exists(app.config['UPLOAD_PATH']):
+            os.makedirs(app.config['UPLOAD_PATH'])
         f.save(os.path.join(app.config['UPLOAD_PATH'], filename))
         flash('Upload success.')
         session['filenames'] = [filename]
@@ -149,6 +151,8 @@ def multi_upload():
             # check the file extension
             if f and allowed_file(f.filename):
                 filename = random_filename(f.filename)
+                if not os.path.exists(app.config['UPLOAD_PATH']):
+                    os.makedirs(app.config['UPLOAD_PATH'])
                 f.save(os.path.join(
                     app.config['UPLOAD_PATH'], filename
                 ))
