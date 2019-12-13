@@ -41,7 +41,7 @@ def send_smtp_mail(subject, to, body):
 
 # send over SendGrid Web API
 def send_api_mail(subject, to, body):
-    sg = sendgrid.SendGridAPIClient(apikey=os.getenv('SENDGRID_API_KEY'))
+    sg = sendgrid.SendGridAPIClient(os.getenv('SENDGRID_API_KEY'))
     from_email = SGEmail('Grey Li <noreply@helloflask.com>')
     to_email = SGEmail(to)
     content = Content("text/plain", body)
