@@ -17,14 +17,17 @@
 
 ## Demos
 
-这个仓库的 demos 文件夹包含本书第一部分的示例程序，每一章对应一个文件夹。使用下面的步骤运行示例程序。
+这个仓库的 demos 文件夹包含本书第一部分的示例程序，每一章对应一个文件夹。为了方便操作，我们把虚拟环境创建在 helloflask 目录，激活以后切换进 helloflask/demos 目录对应的程序子目录再执行 flask run 命令来启动程序。注意不要在 helloflask 目录下创建 .env 文件，这会导致 flask run 运行出错（目前 Flask 的一个待解决的 bug）。 
 
-克隆仓库：
+### 克隆仓库
+
 ```
 $ git clone https://github.com/greyli/helloflask.git
 $ cd helloflask
 ```
-创建&激活虚拟环境并安装依赖包（下面两种方式二选一）：
+### 创建 & 激活虚拟环境 & 安装依赖包
+
+（下面两种方式二选一）：
 
 Option 1 使用 venv/virtualenv + pip：
 ```
@@ -33,7 +36,7 @@ $ source env/bin/activate  # Windows 使用 env\Scripts\activate 命令
 $ pip install -r requirements.txt
 ```
 
-对于上面的命令，根据你安装的 Python 版本和所在操作系统选用 `python` 或 `python3`，`pip` 或 `pip3`。
+对于上面的第一条命令，如果你在 Linux 或 macOS 上使用 Python 3，则使用 `python3 -m venv env`。
 
 Option 2 使用 Pipenv：
 ```
@@ -42,7 +45,10 @@ $ pipenv shell
 ```
 如果你还没有安装Pipenv，那么可以在运行`pipenv`命令前通过pip安装（`pip install pipenv`）。
 
-运行示例程序（以第一章示例程序为例）：
+### 运行示例程序
+
+（以第一章示例程序为例）：
+
 ```
 $ cd demos/hello
 $ flask run
