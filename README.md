@@ -13,7 +13,7 @@
 
 欢迎在本书的[豆瓣图书页面](https://book.douban.com/subject/30310340/)、对应的[知乎问题](https://www.zhihu.com/question/296048455)或是电商网站撰写评价。
 
-如果你发现了书中的错误、运行实例程序出错或是有其他的问题，可以[创建Issue](https://github.com/greyli/helloflask/issues/new/)或是在 [HelloFlask 论坛](https://discuss.helloflask.com)发帖进行反馈。
+如果你发现了书中的错误、运行实例程序出错或是有其他的问题，可以[创建 Issue](https://github.com/greyli/helloflask/issues/new/)（注意：对于其他大多数开源项目来说，issue tracker 用来报告 bug、提议新 feature，或是讨论项目代码本身的问题，而不是用来问库的使用方法和关于你自己的项目代码的问题）或是在 [HelloFlask 论坛](https://discuss.helloflask.com)发帖进行反馈。
 
 ## Demos
 
