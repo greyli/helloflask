@@ -20,6 +20,8 @@ Microsoft SQL Server mssql://username:password@host:port/datebasename
 ```python
 MAIL_DEFAULT_SENDER = ('Grey Li', 'grey@example.com')
 ```
+- P208 第 1 个代码块第 6 行 `render_form(form),action=request.full_path` 修改为 `render_form(form, action=request.full_path)`
+- P213 第 1 个附注段落 `bootstrap.bundle.min.css` 改为 b`ootstrap.bundle.min.js`
 - P235 下方代码块第三行中的 backref 改成 back_populates
 - P585 最后两行中的 bluelog 分别和 stop、start 调换位置，修改后：
 ```
