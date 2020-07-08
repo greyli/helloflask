@@ -24,6 +24,10 @@ app.jinja_env.lstrip_blocks = True
 
 # Custom config
 app.config['UPLOAD_PATH'] = os.path.join(app.root_path, 'uploads')
+
+if not os.path.exists(app.config['UPLOAD_PATH']):
+    os.makedirs(app.config['UPLOAD_PATH'])
+
 app.config['ALLOWED_EXTENSIONS'] = ['png', 'jpg', 'jpeg', 'gif']
 
 # Flask config
