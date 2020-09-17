@@ -168,7 +168,7 @@ class City(db.Model):
 class Country(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(30), unique=True)
-    capital = db.relationship('Capital', uselist=False)  # collection -> scalar
+    capital = db.relationship('Capital', back_populates='country', uselist=False)  # collection -> scalar
 
     def __repr__(self):
         return '<Country %r>' % self.name
@@ -178,7 +178,7 @@ class Capital(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(30), unique=True)
     country_id = db.Column(db.Integer, db.ForeignKey('country.id'))
-    country = db.relationship('Country')  # scalar
+    country = db.relationship('Country', back_populates='capital')  # scalar
 
     def __repr__(self):
         return '<Capital %r>' % self.name
