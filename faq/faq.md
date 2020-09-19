@@ -2,9 +2,27 @@
 
 如果你想提一个问题，请创建Issue。
 
+### 渲染模板报错 jinja2.exceptions.TemplateNotFound: bootstrap/form.html
+
+一般是安装错了依赖导致。本书中使用的用来集成 Bootstrap 的扩展名称为 Bootstrap-Flask，而不是 Flask-Bootstrap。容易产生误解的是，为了遵循 Flask 扩展开发规范（要求扩展的包名称为 flask_foo 形式），同时也为了方便从 Flask-Bootstrap 迁移，所以 Bootstrap-Flask 的包名称为 flask_bootstrap。出现上述错误多是因为安装了 Flask-Bootstrap 导致，你需要先卸载它，然后再安装 Bootstrap-Flask：
+
+```
+$ pip uninstall flask-bootstrap
+$ pip install bootstrap-flask
+```
+
+如果很不幸你同时安装了这两个扩展，那么需要全部卸载然后重新安装 Bootstrap-Flask：
+
+```
+$ pip uninstall flask-bootstrap bootstrap-flask
+$ pip install bootstrap-flask
+```
+
+如果你使用 Pipenv，则将上述命令中的 pip 更换为 pipenv。
+
 ### 第 9 章验证邮件部分，点击邮件里的验证链接无法通过验证，提示 token invalid
 
-回退 Werkzeug 版本书中注明的 0.14.1 可解决。
+回退 Werkzeug 版本到书中注明的 0.14.1 可解决。
 
 ### 第 6 章 Sendgrid 使用报错
 
