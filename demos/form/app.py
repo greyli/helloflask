@@ -139,17 +139,14 @@ def multi_upload():
             flash('CSRF token error.')
             return redirect(url_for('multi_upload'))
 
-        # check if the post request has the file part
-        if 'photo' not in request.files:
-            flash('This field is required.')
+        photos = request.files.getlist('photo')
+        # check if user has selected files. If not, the browser
+        # will submit an empty file part without filename
+        if not photos[0].filename:
+            flash('No selected file.')
             return redirect(url_for('multi_upload'))
 
-        for f in request.files.getlist('photo'):
-            # if user does not select file, browser also
-            # submit a empty part without filename
-            # if f.filename == '':
-            #     flash('No selected file.')
-            #    return redirect(url_for('multi_upload'))
+        for f in photos:
             # check the file extension
             if f and allowed_file(f.filename):
                 filename = random_filename(f.filename)
