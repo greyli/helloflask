@@ -1,6 +1,17 @@
 # FAQ
 
-如果你想提一个问题，请创建Issue。
+### Exception: Install 'email_validator' for email validation support.
+
+WTForms 新版本引入了破坏性变动，Email 验证通过外部库 email-validator 实现，因此需要手动安装这个库：
+
+```
+$ pip install email-validator
+```
+
+如果你使用 Pipenv，则将上述命令中的 pip 更换为 pipenv。
+
+详见 https://stackoverflow.com/a/65056202/5511849
+
 
 ### 渲染模板报错 jinja2.exceptions.TemplateNotFound: bootstrap/form.html
 
