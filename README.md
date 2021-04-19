@@ -1,6 +1,8 @@
 # HelloFlask
 
-这里是《Flask Web开发实战》（Python Web Development with Flask）的Meta仓库，包含第1-6章、13章的示例程序源码和勘误等信息。访问[本书主页](http://helloflask.com/book)查看本书的资源索引、目录、购买链接等详细信息。
+这里是《Flask Web 开发实战》（Python Web Development with Flask）的 Meta 仓库，包含第 1-6 章、13 章的示例程序源码和勘误等信息。访问[本书主页](http://helloflask.com/book)查看本书的资源索引、目录、购买链接等详细信息。
+
+P.S. 如果你阅读这本书感到有一点吃力，那么可以先翻一翻《[Flask 入门教程](https://github.com/greyli/flask-tutorial)》。
 
 ## Resources
 
@@ -11,9 +13,9 @@
 
 ## Feedback
 
-欢迎在本书的[豆瓣图书页面](https://book.douban.com/subject/30310340/)、对应的[知乎问题](https://www.zhihu.com/question/296048455)或是电商网站撰写评价。
+欢迎在本书的[豆瓣图书页面](https://book.douban.com/subject/30310340/)、[知乎问题](https://www.zhihu.com/question/296048455)撰写评价，欢迎在你的博客和社交网站分享这本书。
 
-如果你发现了书中的错误或是运行实例程序出错，可以[创建 Issue](https://github.com/greyli/helloflask/issues/new/) 反馈，其他问题请发到 [HelloFlask 论坛](https://discuss.helloflask.com)。
+如果你发现了书中的错误，可以[创建 Issue](https://github.com/greyli/helloflask/issues/new/) 反馈，其他问题请发到 [HelloFlask 论坛](https://discuss.helloflask.com) 或创建 [GitHub Discussion](https://github.com/greyli/helloflask/discussions/new)（分类选择 Q&A，注意给出尽可能详细的信息）。
 
 ## Demos
 
@@ -29,7 +31,7 @@ $ cd helloflask
 
 （下面两种方式二选一）：
 
-Option 1 使用 venv/virtualenv + pip：
+Option 1：使用 venv/virtualenv + pip：
 ```
 $ python -m venv env  # Python 2 使用 virtualenv env 命令
 $ source env/bin/activate  # Windows 使用 env\Scripts\activate 命令
@@ -38,12 +40,12 @@ $ pip install -r requirements.txt
 
 对于上面的第一条命令，如果你在 Linux 或 macOS 上使用 Python 3，则使用 `python3 -m venv env`。
 
-Option 2 使用 Pipenv：
+Option 2：使用 Pipenv：
 ```
 $ pipenv install --dev
 $ pipenv shell
 ```
-如果你还没有安装Pipenv，那么可以在运行`pipenv`命令前通过pip安装（`pip install pipenv`）。
+如果你还没有安装 Pipenv，那么可以在运行 `pipenv` 命令前通过 pip 安装（`pip install pipenv`）。
 
 ### 运行示例程序
 
@@ -53,9 +55,9 @@ $ pipenv shell
 $ cd demos/hello
 $ flask run
 ```
-现在使用浏览器打开http://localhost:5000
+现在使用浏览器打开 http://localhost:5000
 
-你可以通过切换到不同的示例程序目录来运行不同章节的示例程序。比如，下面的命令将会运行第4章的示例程序：
+你可以通过切换到不同的示例程序目录来运行不同章节的示例程序。比如，下面的命令将会运行第 4 章的示例程序：
 ```
 $ cd demos/form
 $ flask run
@@ -65,13 +67,13 @@ $ flask run
 
 ## HelloFlask Projects
 
-* [SayHello](https://github.com/greyli/sayhello)： 本书第7章示例程序，一个简单的留言板程序。
-* [Bluelog](https://github.com/greyli/bluelog)：本书第8章示例程序，一个个人博客。
-* [Albumy](https://github.com/greyli/albumy)：本书第9章示例程序，多人图片社交网站。
-* [Todoism](https://github.com/greyli/todoism)：本书第10章示例程序，实现了Web API和i18n支持的Todo程序。
-* [CatChat](https://github.com/greyli/catchat)：本书第11章示例程序，基于WebSocket实现，并提供了社交账户登录功能的聊天室。
-* [Flask-Share](https://github.com/greyli/flask-share)：本书第15章的Flask扩展示例。
+* [SayHello](https://github.com/greyli/sayhello)： 本书第 7 章示例程序，一个简单的留言板程序。
+* [Bluelog](https://github.com/greyli/bluelog)：本书第 8 章示例程序，一个个人博客。
+* [Albumy](https://github.com/greyli/albumy)：本书第 9 章示例程序，多人图片社交网站。
+* [Todoism](https://github.com/greyli/todoism)：本书第 10 章示例程序，实现了 Web API 和 i18n 支持的 Todo 程序。
+* [CatChat](https://github.com/greyli/catchat)：本书第 11 章示例程序，基于 WebSocket 实现，并提供了社交账户登录功能的聊天室。
+* [Flask-Share](https://github.com/greyli/flask-share)：本书第 15 章的 Flask 扩展示例。
 
 ## License
 
-该项目基于MIT协议授权，具体可以参考`LICENSE`文件。
+该项目基于 MIT 协议授权，具体可以参考 `LICENSE` 文件。
