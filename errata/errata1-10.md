@@ -19,6 +19,7 @@ import click
 
 ```
 - P116 注意段落第一句「因为 WTForms 会」改为「因为 Flask-WTF 会」
+- P150 第二个代码块第一行 `print(Note.query.filter(body='SHAVE'))` 改为 `print(Note.query.filter(Note.body=='SHAVE'))`
 - P164 第一个代码块最后一行中的「`relationship`」改为「`db.relationship`」
 - P333 第一句「可以在 `create()` 方法中使用 `redirect_url` 参数指定上传后跳转的端点或 URL」改为「可以在 `config()` 方法中使用 `redirect_url` 参数指定上传后跳转的 URL」。
 - P380 第二个代码块的第一行：
