@@ -6,6 +6,7 @@
 ## 勘误贡献者
 
 - @Yuxiaoy1 Yuxiaoy1 https://github.com/Yuxiaoy1
+- @Skylor-Tang Skylor-Tang https://github.com/Skylor-Tang
 - @panla panla https://github.com/panla
 
 
