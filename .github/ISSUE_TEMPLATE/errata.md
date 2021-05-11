@@ -1,6 +1,6 @@
 ---
-name: Errata
-about: 书中的错误和笔误反馈。
+name: 勘误反馈和建议
+about: 书中的错误、笔误、改进建议反馈。
 title: ''
 labels: errata
 assignees: ''
