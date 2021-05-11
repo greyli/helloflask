@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 问题、讨论、分享和其他相关想法
+    url: https://github.com/greyli/helloflask/discussions
+    about: 如果是提问，请给出尽可能详细的相关信息（包括相关代码、命令、命令行输出、完整错误堆栈、操作系统/Python 版本/相关库版本等）。
