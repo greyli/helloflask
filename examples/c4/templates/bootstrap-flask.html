@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/form.html' import render_field, render_form, render_form_row %}
+
+{% block metas %}
+{{ super() }}
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% endblock %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Render Form with Bootstrap-Flask</h1>
+    <h2>1. render_field</h2>
+    <form method="post">
+        {{ form.csrf_token }}
+        {{ render_field(form.username) }}
+        {{ render_field(form.password) }}
+        {{ render_field(form.remember) }}
+        {{ render_field(form.submit) }}
+    </form>
+    <h2>1. render_form</h2>
+    {{ render_form(form) }}
+    <h2>1. render_form_row</h2>
+    <form method="post">
+        {{ form.csrf_token }}
+        {{ render_form_row([form.username, form.password]) }}
+        {{ render_field(form.remember) }}
+        {{ render_field(form.submit) }}
+    </form>
+</div>
+{% endblock %}
