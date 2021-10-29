@@ -3,7 +3,7 @@
 HelloFlask 的 Meta 仓库，包含 HelloFlask 相关文档和示例程序。
 
 
-## Docs
+## Links
 
 - 文档：<https://docs.helloflask.com>
 - 主站：<https://helloflask.com>
@@ -18,7 +18,3 @@ HelloFlask 的 Meta 仓库，包含 HelloFlask 相关文档和示例程序。
 - Flask Web 开发实战（第 2 版）：<https://helloflask.com/book/4>
 
 勘误和建议可以创建 [issue](https://github.com/greyli/helloflask/issues) 提出，遇到相关问题亦可以创建 [discussion](https://github.com/greyli/helloflask/discussions) 讨论。谢谢！
-
-
-## Examples
-
