@@ -1,6 +1,6 @@
 # FAQ
 
-[《Flask Web开发实战》](http://helloflask.com/book)的读者经常提出的问题与回答，如果你想提一个问题，请创建 [discussion](https://github.com/greyli/helloflask/discussions)。
+[《Flask Web开发实战》](https://helloflask.com/book/1)的读者经常提出的问题与回答，如果你想提一个问题，请创建 [discussion](https://github.com/greyli/helloflask/discussions)。
 
 ### Exception: Install 'email_validator' for email validation support.
 
@@ -98,7 +98,7 @@ helloflask并不包含Git标签，所以这里的命令不会输出内容。这�
 
 目前不建议继续使用Flask-Script，Flask内置的CLI组件已经基本能够替代它。如果仍然要使用Flask-Scirpt，可以参考下图：
 
-![Flask-Script在PyCharm中的启动配置](http://helloflask.com/images/pycharm-flask-script.png)
+![Flask-Script在PyCharm中的启动配置](https://helloflask.com/images/pycharm-flask-script.png)
 
 原图来自[Flask学习笔记-PyCharm配置使用Flask-Script启动以及开启Debug模式](https://my.oschina.net/ykbj/blog/618475)。
 
@@ -114,7 +114,7 @@ pipenv --python /usr/local/bin/python3
 
 旧版本的PyCharm不支持通过模块来执行命令。新版本的PyCharm在图1-6的第4点位置有一个下拉选项，可以选择Module name，而不是Script。如果你使用的PyCharm没有这个下拉选项，可以通过为Python解释器选项一栏（Interpreter options）添加-m选项可以起到类似的效果，即python -m flask run。
 
-![旧版本PyCharm配置提示](http://helloflask.com/images/pycharm-m.png)
+![旧版本PyCharm配置提示](https://helloflask.com/images/pycharm-m.png)
 
 
 ### 为什么没有使用Flask-RESTful编写Web API？
