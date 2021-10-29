@@ -1,3 +1,3 @@
 [build]
   publish = "site"
-  command = "pip install . && pip install -r requirements/docs.txt && export PYTHONPATH=$(pwd) && mkdocs build"
+  command = "pip install -r requirements/docs.txt && export PYTHONPATH=$(pwd) && mkdocs build"
