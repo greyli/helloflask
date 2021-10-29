@@ -38,7 +38,7 @@ nav:
   - 主页: index.md
   - 示例程序索引: examples.md
   - Flask Web 开发实战:
-    - 第 1 版:
+    - 第 1 版（2018）:
       - 主页↗: https://helloflask.com/book/1
       - 示例程序: book/1/example.md
       - 勘误:
@@ -54,7 +54,7 @@ nav:
         - 其他勘误: book/1/errata/other.md
       - FAQ: book/1/faq.md
       - 可改进实现: book/1/improvement.md
-    - 第 2 版:
+    - 第 2 版（2022）:
       - 主页↗: https://helloflask.com/book/4
       - 示例程序: book/4/example.md
       - 代码片段:
@@ -67,7 +67,7 @@ nav:
         - 第 6 章：电子邮件: book/4/snippets/c6.md
   - Flask 入门教程:
     - 主页↗: https://helloflask.com/book/3
-    - GitHub 仓库↗: https://github.com/greyli/flask-tutorial
+    - GitHub↗: https://github.com/greyli/flask-tutorial
     - 在线阅读↗: https://read.helloflask.com
   - Python Web API 设计与开发:
     - 主页↗: https://helloflask.com/book/2
