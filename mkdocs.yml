@@ -1,0 +1,86 @@
+site_name: HelloFlask 文档
+site_description: 使用 Python 和 Flask 探索 Web 开发的无限可能。
+site_url: https://docs.helloflask.com
+docs_dir: docs
+theme:
+  name: material
+  custom_dir: docs/_templates
+  logo: _assets/favicon.png
+  favicon: _assets/favicon.png
+  palette:
+    primary: black
+  icon:
+    repo: fontawesome/brands/github
+  language: zh
+repo_url: https://github.com/greyli/helloflask
+repo_name: greyli/helloflask
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/greyli/helloflask
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/helloflask
+copyright: Copyright &copy; 2021 <a href="https://greyli.com" target="_blank" rel="noopener">Grey Li</a>
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.progressbar
+  - attr_list
+  - toc:
+        permalink: True
+nav:
+  - 主页: index.md
+  - 示例程序索引: examples.md
+  - Flask Web 开发实战:
+    - 第 1 版:
+      - 主页↗: https://helloflask.com/book/1
+      - 示例程序: book/1/example.md
+      - 勘误:
+        - 主页: book/1/errata/index.md
+        - 1-1: book/1/errata/1-1.md
+        - 1-2: book/1/errata/1-2.md
+        - 1-3: book/1/errata/1-3.md
+        - 1-4: book/1/errata/1-4.md
+        - 1-5: book/1/errata/1-5.md
+        - 1-6: book/1/errata/1-6.md
+        - 1-7: book/1/errata/1-7.md
+        - 1-10: book/1/errata/1-10.md
+        - 其他勘误: book/1/errata/other.md
+      - FAQ: book/1/faq.md
+      - 可改进实现: book/1/improvement.md
+    - 第 2 版:
+      - 主页↗: https://helloflask.com/book/4
+      - 示例程序: book/4/example.md
+      - 代码片段:
+        - 主页: book/4/snippets/index.md
+        - 第 1 章：初识 Flask: book/4/snippets/c1.md
+        - 第 2 章：Flask 与 HTTP: book/4/snippets/c2.md
+        - 第 3 章：模板和静态文件: book/4/snippets/c3.md
+        - 第 4 章：表单: book/4/snippets/c4.md
+        - 第 5 章：数据库: book/4/snippets/c5.md
+        - 第 6 章：电子邮件: book/4/snippets/c6.md
+  - Flask 入门教程:
+    - 主页↗: https://helloflask.com/book/3
+    - GitHub 仓库↗: https://github.com/greyli/flask-tutorial
+    - 在线阅读↗: https://read.helloflask.com
+  - Python Web API 设计与开发:
+    - 主页↗: https://helloflask.com/book/2
+  - 变更记录: changes.md
+  - 知乎专栏↗: https://zhuanlan.zhihu.com/flask
+  - HelloFlask 主站↗: https://helloflask.com
+  - HelloFlask 论坛↗: https://discuss.helloflask.com
+  - 写作中:
+    - Flask 资源索引: resources.md
+    - Flask 基础知识: basics/index.md
+    - Flask 扩展介绍: extensions/index.md
+    - Flask Snippets: snippets/index.md
+plugins:
+  - search
+extra_css:
+  - _assets/extra.css

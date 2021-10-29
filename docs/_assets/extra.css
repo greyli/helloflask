@@ -1,0 +1,25 @@
+.progress-label {
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    margin: 0;
+    line-height: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 1.2rem;
+    float: left;
+    background-color: #2979ff;
+}
+
+.progress {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    height: 1.2rem;
+    background-color: #eeeeee;
+    position: relative;
+}

@@ -1,5 +1,7 @@
 # FAQ
 
+[《Flask Web开发实战》](http://helloflask.com/book)的读者经常提出的问题与回答，如果你想提一个问题，请创建 [discussion](https://github.com/greyli/helloflask/discussions)。
+
 ### Exception: Install 'email_validator' for email validation support.
 
 WTForms 新版本引入了破坏性变动，Email 验证通过外部库 email-validator 实现，因此需要手动安装这个库：

@@ -2,6 +2,10 @@
 
 ## helloflask 仓库变更
 
+### 2021-10-29
+
+- 创建 HelloFlask 文档：<https://docs.helloflask.com>
+
 ### 2021-9-25
 
 - 开始编写第二版示例程序（放到 examples 目录下），并创建区分版本的依赖文件、勘误文件等。

@@ -1,11 +1,11 @@
-# 《Flask Web 开发实战（第 1 版）》示例程序
+# 《Flask Web 开发实战（第 2 版）》示例程序
 
 在运行示例程序之前，确保你已经把仓库克隆到本地，并完成创建虚拟环境，安装依赖等操作，详见[获取示例程序](/installation)。
 
-每一章的示例程序放在 demos 目录下不同的子文件内，以第 1 章示例程序为例，你需要把工作目录切换到 demos/hello 目录内，然后执行 `flask run` 启动程序：
+每一章的示例程序放在 examples 目录下不同的子文件内，以第 1 章示例程序为例，你需要把工作目录切换到 examples/c1 目录内，然后执行 `flask run` 启动程序：
 
 ```
-$ cd demos/hello
+$ cd examples/c1
 $ flask run
 ```
 
@@ -14,7 +14,7 @@ $ flask run
 通过切换到不同的示例程序目录来运行不同章节的示例程序。比如，下面的命令将会运行第 4 章的示例程序：
 
 ```
-$ cd demos/form
+$ cd examples/c4
 $ flask run
 ```
 
