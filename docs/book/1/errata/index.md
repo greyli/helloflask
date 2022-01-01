@@ -2,7 +2,7 @@
 
 首先，为书中包含的错误表示抱歉！如果你发现了书中的错误，欢迎创建 [issue](https://github.com/greyli/helloflask/issues) 反馈，或是通过 Email 与我联系（withlihui@gmail.com），谢谢！
 
-点击左侧导航栏的条目查看勘误，1-1 表示第 1 版第 2 次印刷，印刷版次可以在前言左边的版权页看到。
+点击左侧导航栏的条目查看勘误，1-1 表示第 1 版第 1 次印刷，印刷版次可以在前言左边的版权页看到。
 
 电子书的版本一般为日期最接近的纸书版本。旧版本可以尝试联系所在平台的客服更新文件。
 
@@ -57,6 +57,8 @@
 * @guoxy2016 Xingyu Guo <https://github.com/guoxy2016> 
 * 微信 仁太
 * 吴谢
+* @Skylor-Tang SkylorTang <https://github.com/Skylor-Tang>
+* @Farmer-chong Farmer.Chillax <https://github.com/Farmer-chong>
 * ……
 
 另外还有通过 QQ、Telegram 和 Email 反馈勘误的读者，不方便索引，这里没有一一列出。感谢你们的贡献！
