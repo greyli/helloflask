@@ -10,6 +10,7 @@
   {% set title = config.site_name ~ " - " ~ page.title | striptags %}
 {% endif %}
 {% set image = config.site_url ~ '_assets/banner.png' %}
+{% set fav_image = config.site_url ~ '_assets/favicon.png' %}
 <!-- Open graph meta tags -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{{ title }}" />
@@ -20,12 +21,12 @@
 <meta property="og:image:width" content="1280" />·
 <meta property="og:image:height" content="640" />
 <!-- Twitter meta tags -->
-<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:card" content="summary" />
 <meta name="twitter:site" content="@helloflask" />
 <meta name="twitter:creator" content="@helloflask" />
 <meta name="twitter:title" content="{{ title }}" />
 <meta name="twitter:description" content="{{ config.site_description }}" />
-<meta name="twitter:image" content="{{ image }}" />
+<meta name="twitter:image" content="{{ fav_image }}" />
 {% endblock %}
 
 {% block analytics %}
