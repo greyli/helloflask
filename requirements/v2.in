@@ -9,3 +9,5 @@ flask-caching
 flask-assets
 # dev
 watchdog
+faker
+coverage
