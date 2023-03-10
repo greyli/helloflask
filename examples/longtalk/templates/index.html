@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>校长讲话</h1>
+<div class="body">{{ post_body }}</div>
+<button id="load">加载更多</button>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('#load').click(function() {
+        $.ajax({
+            url: '/more',
+            type: 'get',
+            success: function(data){
+                $('.body').append(data);
+            }
+        })
+    })
+})
+</script>
+{% endblock %}
