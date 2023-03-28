@@ -1,8 +1,7 @@
 from jinja2.utils import generate_lorem_ipsum
-from flask import Flask, jsonify, render_template
+from flask import Flask, render_template
 
 app = Flask(__name__)
-app.secret_key = os.getenv('SECRET_KEY', 'secret string')
 
 
 @app.route('/')
@@ -12,5 +11,5 @@ def index():
 
 
 @app.route('/more')
-def load_post():
+def more():
     return generate_lorem_ipsum(n=3)

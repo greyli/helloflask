@@ -2,20 +2,24 @@
 
 {% block content %}
 <h1>校长讲话</h1>
-<div class="body">{{ post_body }}</div>
+<div id="post">{{ post_body }}</div>
 <button id="load">加载更多</button>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
-$(function() {
-    $('#load').click(function() {
-        $.ajax({
-            url: '/more',
-            type: 'get',
-            success: function(data){
-                $('.body').append(data);
-            }
-        })
-    })
-})
+  const loadBtn = document.getElementById('load');
+  const postBody = document.getElementById('post');
+  function loadMore() {
+    fetch('/more')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`${response.status} - ${response.statusText}`);
+        }
+        return response.text();
+      })
+      .then(data => {
+        postBody.innerHTML += data;
+      })
+      .catch(error => console.error(error))
+  };
+  loadBtn.addEventListener('click', loadMore);
 </script>
 {% endblock %}
