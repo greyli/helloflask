@@ -19,7 +19,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/greyli/helloflask
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/helloflask
+      link: https://twitter.com/greylihui
 copyright: Copyright &copy; 2021 <a href="https://greyli.com" target="_blank" rel="noopener">Grey Li</a>
 markdown_extensions:
   - admonition
@@ -75,7 +75,7 @@ nav:
   - 变更记录: changes.md
   - 知乎专栏↗: https://zhuanlan.zhihu.com/flask
   - HelloFlask 主站↗: https://helloflask.com
-  - HelloFlask 论坛↗: https://discuss.helloflask.com
+  - 代码厨房社区↗: https://codekitchen.community
   - 写作中:
     - Flask 资源索引: resources.md
     - Flask 基础知识: basics/index.md

@@ -7,7 +7,7 @@ HelloFlask 的 Meta 仓库，包含 HelloFlask 相关文档和示例程序。
 
 - 文档：<https://docs.helloflask.com>
 - 主站：<https://helloflask.com>
-- 论坛：<https://discuss.helloflask.com>
+- 论坛：<https://codekitchen.community>
 
 
 ## Books
@@ -21,7 +21,7 @@ HelloFlask 的 Meta 仓库，包含 HelloFlask 相关文档和示例程序。
 ## Feedbacks
 
 - 勘误和建议：创建 [issue](https://github.com/greyli/helloflask/issues) 或发送邮件到 withlihui@gmail.com
-- 问题求助 & 讨论：在[论坛](https://discuss.helloflask.com)、[GitHub Discussion](https://github.com/greyli/helloflask/discussions) 或[群聊](https://helloflask.com#discuss)创建讨论
+- 问题求助 & 讨论：在[代码厨房论坛](https://codekitchen.community)创建讨论
 
 
 ## Docs

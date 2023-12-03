@@ -1,6 +1,6 @@
 # FAQ
 
-[《Flask Web开发实战》](https://helloflask.com/book/1)的读者经常提出的问题与回答，如果你想提一个问题，请创建 [discussion](https://github.com/greyli/helloflask/discussions)。
+[《Flask Web开发实战》](https://helloflask.com/book/1)的读者经常提出的问题与回答，如果你想提一个问题，请创建 [讨论](https://codekitchen.community)。
 
 ### Exception: Install 'email_validator' for email validation support.
 
