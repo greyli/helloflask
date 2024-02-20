@@ -11,7 +11,7 @@ try:
 except ImportError:
     from urllib.parse import urlparse, urljoin
 
-from jinja2 import escape
+from markupsafe import escape
 from jinja2.utils import generate_lorem_ipsum
 from flask import Flask, make_response, request, redirect, url_for, abort, session, jsonify
 

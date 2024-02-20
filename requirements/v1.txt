@@ -15,7 +15,7 @@ flask-wtf==0.14.3
 flask==1.1.2
 itsdangerous==1.1.0
 jinja2==2.11.1
-jsmin==2.2.2
+jsmin==3.0.1
 mako==1.1.2
 markupsafe==1.1.1
 python-dateutil==2.8.1
