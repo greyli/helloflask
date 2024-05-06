@@ -4,19 +4,13 @@
 #
 #    pip-compile '.\requirements\docs.in'
 #
---trusted-host pypi.python.org
---trusted-host pypi.org
---trusted-host files.pythonhosted.org
-
 click==8.0.3
     # via mkdocs
-colorama==0.4.4
-    # via click
 ghp-import==2.0.2
     # via mkdocs
 importlib-metadata==4.8.1
     # via mkdocs
-jinja2==3.0.2
+jinja2==3.1.4
     # via
     #   mkdocs
     #   mkdocs-material
@@ -32,7 +26,7 @@ mergedeep==1.3.4
 mkdocs==1.2.3
     # via mkdocs-material
 mkdocs-material==7.3.5
-    # via -r .\requirements\docs.in
+    # via -r docs.in
 mkdocs-material-extensions==1.0.3
     # via mkdocs-material
 packaging==21.0
