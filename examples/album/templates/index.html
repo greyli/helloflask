@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p><a href="{{ url_for('upload') }}">&larr; Return</a></p>
+{% if session.photos %}
+  {% for filename in session.photos %}
+  <img src="{{ url_for('get_photo', filename=filename) }}">
+  {% endfor %}
+{% else %}
+  <p>No photos uploaded yet.</p>
+{% endif %}
+{% endblock %}

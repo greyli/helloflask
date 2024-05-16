@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>校长讲话</h1>
+<div id="post">{{ post_body }}</div>
+<button id="load">加载更多</button>
+<script type="text/javascript">
+  const loadBtn = document.getElementById('load');
+  const postBody = document.getElementById('post');
+  function loadMore() {
+    fetch('/more')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`${response.status} - ${response.statusText}`);
+        }
+        return response.text();
+      })
+      .then(data => {
+        postBody.innerHTML += data;
+      })
+      .catch(error => console.error(error))
+  };
+  loadBtn.addEventListener('click', loadMore);
+</script>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>{{ notes|length }} Notes (<a href="{{ url_for('new_note') }}">new</a>):</h3>
+{% for note in notes %}
+<div class="note">
+  <strong>{{ note.title }}</strong>
+  <p>{{ note.body }}</p>
+  <small class="info">Created at: {{ note.created_at.strftime('%Y/%m/%d %H:%M') }}</small>
+  {% if note.updated_at %}
+  <small class="info">Updated at: {{ note.updated_at.strftime('%Y/%m/%d %H:%M') }}</small>
+  {% endif %}
+  <a class='btn' href="{{ url_for('edit_note', note_id=note.id) }}">Edit</a>
+  <form method="post" action="{{ url_for('delete_note', note_id=note.id) }}">
+    <input class="btn" type="submit" value="Delete" onclick="return confirm('Are you sure?')">
+  </form>
+</div>
+{% endfor %}
+{% endblock %}
