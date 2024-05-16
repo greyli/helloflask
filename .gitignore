@@ -115,3 +115,5 @@ docs/_build/
 # Upload file
 demos/form/uploads/*
 !demos/form/uploads/.gitkeep
+examples/album/uploads/*
+!examples/album/uploads/.gitkeep
