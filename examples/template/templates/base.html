@@ -4,10 +4,10 @@
 <head>
   {% block head %}
   <meta charset="utf-8">
-  <title>{% block title %}HelloFlask - File Upload Example{% endblock %}</title>
+  <title>{% block title %}Template - HelloFlask{% endblock %}</title>
   <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
   {% block styles %}
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css' ) }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css' ) }}">
   {% endblock %}
   {% endblock %}
 </head>
@@ -15,9 +15,10 @@
 <body>
   <nav>
     <ul>
-      <li><a href="{{ url_for('index') }}">HelloFlask</a></li>
+      <li><a href="{{ url_for('index') }}">Home</a></li>
     </ul>
   </nav>
+
   <main>
     {% for message in get_flashed_messages() %}
     <div class="alert">{{ message }}</div>
@@ -32,6 +33,7 @@
     </small>
     {% endblock %}
   </footer>
+  {% block scripts %}{% endblock %}
 </body>
 
 </html>

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Forms</h1>
+<ul>
+  <li><a href="{{ url_for('html') }}">HTML Form</a></li>
+  <li><a href="{{ url_for('basic') }}">Basic Form</a></li>
+  <li><a href="{{ url_for('bootstrap') }}">Bootstrap Style Form</a></li>
+  <li><a href="{{ url_for('custom_validator') }}">Custom Validator</a></li>
+</ul>
+{% endblock %}
