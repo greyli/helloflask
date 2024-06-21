@@ -27,8 +27,9 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.highlight
   - pymdownx.inlinehilite
-  - pymdownx.tabbed
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.snippets
   - pymdownx.progressbar
   - attr_list
@@ -36,7 +37,7 @@ markdown_extensions:
         permalink: True
 nav:
   - 主页: index.md
-  - 示例程序索引: examples.md
+  - 获取示例程序: installation.md
   - Flask Web 开发实战:
     - 第 1 版（2018）:
       - 主页↗: https://helloflask.com/book/1
@@ -55,7 +56,7 @@ nav:
         - 其他勘误: book/1/errata/other.md
       - FAQ: book/1/faq.md
       - 可改进实现: book/1/improvement.md
-    - 第 2 版（2022）:
+    - 第 2 版（2024）:
       - 主页↗: https://helloflask.com/book/4
       - 示例程序: book/4/example.md
       - 代码片段:
@@ -76,11 +77,6 @@ nav:
   - 知乎专栏↗: https://zhuanlan.zhihu.com/flask
   - HelloFlask 主站↗: https://helloflask.com
   - 代码厨房社区↗: https://codekitchen.community
-  - 写作中:
-    - Flask 资源索引: resources.md
-    - Flask 基础知识: basics/index.md
-    - Flask 扩展介绍: extensions/index.md
-    - Flask Snippets: snippets/index.md
 plugins:
   - search
 extra_css:
