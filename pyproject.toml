@@ -1,0 +1,49 @@
+[project]
+name = "helloflask"
+version = "2.0.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Grey Li", email = "withlihui@gmail.com"},
+]
+dependencies = [
+    "flask>=3.0.3",
+    "python-dotenv>=1.0.1",
+    "bootstrap-flask>=2.4.0",
+    "flask-wtf[email]>=1.2.1",
+    "flask-ckeditor>=0.5.1",
+    "flask-sqlalchemy>=3.1.1",
+    "flask-mailman>=1.1.0",
+    "flask-caching>=2.3.0",
+    "flask-assets>=2.1.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[[tool.pdm.autoexport]]
+filename = "requirements/docs.txt"
+groups = ["docs"]
+
+[[tool.pdm.autoexport]]
+filename = "requirements/v2.txt"
+groups = ["default", "dev"]
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "watchdog>=4.0.1",
+    "faker>=25.8.0",
+    "coverage>=7.5.3",
+    "pytest>=8.2.2",
+    "pytest-cov>=5.0.0",
+    "ruff>=0.4.9",
+]
+docs = [
+    "mkdocs-material>=9.5.26",
+]
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
