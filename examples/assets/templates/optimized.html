@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+    {% assets "css_all" %}
+    <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+    {% endassets %}
+{% endblock %}
+
+{% block content %}
+    <h1>Bar</h1>
+    <p>Optimized.</p>
+{% endblock %}
+
+
+{% block scripts %}
+    {% assets "js_all" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+{% endblock %}

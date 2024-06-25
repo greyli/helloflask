@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/dropzone.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.Jcrop.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block content %}
+    <h1>Foo</h1>
+    <p>Unoptimized.</p>
+{% endblock %}
+
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+<script src="{{ url_for('static', filename='js/moment-with-locales.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/dropzone.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.Jcrop.min.js') }}"></script>
+{% endblock %}

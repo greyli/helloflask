@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Optional
 
 import click
-from flask import Flask, redirect, url_for, render_template, flash
+from flask import Flask, redirect, url_for, render_template, flash, request
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import select, String, Text, MetaData
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
@@ -37,6 +37,7 @@ db = SQLAlchemy(app, model_class=Base)
 # models
 class Note(db.Model):
     __tablename__ = 'note'
+
     id: Mapped[int] = mapped_column(primary_key=True)
     title: Mapped[str] = mapped_column(String(50))
     body: Mapped[str] = mapped_column(Text)
@@ -97,11 +98,16 @@ class NoteForm(FlaskForm):
     submit = SubmitField()
 
 
+class DeleteNoteForm(FlaskForm):
+    submit = SubmitField('Delete')
+
+
 # views
 @app.route('/')
 def index():
     notes = db.session.scalars(select(Note)).all()
-    return render_template('index.html', notes=notes)
+    delete_form = DeleteNoteForm()
+    return render_template('index.html', notes=notes, delete_form=delete_form)
 
 
 @app.route('/new', methods=['GET', 'POST'])
@@ -128,16 +134,26 @@ def edit_note(note_id):
         db.session.commit()
         flash('Note updated.')
         return redirect(url_for('index'))
-    # pre-fill form
-    form.title.data = note.title
-    form.body.data = note.body
+    if request.method == 'GET':
+        # pre-fill form
+        form.title.data = note.title
+        form.body.data = note.body
     return render_template('edit_note.html', form=form)
 
 
 @app.route('/delete/<int:note_id>', methods=['POST'])
 def delete_note(note_id):
-    note = db.session.get(Note, note_id)
-    db.session.delete(note)
-    db.session.commit()
-    flash('Note deleted.')
+    # note = db.session.get(Note, note_id)
+    # db.session.delete(note)
+    # db.session.commit()
+    # flash('Note deleted.')
+    # return redirect(url_for('index'))
+    form = DeleteNoteForm()
+    if form.validate_on_submit():
+        note = db.session.get(Note, note_id)  # 获取对应记录
+        db.session.delete(note)  # 删除记录
+        db.session.commit()  # 提交修改
+        flash('Note deleted.')
+    else:
+        flash('Delete failed, please try again.')
     return redirect(url_for('index'))
