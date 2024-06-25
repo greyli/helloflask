@@ -12,7 +12,8 @@
   {% endif %}
   <a class='btn' href="{{ url_for('edit_note', note_id=note.id) }}">Edit</a>
   <form method="post" action="{{ url_for('delete_note', note_id=note.id) }}">
-    <input class="btn" type="submit" value="Delete" onclick="return confirm('Are you sure?')">
+    {{ delete_form.csrf_token }}
+    {{ delete_form.submit(class='btn', onclick='return confirm("Are you sure?")') }}
   </form>
 </div>
 {% endfor %}
