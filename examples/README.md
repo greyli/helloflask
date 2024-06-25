@@ -32,5 +32,6 @@ flask run  # 或 pdm run flask run
 - 第 4 章：`ch4`
 - 第 5 章：`ch5`、`notebook`
 - 第 7 章：`longtalk`、`album`
+- 第 12 章：`assets`、`cache`
 
 *在书中相应位置会包含运行示例程序的提示。*

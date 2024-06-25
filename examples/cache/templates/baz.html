@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Baz</h1>
+<p>With cache enabled, only first load will need more than 1 second (1000.00ms).</p>
+<p>Refresh the page to view the change.</p>
+<p>Check the <b>Time</b> column in debug toolbar &rightarrow;</p>
+<p>>>> time.sleep(1)</p>
+{% endblock %}
