@@ -36,8 +36,6 @@ db = SQLAlchemy(app, model_class=Base)
 
 # models
 class Note(db.Model):
-    __tablename__ = 'note'
-
     id: Mapped[int] = mapped_column(primary_key=True)
     title: Mapped[str] = mapped_column(String(50))
     body: Mapped[str] = mapped_column(Text)
@@ -46,12 +44,6 @@ class Note(db.Model):
 
     def __repr__(self):
         return f'<Note {self.id}: {self.title}>'  # pragma: no cover
-
-
-# callbacks
-@app.shell_context_processor
-def make_shell_context():
-    return dict(db=db, Note=Note)  # pragma: no cover
 
 
 # commands
