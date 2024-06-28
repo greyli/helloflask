@@ -1,6 +1,6 @@
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
@@ -41,8 +41,8 @@ class Note(db.Model):
     id: Mapped[int] = mapped_column(primary_key=True)
     title: Mapped[str] = mapped_column(String(50))
     body: Mapped[str] = mapped_column(Text)
-    created_at: Mapped[datetime] = mapped_column(default=datetime.now)
-    updated_at: Mapped[Optional[datetime]] = mapped_column(onupdate=datetime.now)
+    created_at: Mapped[datetime] = mapped_column(default=lambda: datetime.now(timezone.utc))
+    updated_at: Mapped[Optional[datetime]] = mapped_column(onupdate=lambda: datetime.now(timezone.utc))
 
     def __repr__(self):
         return f'<Note {self.id}: {self.title}>'  # pragma: no cover
