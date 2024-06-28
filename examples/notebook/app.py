@@ -48,12 +48,6 @@ class Note(db.Model):
         return f'<Note {self.id}: {self.title}>'  # pragma: no cover
 
 
-# callbacks
-@app.shell_context_processor
-def make_shell_context():
-    return dict(db=db, Note=Note)  # pragma: no cover
-
-
 # commands
 @app.cli.command('init')
 @click.option('--drop-table', is_flag=True, help='Re-create the tables.')
