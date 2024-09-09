@@ -215,26 +215,6 @@ def increment_edited_count(target, value, oldvalue, initiator):
         target.edited_count += 1
 
 
-# shell context
-@app.shell_context_processor
-def make_shell_context():
-    return dict(
-        db=db,
-        Note=Note,
-        Author=Author,
-        Article=Article,
-        Country=Country,
-        Capital=Capital,
-        Student=Student,
-        Teacher=Teacher,
-        User=User,
-        Photo=Photo,
-        Collection=Collection,
-        Post=Post,
-        Comment=Comment
-    )
-
-
 # commands
 @app.cli.command('init')
 @click.option('--drop-table', is_flag=True, help='Re-create the tables.')
