@@ -1,5 +1,6 @@
 import os
 import uuid
+from pathlib import Path
 
 from flask import Flask, render_template, flash, session, redirect, url_for, send_from_directory
 from flask_wtf import FlaskForm
@@ -7,8 +8,8 @@ from wtforms import SubmitField
 from flask_wtf.file import FileField, FileRequired, FileAllowed, FileSize
 
 app = Flask(__name__)
-app.config['UPLOAD_PATH'] = os.path.join(app.root_path, 'uploads')
-app.config['SECRET_KEY'] = 'dev'
+app.config['UPLOAD_PATH'] = Path(app.root_path) / 'uploads'
+app.secret_key = os.getenv('SECRET_KEY', 'secret string')
 
 
 class UploadPhotoForm(FlaskForm):
@@ -21,7 +22,7 @@ class UploadPhotoForm(FlaskForm):
 
 
 def random_filename(origin_filename):
-    ext = os.path.splitext(origin_filename)[1]
+    ext = Path(origin_filename).suffix
     new_filename = f'{uuid.uuid4().hex}{ext}'
     return new_filename
 
@@ -42,7 +43,7 @@ def upload():
     if form.validate_on_submit():
         photo = form.photo.data
         filename = random_filename(photo.filename)
-        photo.save(os.path.join(app.config['UPLOAD_PATH'], filename))
+        photo.save(app.config['UPLOAD_PATH'] / filename)
         flash('Upload success.')
         session['photos'] = [filename]
         return redirect(url_for('index'))
