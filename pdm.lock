@@ -5,7 +5,7 @@
 groups = ["default", "dev", "docs"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:9b4b0579d68835b9f6f7a3a3d70ff9f13d8a937e986b8fc71df342a574a6419d"
+content_hash = "sha256:e2f616c368c07d18f35529a2062a89308fa941d969a147a91d3d34ea1fa89714"
 
 [[package]]
 name = "babel"
@@ -19,6 +19,21 @@ dependencies = [
 files = [
     {file = "Babel-2.15.0-py3-none-any.whl", hash = "sha256:08706bdad8d0a3413266ab61bd6c34d0c28d6e1e7badf40a2cebe67644e2e1fb"},
     {file = "babel-2.15.0.tar.gz", hash = "sha256:8daf0e265d05768bc6c7a314cf1321e9a123afc328cc635c18622a2f30a04413"},
+]
+
+[[package]]
+name = "bleach"
+version = "6.1.0"
+requires_python = ">=3.8"
+summary = "An easy safelist-based HTML-sanitizing tool."
+groups = ["default"]
+dependencies = [
+    "six>=1.9.0",
+    "webencodings",
+]
+files = [
+    {file = "bleach-6.1.0-py3-none-any.whl", hash = "sha256:3225f354cfc436b9789c66c4ee030194bee0568fbf9cbdad3bc8b5c26c5f12b6"},
+    {file = "bleach-6.1.0.tar.gz", hash = "sha256:0a31f1837963c41d46bbf1331b8778e1308ea0791db03cc4e7357b97cf42a8fe"},
 ]
 
 [[package]]
@@ -408,15 +423,15 @@ files = [
 
 [[package]]
 name = "flask-ckeditor"
-version = "0.5.1"
+version = "1.0.0"
 summary = "CKEditor integration for Flask."
 groups = ["default"]
 dependencies = [
     "Flask",
 ]
 files = [
-    {file = "Flask-CKEditor-0.5.1.tar.gz", hash = "sha256:15c8a54a0967cc51b6fa8191ab5fa042e7ee486d6d420c4d5f509a357557c278"},
-    {file = "Flask_CKEditor-0.5.1-py2.py3-none-any.whl", hash = "sha256:330b10f1364a5ef990fd1de72429bb03e4a1ab6ee3aec85f7b38656315dd07fd"},
+    {file = "Flask_CKEditor-1.0.0-py2.py3-none-any.whl", hash = "sha256:1a4aa871b510100df7bb8401b71cdcddfe1fd6d860649bc3760d0d43df485d72"},
+    {file = "flask_ckeditor-1.0.0.tar.gz", hash = "sha256:e1737ca180ea0d46d53226f888f4786589f2e8ed810694aaff2aa68dfad15a98"},
 ]
 
 [[package]]
@@ -1124,7 +1139,7 @@ name = "six"
 version = "1.16.0"
 requires_python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 summary = "Python 2 and 3 compatibility utilities"
-groups = ["dev", "docs"]
+groups = ["default", "dev", "docs"]
 files = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
@@ -1268,6 +1283,16 @@ groups = ["default"]
 files = [
     {file = "webassets-2.0-py3-none-any.whl", hash = "sha256:a31a55147752ba1b3dc07dee0ad8c8efff274464e08bbdb88c1fd59ffd552724"},
     {file = "webassets-2.0.tar.gz", hash = "sha256:167132337677c8cedc9705090f6d48da3fb262c8e0b2773b29f3352f050181cd"},
+]
+
+[[package]]
+name = "webencodings"
+version = "0.5.1"
+summary = "Character encoding aliases for legacy web content"
+groups = ["default"]
+files = [
+    {file = "webencodings-0.5.1-py2.py3-none-any.whl", hash = "sha256:a0af1213f3c2226497a97e2b3aa01a7e4bee4f403f95be16fc9acd2947514a78"},
+    {file = "webencodings-0.5.1.tar.gz", hash = "sha256:b36a1c245f2d304965eb4e0a82848379241dc04b865afcc4aab16748587e1923"},
 ]
 
 [[package]]

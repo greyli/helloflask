@@ -15,6 +15,7 @@ dependencies = [
     "flask-mailman>=1.1.0",
     "flask-caching>=2.3.0",
     "flask-assets>=2.1.0",
+    "bleach>=6.1.0",
 ]
 requires-python = ">=3.8"
 readme = "README.md"
