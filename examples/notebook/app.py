@@ -137,16 +137,11 @@ def edit_note(note_id):
 
 @app.route('/delete/<int:note_id>', methods=['POST'])
 def delete_note(note_id):
-    # note = db.session.get(Note, note_id)
-    # db.session.delete(note)
-    # db.session.commit()
-    # flash('Note deleted.')
-    # return redirect(url_for('index'))
     form = DeleteNoteForm()
     if form.validate_on_submit():
-        note = db.session.get(Note, note_id)  # 获取对应记录
-        db.session.delete(note)  # 删除记录
-        db.session.commit()  # 提交修改
+        note = db.session.get(Note, note_id)
+        db.session.delete(note)
+        db.session.commit()
         flash('Note deleted.')
     else:
         flash('Delete failed, please try again.')
