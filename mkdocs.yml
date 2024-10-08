@@ -7,6 +7,8 @@ theme:
   custom_dir: docs/_templates
   logo: _assets/favicon.png
   favicon: _assets/favicon.png
+  features:
+    - content.code.copy
   palette:
     primary: black
   icon:
