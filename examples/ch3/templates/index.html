@@ -11,6 +11,6 @@
   <li>Test: {% if name is baz %}I am baz.{% endif %}</li>
   <li>Macro: {{ qux(amount=1) }}</li>
   <li><a href="{{ url_for('watchlist_with_static') }}">Watchlist with image and styles.</a></li>
-  <li><a href="{{ url_for('just_flash') }}">Flash something</a></li>
+  <li><a href="{{ url_for('call_flash') }}">Call Flash</a></li>
 </ul>
 {% endblock %}
