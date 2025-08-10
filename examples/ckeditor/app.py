@@ -2,16 +2,20 @@ import os
 import uuid
 from pathlib import Path
 
-from flask_ckeditor import CKEditor, upload_success, upload_fail
 from flask import Flask, render_template, flash, request, url_for, send_from_directory
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, Length
-from flask_ckeditor import CKEditorField
+from flask_ckeditor import CKEditor, upload_success, upload_fail
 from bleach import clean
 
 app = Flask(__name__)
-app.secret_key = os.getenv('SECRET_KEY', 'secret string')
+
+# Load secret key from environment variable
+app.secret_key = os.getenv('SECRET_KEY', None)
+if app.secret_key is None:
+    raise ValueError("SECRET_KEY environment variable is not set")
+
 app.config['CKEDITOR_FILE_UPLOADER'] = 'upload_image'
 app.config['UPLOAD_PATH'] = Path(app.root_path) / 'uploads'
 
@@ -68,4 +72,3 @@ def upload_image():
     f.save(app.config['UPLOAD_PATH'] / filename)
     image_url = url_for('get_image', filename=filename)
     return upload_success(image_url, filename)
- 

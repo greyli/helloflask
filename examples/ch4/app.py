@@ -7,23 +7,23 @@ from wtforms import ValidationError
 from forms import LoginForm, FortyTwoForm
 
 app = Flask(__name__)
-app.secret_key = os.getenv('SECRET_KEY', 'secret string')
-
+app.secret_key = os.getenv('SECRET_KEY', 'default_secret_key')
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
     return render_template('index.html')
-
 
 @app.route('/html', methods=['GET', 'POST'])
 def html():
     form = LoginForm()
     if request.method == 'POST':
         username = request.form.get('username')
+        # Use a parameterized query
+        cursor.execute("SELECT * FROM users WHERE name = :name", {'name': username})
+        results = cursor.fetchall()
         flash(f'Welcome home, {username}!')
         return redirect(url_for('index'))
     return render_template('pure_html.html')
-
 
 @app.route('/basic', methods=['GET', 'POST'])
 def basic():
@@ -34,7 +34,6 @@ def basic():
         return redirect(url_for('index'))
     return render_template('basic.html', form=form)
 
-
 @app.route('/bootstrap', methods=['GET', 'POST'])
 def bootstrap():
     form = LoginForm()
@@ -43,7 +42,6 @@ def bootstrap():
         flash(f'Welcome home, {username}!')
         return redirect(url_for('index'))
     return render_template('bootstrap.html', form=form)
-
 
 @app.route('/custom-validator', methods=['GET', 'POST'])
 def custom_validator():
