@@ -3,9 +3,12 @@
 
 [metadata]
 groups = ["default", "dev", "docs"]
-strategy = ["cross_platform", "inherit_metadata"]
-lock_version = "4.4.1"
-content_hash = "sha256:e2f616c368c07d18f35529a2062a89308fa941d969a147a91d3d34ea1fa89714"
+strategy = ["inherit_metadata"]
+lock_version = "4.5.0"
+content_hash = "sha256:cd2812b7f770cdf41cf67b64899da6f7d8d9ab5b13f6deea08c13cff2260e5f7"
+
+[[metadata.targets]]
+requires_python = ">=3.9"
 
 [[package]]
 name = "babel"
@@ -177,6 +180,7 @@ summary = "Composable command line interface toolkit"
 groups = ["default", "docs"]
 dependencies = [
     "colorama; platform_system == \"Windows\"",
+    "importlib-metadata; python_version < \"3.8\"",
 ]
 files = [
     {file = "click-8.1.7-py3-none-any.whl", hash = "sha256:ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28"},
@@ -408,17 +412,17 @@ files = [
 
 [[package]]
 name = "flask-caching"
-version = "2.3.0"
+version = "2.3.1"
 requires_python = ">=3.8"
 summary = "Adds caching support to Flask applications."
 groups = ["default"]
 dependencies = [
     "Flask",
-    "cachelib<0.10.0,>=0.9.0",
+    "cachelib>=0.9.0",
 ]
 files = [
-    {file = "Flask_Caching-2.3.0-py3-none-any.whl", hash = "sha256:51771c75682e5abc1483b78b96d9131d7941dc669b073852edfa319dd4e29b6e"},
-    {file = "flask_caching-2.3.0.tar.gz", hash = "sha256:d7e4ca64a33b49feb339fcdd17e6ba25f5e01168cf885e53790e885f83a4d2cf"},
+    {file = "Flask_Caching-2.3.1-py3-none-any.whl", hash = "sha256:d3efcf600e5925ea5a2fcb810f13b341ae984f5b52c00e9d9070392f3ca10761"},
+    {file = "flask_caching-2.3.1.tar.gz", hash = "sha256:65d7fd1b4eebf810f844de7de6258254b3248296ee429bdcb3f741bcbf7b98c9"},
 ]
 
 [[package]]
@@ -432,6 +436,20 @@ dependencies = [
 files = [
     {file = "Flask_CKEditor-1.0.0-py2.py3-none-any.whl", hash = "sha256:1a4aa871b510100df7bb8401b71cdcddfe1fd6d860649bc3760d0d43df485d72"},
     {file = "flask_ckeditor-1.0.0.tar.gz", hash = "sha256:e1737ca180ea0d46d53226f888f4786589f2e8ed810694aaff2aa68dfad15a98"},
+]
+
+[[package]]
+name = "flask-debugtoolbar"
+version = "0.16.0"
+requires_python = ">=3.8"
+summary = "A toolbar overlay for debugging Flask applications."
+groups = ["default"]
+dependencies = [
+    "flask>=2.3.0",
+]
+files = [
+    {file = "flask_debugtoolbar-0.16.0-py3-none-any.whl", hash = "sha256:2857a58ef20b88cf022a88bb7f0c6f6be1fb91a2e8b2d9fcc9079357a692083e"},
+    {file = "flask_debugtoolbar-0.16.0.tar.gz", hash = "sha256:3b925d4dcc09205471e5021019dfeb0eb6dabd6c184de16a3496dfb1f342afe1"},
 ]
 
 [[package]]
@@ -585,6 +603,7 @@ summary = "Read metadata from Python packages"
 groups = ["default", "docs"]
 marker = "python_version < \"3.10\""
 dependencies = [
+    "typing-extensions>=3.6.4; python_version < \"3.8\"",
     "zipp>=0.5",
 ]
 files = [
@@ -931,17 +950,6 @@ files = [
 ]
 
 [[package]]
-name = "pytz"
-version = "2024.1"
-summary = "World timezone definitions, modern and historical"
-groups = ["docs"]
-marker = "python_version < \"3.9\""
-files = [
-    {file = "pytz-2024.1-py2.py3-none-any.whl", hash = "sha256:328171f4e3623139da4983451950b28e95ac706e13f3f2630a879749e7a8b319"},
-    {file = "pytz-2024.1.tar.gz", hash = "sha256:2a29735ea9c18baf14b448846bde5a48030ed267578472d8955cd0e7443a9812"},
-]
-
-[[package]]
 name = "pyyaml"
 version = "6.0.1"
 requires_python = ">=3.6"
@@ -1153,6 +1161,7 @@ summary = "Database Abstraction Library"
 groups = ["default"]
 dependencies = [
     "greenlet!=0.4.17; platform_machine == \"win32\" or platform_machine == \"WIN32\" or platform_machine == \"AMD64\" or platform_machine == \"amd64\" or platform_machine == \"x86_64\" or platform_machine == \"ppc64le\" or platform_machine == \"aarch64\"",
+    "importlib-metadata; python_version < \"3.8\"",
     "typing-extensions>=4.6.0",
 ]
 files = [
