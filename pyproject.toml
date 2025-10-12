@@ -1,7 +1,7 @@
 [project]
 name = "helloflask"
 version = "2.0.0"
-description = "Default template for PDM package"
+description = "Hello, Flask!"
 authors = [
     {name = "Grey Li", email = "withlihui@gmail.com"},
 ]
@@ -30,10 +30,12 @@ distribution = false
 [[tool.pdm.autoexport]]
 filename = "requirements/docs.txt"
 groups = ["docs"]
+"without-hashes" = true
 
 [[tool.pdm.autoexport]]
 filename = "requirements/v2.txt"
 groups = ["default", "dev"]
+"without-hashes" = true
 
 [tool.pdm.dev-dependencies]
 dev = [
