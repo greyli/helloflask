@@ -22,7 +22,7 @@ HelloFlask 的 Meta 仓库，包含 HelloFlask 相关文档和示例程序。
 
 《Flask Web 开发实战》示例程序：
 
-- 基础示例程序：[/book/1/example](/book/1/example)
+- 基础示例程序：[demos/](/demos)
 - SayHello（留言板）：<https://github.com/greyli/sayhello>
 - Bluelog（个人博客）：<https://github.com/greyli/bluelog>
 - Albumy（图片社交网站）：<https://github.com/greyli/albumy>
@@ -32,7 +32,7 @@ HelloFlask 的 Meta 仓库，包含 HelloFlask 相关文档和示例程序。
 
 《Flask Web 开发实战（第 2 版）》示例程序：
 
-- 基础示例程序：[/book/4/examples/](/book/4/examples/)
+- 基础示例程序：[examples/](/examples)
 - Greybook（个人博客）：<https://github.com/greyli/greybook>
 - Moments（图片社交博客）：<https://github.com/greyli/moments>
 
