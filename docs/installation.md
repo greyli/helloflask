@@ -30,6 +30,36 @@ $ cd helloflask
     pdm install --dev
     ```
 
+=== "第 2 版（uv）"
+
+    首先[安装 uv](https://docs.astral.sh/uv/getting-started/installation/)：
+
+    ```
+    pip install --user uv
+    ```
+
+    使用下面的命令创建虚拟环境并激活：
+
+    Windows：
+
+    ```
+    uv venv
+    .venv\Scripts\activate
+    ```
+
+    Linux/macOS：
+
+    ```
+    uv venv
+    source .venv/bin/activate
+    ```
+
+    然后安装依赖：
+
+    ```
+    (.venv) $ uv pip install -r requirements/v2.txt
+    ```
+
 === "第 2 版（pip）"
 
     使用下面的命令创建虚拟环境并激活：
@@ -97,8 +127,8 @@ $ cd helloflask
 
 阅读不同版本对应的示例程序文档了解详细运行操作：
 
-- [第 1 版](book/1/example.md)
-- [第 2 版](book/4/example.md)
+- [第 1 版](https://github.com/greyli/helloflask/tree/main/demos#readme)
+- [第 2 版](https://github.com/greyli/helloflask/tree/main/examples#readme)
 
 
 ## 进阶示例程序
