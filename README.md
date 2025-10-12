@@ -45,3 +45,10 @@ HelloFlask 的 Meta 仓库，包含 HelloFlask 相关文档和示例程序。
 
 - 勘误和建议：创建 [issue](https://github.com/greyli/helloflask/issues)
 - 问题求助 & 讨论：在[代码厨房论坛](https://codekitchen.community)创建讨论
+
+
+## Newsletter
+
+欢迎加入李辉的邮件通讯列表，获取关于新作品的动态：
+
+- <https://greyli.com/subscribe/>
