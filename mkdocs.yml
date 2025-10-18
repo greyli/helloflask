@@ -9,12 +9,14 @@ theme:
   favicon: _assets/favicon.png
   features:
     - content.code.copy
+    - content.action.edit
   palette:
     primary: black
   icon:
     repo: fontawesome/brands/github
   language: zh
 repo_url: https://github.com/greyli/helloflask
+edit_uri: blob/main/docs/
 repo_name: greyli/helloflask
 extra:
   social:
