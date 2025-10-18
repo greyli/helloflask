@@ -1,4 +1,4 @@
-# 《Flask Web 开发实战（第 2 版）》示例程序
+# 《Flask 从入门到进阶》示例程序
 
 在运行示例程序之前，确保你已经把仓库克隆到本地，并完成创建虚拟环境，安装依赖等操作，详见[获取示例程序](https://docs.helloflask.com/installation)。
 

@@ -12,13 +12,23 @@ HelloFlask 的 Meta 仓库，包含 HelloFlask 相关文档和示例程序。
 
 ## Books
 
+- Flask 从入门到进阶：<https://helloflask.com/book/4>
 - Flask Web 开发实战：<https://helloflask.com/book/1>
-- Python Web API 设计与开发：<https://helloflask.com/book/2>
 - Flask 入门教程：<https://helloflask.com/book/3>
-- Flask Web 开发实战（第 2 版）：<https://helloflask.com/book/4>
+- Python Web API 设计与开发：<https://helloflask.com/book/2>（写作中）
 
 
 ## Examples
+
+《Flask 从入门到进阶》示例程序：
+
+- 基础示例程序：[examples/](/examples)
+- Greybook（个人博客）：<https://github.com/greyli/greybook>
+- Moments（图片社交博客）：<https://github.com/greyli/moments>
+
+《Flask 入门教程》示例程序
+
+- Watchlist：<https://github.com/greyli/watchlist>
 
 《Flask Web 开发实战》示例程序：
 
@@ -29,16 +39,6 @@ HelloFlask 的 Meta 仓库，包含 HelloFlask 相关文档和示例程序。
 - Todoism（待办事项）：<https://github.com/greyli/todoism>
 - CatChat（聊天室）：<https://github.com/greyli/catchat>
 - Flask-Share（Flask 扩展）：<https://github.com/greyli/flask-share>
-
-《Flask Web 开发实战（第 2 版）》示例程序：
-
-- 基础示例程序：[examples/](/examples)
-- Greybook（个人博客）：<https://github.com/greyli/greybook>
-- Moments（图片社交博客）：<https://github.com/greyli/moments>
-
-《Flask 入门教程》示例程序
-
-- Watchlist：<https://github.com/greyli/watchlist>
 
 
 ## Feedbacks
