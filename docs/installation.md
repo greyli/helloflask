@@ -1,6 +1,6 @@
 # 获取示例程序
 
-这个仓库的 [demos](https://github.com/greyli/helloflask/tree/master/demos) 和 [examples](https://github.com/greyli/helloflask/tree/master/examples) 文件夹分别包含《Flask Web 开发实战》第 1 版和第 2 版的基础示例程序。以下为获取并运行示例程序的步骤：
+这个仓库的 [demos](https://github.com/greyli/helloflask/tree/master/demos) 和 [examples](https://github.com/greyli/helloflask/tree/master/examples) 文件夹分别包含《Flask Web 开发实战》和《Flask 从入门到进阶》（前者的升级版）的基础示例程序。以下为获取并运行示例程序的步骤：
 
 
 ## 克隆仓库
@@ -16,7 +16,7 @@ $ cd helloflask
 
 为了方便操作，可以把虚拟环境创建在仓库根目录（/helloflask），让所有示例程序使用同一个环境。
 
-=== "第 2 版（PDM）"
+=== "Flask 从入门到进阶（PDM）"
 
     首先[安装 PDM](https://pdm-project.org/latest/#installation)：
 
@@ -30,7 +30,7 @@ $ cd helloflask
     pdm install --dev
     ```
 
-=== "第 2 版（uv）"
+=== "Flask 从入门到进阶（uv）"
 
     首先[安装 uv](https://docs.astral.sh/uv/getting-started/installation/)：
 
@@ -60,7 +60,7 @@ $ cd helloflask
     (.venv) $ uv pip install -r requirements/v2.txt
     ```
 
-=== "第 2 版（pip）"
+=== "Flask 从入门到进阶（pip）"
 
     使用下面的命令创建虚拟环境并激活：
 
@@ -84,7 +84,7 @@ $ cd helloflask
     (.venv) $ pip install -r requirements/v2.txt
     ```
 
-=== "第 1 版（Pipenv）"
+=== "Flask Web 开发实战（Pipenv）"
 
 
     首先[安装 Pipenv](https://pipenv.pypa.io/en/latest/installation.html)：
@@ -99,7 +99,7 @@ $ cd helloflask
     $ pipenv install --dev
     ```
 
-=== "第 1 版（pip）"
+=== "Flask Web 开发实战（pip）"
 
     使用下面的命令创建虚拟环境并激活：
 
@@ -127,8 +127,8 @@ $ cd helloflask
 
 阅读不同版本对应的示例程序文档了解详细运行操作：
 
-- [第 1 版](https://github.com/greyli/helloflask/tree/main/demos#readme)
-- [第 2 版](https://github.com/greyli/helloflask/tree/main/examples#readme)
+- [Flask 从入门到进阶](https://github.com/greyli/helloflask/tree/main/examples#readme)
+- [Flask Web 开发实战](https://github.com/greyli/helloflask/tree/main/demos#readme)
 
 
 ## 进阶示例程序
