@@ -45,6 +45,7 @@ nav:
   - Flask 从入门到进阶:
     - 主页↗: https://helloflask.com/book/4
     - 示例程序: book/4/example.md
+    - 完整目录: book/4/menu.md
     - 勘误:
       - 主页: book/4/errata/index.md
       - 1-1: book/4/errata/1-1.md
