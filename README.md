@@ -51,4 +51,4 @@ HelloFlask 的 Meta 仓库，包含 HelloFlask 相关文档和示例程序。
 
 欢迎加入李辉的邮件通讯列表，获取关于新作品的动态：
 
-- <https://greyli.com/subscribe/>
+- <https://greyli.com/newsletter/>
