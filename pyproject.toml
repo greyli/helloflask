@@ -37,7 +37,7 @@ filename = "requirements/v2.txt"
 groups = ["default", "dev"]
 "without-hashes" = true
 
-[tool.pdm.dev-dependencies]
+[dependency-groups]
 dev = [
     "watchdog>=4.0.1",
     "faker>=25.8.0",
